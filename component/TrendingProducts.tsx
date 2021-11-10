@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 
 export default function TrendingProducts() {
     return (
@@ -16,12 +17,14 @@ export default function TrendingProducts() {
                         >
                             <i className="ci-heart"></i>
                         </button>
-                        <a
-                            className="card-img-top d-block overflow-hidden"
-                            href="shop-single-v1.html"
-                        >
-                            <img src="/img/shop/catalog/01.jpg" alt="Product" />
-                        </a>
+                        <Link href="/shop-single-v1" passHref>
+                            <a className="card-img-top d-block overflow-hidden">
+                                <img
+                                    src="/img/shop/catalog/01.jpg"
+                                    alt="Product"
+                                />
+                            </a>
+                        </Link>
                         <div className="card-body py-2">
                             <a
                                 className="product-meta d-block fs-xs pb-1"
@@ -30,9 +33,9 @@ export default function TrendingProducts() {
                                 Sneakers &amp; Keds
                             </a>
                             <h3 className="product-title fs-sm">
-                                <a href="shop-single-v1.html">
-                                    Women Colorblock Sneakers
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a>Women Colorblock Sneakers</a>
+                                </Link>
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <div className="product-price">
@@ -144,12 +147,14 @@ export default function TrendingProducts() {
                         >
                             <i className="ci-heart"></i>
                         </button>
-                        <a
-                            className="card-img-top d-block overflow-hidden"
-                            href="shop-single-v1.html"
-                        >
-                            <img src="/img/shop/catalog/02.jpg" alt="Product" />
-                        </a>
+                        <Link href="/shop-single-v1" passHref>
+                            <a className="card-img-top d-block overflow-hidden">
+                                <img
+                                    src="/img/shop/catalog/02.jpg"
+                                    alt="Product"
+                                />
+                            </a>
+                        </Link>
                         <div className="card-body py-2">
                             <a
                                 className="product-meta d-block fs-xs pb-1"
@@ -158,9 +163,9 @@ export default function TrendingProducts() {
                                 Women’s T-shirt
                             </a>
                             <h3 className="product-title fs-sm">
-                                <a href="shop-single-v1.html">
-                                    Cotton Lace Blouse
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a>Cotton Lace Blouse</a>
+                                </Link>
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <div className="product-price">
@@ -301,12 +306,14 @@ export default function TrendingProducts() {
                         >
                             <i className="ci-heart"></i>
                         </button>
-                        <a
-                            className="card-img-top d-block overflow-hidden"
-                            href="shop-single-v1.html"
-                        >
-                            <img src="/img/shop/catalog/03.jpg" alt="Product" />
-                        </a>
+                        <Link href="/shop-single-v1" passHref>
+                            <a className="card-img-top d-block overflow-hidden">
+                                <img
+                                    src="/img/shop/catalog/03.jpg"
+                                    alt="Product"
+                                />
+                            </a>
+                        </Link>
                         <div className="card-body py-2">
                             <a
                                 className="product-meta d-block fs-xs pb-1"
@@ -315,9 +322,9 @@ export default function TrendingProducts() {
                                 Women’s Shorts
                             </a>
                             <h3 className="product-title fs-sm">
-                                <a href="shop-single-v1.html">
-                                    Mom High Waist Shorts
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a>Mom High Waist Shorts</a>
+                                </Link>
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <div className="product-price">
@@ -426,12 +433,14 @@ export default function TrendingProducts() {
                         >
                             <i className="ci-heart"></i>
                         </button>
-                        <a
-                            className="card-img-top d-block overflow-hidden"
-                            href="shop-single-v1.html"
-                        >
-                            <img src="/img/shop/catalog/07.jpg" alt="Product" />
-                        </a>
+                        <Link href="/shop-single-v1" passHref>
+                            <a className="card-img-top d-block overflow-hidden">
+                                <img
+                                    src="/img/shop/catalog/07.jpg"
+                                    alt="Product"
+                                />
+                            </a>
+                        </Link>
                         <div className="card-body py-2">
                             <a
                                 className="product-meta d-block fs-xs pb-1"
@@ -440,9 +449,9 @@ export default function TrendingProducts() {
                                 Womens Swimwear
                             </a>
                             <h3 className="product-title fs-sm">
-                                <a href="shop-single-v1.html">
-                                    Two-Piece Bikini in Print
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a>Two-Piece Bikini in Print</a>
+                                </Link>
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <div className="product-price">
@@ -537,12 +546,14 @@ export default function TrendingProducts() {
                         >
                             <i className="ci-heart"></i>
                         </button>
-                        <a
-                            className="card-img-top d-block overflow-hidden"
-                            href="shop-single-v1.html"
-                        >
-                            <img src="/img/shop/catalog/04.jpg" alt="Product" />
-                        </a>
+                        <Link href="/shop-single-v1" passHref>
+                            <a className="card-img-top d-block overflow-hidden">
+                                <img
+                                    src="/img/shop/catalog/04.jpg"
+                                    alt="Product"
+                                />
+                            </a>
+                        </Link>
                         <div className="card-body py-2">
                             <a
                                 className="product-meta d-block fs-xs pb-1"
@@ -551,9 +562,9 @@ export default function TrendingProducts() {
                                 Sportswear
                             </a>
                             <h3 className="product-title fs-sm">
-                                <a href="shop-single-v1.html">
-                                    Women Sports Jacket
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a>Women Sports Jacket</a>
+                                </Link>
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <div className="product-price">
@@ -662,12 +673,14 @@ export default function TrendingProducts() {
                         >
                             <i className="ci-heart"></i>
                         </button>
-                        <a
-                            className="card-img-top d-block overflow-hidden"
-                            href="shop-single-v1.html"
-                        >
-                            <img src="/img/shop/catalog/05.jpg" alt="Product" />
-                        </a>
+                        <Link href="/shop-single-v1" passHref>
+                            <a className="card-img-top d-block overflow-hidden">
+                                <img
+                                    src="/img/shop/catalog/05.jpg"
+                                    alt="Product"
+                                />
+                            </a>
+                        </Link>
                         <div className="card-body py-2">
                             <a
                                 className="product-meta d-block fs-xs pb-1"
@@ -676,9 +689,9 @@ export default function TrendingProducts() {
                                 Men’s Sunglasses
                             </a>
                             <h3 className="product-title fs-sm">
-                                <a href="shop-single-v1.html">
-                                    Polarized Sunglasses
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a>Polarized Sunglasses</a>
+                                </Link>
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <div className="product-price">
@@ -696,12 +709,11 @@ export default function TrendingProducts() {
                             </div>
                         </div>
                         <div className="card-body card-body-hidden">
-                            <a
-                                className="btn btn-secondary btn-sm d-block w-100 mb-2"
-                                href="shop-single-v1.html"
-                            >
-                                View details
-                            </a>
+                            <Link href="/shop-single-v1" passHref>
+                                <a className="btn btn-secondary btn-sm d-block w-100 mb-2">
+                                    View details
+                                </a>
+                            </Link>
                             <div className="text-center">
                                 <a
                                     className="nav-link-style fs-ms"
@@ -727,12 +739,14 @@ export default function TrendingProducts() {
                         >
                             <i className="ci-heart"></i>
                         </button>
-                        <a
-                            className="card-img-top d-block overflow-hidden"
-                            href="shop-single-v1.html"
-                        >
-                            <img src="/img/shop/catalog/06.jpg" alt="Product" />
-                        </a>
+                        <Link href="/shop-single-v1" passHref>
+                            <a className="card-img-top d-block overflow-hidden">
+                                <img
+                                    src="/img/shop/catalog/06.jpg"
+                                    alt="Product"
+                                />
+                            </a>
+                        </Link>
                         <div className="card-body py-2">
                             <a
                                 className="product-meta d-block fs-xs pb-1"
@@ -741,9 +755,9 @@ export default function TrendingProducts() {
                                 Backpacks
                             </a>
                             <h3 className="product-title fs-sm">
-                                <a href="shop-single-v1.html">
-                                    TH Jeans City Backpack
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a>TH Jeans City Backpack</a>
+                                </Link>
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <div className="product-price">
@@ -853,12 +867,14 @@ export default function TrendingProducts() {
                         >
                             <i className="ci-heart"></i>
                         </button>
-                        <a
-                            className="card-img-top d-block overflow-hidden"
-                            href="shop-single-v1.html"
-                        >
-                            <img src="/img/shop/catalog/25.jpg" alt="Product" />
-                        </a>
+                        <Link href="/shop-single-v1" passHref>
+                            <a className="card-img-top d-block overflow-hidden">
+                                <img
+                                    src="/img/shop/catalog/25.jpg"
+                                    alt="Product"
+                                />
+                            </a>
+                        </Link>
                         <div className="card-body py-2">
                             <a
                                 className="product-meta d-block fs-xs pb-1"
@@ -867,9 +883,9 @@ export default function TrendingProducts() {
                                 Womens Sneakers
                             </a>
                             <h3 className="product-title fs-sm">
-                                <a href="shop-single-v1.html">
-                                    Leather High-Top Sneakers
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a>Leather High-Top Sneakers</a>
+                                </Link>
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <div className="product-price">

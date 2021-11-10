@@ -612,17 +612,17 @@
                   <h3 className="widget-title">Trending posts</h3>
                   <div className="d-flex align-items-center mb-3"><a className="flex-shrink-0" href="blog-single.html"><img className="rounded" src="/img/blog/widget/01.jpg" width="64" alt="Post image"></a>
                     <div className="ps-3">
-                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">Retro Cameras are Trending. Why so Popular?</a></h6><span className="fs-ms text-muted">by <a href='#' class='blog-entry-meta-link'>Andy Williams</a></span>
+                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">Retro Cameras are Trending. Why so Popular?</a></h6><span className="fs-ms text-muted">by <a href='#' className='blog-entry-meta-link'>Andy Williams</a></span>
                     </div>
                   </div>
                   <div className="d-flex align-items-center mb-3"><a className="flex-shrink-0" href="blog-single.html"><img className="rounded" src="/img/blog/widget/02.jpg" width="64" alt="Post image"></a>
                     <div className="ps-3">
-                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">New Trends in Suburban Fashion</a></h6><span className="fs-ms text-muted">by <a href='#' class='blog-entry-meta-link'>Susan Mayer</a></span>
+                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">New Trends in Suburban Fashion</a></h6><span className="fs-ms text-muted">by <a href='#' className='blog-entry-meta-link'>Susan Mayer</a></span>
                     </div>
                   </div>
                   <div className="d-flex align-items-center"><a className="flex-shrink-0" href="blog-single.html"><img className="rounded" src="/img/blog/widget/03.jpg" width="64" alt="Post image"></a>
                     <div className="ps-3">
-                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">Augmented Reality - Game Changing Technology</a></h6><span className="fs-ms text-muted">by <a href='#' class='blog-entry-meta-link'>John Doe</a></span>
+                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">Augmented Reality - Game Changing Technology</a></h6><span className="fs-ms text-muted">by <a href='#' className='blog-entry-meta-link'>John Doe</a></span>
                     </div>
                   </div>
                 </div>

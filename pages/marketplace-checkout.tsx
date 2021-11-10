@@ -254,15 +254,15 @@
                 <!-- Billing detail-->
                 <div className="row pb-4 gx-4 gy-3">
                   <div className="col-sm-6">
-                    <label className="form-label" htmlFor="mc-fn">First name <span class='text-danger'>*</span></label>
+                    <label className="form-label" htmlFor="mc-fn">First name <span className='text-danger'>*</span></label>
                     <input className="form-control" type="text" value="Jonathan" id="mc-fn">
                   </div>
                   <div className="col-sm-6">
-                    <label className="form-label" htmlFor="mc-ln">Last name <span class='text-danger'>*</span></label>
+                    <label className="form-label" htmlFor="mc-ln">Last name <span className='text-danger'>*</span></label>
                     <input className="form-control" type="text" value="Doe" id="mc-ln">
                   </div>
                   <div className="col-12">
-                    <label className="form-label" htmlFor="mc-email">Email address <span class='text-danger'>*</span></label>
+                    <label className="form-label" htmlFor="mc-email">Email address <span className='text-danger'>*</span></label>
                     <input className="form-control" type="email" value="contact@createx.studio" id="mc-email">
                   </div>
                   <div className="col-sm-6">
@@ -270,7 +270,7 @@
                     <input className="form-control" type="text" value="Createx Studio" id="mc-company">
                   </div>
                   <div className="col-sm-6">
-                    <label className="form-label" htmlFor="mc-country">Country <span class='text-danger'>*</span></label>
+                    <label className="form-label" htmlFor="mc-country">Country <span className='text-danger'>*</span></label>
                     <select className="form-select" id="mc-country">
                       <option value>Select country</option>
                       <option value="Argentina">Argentina</option>
@@ -343,7 +343,7 @@
                     <h3 className="accordion-header"><a className="accordion-button collapsed" href="#paypal" data-bs-toggle="collapse"><i className="ci-paypal me-2 align-middle"></i>Pay with PayPal</a></h3>
                     <div className="accordion-collapse collapse" id="paypal" data-bs-parent="#payment-method" role="tabpanel">
                       <div className="accordion-body fs-sm">
-                        <p><span class='fw-medium'>PayPal</span> - the safer, easier way to pay</p>
+                        <p><span className='fw-medium'>PayPal</span> - the safer, easier way to pay</p>
                         <button className="btn btn-primary" type="button">Checkout with PayPal</button>
                       </div>
                     </div>

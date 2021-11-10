@@ -345,7 +345,7 @@
                     <div className="bg-secondary rounded-3 p-4 mb-4">
                       <div className="d-flex align-items-center"><img className="rounded" src="/img/marketplace/account/avatar.png" width="90" alt="Createx Studio">
                         <div className="ps-3">
-                          <button className="btn btn-light btn-shadow btn-sm mb-2" type="button"><i className="ci-loading me-2"></i>Change <span class='d-none d-sm-inline'>avatar</span></button>
+                          <button className="btn btn-light btn-shadow btn-sm mb-2" type="button"><i className="ci-loading me-2"></i>Change <span className='d-none d-sm-inline'>avatar</span></button>
                           <div className="p mb-0 fs-ms text-muted">Upload JPG, GIF or PNG image. 300 x 300 required.</div>
                         </div>
                       </div>

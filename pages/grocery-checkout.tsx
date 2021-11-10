@@ -824,17 +824,17 @@
                 </div>
                 <div className="row gx-4 gy-3">
                   <div className="col-sm-6">
-                    <label className="form-label" htmlFor="co-fn">First name <span class='text-danger'>*</span></label>
+                    <label className="form-label" htmlFor="co-fn">First name <span className='text-danger'>*</span></label>
                     <input className="form-control" type="text" id="co-fn" required>
                     <div className="invalid-feedback">Please enter your first name!</div>
                   </div>
                   <div className="col-sm-6">
-                    <label className="form-label" htmlFor="co-ln">Last name <span class='text-danger'>*</span></label>
+                    <label className="form-label" htmlFor="co-ln">Last name <span className='text-danger'>*</span></label>
                     <input className="form-control" type="text" id="co-ln" required>
                     <div className="invalid-feedback">Please enter your last name!</div>
                   </div>
                   <div className="col-sm-6">
-                    <label className="form-label" htmlFor="co-ln">Phone number <span class='text-danger'>*</span></label>
+                    <label className="form-label" htmlFor="co-ln">Phone number <span className='text-danger'>*</span></label>
                     <input className="form-control" type="tel" id="co-phone" required>
                     <div className="invalid-feedback">Please enter your phone number!</div>
                   </div>
@@ -843,7 +843,7 @@
                     <input className="form-control bg-image-none" type="email" id="co-email">
                   </div>
                   <div className="col-sm-12">
-                    <label className="form-label" htmlFor="co-address">Address <span class='text-danger'>*</span></label>
+                    <label className="form-label" htmlFor="co-address">Address <span className='text-danger'>*</span></label>
                     <input className="form-control" type="text" id="co-address" required>
                     <div className="invalid-feedback">Please enter your address!</div>
                   </div>

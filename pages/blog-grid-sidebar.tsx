@@ -516,7 +516,7 @@
               </div>
               <div className="d-flex align-items-center fs-sm"><a className="blog-entry-meta-link" href="#">
                   <div className="blog-entry-author-ava"><img src="/img/blog/meta/04.jpg" alt="Olivia Reyes"></div>Olivia Reyes</a><span className="blog-entry-meta-divider"></span>
-                <div className="fs-sm text-muted">in <a href='#' class='blog-entry-meta-link'>Lifestyle</a>, <a href='#' class='blog-entry-meta-link'>Nutrition</a></div>
+                <div className="fs-sm text-muted">in <a href='#' className='blog-entry-meta-link'>Lifestyle</a>, <a href='#' className='blog-entry-meta-link'>Nutrition</a></div>
               </div>
             </article>
             <article><a className="blog-entry-thumb mb-3" href="blog-single-sidebar.html"><span className="blog-entry-meta-label fs-sm"><i className="ci-time"></i>Aug 27</span><img src="/img/blog/featured/02.jpg" alt="Featured post"></a>
@@ -525,7 +525,7 @@
               </div>
               <div className="d-flex align-items-center fs-sm"><a className="blog-entry-meta-link" href="#">
                   <div className="blog-entry-author-ava"><img src="/img/blog/meta/05.jpg" alt="Rafael Marquez"></div>Rafael Marquez</a><span className="blog-entry-meta-divider"></span>
-                <div className="fs-sm text-muted">in <a href='#' class='blog-entry-meta-link'>Online shpopping</a></div>
+                <div className="fs-sm text-muted">in <a href='#' className='blog-entry-meta-link'>Online shpopping</a></div>
               </div>
             </article>
             <article><a className="blog-entry-thumb mb-3" href="blog-single-sidebar.html"><span className="blog-entry-meta-label fs-sm"><i className="ci-time"></i>Aug 16</span><img src="/img/blog/featured/03.jpg" alt="Featured post"></a>
@@ -534,7 +534,7 @@
               </div>
               <div className="d-flex align-items-center fs-sm"><a className="blog-entry-meta-link" href="#">
                   <div className="blog-entry-author-ava"><img src="/img/blog/meta/03.jpg" alt="Paul Woodred"></div>Paul Woodred</a><span className="blog-entry-meta-divider"></span>
-                <div className="fs-sm text-muted">in <a href='#' class='blog-entry-meta-link'>Cartzilla news</a></div>
+                <div className="fs-sm text-muted">in <a href='#' className='blog-entry-meta-link'>Cartzilla news</a></div>
               </div>
             </article>
           </div>
@@ -667,17 +667,17 @@
                   <h3 className="widget-title">Trending posts</h3>
                   <div className="d-flex align-items-center mb-3"><a className="flex-shrink-0" href="blog-single.html"><img className="rounded" src="/img/blog/widget/01.jpg" width="64" alt="Post image"></a>
                     <div className="ps-3">
-                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">Retro Cameras are Trending. Why so Popular?</a></h6><span className="fs-ms text-muted">by <a href='#' class='blog-entry-meta-link'>Andy Williams</a></span>
+                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">Retro Cameras are Trending. Why so Popular?</a></h6><span className="fs-ms text-muted">by <a href='#' className='blog-entry-meta-link'>Andy Williams</a></span>
                     </div>
                   </div>
                   <div className="d-flex align-items-center mb-3"><a className="flex-shrink-0" href="blog-single.html"><img className="rounded" src="/img/blog/widget/02.jpg" width="64" alt="Post image"></a>
                     <div className="ps-3">
-                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">New Trends in Suburban Fashion</a></h6><span className="fs-ms text-muted">by <a href='#' class='blog-entry-meta-link'>Susan Mayer</a></span>
+                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">New Trends in Suburban Fashion</a></h6><span className="fs-ms text-muted">by <a href='#' className='blog-entry-meta-link'>Susan Mayer</a></span>
                     </div>
                   </div>
                   <div className="d-flex align-items-center"><a className="flex-shrink-0" href="blog-single.html"><img className="rounded" src="/img/blog/widget/03.jpg" width="64" alt="Post image"></a>
                     <div className="ps-3">
-                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">Augmented Reality - Game Changing Technology</a></h6><span className="fs-ms text-muted">by <a href='#' class='blog-entry-meta-link'>John Doe</a></span>
+                      <h6 className="blog-entry-title fs-sm mb-0"><a href="blog-single.html">Augmented Reality - Game Changing Technology</a></h6><span className="fs-ms text-muted">by <a href='#' className='blog-entry-meta-link'>John Doe</a></span>
                     </div>
                   </div>
                 </div>

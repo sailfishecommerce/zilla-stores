@@ -252,7 +252,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/07.jpg" alt="Computers &amp; Accessories"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$149.<small>80</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$149.<small>80</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -297,7 +297,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/09.jpg" alt="Smartphones &amp; Tablets"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$127.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$127.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -338,7 +338,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/08.jpg" alt="TV, Video &amp; Audio"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$78.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$78.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -383,7 +383,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/10.jpg" alt="Cameras, Photo &amp; Video"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$210.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$210.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -417,7 +417,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/11.jpg" alt="Headphones"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$35.<small>99</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$35.<small>99</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -440,7 +440,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/12.jpg" alt="Wearable Electronics"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$79.<small>50</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$79.<small>50</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -485,7 +485,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/13.jpg" alt="Printers &amp; Ink"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$54.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$54.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -525,7 +525,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/14.jpg" alt="Video Games"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$19.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$19.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -563,7 +563,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/16.jpg" alt="Speakers &amp; Home Music"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$43.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$43.<small>00</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>
@@ -587,7 +587,7 @@
                               </div>
                             </div>
                             <div className="mega-dropdown-column d-none d-lg-block py-4 text-center"><a className="d-block mb-2" href="#"><img src="/img/shop/departments/15.jpg" alt="HDD/SSD Data Storage"></a>
-                              <div className="fs-sm mb-3">Starting from <span class='fw-medium'>$21.<small>60</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
+                              <div className="fs-sm mb-3">Starting from <span className='fw-medium'>$21.<small>60</small></span></div><a className="btn btn-primary btn-shadow btn-sm" href="#">See offers<i className="ci-arrow-right fs-xs ms-1"></i></a>
                             </div>
                           </div>
                         </div>

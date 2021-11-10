@@ -231,7 +231,7 @@
           <div className="container py-lg-5 my-lg-5">
             <div className="row mb-4 mb-sm-5">
               <div className="col-lg-7 col-md-9 text-center text-sm-start">
-                <h1 className="text-white lh-base"><span class='fw-light'>Over</span> 1,500 <span class='fw-light'>curated</span> Design <span class='fw-light'>resources</span>, Images, Graphic <span class='fw-light'>&amp;</span> Website <span class='fw-light'>templates</span></h1>
+                <h1 className="text-white lh-base"><span className='fw-light'>Over</span> 1,500 <span className='fw-light'>curated</span> Design <span className='fw-light'>resources</span>, Images, Graphic <span className='fw-light'>&amp;</span> Website <span className='fw-light'>templates</span></h1>
                 <h2 className="h5 text-white fw-light">High quality items created by our global community</h2>
               </div>
             </div>

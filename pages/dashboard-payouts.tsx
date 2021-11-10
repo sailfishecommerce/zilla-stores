@@ -288,7 +288,7 @@
                   <div className="col-sm-6 px-2 mb-4">
                     <div className="bg-secondary h-100 rounded-3 p-4">
                       <h3 className="h5">Next payout</h3>
-                      <p className="fs-sm">Your current earnings of <span class='fw-medium'>$1,375.00</span> will be sent to you 8/15/2019</p>
+                      <p className="fs-sm">Your current earnings of <span className='fw-medium'>$1,375.00</span> will be sent to you 8/15/2019</p>
                     </div>
                   </div>
                   <div className="col-sm-6 px-2 mb-4">

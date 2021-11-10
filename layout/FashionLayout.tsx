@@ -19,7 +19,7 @@ export default function FashionLayout({
         <body className="handheld-toolbar-enabled">
             <Head>
                 <meta charSet="utf-8" />
-                <title>Cartzilla |{title}</title>
+                <title>Cartzilla | {title}</title>
                 {/* SEO Meta Tags*/}
                 <meta
                     name="description"

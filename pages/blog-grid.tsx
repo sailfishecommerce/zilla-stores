@@ -516,7 +516,7 @@
               </div>
               <div className="d-flex align-items-center fs-sm"><a className="blog-entry-meta-link" href="#">
                   <div className="blog-entry-author-ava"><img src="/img/blog/meta/04.jpg" alt="Olivia Reyes"></div>Olivia Reyes</a><span className="blog-entry-meta-divider"></span>
-                <div className="fs-sm text-muted">in <a href='#' class='blog-entry-meta-link'>Lifestyle</a>, <a href='#' class='blog-entry-meta-link'>Nutrition</a></div>
+                <div className="fs-sm text-muted">in <a href='#' className='blog-entry-meta-link'>Lifestyle</a>, <a href='#' className='blog-entry-meta-link'>Nutrition</a></div>
               </div>
             </article>
             <article><a className="blog-entry-thumb mb-3" href="blog-single-sidebar.html"><span className="blog-entry-meta-label fs-sm"><i className="ci-time"></i>Aug 27</span><img src="/img/blog/featured/02.jpg" alt="Featured post"></a>
@@ -525,7 +525,7 @@
               </div>
               <div className="d-flex align-items-center fs-sm"><a className="blog-entry-meta-link" href="#">
                   <div className="blog-entry-author-ava"><img src="/img/blog/meta/05.jpg" alt="Rafael Marquez"></div>Rafael Marquez</a><span className="blog-entry-meta-divider"></span>
-                <div className="fs-sm text-muted">in <a href='#' class='blog-entry-meta-link'>Online shpopping</a></div>
+                <div className="fs-sm text-muted">in <a href='#' className='blog-entry-meta-link'>Online shpopping</a></div>
               </div>
             </article>
             <article><a className="blog-entry-thumb mb-3" href="blog-single-sidebar.html"><span className="blog-entry-meta-label fs-sm"><i className="ci-time"></i>Aug 16</span><img src="/img/blog/featured/03.jpg" alt="Featured post"></a>
@@ -534,7 +534,7 @@
               </div>
               <div className="d-flex align-items-center fs-sm"><a className="blog-entry-meta-link" href="#">
                   <div className="blog-entry-author-ava"><img src="/img/blog/meta/03.jpg" alt="Paul Woodred"></div>Paul Woodred</a><span className="blog-entry-meta-divider"></span>
-                <div className="fs-sm text-muted">in <a href='#' class='blog-entry-meta-link'>Cartzilla news</a></div>
+                <div className="fs-sm text-muted">in <a href='#' className='blog-entry-meta-link'>Cartzilla news</a></div>
               </div>
             </article>
           </div>

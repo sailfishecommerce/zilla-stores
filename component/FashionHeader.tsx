@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-//<!-- Topbar-->
+import Link from "next/link";
+
 export default function FashionHeader() {
     return (
         <header className="shadow-sm">
@@ -17,27 +18,26 @@ export default function FashionHeader() {
                             <li>
                                 <a
                                     className="dropdown-item"
-                                    href="tel:00331697720"
+                                    href="/tel:00331697720"
                                 >
                                     <i className="ci-support text-muted me-2"></i>
                                     (00) 33 169 7720
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    className="dropdown-item"
-                                    href="order-tracking.html"
-                                >
-                                    <i className="ci-location text-muted me-2"></i>
-                                    Order tracking
-                                </a>
+                                <Link href="/order-tracking" passHref>
+                                    <a className="dropdown-item">
+                                        <i className="ci-location text-muted me-2"></i>
+                                        Order tracking
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
                     <div className="topbar-text text-nowrap d-none d-md-inline-block">
                         <i className="ci-support"></i>
                         <span className="text-muted me-1">Support</span>
-                        <a className="topbar-link" href="tel:00331697720">
+                        <a className="topbar-link" href="/tel:00331697720">
                             (00) 33 169 7720
                         </a>
                     </div>
@@ -58,12 +58,11 @@ export default function FashionHeader() {
                         </div>
                     </div>
                     <div className="ms-3 text-nowrap">
-                        <a
-                            className="topbar-link me-4 d-none d-md-inline-block"
-                            href="order-tracking.html"
-                        >
-                            <i className="ci-location"></i>Order tracking
-                        </a>
+                        <Link href="/order-tracking" passHref>
+                            <a className="topbar-link me-4 d-none d-md-inline-block">
+                                <i className="ci-location"></i>Order tracking
+                            </a>
+                        </Link>
                         <div className="topbar-text dropdown disable-autohide">
                             <a
                                 className="topbar-link dropdown-toggle"
@@ -129,26 +128,24 @@ export default function FashionHeader() {
             <div className="navbar-sticky bg-light">
                 <div className="navbar navbar-expand-lg navbar-light">
                     <div className="container">
-                        <a
-                            className="navbar-brand d-none d-sm-block flex-shrink-0"
-                            href="index.html"
-                        >
-                            <img
-                                src="/img/logo-dark.png"
-                                width="142"
-                                alt="Cartzilla"
-                            />
-                        </a>
-                        <a
-                            className="navbar-brand d-sm-none flex-shrink-0 me-2"
-                            href="index.html"
-                        >
-                            <img
-                                src="/img/logo-icon.png"
-                                width="74"
-                                alt="Cartzilla"
-                            />
-                        </a>
+                        <Link href="/" passHref>
+                            <a className="navbar-brand d-none d-sm-block flex-shrink-0">
+                                <img
+                                    src="/img/logo-dark.png"
+                                    width="142"
+                                    alt="Cartzilla"
+                                />
+                            </a>
+                        </Link>
+                        <Link href="/" passHref>
+                            <a className="navbar-brand d-sm-none flex-shrink-0 me-2">
+                                <img
+                                    src="/img/logo-icon.png"
+                                    width="74"
+                                    alt="Cartzilla"
+                                />
+                            </a>
+                        </Link>
                         <div className="input-group d-none d-lg-flex mx-4">
                             <input
                                 className="form-control rounded-end pe-5"
@@ -177,17 +174,16 @@ export default function FashionHeader() {
                                     <i className="navbar-tool-icon ci-menu"></i>
                                 </div>
                             </a>
-                            <a
-                                className="navbar-tool d-none d-lg-flex"
-                                href="account-wishlist.html"
-                            >
-                                <span className="navbar-tool-tooltip">
-                                    Wishlist
-                                </span>
-                                <div className="navbar-tool-icon-box">
-                                    <i className="navbar-tool-icon ci-heart"></i>
-                                </div>
-                            </a>
+                            <Link href="/account-wishlist" passHref>
+                                <a className="navbar-tool d-none d-lg-flex">
+                                    <span className="navbar-tool-tooltip">
+                                        Wishlist
+                                    </span>
+                                    <div className="navbar-tool-icon-box">
+                                        <i className="navbar-tool-icon ci-heart"></i>
+                                    </div>
+                                </a>
+                            </Link>
                             <a
                                 className="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2"
                                 href="#signin-modal"
@@ -201,20 +197,19 @@ export default function FashionHeader() {
                                 </div>
                             </a>
                             <div className="navbar-tool dropdown ms-3">
-                                <a
-                                    className="navbar-tool-icon-box bg-secondary dropdown-toggle"
-                                    href="shop-cart.html"
-                                >
-                                    <span className="navbar-tool-label">4</span>
-                                    <i className="navbar-tool-icon ci-cart"></i>
-                                </a>
-                                <a
-                                    className="navbar-tool-text"
-                                    href="shop-cart.html"
-                                >
-                                    <small>My Cart</small>$265.00
-                                </a>
-                                {/*<!-- Cart dropdown-->*/}
+                                <Link href="/shop-cart" passHref>
+                                    <a className="navbar-tool-icon-box bg-secondary dropdown-toggle">
+                                        <span className="navbar-tool-label">
+                                            4
+                                        </span>
+                                        <i className="navbar-tool-icon ci-cart"></i>
+                                    </a>
+                                </Link>
+                                <Link href="/shop-cart" passHref>
+                                    <a className="navbar-tool-text">
+                                        <small>My Cart</small>$265.00
+                                    </a>
+                                </Link>
                                 <div className="dropdown-menu dropdown-menu-end">
                                     <div
                                         className="widget widget-cart px-3 pt-2 pb-3"
@@ -236,22 +231,30 @@ export default function FashionHeader() {
                                                     </span>
                                                 </button>
                                                 <div className="d-flex align-items-center">
-                                                    <a
-                                                        className="flex-shrink-0"
-                                                        href="shop-single-v1.html"
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
                                                     >
-                                                        <img
-                                                            src="/img/shop/cart/widget/01.jpg"
-                                                            width="64"
-                                                            alt="Product"
-                                                        />
-                                                    </a>
+                                                        <a className="flex-shrink-0">
+                                                            <img
+                                                                src="/img/shop/cart/widget/01.jpg"
+                                                                width="64"
+                                                                alt="Product"
+                                                            />
+                                                        </a>
+                                                    </Link>
                                                     <div className="ps-2">
                                                         <h6 className="widget-product-title">
-                                                            <a href="shop-single-v1.html">
-                                                                Women Colorblock
-                                                                Sneakers
-                                                            </a>
+                                                            <Link
+                                                                href="/shop-single-v1"
+                                                                passHref
+                                                            >
+                                                                <a>
+                                                                    Women
+                                                                    Colorblock
+                                                                    Sneakers
+                                                                </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="widget-product-meta">
                                                             <span className="text-accent me-2">
@@ -278,22 +281,30 @@ export default function FashionHeader() {
                                                     </span>
                                                 </button>
                                                 <div className="d-flex align-items-center">
-                                                    <a
-                                                        className="flex-shrink-0"
-                                                        href="shop-single-v1.html"
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
                                                     >
-                                                        <img
-                                                            src="/img/shop/cart/widget/02.jpg"
-                                                            width="64"
-                                                            alt="Product"
-                                                        />
-                                                    </a>
+                                                        <a className="flex-shrink-0">
+                                                            <img
+                                                                src="/img/shop/cart/widget/02.jpg"
+                                                                width="64"
+                                                                alt="Product"
+                                                            />
+                                                        </a>
+                                                    </Link>
                                                     <div className="ps-2">
                                                         <h6 className="widget-product-title">
-                                                            <a href="shop-single-v1.html">
-                                                                TH Jeans City
-                                                                Backpack
-                                                            </a>
+                                                            <Link
+                                                                href="/shop-single-v1"
+                                                                passHref
+                                                            >
+                                                                <a>
+                                                                    TH Jeans
+                                                                    City
+                                                                    Backpack
+                                                                </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="widget-product-meta">
                                                             <span className="text-accent me-2">
@@ -320,22 +331,29 @@ export default function FashionHeader() {
                                                     </span>
                                                 </button>
                                                 <div className="d-flex align-items-center">
-                                                    <a
-                                                        className="flex-shrink-0"
-                                                        href="shop-single-v1.html"
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
                                                     >
-                                                        <img
-                                                            src="/img/shop/cart/widget/03.jpg"
-                                                            width="64"
-                                                            alt="Product"
-                                                        />
-                                                    </a>
+                                                        <a className="flex-shrink-0">
+                                                            <img
+                                                                src="/img/shop/cart/widget/03.jpg"
+                                                                width="64"
+                                                                alt="Product"
+                                                            />
+                                                        </a>
+                                                    </Link>
                                                     <div className="ps-2">
                                                         <h6 className="widget-product-title">
-                                                            <a href="shop-single-v1.html">
-                                                                3-Color Sun
-                                                                Stash Hat
-                                                            </a>
+                                                            <Link
+                                                                href="/shop-single-v1"
+                                                                passHref
+                                                            >
+                                                                <a>
+                                                                    3-Color Sun
+                                                                    Stash Hat
+                                                                </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="widget-product-meta">
                                                             <span className="text-accent me-2">
@@ -362,22 +380,29 @@ export default function FashionHeader() {
                                                     </span>
                                                 </button>
                                                 <div className="d-flex align-items-center">
-                                                    <a
-                                                        className="flex-shrink-0"
-                                                        href="shop-single-v1.html"
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
                                                     >
-                                                        <img
-                                                            src="/img/shop/cart/widget/04.jpg"
-                                                            width="64"
-                                                            alt="Product"
-                                                        />
-                                                    </a>
+                                                        <a className="flex-shrink-0">
+                                                            <img
+                                                                src="/img/shop/cart/widget/04.jpg"
+                                                                width="64"
+                                                                alt="Product"
+                                                            />
+                                                        </a>
+                                                    </Link>
                                                     <div className="ps-2">
                                                         <h6 className="widget-product-title">
-                                                            <a href="shop-single-v1.html">
-                                                                Cotton Polo
-                                                                Regular Fit
-                                                            </a>
+                                                            <Link
+                                                                href="/shop-single-v1"
+                                                                passHref
+                                                            >
+                                                                <a>
+                                                                    Cotton Polo
+                                                                    Regular Fit
+                                                                </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="widget-product-meta">
                                                             <span className="text-accent me-2">
@@ -403,21 +428,19 @@ export default function FashionHeader() {
                                                     $265.<small>00</small>
                                                 </span>
                                             </div>
-                                            <a
-                                                className="btn btn-outline-secondary btn-sm"
-                                                href="shop-cart.html"
-                                            >
-                                                Expand cart
-                                                <i className="ci-arrow-right ms-1 me-n1"></i>
-                                            </a>
+                                            <Link href="/shop-cart" passHref>
+                                                <a className="btn btn-outline-secondary btn-sm">
+                                                    Expand cart
+                                                    <i className="ci-arrow-right ms-1 me-n1"></i>
+                                                </a>
+                                            </Link>
                                         </div>
-                                        <a
-                                            className="btn btn-primary btn-sm d-block w-100"
-                                            href="checkout-details.html"
-                                        >
-                                            <i className="ci-card me-2 fs-base align-middle"></i>
-                                            Checkout
-                                        </a>
+                                        <Link href="/checkout-details" passHref>
+                                            <a className="btn btn-primary btn-sm d-block w-100">
+                                                <i className="ci-card me-2 fs-base align-middle"></i>
+                                                Checkout
+                                            </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -724,179 +747,238 @@ export default function FashionHeader() {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li className="dropdown position-static mb-0">
-                                            <a
-                                                className="dropdown-item py-2 border-bottom"
-                                                href="home-fashion-store-v1.html"
+                                            <Link
+                                                href="/home-fashion-store-v1"
+                                                passHref
                                             >
-                                                <span className="d-block text-heading">
-                                                    Fashion Store v.1
-                                                </span>
-                                                <small className="d-block text-muted">
-                                                    Classic shop layout
-                                                </small>
-                                            </a>
-                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
-                                                <a
-                                                    className="d-block"
-                                                    href="home-fashion-store-v1.html"
-                                                    style={{ width: "250px" }}
-                                                >
-                                                    <img
-                                                        src="/img/home/preview/th01.jpg"
-                                                        alt="Fashion Store v.1"
-                                                    />
+                                                <a className="dropdown-item py-2 border-bottom">
+                                                    <span className="d-block text-heading">
+                                                        Fashion Store v.1
+                                                    </span>
+                                                    <small className="d-block text-muted">
+                                                        Classic shop layout
+                                                    </small>
                                                 </a>
+                                            </Link>
+                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
+                                                <Link
+                                                    href="/home-fashion-store-v1"
+                                                    passHref
+                                                >
+                                                    <a
+                                                        className="d-block"
+                                                        style={{
+                                                            width: "250px",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src="/img/home/preview/th01.jpg"
+                                                            alt="Fashion Store v.1"
+                                                        />
+                                                    </a>
+                                                </Link>
                                             </div>
                                         </li>
                                         <li className="dropdown position-static mb-0">
-                                            <a
-                                                className="dropdown-item py-2 border-bottom"
-                                                href="home-electronics-store.html"
+                                            <Link
+                                                href="/home-electronics-store"
+                                                passHref
                                             >
-                                                <span className="d-block text-heading">
-                                                    Electronics Store
-                                                </span>
-                                                <small className="d-block text-muted">
-                                                    Slider + Promo banners
-                                                </small>
-                                            </a>
-                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
-                                                <a
-                                                    className="d-block"
-                                                    href="home-electronics-store.html"
-                                                    style={{ width: "250px" }}
-                                                >
-                                                    <img
-                                                        src="/img/home/preview/th03.jpg"
-                                                        alt="Electronics Store"
-                                                    />
+                                                <a className="dropdown-item py-2 border-bottom">
+                                                    <span className="d-block text-heading">
+                                                        Electronics Store
+                                                    </span>
+                                                    <small className="d-block text-muted">
+                                                        Slider + Promo banners
+                                                    </small>
                                                 </a>
+                                            </Link>
+                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
+                                                <Link
+                                                    href="/home-electronics-store"
+                                                    passHref
+                                                >
+                                                    <a
+                                                        className="d-block"
+                                                        style={{
+                                                            width: "250px",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src="/img/home/preview/th03.jpg"
+                                                            alt="Electronics Store"
+                                                        />
+                                                    </a>
+                                                </Link>
                                             </div>
                                         </li>
                                         <li className="dropdown position-static mb-0">
-                                            <a
-                                                className="dropdown-item py-2 border-bottom"
-                                                href="home-marketplace.html"
+                                            <Link
+                                                href="/home-marketplace"
+                                                passHref
                                             >
-                                                <span className="d-block text-heading">
-                                                    Marketplace
-                                                </span>
-                                                <small className="d-block text-muted">
-                                                    Multi-vendor, digital goods
-                                                </small>
-                                            </a>
-                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
-                                                <a
-                                                    className="d-block"
-                                                    href="home-marketplace.html"
-                                                    style={{ width: "250px" }}
-                                                >
-                                                    <img
-                                                        src="/img/home/preview/th04.jpg"
-                                                        alt="Marketplace"
-                                                    />
+                                                <a className="dropdown-item py-2 border-bottom">
+                                                    <span className="d-block text-heading">
+                                                        Marketplace
+                                                    </span>
+                                                    <small className="d-block text-muted">
+                                                        Multi-vendor, digital
+                                                        goods
+                                                    </small>
                                                 </a>
+                                            </Link>
+                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
+                                                <Link
+                                                    href="/home-marketplace"
+                                                    passHref
+                                                >
+                                                    <a
+                                                        className="d-block"
+                                                        style={{
+                                                            width: "250px",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src="/img/home/preview/th04.jpg"
+                                                            alt="Marketplace"
+                                                        />
+                                                    </a>
+                                                </Link>
                                             </div>
                                         </li>
                                         <li className="dropdown position-static mb-0">
-                                            <a
-                                                className="dropdown-item py-2 border-bottom"
-                                                href="home-grocery-store.html"
+                                            <Link
+                                                href="/home-grocery-store"
+                                                passHref
                                             >
-                                                <span className="d-block text-heading">
-                                                    Grocery Store
-                                                </span>
-                                                <small className="d-block text-muted">
-                                                    Full width + Side menu
-                                                </small>
-                                            </a>
-                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
-                                                <a
-                                                    className="d-block"
-                                                    href="home-grocery-store.html"
-                                                    style={{ width: "250px" }}
-                                                >
-                                                    <img
-                                                        src="/img/home/preview/th06.jpg"
-                                                        alt="Grocery Store"
-                                                    />
+                                                <a className="dropdown-item py-2 border-bottom">
+                                                    <span className="d-block text-heading">
+                                                        Grocery Store
+                                                    </span>
+                                                    <small className="d-block text-muted">
+                                                        Full width + Side menu
+                                                    </small>
                                                 </a>
+                                            </Link>
+                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
+                                                <Link
+                                                    href="/home-grocery-store"
+                                                    passHref
+                                                >
+                                                    <a
+                                                        className="d-block"
+                                                        style={{
+                                                            width: "250px",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src="/img/home/preview/th06.jpg"
+                                                            alt="Grocery Store"
+                                                        />
+                                                    </a>
+                                                </Link>
                                             </div>
                                         </li>
                                         <li className="dropdown position-static mb-0">
-                                            <a
-                                                className="dropdown-item py-2 border-bottom"
-                                                href="home-food-delivery.html"
+                                            <Link
+                                                href="/home-food-delivery"
+                                                passHref
                                             >
-                                                <span className="d-block text-heading">
-                                                    Food Delivery Service
-                                                </span>
-                                                <small className="d-block text-muted">
-                                                    Food &amp; Beverages
-                                                    delivery
-                                                </small>
-                                            </a>
-                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
-                                                <a
-                                                    className="d-block"
-                                                    href="home-food-delivery.html"
-                                                    style={{ width: "250px" }}
-                                                >
-                                                    <img
-                                                        src="/img/home/preview/th07.jpg"
-                                                        alt="Food Delivery Service"
-                                                    />
+                                                <a className="dropdown-item py-2 border-bottom">
+                                                    <span className="d-block text-heading">
+                                                        Food Delivery Service
+                                                    </span>
+                                                    <small className="d-block text-muted">
+                                                        Food &amp; Beverages
+                                                        delivery
+                                                    </small>
                                                 </a>
+                                            </Link>
+                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
+                                                <Link
+                                                    href="/home-food-delivery"
+                                                    passHref
+                                                >
+                                                    <a
+                                                        className="d-block"
+                                                        style={{
+                                                            width: "250px",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src="/img/home/preview/th07.jpg"
+                                                            alt="Food Delivery Service"
+                                                        />
+                                                    </a>
+                                                </Link>
                                             </div>
                                         </li>
                                         <li className="dropdown position-static mb-0">
-                                            <a
-                                                className="dropdown-item py-2 border-bottom"
-                                                href="home-fashion-store-v2.html"
+                                            <Link
+                                                href="/home-fashion-store-v2"
+                                                passHref
                                             >
-                                                <span className="d-block text-heading">
-                                                    Fashion Store v.2
-                                                </span>
-                                                <small className="d-block text-muted">
-                                                    Slider + Featured categories
-                                                </small>
-                                            </a>
-                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
-                                                <a
-                                                    className="d-block"
-                                                    href="home-fashion-store-v2.html"
-                                                    style={{ width: "250px" }}
-                                                >
-                                                    <img
-                                                        src="/img/home/preview/th02.jpg"
-                                                        alt="Fashion Store v.2"
-                                                    />
+                                                <a className="dropdown-item py-2 border-bottom">
+                                                    <span className="d-block text-heading">
+                                                        Fashion Store v.2
+                                                    </span>
+                                                    <small className="d-block text-muted">
+                                                        Slider + Featured
+                                                        categories
+                                                    </small>
                                                 </a>
+                                            </Link>
+                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
+                                                <Link
+                                                    href="/home-fashion-store-v2"
+                                                    passHref
+                                                >
+                                                    <a
+                                                        className="d-block"
+                                                        style={{
+                                                            width: "250px",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src="/img/home/preview/th02.jpg"
+                                                            alt="Fashion Store v.2"
+                                                        />
+                                                    </a>
+                                                </Link>
                                             </div>
                                         </li>
                                         <li className="dropdown position-static mb-0">
-                                            <a
-                                                className="dropdown-item py-2"
-                                                href="home-single-store.html"
+                                            <Link
+                                                href="/home-single-store"
+                                                passHref
                                             >
-                                                <span className="d-block text-heading">
-                                                    Single Product Store
-                                                </span>
-                                                <small className="d-block text-muted">
-                                                    Single product / mono brand
-                                                </small>
-                                            </a>
-                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
-                                                <a
-                                                    className="d-block"
-                                                    href="home-single-store.html"
-                                                    style={{ width: "250px" }}
-                                                >
-                                                    <img
-                                                        src="/img/home/preview/th05.jpg"
-                                                        alt="Single Product / Brand Store"
-                                                    />
+                                                <a className="dropdown-item py-2">
+                                                    <span className="d-block text-heading">
+                                                        Single Product Store
+                                                    </span>
+                                                    <small className="d-block text-muted">
+                                                        Single product / mono
+                                                        brand
+                                                    </small>
                                                 </a>
+                                            </Link>
+                                            <div className="dropdown-menu h-100 animation-none mt-0 p-3">
+                                                <Link
+                                                    href="/home-single-store"
+                                                    passHref
+                                                >
+                                                    <a
+                                                        className="d-block"
+                                                        style={{
+                                                            width: "250px",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src="/img/home/preview/th05.jpg"
+                                                            alt="Single Product / Brand Store"
+                                                        />
+                                                    </a>
+                                                </Link>
                                             </div>
                                         </li>
                                     </ul>
@@ -918,58 +1000,74 @@ export default function FashionHeader() {
                                                     </h6>
                                                     <ul className="widget-list">
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-grid-ls.html"
+                                                            <Link
+                                                                href="/shop-grid-ls"
+                                                                passHref
                                                             >
-                                                                Shop Grid - Left
-                                                                Sidebar
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Shop Grid -
+                                                                    Left Sidebar
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-grid-rs.html"
+                                                            <Link
+                                                                href="/shop-grid-rs"
+                                                                passHref
                                                             >
-                                                                Shop Grid -
-                                                                Right Sidebar
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Shop Grid -
+                                                                    Right
+                                                                    Sidebar
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-grid-ft.html"
+                                                            <Link
+                                                                href="/shop-grid-ft"
+                                                                passHref
                                                             >
-                                                                Shop Grid -
-                                                                Filters on Top
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Shop Grid -
+                                                                    Filters on
+                                                                    Top
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-list-ls.html"
+                                                            <Link
+                                                                href="/shop-list-ls"
+                                                                passHref
                                                             >
-                                                                Shop List - Left
-                                                                Sidebar
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Shop List -
+                                                                    Left Sidebar
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-list-rs.html"
+                                                            <Link
+                                                                href="/shop-list-rs"
+                                                                passHref
                                                             >
-                                                                Shop List -
-                                                                Right Sidebar
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Shop List -
+                                                                    Right
+                                                                    Sidebar
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-list-ft.html"
+                                                            <Link
+                                                                href="/shop-list-ft"
+                                                                passHref
                                                             >
-                                                                Shop List -
-                                                                Filters on Top
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Shop List -
+                                                                    Filters on
+                                                                    Top
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -979,44 +1077,56 @@ export default function FashionHeader() {
                                                     </h6>
                                                     <ul className="widget-list">
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="marketplace-category.html"
+                                                            <Link
+                                                                href="/marketplace-category"
+                                                                passHref
                                                             >
-                                                                Category Page
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Category
+                                                                    Page
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="marketplace-single.html"
+                                                            <Link
+                                                                href="/marketplace-single"
+                                                                passHref
                                                             >
-                                                                Single Item Page
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Single Item
+                                                                    Page
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="marketplace-vendor.html"
+                                                            <Link
+                                                                href="/marketplace-vendor"
+                                                                passHref
                                                             >
-                                                                Vendor Page
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Vendor Page
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="marketplace-cart.html"
+                                                            <Link
+                                                                href="/marketplace-cart"
+                                                                passHref
                                                             >
-                                                                Cart
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Cart
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="marketplace-checkout.html"
+                                                            <Link
+                                                                href="/marketplace-checkout"
+                                                                passHref
                                                             >
-                                                                Checkout
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Checkout
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1028,98 +1138,124 @@ export default function FashionHeader() {
                                                     </h6>
                                                     <ul className="widget-list">
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-categories.html"
+                                                            <Link
+                                                                href="/shop-categories"
+                                                                passHref
                                                             >
-                                                                Shop Categories
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Shop
+                                                                    Categories
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-single-v1.html"
+                                                            <Link
+                                                                href="/shop-single-v1"
+                                                                passHref
                                                             >
-                                                                Product Page v.1
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Product Page
+                                                                    v.1
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-single-v2.html"
+                                                            <Link
+                                                                href="/shop-single-v2"
+                                                                passHref
                                                             >
-                                                                Product Page v.2
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Product Page
+                                                                    v.2
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="shop-cart.html"
+                                                            <Link
+                                                                href="/shop-cart"
+                                                                passHref
                                                             >
-                                                                Cart
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Cart
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="checkout-details.html"
+                                                            <Link
+                                                                href="/checkout-details"
+                                                                passHref
                                                             >
-                                                                Checkout -
-                                                                Details
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Checkout -
+                                                                    Details
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="checkout-shipping.html"
+                                                            <Link
+                                                                href="/checkout-shipping"
+                                                                passHref
                                                             >
-                                                                Checkout -
-                                                                Shipping
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Checkout -
+                                                                    Shipping
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="checkout-payment.html"
+                                                            <Link
+                                                                href="/checkout-payment"
+                                                                passHref
                                                             >
-                                                                Checkout -
-                                                                Payment
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Checkout -
+                                                                    Payment
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="checkout-review.html"
+                                                            <Link
+                                                                href="/checkout-review"
+                                                                passHref
                                                             >
-                                                                Checkout -
-                                                                Review
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Checkout -
+                                                                    Review
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="checkout-complete.html"
+                                                            <Link
+                                                                href="/checkout-complete"
+                                                                passHref
                                                             >
-                                                                Checkout -
-                                                                Complete
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Checkout -
+                                                                    Complete
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="order-tracking.html"
+                                                            <Link
+                                                                href="/order-tracking"
+                                                                passHref
                                                             >
-                                                                Order Tracking
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Order
+                                                                    Tracking
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="comparison.html"
+                                                            <Link
+                                                                href="/comparison"
+                                                                passHref
                                                             >
-                                                                Product
-                                                                Comparison
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Product
+                                                                    Comparison
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1131,29 +1267,37 @@ export default function FashionHeader() {
                                                     </h6>
                                                     <ul className="widget-list">
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="grocery-catalog.html"
+                                                            <Link
+                                                                href="/grocery-catalog"
+                                                                passHref
                                                             >
-                                                                Product Catalog
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Product
+                                                                    Catalog
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="grocery-single.html"
+                                                            <Link
+                                                                href="/grocery-single"
+                                                                passHref
                                                             >
-                                                                Single Product
-                                                                Page
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Single
+                                                                    Product P
+                                                                    age
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="grocery-checkout.html"
+                                                            <Link
+                                                                href="/grocery-checkout"
+                                                                passHref
                                                             >
-                                                                Checkout
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Checkout
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1163,40 +1307,49 @@ export default function FashionHeader() {
                                                     </h6>
                                                     <ul className="widget-list">
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="food-delivery-category.html"
+                                                            <Link
+                                                                href="/food-delivery-category"
+                                                                passHref
                                                             >
-                                                                Category Page
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Category
+                                                                    Page
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="food-delivery-single.html"
+                                                            <Link
+                                                                href="/food-delivery-single"
+                                                                passHref
                                                             >
-                                                                Single Item
-                                                                (Restaurant)
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Single Item
+                                                                    (Restaurant)
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="food-delivery-cart.html"
+                                                            <Link
+                                                                href="/food-delivery-cart"
+                                                                passHref
                                                             >
-                                                                Cart (Your
-                                                                Order)
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Cart (Your
+                                                                    Order)
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="widget-list-item">
-                                                            <a
-                                                                className="widget-list-link"
-                                                                href="food-delivery-checkout.html"
+                                                            <Link
+                                                                href="/food-delivery-checkout"
+                                                                passHref
                                                             >
-                                                                Checkout
-                                                                (Address &amp;
-                                                                Payment)
-                                                            </a>
+                                                                <a className="widget-list-link">
+                                                                    Checkout (Ad
+                                                                    dress &amp;
+                                                                    Payment)
+                                                                </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1224,60 +1377,74 @@ export default function FashionHeader() {
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="account-orders.html"
+                                                    <Link
+                                                        href="/account-orders"
+                                                        passHref
                                                     >
-                                                        Orders History
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Orders History
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="account-profile.html"
+                                                    <Link
+                                                        href="/account-profile"
+                                                        passHref
                                                     >
-                                                        Profile Settings
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Profile Settings
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="account-address.html"
+                                                    <Link
+                                                        href="/account-address"
+                                                        passHref
                                                     >
-                                                        Account Addresses
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Account Addresses
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="account-payment.html"
+                                                    <Link
+                                                        href="/account-payment"
+                                                        passHref
                                                     >
-                                                        Payment Methods
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Payment Methods
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="account-wishlist.html"
+                                                    <Link
+                                                        href="/account-wishlist"
+                                                        passHref
                                                     >
-                                                        Wishlist
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Wishlist
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="account-tickets.html"
+                                                    <Link
+                                                        href="/account-tickets"
+                                                        passHref
                                                     >
-                                                        My Tickets
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            My Tickets
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="account-single-ticket.html"
+                                                    <Link
+                                                        href="/account-single-ticket"
+                                                        passHref
                                                     >
-                                                        Single Ticket
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Single Ticket
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -1291,78 +1458,96 @@ export default function FashionHeader() {
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="dashboard-settings.html"
+                                                    <Link
+                                                        href="/dashboard-settings"
+                                                        passHref
                                                     >
-                                                        Settings
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Settings
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="dashboard-purchases.html"
+                                                    <Link
+                                                        href="/dashboard-purchases"
+                                                        passHref
                                                     >
-                                                        Purchases
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Purchases
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="dashboard-favorites.html"
+                                                    <Link
+                                                        href="/dashboard-favorites"
+                                                        passHref
                                                     >
-                                                        Favorites
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Favorites
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="dashboard-sales.html"
+                                                    <Link
+                                                        href="/dashboard-sales"
+                                                        passHref
                                                     >
-                                                        Sales
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Sales
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="dashboard-products.html"
+                                                    <Link
+                                                        href="/dashboard-products"
+                                                        passHref
                                                     >
-                                                        Products
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Products
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="dashboard-add-new-product.html"
+                                                    <Link
+                                                        href="/dashboard-add-new-product"
+                                                        passHref
                                                     >
-                                                        Add New Product
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Add New Product
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="dashboard-payouts.html"
+                                                    <Link
+                                                        href="/dashboard-payouts"
+                                                        passHref
                                                     >
-                                                        Payouts
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Payouts
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a
-                                                className="dropdown-item"
-                                                href="account-signin.html"
+                                            <Link
+                                                href="/account-signin"
+                                                passHref
                                             >
-                                                Sign In / Sign Up
-                                            </a>
+                                                <a className="dropdown-item">
+                                                    Sign In / Sign Up
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a
-                                                className="dropdown-item"
-                                                href="account-password-recovery.html"
+                                            <Link
+                                                href="/account-password-recovery"
+                                                passHref
                                             >
-                                                Password Recovery
-                                            </a>
+                                                <a className="dropdown-item">
+                                                    Password Recovery
+                                                </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -1386,95 +1571,111 @@ export default function FashionHeader() {
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="navbar-1-level-light.html"
+                                                    <Link
+                                                        href="/navbar-1-level-light"
+                                                        passHref
                                                     >
-                                                        1 Level Light
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            1 Level Light
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="navbar-1-level-dark.html"
+                                                    <Link
+                                                        href="/navbar-1-level-dark"
+                                                        passHref
                                                     >
-                                                        1 Level Dark
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            1 Level Dark
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="navbar-2-level-light.html"
+                                                    <Link
+                                                        href="/navbar-2-level-light"
+                                                        passHref
                                                     >
-                                                        2 Level Light
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            2 Level Light
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="navbar-2-level-dark.html"
+                                                    <Link
+                                                        href="/navbar-2-level-dark"
+                                                        passHref
                                                     >
-                                                        2 Level Dark
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            2 Level Dark
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="navbar-3-level-light.html"
+                                                    <Link
+                                                        href="/navbar-3-level-light"
+                                                        passHref
                                                     >
-                                                        3 Level Light
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            3 Level Light
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="navbar-3-level-dark.html"
+                                                    <Link
+                                                        href="/navbar-3-level-dark"
+                                                        passHref
                                                     >
-                                                        3 Level Dark
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            3 Level Dark
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="home-electronics-store.html"
+                                                    <Link
+                                                        href="/home-electronics-store"
+                                                        passHref
                                                     >
-                                                        Electronics Store
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Electronics Store
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="home-marketplace.html"
+                                                    <Link
+                                                        href="/home-marketplace"
+                                                        passHref
                                                     >
-                                                        Marketplace
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Marketplace
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="home-grocery-store.html"
+                                                    <Link
+                                                        href="/home-grocery-store"
+                                                        passHref
                                                     >
-                                                        Side Menu (Grocery)
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Side Menu (Grocery)
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="dropdown-divider"></li>
                                         <li>
-                                            <a
-                                                className="dropdown-item"
-                                                href="about.html"
-                                            >
-                                                About Us
-                                            </a>
+                                            <Link href="/about" passHref>
+                                                <a className="dropdown-item">
+                                                    About Us
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a
-                                                className="dropdown-item"
-                                                href="contacts.html"
-                                            >
-                                                Contacts
-                                            </a>
+                                            <Link href="/contacts" passHref>
+                                                <a className="dropdown-item">
+                                                    Contacts
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="dropdown">
                                             <a
@@ -1486,28 +1687,34 @@ export default function FashionHeader() {
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="help-topics.html"
+                                                    <Link
+                                                        href="/help-topics"
+                                                        passHref
                                                     >
-                                                        Help Topics
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Help Topics
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="help-single-topic.html"
+                                                    <Link
+                                                        href="/help-single-topic"
+                                                        passHref
                                                     >
-                                                        Single Topic
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Single Topic
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="help-submit-request.html"
+                                                    <Link
+                                                        href="/help-submit-request"
+                                                        passHref
                                                     >
-                                                        Submit a Request
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Submit a Request
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -1521,31 +1728,37 @@ export default function FashionHeader() {
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="404-simple.html"
+                                                    <Link
+                                                        href="/404-simple"
+                                                        passHref
                                                     >
-                                                        404 - Simple Text
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            404 - Simple Text
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="404-illustration.html"
+                                                    <Link
+                                                        href="/404-illustration"
+                                                        passHref
                                                     >
-                                                        404 - Illustration
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            404 - Illustration
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="dropdown-divider"></li>
                                         <li>
-                                            <a
-                                                className="dropdown-item"
-                                                href="sticky-footer.html"
+                                            <Link
+                                                href="/sticky-footer"
+                                                passHref
                                             >
-                                                Sticky Footer Demo
-                                            </a>
+                                                <a className="dropdown-item">
+                                                    Sticky Footer Demo
+                                                </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -1569,20 +1782,24 @@ export default function FashionHeader() {
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="blog-list-sidebar.html"
+                                                    <Link
+                                                        href="/blog-list-sidebar"
+                                                        passHref
                                                     >
-                                                        List with Sidebar
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            List with Sidebar
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="blog-list.html"
+                                                    <Link
+                                                        href="/blog-list"
+                                                        passHref
                                                     >
-                                                        List no Sidebar
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            List no Sidebar
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -1596,20 +1813,24 @@ export default function FashionHeader() {
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="blog-grid-sidebar.html"
+                                                    <Link
+                                                        href="/blog-grid-sidebar"
+                                                        passHref
                                                     >
-                                                        Grid with Sidebar
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Grid with Sidebar
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="blog-grid.html"
+                                                    <Link
+                                                        href="/blog-grid"
+                                                        passHref
                                                     >
-                                                        Grid no Sidebar
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Grid no Sidebar
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -1623,20 +1844,24 @@ export default function FashionHeader() {
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="blog-single-sidebar.html"
+                                                    <Link
+                                                        href="/blog-single-sidebar"
+                                                        passHref
                                                     >
-                                                        Article with Sidebar
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Article with Sidebar
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href="blog-single.html"
+                                                    <Link
+                                                        href="/blog-single"
+                                                        passHref
                                                     >
-                                                        Article no Sidebar
-                                                    </a>
+                                                        <a className="dropdown-item">
+                                                            Article no Sidebar
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -1654,7 +1879,7 @@ export default function FashionHeader() {
                                         <li>
                                             <a
                                                 className="dropdown-item"
-                                                href="docs/dev-setup.html"
+                                                href="/docs/dev-setup"
                                             >
                                                 <div className="d-flex">
                                                     <div className="lead text-muted pt-1">
@@ -1676,7 +1901,7 @@ export default function FashionHeader() {
                                         <li>
                                             <a
                                                 className="dropdown-item"
-                                                href="components/typography.html"
+                                                href="/components/typography"
                                             >
                                                 <div className="d-flex">
                                                     <div className="lead text-muted pt-1">
@@ -1700,7 +1925,7 @@ export default function FashionHeader() {
                                         <li>
                                             <a
                                                 className="dropdown-item"
-                                                href="docs/changelog.html"
+                                                href="/docs/changelog"
                                             >
                                                 <div className="d-flex">
                                                     <div className="lead text-muted pt-1">
@@ -1724,7 +1949,7 @@ export default function FashionHeader() {
                                         <li>
                                             <a
                                                 className="dropdown-item"
-                                                href="mailto:support@createx.studio"
+                                                href="/mailto:support@createx.studio"
                                             >
                                                 <div className="d-flex">
                                                     <div className="lead text-muted pt-1">

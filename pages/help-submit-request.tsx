@@ -544,7 +544,7 @@
             <form className="needs-validation" noValidate>
               <div className="row gx-4 gy-3">
                 <div className="col-sm-6">
-                  <label className="form-label" htmlFor="help-topic">Select a topic <strong class='text-danger'>*</strong></label>
+                  <label className="form-label" htmlFor="help-topic">Select a topic <strong className='text-danger'>*</strong></label>
                   <select className="form-select" required id="help-topic">
                     <option value>—</option>
                     <option value="Managing Account">Managing Account</option>
@@ -561,17 +561,17 @@
                   <input className="form-control" type="text" id="help-subject">
                 </div>
                 <div className="col-12">
-                  <label className="form-label" htmlFor="help-message">Request Message <strong class='text-danger'>*</strong></label>
+                  <label className="form-label" htmlFor="help-message">Request Message <strong className='text-danger'>*</strong></label>
                   <textarea className="form-control" rows="6" required id="help-message"></textarea>
                   <div className="invalid-feedback">Please provide a detailed description of your problem!</div>
                 </div>
                 <div className="col-sm-6">
-                  <label className="form-label" htmlFor="help-name">Your Name <strong class='text-danger'>*</strong></label>
+                  <label className="form-label" htmlFor="help-name">Your Name <strong className='text-danger'>*</strong></label>
                   <input className="form-control" type="text" required id="help-name">
                   <div className="invalid-feedback">Please enter your name!</div>
                 </div>
                 <div className="col-sm-6">
-                  <label className="form-label" htmlFor="help-email">Your Email <strong class='text-danger'>*</strong></label>
+                  <label className="form-label" htmlFor="help-email">Your Email <strong className='text-danger'>*</strong></label>
                   <input className="form-control" type="email" required id="help-email">
                   <div className="invalid-feedback">Please enter valid email address!</div>
                 </div>

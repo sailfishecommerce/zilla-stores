@@ -4,7 +4,7 @@ import FashionLayout from "../layout/FashionLayout";
 export default function BlogList() {
     return (
         <FashionLayout title="Blog list">
-            <main className="page-wrapper">
+            <>
                 <div className="bg-secondary py-4">
                     <div className="container d-lg-flex justify-content-between py-2 py-lg-3">
                         <div className="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
@@ -673,7 +673,7 @@ export default function BlogList() {
                         </section>
                     </div>
                 </div>
-            </main>
+            </>
         </FashionLayout>
     );
 }

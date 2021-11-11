@@ -40,13 +40,13 @@
             <form className="needs-validation tab-pane fade show active" autoComplete="off" noValidate id="signin-tab">
               <div className="mb-3">
                 <label className="form-label" htmlFor="si-email">Email address</label>
-                <input className="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                <input className="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required />
                 <div className="invalid-feedback">Please provide a valid email address.</div>
               </div>
               <div className="mb-3">
                 <label className="form-label" htmlFor="si-password">Password</label>
                 <div className="password-toggle">
-                  <input className="form-control" type="password" id="si-password" required>
+                  <input className="form-control" type="password" id="si-password" required />
                   <label className="password-toggle-btn" aria-label="Show/hide password">
                     <input className="password-toggle-check" type="checkbox"><span className="password-toggle-indicator"></span>
                   </label>
@@ -63,18 +63,18 @@
             <form className="needs-validation tab-pane fade" autoComplete="off" noValidate id="signup-tab">
               <div className="mb-3">
                 <label className="form-label" htmlFor="su-name">Full name</label>
-                <input className="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                <input className="form-control" type="text" id="su-name" placeholder="John Doe" required />
                 <div className="invalid-feedback">Please fill in your name.</div>
               </div>
               <div className="mb-3">
                 <label htmlFor="su-email">Email address</label>
-                <input className="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                <input className="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required />
                 <div className="invalid-feedback">Please provide a valid email address.</div>
               </div>
               <div className="mb-3">
                 <label className="form-label" htmlFor="su-password">Password</label>
                 <div className="password-toggle">
-                  <input className="form-control" type="password" id="su-password" required>
+                  <input className="form-control" type="password" id="su-password" required />
                   <label className="password-toggle-btn" aria-label="Show/hide password">
                     <input className="password-toggle-check" type="checkbox"><span className="password-toggle-indicator"></span>
                   </label>
@@ -83,7 +83,7 @@
               <div className="mb-3">
                 <label className="form-label" htmlFor="su-password-confirm">Confirm password</label>
                 <div className="password-toggle">
-                  <input className="form-control" type="password" id="su-password-confirm" required>
+                  <input className="form-control" type="password" id="su-password-confirm" required />
                   <label className="password-toggle-btn" aria-label="Show/hide password">
                     <input className="password-toggle-check" type="checkbox"><span className="password-toggle-indicator"></span>
                   </label>
@@ -619,17 +619,17 @@
               <div className="row g-3">
                 <div className="col-sm-6">
                   <label className="form-label" htmlFor="cf-name">Your name:&nbsp;<span className="text-danger">*</span></label>
-                  <input className="form-control" type="text" id="cf-name" placeholder="John Doe" required>
+                  <input className="form-control" type="text" id="cf-name" placeholder="John Doe" required />
                   <div className="invalid-feedback">Please fill in you name!</div>
                 </div>
                 <div className="col-sm-6">
                   <label className="form-label" htmlFor="cf-email">Email address:&nbsp;<span className="text-danger">*</span></label>
-                  <input className="form-control" type="email" id="cf-email" placeholder="johndoe@email.com" required>
+                  <input className="form-control" type="email" id="cf-email" placeholder="johndoe@email.com" required />
                   <div className="invalid-feedback">Please provide valid email address!</div>
                 </div>
                 <div className="col-sm-6">
                   <label className="form-label" htmlFor="cf-phone">Your phone:&nbsp;<span className="text-danger">*</span></label>
-                  <input className="form-control" type="text" id="cf-phone" placeholder="+1 (212) 00 000 000" required>
+                  <input className="form-control" type="text" id="cf-phone" placeholder="+1 (212) 00 000 000" required />
                   <div className="invalid-feedback">Please provide valid phone number!</div>
                 </div>
                 <div className="col-sm-6">
@@ -638,7 +638,7 @@
                 </div>
                 <div className="col-12">
                   <label className="form-label" htmlFor="cf-message">Message:&nbsp;<span className="text-danger">*</span></label>
-                  <textarea className="form-control" id="cf-message" rows="6" placeholder="Please describe in detail your request" required></textarea>
+                  <textarea className="form-control" id="cf-message" rows="6" placeholder="Please describe in detail your request" required /></textarea>
                   <div className="invalid-feedback">Please write a message!</div>
                   <button className="btn btn-primary mt-4" type="submit">Send message</button>
                 </div>
@@ -699,7 +699,7 @@
               <h3 className="widget-title text-light pb-1">Stay informed</h3>
               <form className="subscription-form validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" noValidate>
                 <div className="input-group flex-nowrap"><i className="ci-mail position-absolute top-50 translate-middle-y text-muted fs-base ms-3"></i>
-                  <input className="form-control rounded-start" type="email" name="EMAIL" placeholder="Your email" required>
+                  <input className="form-control rounded-start" type="email" name="EMAIL" placeholder="Your email" required />
                   <button className="btn btn-primary" type="submit" name="subscribe">Subscribe*</button>
                 </div>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->

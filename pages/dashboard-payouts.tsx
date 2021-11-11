@@ -40,13 +40,13 @@
             <form className="needs-validation tab-pane fade show active" autoComplete="off" noValidate id="signin-tab">
               <div className="mb-3">
                 <label className="form-label" htmlFor="si-email">Email address</label>
-                <input className="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                <input className="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required />
                 <div className="invalid-feedback">Please provide a valid email address.</div>
               </div>
               <div className="mb-3">
                 <label className="form-label" htmlFor="si-password">Password</label>
                 <div className="password-toggle">
-                  <input className="form-control" type="password" id="si-password" required>
+                  <input className="form-control" type="password" id="si-password" required />
                   <label className="password-toggle-btn" aria-label="Show/hide password">
                     <input className="password-toggle-check" type="checkbox"><span className="password-toggle-indicator"></span>
                   </label>
@@ -63,18 +63,18 @@
             <form className="needs-validation tab-pane fade" autoComplete="off" noValidate id="signup-tab">
               <div className="mb-3">
                 <label className="form-label" htmlFor="su-name">Full name</label>
-                <input className="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                <input className="form-control" type="text" id="su-name" placeholder="John Doe" required />
                 <div className="invalid-feedback">Please fill in your name.</div>
               </div>
               <div className="mb-3">
                 <label htmlFor="su-email">Email address</label>
-                <input className="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                <input className="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required />
                 <div className="invalid-feedback">Please provide a valid email address.</div>
               </div>
               <div className="mb-3">
                 <label className="form-label" htmlFor="su-password">Password</label>
                 <div className="password-toggle">
-                  <input className="form-control" type="password" id="su-password" required>
+                  <input className="form-control" type="password" id="su-password" required />
                   <label className="password-toggle-btn" aria-label="Show/hide password">
                     <input className="password-toggle-check" type="checkbox"><span className="password-toggle-indicator"></span>
                   </label>
@@ -83,7 +83,7 @@
               <div className="mb-3">
                 <label className="form-label" htmlFor="su-password-confirm">Confirm password</label>
                 <div className="password-toggle">
-                  <input className="form-control" type="password" id="su-password-confirm" required>
+                  <input className="form-control" type="password" id="su-password-confirm" required />
                   <label className="password-toggle-btn" aria-label="Show/hide password">
                     <input className="password-toggle-check" type="checkbox"><span className="password-toggle-indicator"></span>
                   </label>
@@ -451,7 +451,7 @@
             <h3 className="widget-title text-light pb-1">Subscribe to newsletter</h3>
             <form className="subscription-form validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" noValidate>
               <div className="input-group flex-nowrap"><i className="ci-mail position-absolute top-50 translate-middle-y text-muted fs-base ms-3"></i>
-                <input className="form-control rounded-start" type="email" name="EMAIL" placeholder="Your email" required>
+                <input className="form-control rounded-start" type="email" name="EMAIL" placeholder="Your email" required />
                 <button className="btn btn-primary" type="submit" name="subscribe">Subscribe*</button>
               </div>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->

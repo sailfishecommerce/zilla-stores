@@ -121,7 +121,7 @@ export default function AccountSingleTicket() {
             <h3 className="h5 mt-2 pt-4 pb-2">Leave a Message</h3>
             <form className="needs-validation" noValidate>
               <div className="mb-3">
-                <textarea className="form-control" rows={8} placeholder="Write your message here..." required></textarea>
+                <textarea className="form-control" rows={8} placeholder="Write your message here..." required /></textarea>
                 <div className="invalid-tooltip">Please write the message!</div>
               </div>
               <div className="d-flex flex-wrap justify-content-between align-items-center">

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React, { PropsWithChildren } from "react";
 import AuthModal from "../component/AuthModal";
+import ElectronicModalView from "../component/ElectronicModalView";
 import ElectronicsNavbar from "../component/ElectronicsNavbar";
 import Footer from "../component/Footer";
 
@@ -60,6 +61,7 @@ export default function Electroniclayout({
             </Head>
             <AuthModal />
             <main className="page-wrapper">
+                <ElectronicModalView />
                 <ElectronicsNavbar />
                 {children}
             </main>

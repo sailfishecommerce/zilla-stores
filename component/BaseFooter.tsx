@@ -24,7 +24,7 @@ export default function BaseFooter() {
                             href="https://createx.studio/"
                             target="_blank"
                         >
-                            Createx Studio
+                            Bandicoot Studio
                         </a>
                     </div>
                 </div>

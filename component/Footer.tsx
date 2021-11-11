@@ -559,7 +559,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Createx Studio
+                                Bandicoot Studio
                             </a>
                         </div>
                     </div>

@@ -67,13 +67,13 @@ export default function DashboardHeader() {
                                         <img
                                             src="/img/marketplace/account/avatar-sm.png"
                                             width="32"
-                                            alt="Createx Studio"
+                                            alt="Bandicoot Studio"
                                         />
                                     </a>
                                 </Link>
                                 <Link href="/dashboard-sales" passHref>
                                     <a className="navbar-tool-text ms-n1">
-                                        <small>Createx Std.</small>$1,375.00
+                                        <small>Bandicoot Std.</small>$1,375.00
                                     </a>
                                 </Link>
                                 <div className="dropdown-menu dropdown-menu-end">
@@ -786,12 +786,12 @@ export default function DashboardHeader() {
                             <img
                                 className="rounded-circle"
                                 src="/img/marketplace/account/avatar.png"
-                                alt="Createx Studio"
+                                alt="Bandicoot Studio"
                             />
                         </div>
                         <div className="ps-3">
                             <h3 className="text-light fs-lg mb-0">
-                                Createx Studio
+                                Bandicoot Studio
                             </h3>
                             <span className="d-block text-light fs-ms opacity-60 py-1">
                                 Member since November 2019

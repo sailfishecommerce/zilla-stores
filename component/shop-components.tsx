@@ -12,7 +12,7 @@
             name="keywords"
             content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean"
         />
-        <meta name="author" content="Createx Studio" />
+        <meta name="author" content="Bandicoot Studio" />
         <!-- Viewport-->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Favicon and Touch Icons-->
@@ -1412,7 +1412,7 @@
                                                             <a
                                                                 className="product-meta fw-medium"
                                                                 href="#"
-                                                                >Createx Std. </a
+                                                                >Bandicoot Std. </a
                                                             >in
                                                             <a
                                                                 className="product-meta fw-medium"
@@ -1502,7 +1502,7 @@
   &lt;div className=&quot;card-body&quot;&gt;
     &lt;div className=&quot;d-flex flex-wrap justify-content-between align-items-start pb-2&quot;&gt;
       &lt;div className=&quot;text-muted fs-xs me-1&quot;&gt;
-        by &lt;a className=&quot;product-meta fw-medium&quot; href=&quot;#&quot;&gt;Createx Std. &lt;/a&gt;
+        by &lt;a className=&quot;product-meta fw-medium&quot; href=&quot;#&quot;&gt;Bandicoot Std. &lt;/a&gt;
         in &lt;a className=&quot;product-meta fw-medium&quot; href=&quot;#&quot;&gt;Graphics&lt;/a&gt;
       &lt;/div&gt;
       &lt;div className=&quot;star-rating&quot;&gt;
@@ -1550,7 +1550,7 @@
     .d-flex.flex-wrap.justify-content-between.align-items-start.pb-2
       .text-muted.fs-xs.me-1
         | by
-        a.product-meta.fw-medium(href=&quot;#&quot;) Createx Std.
+        a.product-meta.fw-medium(href=&quot;#&quot;) Bandicoot Std.
         | in
         a.product-meta.fw-medium(href=&quot;#&quot;) Graphics
       +star-rating(4)

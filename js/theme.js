@@ -19,10 +19,10 @@ function _typeof(obj) {
 
 /**
  * Cartzilla | Bootstrap E-Commerce Template
- * Copyright 2021 Createx Studio
+ * Copyright 2021 Bandicoot Studio
  * Theme core scripts
  *
- * @author Createx Studio
+ * @author Bandicoot Studio
  * @version 2.3.0
  */
 (function () {

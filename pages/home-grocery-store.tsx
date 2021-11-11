@@ -6,7 +6,7 @@
     <!-- SEO Meta Tags-->
     <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
     <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
-    <meta name="author" content="Createx Studio">
+    <meta name="author" content="Bandicoot Studio">
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
@@ -1282,7 +1282,7 @@
         </div>
         <div className="bg-darker px-lg-3 py-3">
           <div className="d-sm-flex justify-content-between align-items-center mx-auto px-3" style="max-width: 80rem;">
-            <div className="fs-xs text-light opacity-50 text-center text-sm-start py-3">© All rights reserved. Made by <a className="text-light" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></div>
+            <div className="fs-xs text-light opacity-50 text-center text-sm-start py-3">© All rights reserved. Made by <a className="text-light" href="https://createx.studio/" target="_blank" rel="noopener">Bandicoot Studio</a></div>
             <div className="py-3"><img className="d-block mx-auto mx-sm-start" src="/img/cards-alt.png" width="187" alt="Payment methods"></div>
           </div>
         </div>

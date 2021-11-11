@@ -1,21 +1,24 @@
+import { PropsWithChildren } from "react";
 import Head from "next/head";
-import React, { PropsWithChildren } from "react";
-import AuthModal from "../component/AuthModal";
-import ElectronicsNavbar from "../component/ElectronicsNavbar";
-import Footer from "../component/Footer";
 
-interface ElectroniclayoutProps {
+import GrocerySidebar from "../component/GrocerySidebar";
+import GroceryHeader from "../component/GroceryHeader";
+import GroceryFooter from "../component/GroceryFooter";
+
+interface GroceryLayoutProps {
+    children: JSX.Element;
     title: string;
 }
-export default function Electroniclayout({
-    title,
+
+export default function GroceryLayout({
     children,
-}: PropsWithChildren<ElectroniclayoutProps>) {
+    title,
+}: PropsWithChildren<GroceryLayoutProps>) {
     return (
-        <>
+        <body className="bg-secondary">
             <Head>
                 <meta charSet="utf-8" />
-                <title>Cartzilla | {title}</title>
+                <title>Cartzilla |{title}</title>
                 {/* SEO Meta Tags*/}
                 <meta
                     name="description"
@@ -58,12 +61,23 @@ export default function Electroniclayout({
                 <meta name="msapplication-TileColor" content="#ffffff" />
                 <meta name="theme-color" content="#ffffff" />
             </Head>
-            <AuthModal />
-            <main className="page-wrapper">
-                <ElectronicsNavbar />
+            <GroceryHeader />
+            <GrocerySidebar />
+            <main className="offcanvas-enabled" style={{ paddingTop: "5rem" }}>
                 {children}
+                <GroceryFooter />
             </main>
-            <Footer />
-        </>
+            <a
+                className="btn-scroll-top"
+                href="#top"
+                data-scroll
+                data-fixed-element
+            >
+                <span className="btn-scroll-top-tooltip text-muted fs-sm me-2">
+                    Top
+                </span>
+                <i className="btn-scroll-top-icon ci-arrow-up"> </i>
+            </a>
+        </body>
     );
 }

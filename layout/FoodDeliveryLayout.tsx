@@ -1,21 +1,22 @@
 import Head from "next/head";
-import React, { PropsWithChildren } from "react";
-import AuthModal from "../component/AuthModal";
-import ElectronicsNavbar from "../component/ElectronicsNavbar";
-import Footer from "../component/Footer";
+import { PropsWithChildren } from "react";
 
-interface ElectroniclayoutProps {
+import FoodDeliveryFooter from "../component/FoodDeliveryFooter";
+import FoodDeliveryHeader from "../component/FoodDeliveryHeader";
+
+interface FoodDeliveryLayout {
     title: string;
+    children: JSX.Element;
 }
-export default function Electroniclayout({
+export default function FoodDeliveryLayout({
     title,
     children,
-}: PropsWithChildren<ElectroniclayoutProps>) {
+}: PropsWithChildren<FoodDeliveryLayout>) {
     return (
-        <>
+        <body className="handheld-toolbar-enabled">
             <Head>
                 <meta charSet="utf-8" />
-                <title>Cartzilla | {title}</title>
+                <title>Cartzilla |{title}</title>
                 {/* SEO Meta Tags*/}
                 <meta
                     name="description"
@@ -58,12 +59,11 @@ export default function Electroniclayout({
                 <meta name="msapplication-TileColor" content="#ffffff" />
                 <meta name="theme-color" content="#ffffff" />
             </Head>
-            <AuthModal />
             <main className="page-wrapper">
-                <ElectronicsNavbar />
+                <FoodDeliveryHeader />
                 {children}
             </main>
-            <Footer />
-        </>
+            <FoodDeliveryFooter />
+        </body>
     );
 }

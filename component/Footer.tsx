@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-export default function FashionFooter() {
+export default function Footer() {
     return (
         <>
             <footer className="footer bg-dark pt-5">

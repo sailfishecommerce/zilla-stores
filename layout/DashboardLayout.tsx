@@ -1,24 +1,21 @@
-import React, { PropsWithChildren } from "react";
 import Head from "next/head";
+import React, { PropsWithChildren } from "react";
+import DashboardFooter from "../component/DashboardFooter";
+import DashboardHeader from "../component/DashboardHeader";
 
-import Footer from "../component/Footer";
-import FashionHeader from "../component/FashionHeader";
-import AuthModal from "../component/AuthModal";
-
-interface BaseLayoutProps {
-    children: JSX.Element;
+interface DashboardLayoutProps {
     title: string;
+    children: JSX.Element;
 }
-
-export default function FashionLayout({
-    children,
+export default function DashboardLayout({
     title,
-}: PropsWithChildren<BaseLayoutProps>) {
+    children,
+}: PropsWithChildren<DashboardLayoutProps>) {
     return (
-        <body className="handheld-toolbar-enabled">
+        <>
             <Head>
                 <meta charSet="utf-8" />
-                <title>Cartzilla | {title}</title>
+                <title>Cartzilla |{title}</title>
                 {/* SEO Meta Tags*/}
                 <meta
                     name="description"
@@ -61,12 +58,11 @@ export default function FashionLayout({
                 <meta name="msapplication-TileColor" content="#ffffff" />
                 <meta name="theme-color" content="#ffffff" />
             </Head>
-            <AuthModal />
             <main className="page-wrapper">
-                <FashionHeader />
+                <DashboardHeader />
                 {children}
             </main>
-            <Footer />
-        </body>
+            <DashboardFooter />
+        </>
     );
 }

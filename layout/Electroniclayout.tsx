@@ -1,21 +1,18 @@
-import React, { PropsWithChildren } from "react";
 import Head from "next/head";
-
-import Footer from "../component/Footer";
-import FashionHeader from "../component/FashionHeader";
+import React, { PropsWithChildren } from "react";
 import AuthModal from "../component/AuthModal";
+import ElectronicsNavbar from "../component/ElectronicsNavbar";
+import Footer from "../component/Footer";
 
-interface BaseLayoutProps {
-    children: JSX.Element;
+interface ElectroniclayoutProps {
     title: string;
 }
-
-export default function FashionLayout({
-    children,
+export default function Electroniclayout({
     title,
-}: PropsWithChildren<BaseLayoutProps>) {
+    children,
+}: PropsWithChildren<ElectroniclayoutProps>) {
     return (
-        <body className="handheld-toolbar-enabled">
+        <>
             <Head>
                 <meta charSet="utf-8" />
                 <title>Cartzilla | {title}</title>
@@ -63,10 +60,10 @@ export default function FashionLayout({
             </Head>
             <AuthModal />
             <main className="page-wrapper">
-                <FashionHeader />
+                <ElectronicsNavbar />
                 {children}
             </main>
             <Footer />
-        </body>
+        </>
     );
 }

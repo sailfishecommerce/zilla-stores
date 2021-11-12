@@ -259,11 +259,12 @@ export default function MarketplaceCategory() {
                                         </button>
                                     </div>
                                     <Link href="/marketplace-single" passHref>
-                                        <a className="product-thumb-overlay"></a>
-                                        <img
-                                            src="/img/marketplace/products/03.jpg"
-                                            alt="Product"
-                                        />
+                                        <a className="product-thumb-overlay">
+                                            <img
+                                                src="/img/marketplace/products/03.jpg"
+                                                alt="Product"
+                                            />
+                                        </a>
                                     </Link>
                                 </div>
                                 <div className="card-body">

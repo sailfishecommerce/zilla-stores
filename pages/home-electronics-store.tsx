@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Electroniclayout from "../layout/Electroniclayout"
 
@@ -87,7 +88,7 @@ export default function HomeElectronicStore() {
             <div className="card product-card">
               <div className="product-card-actions d-flex align-items-center"><a className="btn-action nav-link-style me-2" href="#"><i className="ci-compare me-1"></i>Compare</a>
                 <button className="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i className="ci-heart"></i></button>
-              </div><a className="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="/img/shop/catalog/58.jpg" alt="Product"></a>
+              </div><a className="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="/img/shop/catalog/58.jpg" alt="Product" /></a>
               <div className="card-body py-2"><a className="product-meta d-block fs-xs pb-1" href="#">Headphones</a>
                 <h3 className="product-title fs-sm"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h3>
                 <div className="d-flex justify-content-between">
@@ -163,7 +164,7 @@ export default function HomeElectronicStore() {
                 <div className="text-center"><a className="nav-link-style fs-ms" href="#quick-view-electro" data-bs-toggle="modal"><i className="ci-eye align-middle me-1"></i>Quick view</a></div>
               </div>
             </div>
-            <hr className="d-sm-none">
+            <hr className="d-sm-none" />
           </div>
           {/*<!-- Product-->*/}
           <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
@@ -191,7 +192,7 @@ export default function HomeElectronicStore() {
             <div className="card product-card">
               <div className="product-card-actions d-flex align-items-center"><a className="btn-action nav-link-style me-2" href="#"><i className="ci-compare me-1"></i>Compare</a>
                 <button className="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i className="ci-heart"></i></button>
-              </div><a className="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="/img/shop/catalog/63.jpg" alt="Product"></a>
+              </div><a className="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="/img/shop/catalog/63.jpg" alt="Product" /></a>
               <div className="card-body py-2"><a className="product-meta d-block fs-xs pb-1" href="#">Smartphones</a>
                 <h3 className="product-title fs-sm"><a href="shop-single-v2.html">Popular Smartphone 128GB</a></h3>
                 <div className="d-flex justify-content-between">
@@ -205,7 +206,7 @@ export default function HomeElectronicStore() {
                 <div className="text-center"><a className="nav-link-style fs-ms" href="#quick-view-electro" data-bs-toggle="modal"><i className="ci-eye align-middle me-1"></i>Quick view</a></div>
               </div>
             </div>
-            <hr className="d-sm-none">
+            <hr className="d-sm-none" />
           </div>
           {/*<!-- Product-->*/}
           <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
@@ -226,7 +227,7 @@ export default function HomeElectronicStore() {
                 <div className="text-center"><a className="nav-link-style fs-ms" href="#quick-view-electro" data-bs-toggle="modal"><i className="ci-eye align-middle me-1"></i>Quick view</a></div>
               </div>
             </div>
-            <hr className="d-sm-none">
+            <hr className="d-sm-none" />
           </div>
           {/*<!-- Product-->*/}
           <div className="col-lg-3 col-md-4 col-sm-6 px-2">
@@ -265,7 +266,7 @@ export default function HomeElectronicStore() {
                 </div><a className="btn btn-accent" href="#">View offers<i className="ci-arrow-right fs-ms ms-1"></i></a>
               </div>
             </div>
-            <div className="col-md-7"><img src="/img/home/banners/offer.jpg" alt="iPad Pro Offer"></div>
+            <div className="col-md-7"><img src="/img/home/banners/offer.jpg" alt="iPad Pro Offer" /></div>
           </div>
         </div>
       </section>
@@ -291,13 +292,13 @@ export default function HomeElectronicStore() {
           <div className="col-md-4 col-sm-6 mb-2 py-3">
             <div className="widget">
               <h3 className="widget-title">Bestsellers</h3>
-              <div className="d-flex align-items-center pb-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/cart/widget/05.jpg" width="64" alt="Product"></a>
+              <div className="d-flex align-items-center pb-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/cart/widget/05.jpg" width="64" alt="Product" /></a>
                 <div className="ps-2">
                   <h6 className="widget-product-title"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h6>
                   <div className="widget-product-meta"><span className="text-accent">$259.<small>00</small></span></div>
                 </div>
               </div>
-              <div className="d-flex align-items-center py-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/cart/widget/06.jpg" width="64" alt="Product"></a>
+              <div className="d-flex align-items-center py-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/cart/widget/06.jpg" width="64" alt="Product" /></a>
                 <div className="ps-2">
                   <h6 className="widget-product-title"><a href="shop-single-v2.html">Cloud Security Camera</a></h6>
                   <div className="widget-product-meta"><span className="text-accent">$122.<small>00</small></span></div>
@@ -343,7 +344,7 @@ export default function HomeElectronicStore() {
                   </div>
                 </div>
               </div>
-              <div className="d-flex align-items-center py-2"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/09.jpg" width="64" alt="Product"></a>
+              <div className="d-flex align-items-center py-2"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/09.jpg" width="64" alt="Product" /></a>
                 <div className="ps-2">
                   <h6 className="widget-product-title"><a href="shop-single-v2.html">Smart Watch Series 5, Aluminium</a></h6>
                   <div className="widget-product-meta"><span className="text-accent">$349.<small>99</small></span></div>
@@ -355,7 +356,7 @@ export default function HomeElectronicStore() {
           <div className="col-md-4 col-sm-6 mb-2 py-3">
             <div className="widget">
               <h3 className="widget-title">Top rated</h3>
-              <div className="d-flex align-items-center pb-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/10.jpg" width="64" alt="Product"></a>
+              <div className="d-flex align-items-center pb-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/10.jpg" width="64" alt="Product" /></a>
                 <div className="ps-2">
                   <h6 className="widget-product-title"><a href="shop-single-v2.html">Android Smartphone S9</a></h6>
                   <div className="widget-product-meta"><span className="text-accent">$749.<small>99</small></span>
@@ -363,19 +364,19 @@ export default function HomeElectronicStore() {
                   </div>
                 </div>
               </div>
-              <div className="d-flex align-items-center py-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/11.jpg" width="64" alt="Product"></a>
+              <div className="d-flex align-items-center py-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/11.jpg" width="64" alt="Product" /></a>
                 <div className="ps-2">
                   <h6 className="widget-product-title"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h6>
                   <div className="widget-product-meta"><span className="text-accent">$428.<small>60</small></span></div>
                 </div>
               </div>
-              <div className="d-flex align-items-center py-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/12.jpg" width="64" alt="Product"></a>
+              <div className="d-flex align-items-center py-2 border-bottom"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/12.jpg" width="64" alt="Product" /></a>
                 <div className="ps-2">
                   <h6 className="widget-product-title"><a href="shop-single-v2.html">360 Degrees Camera</a></h6>
                   <div className="widget-product-meta"><span className="text-accent">$98.<small>75</small></span></div>
                 </div>
               </div>
-              <div className="d-flex align-items-center py-2"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/13.jpg" width="64" alt="Product"></a>
+              <div className="d-flex align-items-center py-2"><a className="d-block flex-shrink-0" href="shop-single-v2.html"><img src="/img/shop/widget/13.jpg" width="64" alt="Product" /></a>
                 <div className="ps-2">
                   <h6 className="widget-product-title"><a href="shop-single-v2.html">Digital Camera 40MP</a></h6>
                   <div className="widget-product-meta"><span className="text-accent">$210.<small>00</small></span>
@@ -392,8 +393,8 @@ export default function HomeElectronicStore() {
         <div className="border rounded-3 p-3">
           <div className="row">
             <div className="col-md-4 mb-3 mb-md-0">
-              <div className="bg-secondary p-5 text-center"><img className="d-block mb-4 mx-auto" src="/img/home/yt-logo.png" width="120" alt="YouTube">
-                <div className="d-flex justify-content-center align-items-center mb-4"><img className="me-2" src="/img/home/yt-subscribers.png" width="126" alt="YouTube Subscribers" /><span className="fs-sm">250k+</span></div><a className="btn btn-primary border-0 btn-sm mb-3" href="#" style="background-color: #ff0000;"><i className="ci-add-user me-2"></i>Subscribe*</a>
+              <div className="bg-secondary p-5 text-center"><img className="d-block mb-4 mx-auto" src="/img/home/yt-logo.png" width="120" alt="YouTube" />
+                <div className="d-flex justify-content-center align-items-center mb-4"><img className="me-2" src="/img/home/yt-subscribers.png" width="126" alt="YouTube Subscribers" /><span className="fs-sm">250k+</span></div><a className="btn btn-primary border-0 btn-sm mb-3" href="#" style={{backgroundColor: "#ff0000"}}><i className="ci-add-user me-2"></i>Subscribe*</a>
                 <p className="fs-sm mb-0">*View latest gadgets reviews available for purchase in our store.</p>
               </div>
             </div>
@@ -403,16 +404,16 @@ export default function HomeElectronicStore() {
               </div>
               <div className="row g-0">
                 <div className="col-lg-4 col-6 mb-3"><a className="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/vS93u75NnPo" data-bs-toggle="video">
-                    <div className="position-relative mb-2"><span className="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:16</span><img className="w-100" src="/img/home/video/cover01.jpg" alt="Video cover"></div>
+                    <div className="position-relative mb-2"><span className="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:16</span><img className="w-100" src="/img/home/video/cover01.jpg" alt="Video cover" /></div>
                     <h6 className="fs-sm pt-1">5 New Cool Gadgets You Must See on Cartzilla - Cheap Budget</h6></a></div>
                 <div className="col-lg-4 col-6 mb-3"><a className="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/B6LaYgGogf0" data-bs-toggle="video">
-                    <div className="position-relative mb-2"><span className="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">7:27</span><img className="w-100" src="/img/home/video/cover02.jpg" alt="Video cover"></div>
+                    <div className="position-relative mb-2"><span className="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">7:27</span><img className="w-100" src="/img/home/video/cover02.jpg" alt="Video cover" /></div>
                     <h6 className="fs-sm pt-1">5 Super Useful Gadgets on Cartzilla You Must Have in 2020</h6></a></div>
                 <div className="col-lg-4 col-6 mb-3"><a className="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/kB-ROfRS9V4" data-bs-toggle="video">
-                    <div className="position-relative mb-2"><span className="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:20</span><img className="w-100" src="/img/home/video/cover03.jpg" alt="Video cover"></div>
+                    <div className="position-relative mb-2"><span className="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:20</span><img className="w-100" src="/img/home/video/cover03.jpg" alt="Video cover" /></div>
                     <h6 className="fs-sm pt-1">Top 5 New Amazing Gadgets on Cartzilla You Must See</h6></a></div>
                 <div className="col-lg-4 col-6 mb-3 d-lg-none"><a className="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/sJK67XXE_Rg" data-bs-toggle="video">
-                    <div className="position-relative mb-2"><span className="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:11</span><img className="w-100" src="/img/home/video/cover04.jpg" alt="Video cover"></div>
+                    <div className="position-relative mb-2"><span className="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:11</span><img className="w-100" src="/img/home/video/cover04.jpg" alt="Video cover" /></div>
                     <h6 className="fs-sm fw-bold pt-1">5 Amazing Construction Inventions and Working Tools Available...</h6></a></div>
               </div>
             </div>

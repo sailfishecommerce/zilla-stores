@@ -1,5 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 import DashboardLayout from "../layout/DashboardLayout";
+import DashboardSidebar from "../component/DashboardSidebar";
 
 export default function DashboardFavorites() {
     return (
@@ -8,122 +11,7 @@ export default function DashboardFavorites() {
                 <div className="bg-light shadow-lg rounded-3 overflow-hidden">
                     <div className="row">
                         {/*<!-- Sidebar-->*/}
-                        <aside className="col-lg-4 pe-xl-5">
-                            {/*<!-- Account menu toggler (hidden on screens larger 992px)-->*/}
-                            <div className="d-block d-lg-none p-4">
-                                <a
-                                    className="btn btn-outline-accent d-block"
-                                    href="#account-menu"
-                                    data-bs-toggle="collapse"
-                                >
-                                    <i className="ci-menu me-2"></i>Account menu
-                                </a>
-                            </div>
-                            {/*<!-- Actual menu-->*/}
-                            <div className="h-100 border-end mb-2">
-                                <div
-                                    className="d-lg-block collapse"
-                                    id="account-menu"
-                                >
-                                    <div className="bg-secondary p-4">
-                                        <h3 className="fs-sm mb-0 text-muted">
-                                            Account
-                                        </h3>
-                                    </div>
-                                    <ul className="list-unstyled mb-0">
-                                        <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="dashboard-settings.html"
-                                            >
-                                                <i className="ci-settings opacity-60 me-2"></i>
-                                                Settings
-                                            </a>
-                                        </li>
-                                        <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="dashboard-purchases.html"
-                                            >
-                                                <i className="ci-basket opacity-60 me-2"></i>
-                                                Purchases
-                                            </a>
-                                        </li>
-                                        <li className="mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3 active"
-                                                href="dashboard-favorites.html"
-                                            >
-                                                <i className="ci-heart opacity-60 me-2"></i>
-                                                Favorites
-                                                <span className="fs-sm text-muted ms-auto">
-                                                    4
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div className="bg-secondary p-4">
-                                        <h3 className="fs-sm mb-0 text-muted">
-                                            Seller Dashboard
-                                        </h3>
-                                    </div>
-                                    <ul className="list-unstyled mb-0">
-                                        <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="dashboard-sales.html"
-                                            >
-                                                <i className="ci-dollar opacity-60 me-2"></i>
-                                                Sales
-                                                <span className="fs-sm text-muted ms-auto">
-                                                    $1,375.00
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="dashboard-products.html"
-                                            >
-                                                <i className="ci-package opacity-60 me-2"></i>
-                                                Products
-                                                <span className="fs-sm text-muted ms-auto">
-                                                    5
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="dashboard-add-new-product.html"
-                                            >
-                                                <i className="ci-cloud-upload opacity-60 me-2"></i>
-                                                Add New Product
-                                            </a>
-                                        </li>
-                                        <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="dashboard-payouts.html"
-                                            >
-                                                <i className="ci-currency-exchange opacity-60 me-2"></i>
-                                                Payouts
-                                            </a>
-                                        </li>
-                                        <li className="mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="account-signin.html"
-                                            >
-                                                <i className="ci-sign-out opacity-60 me-2"></i>
-                                                Sign out
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <hr />
-                                </div>
-                            </div>
-                        </aside>
+                        <DashboardSidebar />
                         {/*<!-- Content-->*/}
                         <section className="col-lg-8 pt-lg-4 pb-4 mb-3">
                             <div className="pt-2 px-4 ps-lg-0 pe-xl-5">
@@ -135,201 +23,331 @@ export default function DashboardFavorites() {
                                 </h2>
                                 {/*<!-- Product-->*/}
                                 <div className="d-block d-sm-flex align-items-center py-4 border-bottom">
-                                    <a
-                                        className="d-block position-relative mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
-                                        href="marketplace-single.html"
-                                        style={{ width: "12.5rem" }}
-                                    >
-                                        <img
-                                            className="rounded-3"
-                                            src="/img/marketplace/products/th02.jpg"
-                                            alt="Product"
-                                        />
-                                        <span
-                                            className="btn btn-icon btn-danger position-absolute top-0 end-0 py-0 px-1 m-2"
-                                            data-bs-toggle="tooltip"
-                                            title="Remove from Favorites"
+                                    <Link href="/marketplace-single" passHref>
+                                        <a
+                                            className="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
+                                            style={{ width: "12.5rem" }}
                                         >
-                                            <i className="ci-trash"></i>
-                                        </span>
-                                    </a>
+                                            <img
+                                                className="rounded-3"
+                                                src="/img/marketplace/products/th02.jpg"
+                                                alt="Product"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="text-center text-sm-start">
                                         <h3 className="h6 product-title mb-2">
-                                            <a href="marketplace-single.html">
-                                                UI Isometric Devices Pack (PSD)
-                                            </a>
-                                        </h3>
-                                        <div className="d-inline-block text-accent">
-                                            $23.<small>00</small>
-                                        </div>
-                                        <a
-                                            className="d-inline-block text-accent fs-ms border-start ms-2 ps-2"
-                                            href="marketplace-vendor.html"
-                                        >
-                                            by uidesigner
-                                        </a>
-                                        <div className="d-sm-flex align-items-center pt-2">
-                                            <select className="form-select form-select-sm my-1 me-2">
-                                                <option>
-                                                    Standard license
-                                                </option>
-                                                <option>
-                                                    Extended license
-                                                </option>
-                                            </select>
-                                            <button
-                                                className="btn btn-primary btn-sm mx-auto mx-sm-0 my-2"
-                                                type="button"
+                                            <Link
+                                                href="/marketplace-single"
+                                                passHref
                                             >
-                                                <i className="ci-cart me-1"></i>
-                                                Add to Cart
-                                            </button>
+                                                <a>
+                                                    UI Isometric Devices Pack
+                                                    (PSD)
+                                                </a>
+                                            </Link>
+                                        </h3>
+                                        <div className="text-accent fs-sm mb-1">
+                                            Extended license
+                                        </div>
+                                        <div className="form-check d-table text-start mx-auto mx-sm-0">
+                                            <input
+                                                className="form-check-input"
+                                                type="checkbox"
+                                                id="update-info-2"
+                                                checked
+                                            />
+                                            <label
+                                                className="form-check-label fs-ms"
+                                                htmlFor="update-info-2"
+                                            >
+                                                Notify me when this product is
+                                                updated
+                                            </label>
+                                        </div>
+                                        <div className="d-flex align-items-center justify-content-center justify-content-sm-start pt-2">
+                                            <div className="my-2">
+                                                <button
+                                                    className="btn btn-primary btn-sm me-3"
+                                                    type="button"
+                                                >
+                                                    <i className="ci-download me-1"></i>
+                                                    Download
+                                                </button>
+                                            </div>
+                                            <a
+                                                className="d-block text-muted text-center my-2"
+                                                href="#"
+                                            >
+                                                <div className="star-rating">
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star"></i>
+                                                </div>
+                                                <div className="fs-xs">
+                                                    You rated this product
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 {/*<!-- Product-->*/}
                                 <div className="d-block d-sm-flex align-items-center py-4 border-bottom">
-                                    <a
-                                        className="d-block position-relative mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
-                                        href="marketplace-single.html"
-                                        style={{ width: "12.5rem" }}
-                                    >
-                                        <img
-                                            className="rounded-3"
-                                            src="/img/marketplace/products/th06.jpg"
-                                            alt="Product"
-                                        />
-                                        <span
-                                            className="btn btn-icon btn-danger position-absolute top-0 end-0 py-0 px-1 m-2"
-                                            data-bs-toggle="tooltip"
-                                            title="Remove from Favorites"
+                                    <Link href="/marketplace-single" passHref>
+                                        <a
+                                            className="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
+                                            style={{ width: "12.5rem" }}
                                         >
-                                            <i className="ci-trash"></i>
-                                        </span>
-                                    </a>
+                                            <img
+                                                className="rounded-3"
+                                                src="/img/marketplace/products/th03.jpg"
+                                                alt="Product"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="text-center text-sm-start">
                                         <h3 className="h6 product-title mb-2">
-                                            <a href="marketplace-single.html">
-                                                Project Devices Showcase (PSD)
-                                            </a>
-                                        </h3>
-                                        <div className="d-inline-block text-accent">
-                                            $18.<small>00</small>
-                                        </div>
-                                        <a
-                                            className="d-inline-block text-accent fs-ms border-start ms-2 ps-2"
-                                            href="marketplace-vendor.html"
-                                        >
-                                            by pixels
-                                        </a>
-                                        <div className="d-sm-flex align-items-center pt-2">
-                                            <select className="form-select form-select-sm my-1 me-2">
-                                                <option>
-                                                    Standard license
-                                                </option>
-                                                <option>
-                                                    Extended license
-                                                </option>
-                                            </select>
-                                            <button
-                                                className="btn btn-primary btn-sm mx-auto mx-sm-0 my-2"
-                                                type="button"
+                                            <Link
+                                                href="/marketplace-single"
+                                                passHref
                                             >
-                                                <i className="ci-cart me-1"></i>
-                                                Add to Cart
-                                            </button>
+                                                <a>
+                                                    Bandicoot - Multipurpose
+                                                    E-Commerce Template
+                                                </a>
+                                            </Link>
+                                        </h3>
+                                        <div className="text-accent fs-sm mb-1">
+                                            Standard license
+                                        </div>
+                                        <div className="form-check d-table text-start mx-auto mx-sm-0">
+                                            <input
+                                                className="form-check-input"
+                                                type="checkbox"
+                                                id="update-info-3"
+                                                checked
+                                            />
+                                            <label
+                                                className="form-check-label fs-ms"
+                                                htmlFor="update-info-3"
+                                            >
+                                                Notify me when this product is
+                                                updated
+                                            </label>
+                                        </div>
+                                        <div className="d-flex align-items-center justify-content-center justify-content-sm-start pt-2">
+                                            <div className="my-2">
+                                                <button
+                                                    className="btn btn-primary btn-sm me-3"
+                                                    type="button"
+                                                >
+                                                    <i className="ci-download me-1"></i>
+                                                    Download
+                                                </button>
+                                            </div>
+                                            <a
+                                                className="d-block text-muted text-center my-2"
+                                                href="#"
+                                            >
+                                                <div className="star-rating">
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                </div>
+                                                <div className="fs-xs">
+                                                    You rated this product
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 {/*<!-- Product-->*/}
                                 <div className="d-block d-sm-flex align-items-center py-4 border-bottom">
-                                    <a
-                                        className="d-block position-relative mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
-                                        href="marketplace-single.html"
-                                        style={{ width: "12.5rem" }}
-                                    >
-                                        <img
-                                            className="rounded-3"
-                                            src="/img/marketplace/products/th01.jpg"
-                                            alt="Product"
-                                        />
-                                        <span
-                                            className="btn btn-icon btn-danger position-absolute top-0 end-0 py-0 px-1 m-2"
-                                            data-bs-toggle="tooltip"
-                                            title="Remove from Favorites"
+                                    <Link href="/marketplace-single" passHref>
+                                        <a
+                                            className="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
+                                            style={{ width: "12.5rem" }}
                                         >
-                                            <i className="ci-trash"></i>
-                                        </span>
-                                    </a>
+                                            <img
+                                                className="rounded-3"
+                                                src="/img/marketplace/products/th04.jpg"
+                                                alt="Product"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="text-center text-sm-start">
                                         <h3 className="h6 product-title mb-2">
-                                            <a href="marketplace-single.html">
-                                                Top View Smartwatch 3D Render
-                                            </a>
-                                        </h3>
-                                        <div className="d-inline-block text-accent">
-                                            $19.<small>00</small>
-                                        </div>
-                                        <a
-                                            className="d-inline-block text-accent fs-ms border-start ms-2 ps-2"
-                                            href="marketplace-vendor.html"
-                                        >
-                                            by modello
-                                        </a>
-                                        <div className="d-sm-flex align-items-center pt-2">
-                                            <select className="form-select form-select-sm my-1 me-2">
-                                                <option>
-                                                    Standard license
-                                                </option>
-                                                <option>
-                                                    Extended license
-                                                </option>
-                                            </select>
-                                            <button
-                                                className="btn btn-primary btn-sm mx-auto mx-sm-0 my-2"
-                                                type="button"
+                                            <Link
+                                                href="/marketplace-single"
+                                                passHref
                                             >
-                                                <i className="ci-cart me-1"></i>
-                                                Add to Cart
-                                            </button>
+                                                <a>
+                                                    Hardcover Book Catalog
+                                                    Mockup (PSD)
+                                                </a>
+                                            </Link>
+                                        </h3>
+                                        <div className="text-accent fs-sm mb-1">
+                                            Standard license
+                                        </div>
+                                        <div className="form-check d-table text-start mx-auto mx-sm-0">
+                                            <input
+                                                className="form-check-input"
+                                                type="checkbox"
+                                                id="update-info-4"
+                                            />
+                                            <label
+                                                className="form-check-label fs-ms"
+                                                htmlFor="update-info-4"
+                                            >
+                                                Notify me when this product is
+                                                updated
+                                            </label>
+                                        </div>
+                                        <div className="d-flex align-items-center justify-content-center justify-content-sm-start pt-2">
+                                            <div className="my-2">
+                                                <button
+                                                    className="btn btn-primary btn-sm me-3"
+                                                    type="button"
+                                                >
+                                                    <i className="ci-download me-1"></i>
+                                                    Download
+                                                </button>
+                                            </div>
+                                            <a
+                                                className="d-block text-muted text-center my-2"
+                                                href="#"
+                                            >
+                                                <div className="star-rating">
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-filled active"></i>
+                                                    <i className="star-rating-icon ci-star-half active"></i>
+                                                    <i className="star-rating-icon ci-star"></i>
+                                                </div>
+                                                <div className="fs-xs">
+                                                    Reate this product
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/*<!-- Product-->*/}
+                                <div className="d-block d-sm-flex align-items-center py-4 border-bottom">
+                                    <Link href="/marketplace-single" passHref>
+                                        <a
+                                            className="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
+                                            style={{ width: "12.5rem" }}
+                                        >
+                                            <img
+                                                className="rounded-3"
+                                                src="/img/marketplace/products/th05.jpg"
+                                                alt="Product"
+                                            />
+                                        </a>
+                                    </Link>
+                                    <div className="text-center text-sm-start">
+                                        <h3 className="h6 product-title mb-2">
+                                            <Link
+                                                href="/marketplace-single"
+                                                passHref
+                                            >
+                                                <a>Photo of Business Meeting</a>
+                                            </Link>
+                                        </h3>
+                                        <div className="text-accent fs-sm mb-1">
+                                            Standard license
+                                        </div>
+                                        <div className="form-check d-table text-start mx-auto mx-sm-0">
+                                            <input
+                                                className="form-check-input"
+                                                type="checkbox"
+                                                id="update-info-5"
+                                            />
+                                            <label
+                                                className="form-check-label fs-ms"
+                                                htmlFor="update-info-5"
+                                            >
+                                                Notify me when this product is
+                                                updated
+                                            </label>
+                                        </div>
+                                        <div className="d-flex align-items-center justify-content-center justify-content-sm-start pt-2">
+                                            <div className="my-2">
+                                                <button
+                                                    className="btn btn-primary btn-sm me-3"
+                                                    type="button"
+                                                >
+                                                    <i className="ci-download me-1"></i>
+                                                    Download
+                                                </button>
+                                            </div>
+                                            <a
+                                                className="d-block text-muted text-center my-2"
+                                                href="#"
+                                            >
+                                                <div className="star-rating">
+                                                    <i className="star-rating-icon ci-star"></i>
+                                                    <i className="star-rating-icon ci-star"></i>
+                                                    <i className="star-rating-icon ci-star"></i>
+                                                    <i className="star-rating-icon ci-star"></i>
+                                                    <i className="star-rating-icon ci-star"></i>
+                                                </div>
+                                                <div className="fs-xs">
+                                                    Reate this product
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 {/*<!-- Product-->*/}
                                 <div className="d-block d-sm-flex align-items-center pt-4 pb-2">
-                                    <a
-                                        className="d-block position-relative mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
-                                        href="marketplace-single.html"
-                                        style={{ width: "12.5rem" }}
-                                    >
-                                        <img
-                                            className="rounded-3"
-                                            src="/img/marketplace/products/th07.jpg"
-                                            alt="Product"
-                                        />
-                                        <span
-                                            className="btn btn-icon btn-danger position-absolute top-0 end-0 py-0 px-1 m-2"
-                                            data-bs-toggle="tooltip"
-                                            title="Remove from Favorites"
+                                    <Link href="/marketplace-single" passHref>
+                                        <a
+                                            className="d-block position-relative mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto"
+                                            style={{ width: "12.5rem" }}
                                         >
-                                            <i className="ci-trash"></i>
-                                        </span>
-                                    </a>
+                                            <img
+                                                className="rounded-3"
+                                                src="/img/marketplace/products/th07.jpg"
+                                                alt="Product"
+                                            />
+                                            <span
+                                                className="btn btn-icon btn-danger position-absolute top-0 end-0 py-0 px-1 m-2"
+                                                data-bs-toggle="tooltip"
+                                                title="Remove from Favorites"
+                                            >
+                                                <i className="ci-trash"></i>
+                                            </span>
+                                        </a>
+                                    </Link>
                                     <div className="text-center text-sm-start">
                                         <h3 className="h6 product-title mb-2">
-                                            <a href="marketplace-single.html">
-                                                Gravity Devices UI Mockup (PSD)
-                                            </a>
+                                            <Link
+                                                href="/marketplace-single"
+                                                passHref
+                                            >
+                                                <a>
+                                                    Gravity Devices UI Mockup
+                                                    (PSD)
+                                                </a>
+                                            </Link>
                                         </h3>
                                         <div className="d-inline-block text-accent">
                                             $15.<small>00</small>
                                         </div>
-                                        <a
-                                            className="d-inline-block text-accent fs-ms border-start ms-2 ps-2"
-                                            href="marketplace-vendor.html"
+                                        <Link
+                                            href="/marketplace-vendor"
+                                            passHref
                                         >
-                                            by pixels
-                                        </a>
+                                            <a className="d-inline-block text-accent fs-ms border-start ms-2 ps-2">
+                                                by pixels
+                                            </a>
+                                        </Link>
                                         <div className="d-sm-flex align-items-center pt-2">
                                             <select className="form-select form-select-sm my-1 me-2">
                                                 <option>

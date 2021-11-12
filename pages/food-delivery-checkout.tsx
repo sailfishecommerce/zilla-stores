@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 import FoodDeliveryLayout from "../layout/FoodDeliveryLayout";
 
 export default function FoodDeliveryCheckout() {
@@ -8,12 +10,16 @@ export default function FoodDeliveryCheckout() {
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
                         <li className="breadcrumb-item">
-                            <a className="text-nowrap" href="index.html">
-                                <i className="ci-home"></i>Home
-                            </a>
+                            <Link href="//" passHref>
+                                <a className="text-nowrap">
+                                    <i className="ci-home"></i>Home
+                                </a>
+                            </Link>
                         </li>
                         <li className="breadcrumb-item text-nowrap">
-                            <a href="food-delivery-cart.html">Cart</a>
+                            <Link href="/food-delivery-cart" passHref>
+                                <a>Cart</a>
+                            </Link>
                         </li>
                         <li
                             className="breadcrumb-item text-nowrap active"
@@ -26,20 +32,18 @@ export default function FoodDeliveryCheckout() {
                 <div className="rounded-3 shadow-lg mt-4 mb-5">
                     <ul className="nav nav-tabs nav-justified mb-sm-4">
                         <li className="nav-item">
-                            <a
-                                className="nav-link fs-lg fw-medium py-4"
-                                href="food-delivery-cart.html"
-                            >
-                                1. Your order
-                            </a>
+                            <Link href="/food-delivery-cart" passHref>
+                                <a className="nav-link fs-lg fw-medium py-4">
+                                    1. Your order
+                                </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a
-                                className="nav-link fs-lg fw-medium py-4 active"
-                                href="food-delivery-checkout.html"
-                            >
-                                2. Checkout
-                            </a>
+                            <Link href="/food-delivery-checkout" passHref>
+                                <a className="nav-link fs-lg fw-medium py-4 active">
+                                    2. Checkout
+                                </a>
+                            </Link>
                         </li>
                     </ul>
                     <form

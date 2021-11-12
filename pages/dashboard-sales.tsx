@@ -7,7 +7,7 @@ export default function DashboardSales() {
         <DashboardLayout title="Dashboard Sales">
             <>
                 <div className="container mb-5 pb-3">
-                    <div className="bg-light shadow-lg rounded-3 overflow-hidden">
+									<div className="bg-light shadow-lg rounded-3 overflow-hidden">
                         <div className="row">
                             {/*<!-- Sidebar-->*/}
                             <DashboardSidebar />

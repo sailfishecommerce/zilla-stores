@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import FashionLayout from "../layout/FashionLayout";
 
 export default function BlogGrid() {
@@ -11,12 +12,11 @@ export default function BlogGrid() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
-                                        <a
-                                            className="text-nowrap"
-                                            href="index.html"
-                                        >
-                                            <i className="ci-home"></i>Home
-                                        </a>
+                                        <Link href="/index" passHref>
+                                            <a className="text-nowrap">
+                                                <i className="ci-home"></i>Home
+                                            </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
                                         <a href="#">Blog</a>
@@ -43,30 +43,36 @@ export default function BlogGrid() {
                             data-carousel-options='{"items": 2, "nav": false, "autoHeight": true, "responsive": {"0":{"items":1},"700":{"items":2, "gutter": 20},"991":{"items":2, "gutter": 30}}}'
                         >
                             <article>
-                                <a
-                                    className="blog-entry-thumb mb-3"
-                                    href="blog-single-sidebar.html"
-                                >
-                                    <span className="blog-entry-meta-label fs-sm">
-                                        <i className="ci-time"></i>Sep 10
-                                    </span>
-                                    <img
-                                        src="/img/blog/featured/01.jpg"
-                                        alt="Featured post"
-                                    />
-                                </a>
+                                <Link href="/blog-single-sidebar" passHref>
+                                    <a className="blog-entry-thumb mb-3">
+                                        <span className="blog-entry-meta-label fs-sm">
+                                            <i className="ci-time"></i>Sep 10
+                                        </span>
+                                        <img
+                                            src="/img/blog/featured/01.jpg"
+                                            alt="Featured post"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="d-flex justify-content-between mb-2 pt-1">
                                     <h2 className="h5 blog-entry-title mb-0">
-                                        <a href="blog-single-sidebar.html">
-                                            Healthy Food - New Way of Living
-                                        </a>
+                                        <Link
+                                            href="/blog-single-sidebar"
+                                            passHref
+                                        >
+                                            <a>
+                                                Healthy Food - New Way of Living
+                                            </a>
+                                        </Link>
                                     </h2>
-                                    <a
-                                        className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1"
-                                        href="blog-single-sidebar.html#comments"
+                                    <Link
+                                        href="/blog-single-sidebar#comments"
+                                        passHref
                                     >
-                                        <i className="ci-message"></i>13
-                                    </a>
+                                        <a className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1">
+                                            <i className="ci-message"></i>13
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="d-flex align-items-center fs-sm">
                                     <a
@@ -101,31 +107,37 @@ export default function BlogGrid() {
                                 </div>
                             </article>
                             <article>
-                                <a
-                                    className="blog-entry-thumb mb-3"
-                                    href="blog-single-sidebar.html"
-                                >
-                                    <span className="blog-entry-meta-label fs-sm">
-                                        <i className="ci-time"></i>Aug 27
-                                    </span>
-                                    <img
-                                        src="/img/blog/featured/02.jpg"
-                                        alt="Featured post"
-                                    />
-                                </a>
+                                <Link href="/blog-single-sidebar" passHref>
+                                    <a className="blog-entry-thumb mb-3">
+                                        <span className="blog-entry-meta-label fs-sm">
+                                            <i className="ci-time"></i>Aug 27
+                                        </span>
+                                        <img
+                                            src="/img/blog/featured/02.jpg"
+                                            alt="Featured post"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="d-flex justify-content-between mb-2 pt-1">
                                     <h2 className="h5 blog-entry-title mb-0">
-                                        <a href="blog-single-sidebar.html">
-                                            Online Payment Security Tips for
-                                            Shoppers
-                                        </a>
+                                        <Link
+                                            href="/blog-single-sidebar"
+                                            passHref
+                                        >
+                                            <a>
+                                                Online Payment Security Tips for
+                                                Shoppers
+                                            </a>
+                                        </Link>
                                     </h2>
-                                    <a
-                                        className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1"
-                                        href="blog-single-sidebar.html#comments"
+                                    <Link
+                                        href="/blog-single-sidebar#comments"
+                                        passHref
                                     >
-                                        <i className="ci-message"></i>9
-                                    </a>
+                                        <a className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1">
+                                            <i className="ci-message"></i>9
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="d-flex align-items-center fs-sm">
                                     <a
@@ -153,31 +165,37 @@ export default function BlogGrid() {
                                 </div>
                             </article>
                             <article>
-                                <a
-                                    className="blog-entry-thumb mb-3"
-                                    href="blog-single-sidebar.html"
-                                >
-                                    <span className="blog-entry-meta-label fs-sm">
-                                        <i className="ci-time"></i>Aug 16
-                                    </span>
-                                    <img
-                                        src="/img/blog/featured/03.jpg"
-                                        alt="Featured post"
-                                    />
-                                </a>
+                                <Link href="/blog-single-sidebar" passHref>
+                                    <a className="blog-entry-thumb mb-3">
+                                        <span className="blog-entry-meta-label fs-sm">
+                                            <i className="ci-time"></i>Aug 16
+                                        </span>
+                                        <img
+                                            src="/img/blog/featured/03.jpg"
+                                            alt="Featured post"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="d-flex justify-content-between mb-2 pt-1">
                                     <h2 className="h5 blog-entry-title mb-0">
-                                        <a href="blog-single-sidebar.html">
-                                            We Launched New Store in San
-                                            Francisco!
-                                        </a>
+                                        <Link
+                                            href="/blog-single-sidebar"
+                                            passHref
+                                        >
+                                            <a>
+                                                We Launched New Store in San
+                                                Francisco!
+                                            </a>
+                                        </Link>
                                     </h2>
-                                    <a
-                                        className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1"
-                                        href="blog-single-sidebar.html#comments"
+                                    <Link
+                                        href="/blog-single-sidebar#comments"
+                                        passHref
                                     >
-                                        <i className="ci-message"></i>23
-                                    </a>
+                                        <a className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1">
+                                            <i className="ci-message"></i>23
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="d-flex align-items-center fs-sm">
                                     <a
@@ -215,10 +233,12 @@ export default function BlogGrid() {
                                 <div className="card">
                                     <div className="card-body">
                                         <h2 className="h6 blog-entry-title">
-                                            <a href="blog-single.html">
-                                                Global Travel and Vacations on a
-                                                Tight Budget
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a>
+                                                    Global Travel and Vacations
+                                                    on a Tight Budget
+                                                </a>
+                                            </Link>
                                         </h2>
                                         <p className="fs-sm">
                                             Lorem ipsum dolor sit amet,
@@ -261,12 +281,15 @@ export default function BlogGrid() {
                                                 Aug 15
                                             </a>
                                             <span className="blog-entry-meta-divider mx-2"></span>
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>8
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    8
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -274,22 +297,23 @@ export default function BlogGrid() {
                             {/*<!-- Entry-->*/}
                             <article className="masonry-grid-item">
                                 <div className="card">
-                                    <a
-                                        className="blog-entry-thumb"
-                                        href="blog-single.html"
-                                    >
-                                        <img
-                                            className="card-img-top"
-                                            src="/img/blog/01.jpg"
-                                            alt="Post"
-                                        />
-                                    </a>
+                                    <Link href="/blog-single" passHref>
+                                        <a className="blog-entry-thumb">
+                                            <img
+                                                className="card-img-top"
+                                                src="/img/blog/01.jpg"
+                                                alt="Post"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="card-body">
                                         <h2 className="h6 blog-entry-title">
-                                            <a href="blog-single.html">
-                                                Top New Trends in Suburban High
-                                                Fashion
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a>
+                                                    Top New Trends in Suburban
+                                                    High Fashion
+                                                </a>
+                                            </Link>
                                         </h2>
                                         <p className="fs-sm">
                                             Lorem ipsum dolor sit amet,
@@ -330,12 +354,15 @@ export default function BlogGrid() {
                                                 Jul 23
                                             </a>
                                             <span className="blog-entry-meta-divider mx-2"></span>
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>19
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    19
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -345,10 +372,12 @@ export default function BlogGrid() {
                                 <div className="card">
                                     <div className="card-body">
                                         <h2 className="h6 blog-entry-title">
-                                            <a href="blog-single.html">
-                                                Google Pay is Now Available in
-                                                All Outlets
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a>
+                                                    Google Pay is Now Available
+                                                    in All Outlets
+                                                </a>
+                                            </Link>
                                         </h2>
                                         <p className="fs-sm">
                                             Lorem ipsum dolor sit amet,
@@ -385,12 +414,15 @@ export default function BlogGrid() {
                                                 Jul 6
                                             </a>
                                             <span className="blog-entry-meta-divider mx-2"></span>
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>7
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    7
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -400,7 +432,7 @@ export default function BlogGrid() {
                                 <div className="card gallery">
                                     <a
                                         className="blog-entry-thumb gallery-item video-item"
-                                        href="https://www.youtube.com/watch?v=TedKIlo0c04"
+                                        href="/https://www.youtube.com/watch?v=TedKIlo0c04"
                                     >
                                         <span className="blog-entry-meta-label fs-sm">
                                             <i className="ci-video"></i>
@@ -416,11 +448,13 @@ export default function BlogGrid() {
                                     </a>
                                     <div className="card-body">
                                         <h2 className="h6 blog-entry-title">
-                                            <a href="blog-single.html">
-                                                We Launched Regular Drone
-                                                Delivery in California. Watch
-                                                Demo Video
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a>
+                                                    We Launched Regular Drone
+                                                    Delivery in California.
+                                                    Watch Demo Video
+                                                </a>
+                                            </Link>
                                         </h2>
                                         <p className="fs-sm">
                                             Lorem ipsum dolor sit amet,
@@ -455,12 +489,15 @@ export default function BlogGrid() {
                                                 Jun 12
                                             </a>
                                             <span className="blog-entry-meta-divider mx-2"></span>
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>31
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    31
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -468,22 +505,23 @@ export default function BlogGrid() {
                             {/*<!-- Entry-->*/}
                             <article className="masonry-grid-item">
                                 <div className="card">
-                                    <a
-                                        className="blog-entry-thumb"
-                                        href="blog-single.html"
-                                    >
-                                        <img
-                                            className="card-img-top"
-                                            src="/img/blog/02.jpg"
-                                            alt="Post"
-                                        />
-                                    </a>
+                                    <Link href="/blog-single" passHref>
+                                        <a className="blog-entry-thumb">
+                                            <img
+                                                className="card-img-top"
+                                                src="/img/blog/02.jpg"
+                                                alt="Post"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="card-body">
                                         <h2 className="h6 blog-entry-title">
-                                            <a href="blog-single.html">
-                                                Shopping Tips. Places Where to
-                                                Buy Cheap
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a>
+                                                    Shopping Tips. Places Where
+                                                    to Buy Cheap
+                                                </a>
+                                            </Link>
                                         </h2>
                                         <p className="fs-sm">
                                             Lorem ipsum dolor sit amet,
@@ -524,12 +562,15 @@ export default function BlogGrid() {
                                                 May 29
                                             </a>
                                             <span className="blog-entry-meta-divider mx-2"></span>
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>15
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    15
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -537,23 +578,25 @@ export default function BlogGrid() {
                             {/*<!-- Entry-->*/}
                             <article className="masonry-grid-item">
                                 <div className="card">
-                                    <a
-                                        className="blog-entry-thumb"
-                                        href="blog-single.html"
-                                    >
-                                        <img
-                                            className="card-img-top"
-                                            src="/img/blog/04.jpg"
-                                            alt="Post"
-                                        />
-                                    </a>
+                                    <Link href="/blog-single" passHref>
+                                        <a className="blog-entry-thumb">
+                                            <img
+                                                className="card-img-top"
+                                                src="/img/blog/04.jpg"
+                                                alt="Post"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="card-body">
                                         <h2 className="h6 blog-entry-title">
-                                            <a href="blog-single.html">
-                                                Payments Made Easy. How New
-                                                Technology will Affect
-                                                E-Commerce Industry Worldwide?
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a>
+                                                    Payments Made Easy. How New
+                                                    Technology will Affect
+                                                    E-Commerce Industry Wo
+                                                    rldwide?
+                                                </a>
+                                            </Link>
                                         </h2>
                                         <p className="fs-sm">
                                             Lorem ipsum dolor sit amet,
@@ -596,12 +639,15 @@ export default function BlogGrid() {
                                                 May 13
                                             </a>
                                             <span className="blog-entry-meta-divider mx-2"></span>
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>28
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    28
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -611,10 +657,13 @@ export default function BlogGrid() {
                                 <div className="card">
                                     <div className="card-body">
                                         <h2 className="h6 blog-entry-title">
-                                            <a href="blog-single.html">
-                                                Different Ways E-commerce
-                                                Companies Can Capitalize on Apps
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a>
+                                                    Different Ways E-commerce
+                                                    Companies Can Capitalize on
+                                                    Apps
+                                                </a>
+                                            </Link>
                                         </h2>
                                         <p className="fs-sm">
                                             Lorem ipsum dolor sit amet,
@@ -649,12 +698,15 @@ export default function BlogGrid() {
                                                 Apr 15
                                             </a>
                                             <span className="blog-entry-meta-divider mx-2"></span>
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>22
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    22
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -664,10 +716,12 @@ export default function BlogGrid() {
                                 <div className="card">
                                     <div className="card-body">
                                         <h2 className="h6 blog-entry-title">
-                                            <a href="blog-single.html">
-                                                Must Have Clothing On Your Next
-                                                Trip
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a>
+                                                    Must Have Clothing On Your
+                                                    Next Trip
+                                                </a>
+                                            </Link>
                                         </h2>
                                         <p className="fs-sm">
                                             Lorem ipsum dolor sit amet,
@@ -708,12 +762,15 @@ export default function BlogGrid() {
                                                 Apr 10
                                             </a>
                                             <span className="blog-entry-meta-divider mx-2"></span>
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>7
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    7
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import FashionLayout from "../layout/FashionLayout";
+import Link from "next/link";
+
+import FashionLayout from "../layout/FashionLayout"
 
 export default function BlogList() {
     return (
@@ -11,12 +13,11 @@ export default function BlogList() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
-                                        <a
-                                            className="text-nowrap"
-                                            href="index.html"
-                                        >
-                                            <i className="ci-home"></i>Home
-                                        </a>
+                                        <Link href="/" passHref>
+                                            <a className="text-nowrap">
+                                                <i className="ci-home"></i>Home
+                                            </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
                                         <a href="#">Blog</a>
@@ -43,30 +44,36 @@ export default function BlogList() {
                             data-carousel-options='{"items": 2, "nav": false, "autoHeight": true, "responsive": {"0":{"items":1},"700":{"items":2, "gutter": 20},"991":{"items":2, "gutter": 30}}}'
                         >
                             <article>
-                                <a
-                                    className="blog-entry-thumb mb-3"
-                                    href="blog-single-sidebar.html"
-                                >
-                                    <span className="blog-entry-meta-label fs-sm">
-                                        <i className="ci-time"></i>Sep 10
-                                    </span>
-                                    <img
-                                        src="/img/blog/featured/01.jpg"
-                                        alt="Featured post"
-                                    />
-                                </a>
+                                <Link href="/blog-single-sidebar" passHref>
+                                    <a className="blog-entry-thumb mb-3">
+                                        <span className="blog-entry-meta-label fs-sm">
+                                            <i className="ci-time"></i>Sep 10
+                                        </span>
+                                        <img
+                                            src="/img/blog/featured/01.jpg"
+                                            alt="Featured post"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="d-flex justify-content-between mb-2 pt-1">
                                     <h2 className="h5 blog-entry-title mb-0">
-                                        <a href="blog-single-sidebar.html">
-                                            Healthy Food - New Way of Living
-                                        </a>
+                                        <Link
+                                            href="/blog-single-sidebar"
+                                            passHref
+                                        >
+                                            <a>
+                                                Healthy Food - New Way of Living
+                                            </a>
+                                        </Link>
                                     </h2>
-                                    <a
-                                        className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1"
-                                        href="blog-single-sidebar.html#comments"
+                                    <Link
+                                        href="/blog-single-sidebar#comments"
+                                        passHref
                                     >
-                                        <i className="ci-message"></i>13
-                                    </a>
+                                        <a className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1">
+                                            <i className="ci-message"></i>13
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="d-flex align-items-center fs-sm">
                                     <a
@@ -101,31 +108,37 @@ export default function BlogList() {
                                 </div>
                             </article>
                             <article>
-                                <a
-                                    className="blog-entry-thumb mb-3"
-                                    href="blog-single-sidebar.html"
-                                >
-                                    <span className="blog-entry-meta-label fs-sm">
-                                        <i className="ci-time"></i>Aug 27
-                                    </span>
-                                    <img
-                                        src="/img/blog/featured/02.jpg"
-                                        alt="Featured post"
-                                    />
-                                </a>
+                                <Link href="/blog-single-sidebar" passHref>
+                                    <a className="blog-entry-thumb mb-3">
+                                        <span className="blog-entry-meta-label fs-sm">
+                                            <i className="ci-time"></i>Aug 27
+                                        </span>
+                                        <img
+                                            src="/img/blog/featured/02.jpg"
+                                            alt="Featured post"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="d-flex justify-content-between mb-2 pt-1">
                                     <h2 className="h5 blog-entry-title mb-0">
-                                        <a href="blog-single-sidebar.html">
-                                            Online Payment Security Tips for
-                                            Shoppers
-                                        </a>
+                                        <Link
+                                            href="/blog-single-sidebar"
+                                            passHref
+                                        >
+                                            <a>
+                                                Online Payment Security Tips for
+                                                Shoppers
+                                            </a>
+                                        </Link>
                                     </h2>
-                                    <a
-                                        className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1"
-                                        href="blog-single-sidebar.html#comments"
+                                    <Link
+                                        href="/blog-single-sidebar#comments"
+                                        passHref
                                     >
-                                        <i className="ci-message"></i>9
-                                    </a>
+                                        <a className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1">
+                                            <i className="ci-message"></i>9
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="d-flex align-items-center fs-sm">
                                     <a
@@ -153,31 +166,37 @@ export default function BlogList() {
                                 </div>
                             </article>
                             <article>
-                                <a
-                                    className="blog-entry-thumb mb-3"
-                                    href="blog-single-sidebar.html"
-                                >
-                                    <span className="blog-entry-meta-label fs-sm">
-                                        <i className="ci-time"></i>Aug 16
-                                    </span>
-                                    <img
-                                        src="/img/blog/featured/03.jpg"
-                                        alt="Featured post"
-                                    />
-                                </a>
+                                <Link href="/blog-single-sidebar" passHref>
+                                    <a className="blog-entry-thumb mb-3">
+                                        <span className="blog-entry-meta-label fs-sm">
+                                            <i className="ci-time"></i>Aug 16
+                                        </span>
+                                        <img
+                                            src="/img/blog/featured/03.jpg"
+                                            alt="Featured post"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="d-flex justify-content-between mb-2 pt-1">
                                     <h2 className="h5 blog-entry-title mb-0">
-                                        <a href="blog-single-sidebar.html">
-                                            We Launched New Store in San
-                                            Francisco!
-                                        </a>
+                                        <Link
+                                            href="/blog-single-sidebar"
+                                            passHref
+                                        >
+                                            <a>
+                                                We Launched New Store in San
+                                                Francisco!
+                                            </a>
+                                        </Link>
                                     </h2>
-                                    <a
-                                        className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1"
-                                        href="blog-single-sidebar.html#comments"
+                                    <Link
+                                        href="/blog-single-sidebar#comments"
+                                        passHref
                                     >
-                                        <i className="ci-message"></i>23
-                                    </a>
+                                        <a className="blog-entry-meta-link fs-sm text-nowrap ms-3 pt-1">
+                                            <i className="ci-message"></i>23
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="d-flex align-items-center fs-sm">
                                     <a
@@ -235,10 +254,12 @@ export default function BlogList() {
                                         </a>
                                     </div>
                                     <h2 className="h5 blog-entry-title">
-                                        <a href="blog-single.html">
-                                            Global Travel and Vacations on a
-                                            Tight Budget
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a>
+                                                Global Travel and Vacations on a
+                                                Tight Budget
+                                            </a>
+                                        </Link>
                                     </h2>
                                 </div>
                                 <div className="blog-end-column">
@@ -260,12 +281,15 @@ export default function BlogList() {
                                             </a>
                                         </div>
                                         <div className="fs-sm mb-2">
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>8
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    8
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <p className="fs-sm">
@@ -280,12 +304,11 @@ export default function BlogList() {
                                         fugiat nulla pariatur. Excepteur sint
                                         occaecat cupidatat non proident, sunt in
                                         culpa qui officia deserunt…{" "}
-                                        <a
-                                            href="blog-single.html"
-                                            className="blog-entry-meta-link fw-medium"
-                                        >
-                                            [Read more]
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a className="blog-entry-meta-link fw-medium">
+                                                [Read more]
+                                            </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </article>
@@ -314,22 +337,23 @@ export default function BlogList() {
                                         </a>
                                     </div>
                                     <h2 className="h5 blog-entry-title">
-                                        <a href="blog-single.html">
-                                            Top New Trends in Suburban High
-                                            Fashion
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a>
+                                                Top New Trends in Suburban High
+                                                Fashion
+                                            </a>
+                                        </Link>
                                     </h2>
                                 </div>
                                 <div className="blog-end-column">
-                                    <a
-                                        className="blog-entry-thumb mb-3"
-                                        href="blog-single.html"
-                                    >
-                                        <img
-                                            src="/img/blog/01.jpg"
-                                            alt="Post"
-                                        />
-                                    </a>
+                                    <Link href="/blog-single" passHref>
+                                        <a className="blog-entry-thumb mb-3">
+                                            <img
+                                                src="/img/blog/01.jpg"
+                                                alt="Post"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="d-flex justify-content-between mb-1">
                                         <div className="fs-sm text-muted pe-2 mb-2">
                                             in{" "}
@@ -348,12 +372,15 @@ export default function BlogList() {
                                             </a>
                                         </div>
                                         <div className="fs-sm mb-2">
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>19
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    19
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <p className="fs-sm">
@@ -362,12 +389,11 @@ export default function BlogList() {
                                         incididunt ut labore et dolore magna
                                         aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation…{" "}
-                                        <a
-                                            href="blog-single.html"
-                                            className="blog-entry-meta-link fw-medium"
-                                        >
-                                            [Read more]
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a className="blog-entry-meta-link fw-medium">
+                                                [Read more]
+                                            </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </article>
@@ -396,22 +422,23 @@ export default function BlogList() {
                                         </a>
                                     </div>
                                     <h2 className="h5 blog-entry-title">
-                                        <a href="blog-single.html">
-                                            Shopping Tips. Places Where to Buy
-                                            Cheap
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a>
+                                                Shopping Tips. Places Where to
+                                                Buy Cheap
+                                            </a>
+                                        </Link>
                                     </h2>
                                 </div>
                                 <div className="blog-end-column">
-                                    <a
-                                        className="blog-entry-thumb mb-3"
-                                        href="blog-single.html"
-                                    >
-                                        <img
-                                            src="/img/blog/02.jpg"
-                                            alt="Post"
-                                        />
-                                    </a>
+                                    <Link href="/blog-single" passHref>
+                                        <a className="blog-entry-thumb mb-3">
+                                            <img
+                                                src="/img/blog/02.jpg"
+                                                alt="Post"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="d-flex justify-content-between mb-1">
                                         <div className="fs-sm text-muted pe-2 mb-2">
                                             in{" "}
@@ -430,12 +457,15 @@ export default function BlogList() {
                                             </a>
                                         </div>
                                         <div className="fs-sm mb-2">
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>15
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    15
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <p className="fs-sm">
@@ -444,12 +474,11 @@ export default function BlogList() {
                                         incididunt ut labore et dolore magna
                                         aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation…{" "}
-                                        <a
-                                            href="blog-single.html"
-                                            className="blog-entry-meta-link fw-medium"
-                                        >
-                                            [Read more]
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a className="blog-entry-meta-link fw-medium">
+                                                [Read more]
+                                            </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </article>
@@ -478,10 +507,12 @@ export default function BlogList() {
                                         </a>
                                     </div>
                                     <h2 className="h5 blog-entry-title">
-                                        <a href="blog-single.html">
-                                            Google Pay is Now Available in All
-                                            Outlets
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a>
+                                                Google Pay is Now Available in
+                                                All O
+                                            </a>
+                                        </Link>
                                     </h2>
                                 </div>
                                 <div className="blog-end-column">
@@ -496,12 +527,15 @@ export default function BlogList() {
                                             </a>
                                         </div>
                                         <div className="fs-sm mb-2">
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>7
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    7
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <p className="fs-sm">
@@ -516,12 +550,11 @@ export default function BlogList() {
                                         fugiat nulla pariatur. Excepteur sint
                                         occaecat cupidatat non proident, sunt in
                                         culpa qui officia deserunt…{" "}
-                                        <a
-                                            href="blog-single.html"
-                                            className="blog-entry-meta-link fw-medium"
-                                        >
-                                            [Read more]
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a className="blog-entry-meta-link fw-medium">
+                                                [Read more]
+                                            </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </article>
@@ -550,16 +583,19 @@ export default function BlogList() {
                                         </a>
                                     </div>
                                     <h2 className="h5 blog-entry-title">
-                                        <a href="blog-single.html">
-                                            We Launched Regular Drone Delivery
-                                            in California. Watch Demo Video
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a>
+                                                We Launched Regular Drone
+                                                Delivery in California. Watch
+                                                Demo Video
+                                            </a>
+                                        </Link>
                                     </h2>
                                 </div>
                                 <div className="blog-end-column gallery">
                                     <a
                                         className="blog-entry-thumb gallery-item video-item mb-3"
-                                        href="https://www.youtube.com/watch?v=TedKIlo0c04"
+                                        href="/https://www.youtube.com/watch?v=TedKIlo0c04"
                                     >
                                         <span className="blog-entry-meta-label fs-sm">
                                             <i className="ci-video"></i>
@@ -583,12 +619,15 @@ export default function BlogList() {
                                             </a>
                                         </div>
                                         <div className="fs-sm mb-2">
-                                            <a
-                                                className="blog-entry-meta-link text-nowrap"
-                                                href="blog-single.html#comments"
+                                            <Link
+                                                href="/blog-single#comments"
+                                                passHref
                                             >
-                                                <i className="ci-message"></i>31
-                                            </a>
+                                                <a className="blog-entry-meta-link text-nowrap">
+                                                    <i className="ci-message"></i>
+                                                    31
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <p className="fs-sm">
@@ -597,12 +636,11 @@ export default function BlogList() {
                                         incididunt ut labore et dolore magna
                                         aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation…{" "}
-                                        <a
-                                            href="blog-single.html"
-                                            className="blog-entry-meta-link fw-medium"
-                                        >
-                                            [Read more]
-                                        </a>
+                                        <Link href="/blog-single" passHref>
+                                            <a className="blog-entry-meta-link fw-medium">
+                                                [Read more]
+                                            </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </article>

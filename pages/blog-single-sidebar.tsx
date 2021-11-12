@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 import FashionLayout from "../layout/FashionLayout";
 
 export default function BlogList() {
@@ -11,12 +13,11 @@ export default function BlogList() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
-                                        <a
-                                            className="text-nowrap"
-                                            href="index.html"
-                                        >
-                                            <i className="ci-home"></i>Home
-                                        </a>
+                                        <Link href="/" passHref>
+                                            <a className="text-nowrap">
+                                                <i className="ci-home"></i>Home
+                                            </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
                                         <a href="#">Blog</a>
@@ -241,15 +242,14 @@ export default function BlogList() {
                                         Prev post
                                     </span>
                                 </a>
-                                <a
-                                    className="entry-navigation-link"
-                                    href="blog-list.html"
-                                >
-                                    <i className="ci-view-list me-2"></i>
-                                    <span className="d-none d-sm-inline">
-                                        All posts
-                                    </span>
-                                </a>
+                                <Link href="/blog-list" passHref>
+                                    <a className="entry-navigation-link">
+                                        <i className="ci-view-list me-2"></i>
+                                        <span className="d-none d-sm-inline">
+                                            All posts
+                                        </span>
+                                    </a>
+                                </Link>
                                 <a
                                     className="entry-navigation-link"
                                     href="#"
@@ -521,24 +521,28 @@ export default function BlogList() {
                                             Trending posts
                                         </h3>
                                         <div className="d-flex align-items-center mb-3">
-                                            <a
-                                                className="flex-shrink-0"
-                                                href="blog-single.html"
-                                            >
-                                                <img
-                                                    className="rounded"
-                                                    src="/img/blog/widget/01.jpg"
-                                                    width="64"
-                                                    alt="Post image"
-                                                />
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a className="flex-shrink-0">
+                                                    <img
+                                                        className="rounded"
+                                                        src="/img/blog/widget/01.jpg"
+                                                        width="64"
+                                                        alt="Post image"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="ps-3">
                                                 <h6 className="blog-entry-title fs-sm mb-0">
-                                                    <a href="blog-single.html">
-                                                        Retro Cameras are
-                                                        Trending. Why so
-                                                        Popular?
-                                                    </a>
+                                                    <Link
+                                                        href="/blog-single"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Retro Cameras are
+                                                            Trending. Why so
+                                                            Popular?
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="fs-ms text-muted">
                                                     by{" "}
@@ -552,23 +556,27 @@ export default function BlogList() {
                                             </div>
                                         </div>
                                         <div className="d-flex align-items-center mb-3">
-                                            <a
-                                                className="flex-shrink-0"
-                                                href="blog-single.html"
-                                            >
-                                                <img
-                                                    className="rounded"
-                                                    src="/img/blog/widget/02.jpg"
-                                                    width="64"
-                                                    alt="Post image"
-                                                />
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a className="flex-shrink-0">
+                                                    <img
+                                                        className="rounded"
+                                                        src="/img/blog/widget/02.jpg"
+                                                        width="64"
+                                                        alt="Post image"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="ps-3">
                                                 <h6 className="blog-entry-title fs-sm mb-0">
-                                                    <a href="blog-single.html">
-                                                        New Trends in Suburban
-                                                        Fashion
-                                                    </a>
+                                                    <Link
+                                                        href="/blog-single"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            New Trends in
+                                                            Suburban Fashion
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="fs-ms text-muted">
                                                     by{" "}
@@ -582,23 +590,28 @@ export default function BlogList() {
                                             </div>
                                         </div>
                                         <div className="d-flex align-items-center">
-                                            <a
-                                                className="flex-shrink-0"
-                                                href="blog-single.html"
-                                            >
-                                                <img
-                                                    className="rounded"
-                                                    src="/img/blog/widget/03.jpg"
-                                                    width="64"
-                                                    alt="Post image"
-                                                />
-                                            </a>
+                                            <Link href="/blog-single" passHref>
+                                                <a className="flex-shrink-0">
+                                                    <img
+                                                        className="rounded"
+                                                        src="/img/blog/widget/03.jpg"
+                                                        width="64"
+                                                        alt="Post image"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="ps-3">
                                                 <h6 className="blog-entry-title fs-sm mb-0">
-                                                    <a href="blog-single.html">
-                                                        Augmented Reality - Game
-                                                        Changing Technology
-                                                    </a>
+                                                    <Link
+                                                        href="/blog-single"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Augmented Reality -
+                                                            Game Changing
+                                                            Technology
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="fs-ms text-muted">
                                                     by{" "}

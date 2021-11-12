@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 import FoodDeliveryLayout from "../layout/FoodDeliveryLayout";
 
 export default function FoodDeliveryCart() {
@@ -8,9 +10,11 @@ export default function FoodDeliveryCart() {
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
                         <li className="breadcrumb-item">
-                            <a className="text-nowrap" href="index.html">
-                                <i className="ci-home"></i>Home
-                            </a>
+                            <Link href="//" passHref>
+                                <a className="text-nowrap">
+                                    <i className="ci-home"></i>Home
+                                </a>
+                            </Link>
                         </li>
                         <li
                             className="breadcrumb-item text-nowrap active"
@@ -23,20 +27,18 @@ export default function FoodDeliveryCart() {
                 <div className="rounded-3 shadow-lg mt-4 mb-5">
                     <ul className="nav nav-tabs nav-justified mb-4">
                         <li className="nav-item">
-                            <a
-                                className="nav-link fs-lg fw-medium py-4 active"
-                                href="food-delivery-cart.html"
-                            >
-                                1. Your order
-                            </a>
+                            <Link href="/food-delivery-cart" passHref>
+                                <a className="nav-link fs-lg fw-medium py-4 active">
+                                    1. Your order
+                                </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a
-                                className="nav-link fs-lg fw-medium py-4"
-                                href="food-delivery-checkout.html"
-                            >
-                                2. Checkout
-                            </a>
+                            <Link href="/food-delivery-checkout" passHref>
+                                <a className="nav-link fs-lg fw-medium py-4">
+                                    2. Checkout
+                                </a>
+                            </Link>
                         </li>
                     </ul>
                     <div className="px-3 px-sm-4 px-xl-5 pt-1 pb-4 pb-sm-5">
@@ -282,13 +284,15 @@ export default function FoodDeliveryCart() {
                                             Apply promo code
                                         </button>
                                     </form>
-                                    <a
-                                        className="btn btn-primary btn-shadow d-block w-100 mt-4 mb-3"
-                                        href="food-delivery-checkout.html"
+                                    <Link
+                                        href="/food-delivery-checkout"
+                                        passHref
                                     >
-                                        <i className="ci-card fs-lg me-2"></i>
-                                        Proceed to Checkout
-                                    </a>
+                                        <a className="btn btn-primary btn-shadow d-block w-100 mt-4 mb-3">
+                                            <i className="ci-card fs-lg me-2"></i>
+                                            Proceed to Checkout
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

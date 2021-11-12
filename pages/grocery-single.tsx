@@ -11,15 +11,16 @@ export default function GrocerySingle() {
                     <nav className="mb-4" aria-label="breadcrumb">
                         <ol className="breadcrumb flex-lg-nowrap">
                             <li className="breadcrumb-item">
-                                <a
-                                    href="/home-grocery-store"
-                                    className="text-nowrap"
-                                >
-                                    <i className="ci-home"></i>Home
-                                </a>
+                                <Link href="/home-grocery-store">
+                                    <a className="text-nowrap">
+                                        <i className="ci-home"></i>Home
+                                    </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item text-nowrap">
-                                <a href="/grocery-catalog">Product catalog</a>
+                                <Link href="/grocery-catalog">
+                                    <a>Product catalog</a>
+                                </Link>
                             </li>
                             <li
                                 className="breadcrumb-item text-nowrap active"
@@ -292,16 +293,14 @@ export default function GrocerySingle() {
                                         >
                                             <i className="ci-heart"></i>
                                         </button>
-
-                                        <a
-                                            href="/grocery-single"
-                                            className="card-img-top d-block overflow-hidden"
-                                        >
-                                            <img
-                                                src="/img/grocery/catalog/10.jpg"
-                                                alt="Product"
-                                            />
-                                        </a>
+                                        <Link href="/grocery-single" passHref>
+                                            <a className="card-img-top d-block overflow-hidden">
+                                                <img
+                                                    src="/img/grocery/catalog/10.jpg"
+                                                    alt="Product"
+                                                />
+                                            </a>
+                                        </Link>
                                         <div className="card-body py-2">
                                             <a
                                                 className="product-meta d-block fs-xs pb-1"
@@ -310,9 +309,12 @@ export default function GrocerySingle() {
                                                 Meat and Poultry
                                             </a>
                                             <h3 className="product-title fs-sm text-truncate">
-                                                <a href="/grocery-single">
-                                                    Frozen Oven-ready Poultry
-                                                </a>
+                                                <Link href="/grocery-single">
+                                                    <a>
+                                                        Frozen Oven-ready
+                                                        Poultry
+                                                    </a>
+                                                </Link>
                                             </h3>
                                             <div className="product-price">
                                                 <span className="text-accent">
@@ -510,16 +512,14 @@ export default function GrocerySingle() {
                                         >
                                             <i className="ci-heart"></i>
                                         </button>
-
-                                        <a
-                                            href="/grocery-single"
-                                            className="card-img-top d-block overflow-hidden"
-                                        >
-                                            <img
-                                                src="/img/grocery/catalog/14.jpg"
-                                                alt="Product"
-                                            />
-                                        </a>
+                                        <Link href="/grocery-single" passHref>
+                                            <a className="card-img-top d-block overflow-hidden">
+                                                <img
+                                                    src="/img/grocery/catalog/14.jpg"
+                                                    alt="Product"
+                                                />
+                                            </a>
+                                        </Link>
                                         <div className="card-body py-2">
                                             <a
                                                 className="product-meta d-block fs-xs pb-1"
@@ -528,10 +528,16 @@ export default function GrocerySingle() {
                                                 Canned Food and Oil
                                             </a>
                                             <h3 className="product-title fs-sm text-truncate">
-                                                <a href="/grocery-single">
-                                                    Sardine in Tomato Sauce
-                                                    (105g)
-                                                </a>
+                                                <Link
+                                                    href="/grocery-single"
+                                                    passHref
+                                                >
+                                                    <a>
+                                                        Sardine in Tomato Sauce
+                                                        (105g)
+                                                    </a>
+                                                </Link>
+                                                s
                                             </h3>
                                             <div className="product-price">
                                                 <span className="text-accent">

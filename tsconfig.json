@@ -21,6 +21,6 @@
         "**/*.tsx",
         "**/**/*.tsx",
         "**/**/*.ts"
-    ],
+, "component/Carousel/CarouselWrapper.jsx"    ],
     "exclude": ["node_modules"]
 }

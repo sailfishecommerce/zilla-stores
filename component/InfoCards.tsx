@@ -1,11 +1,11 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function InfoCards() {
     return (
         <section className="container-fluid px-0">
             <div className="row g-0">
                 <div className="col-md-6">
-                    <Link href="blog-list-sidebar" passHref>
+                    <Link href="/blog-list-sidebar" passHref>
                         <a className="card border-0 rounded-0 text-decoration-none py-md-4 bg-faded-primary">
                             <div className="card-body text-center">
                                 <i className="ci-edit h3 mt-2 mb-4 text-primary"></i>

@@ -581,7 +581,7 @@ export default function Footer() {
                     </Link>
                     <a
                         className="d-table-cell handheld-toolbar-item"
-                        href="javascript:void(0)"
+                        //href="javascript:void(0)"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse"
                         //onclick="window.scrollTo(0, 0)"

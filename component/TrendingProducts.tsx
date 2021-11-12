@@ -985,9 +985,11 @@ export default function TrendingProducts() {
                 </div>
             </div>
             <div className="text-center pt-3">
-                <a className="btn btn-outline-accent" href="shop-grid-ls.html">
-                    More products<i className="ci-arrow-right ms-1"></i>
-                </a>
+                <Link href="/shop-grid-ls" passHref>
+                    <a className="btn btn-outline-accent">
+                        More products<i className="ci-arrow-right ms-1"></i>
+                    </a>
+                </Link>
             </div>
         </section>
     );

@@ -12,12 +12,11 @@ export default function ShopListrs() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
-                                        <a
-                                            className="text-nowrap"
-                                            href="index.html"
-                                        >
-                                            <i className="ci-home"></i>Home
-                                        </a>
+                                        <Link href="/" passHref>
+                                            <a className="text-nowrap">
+                                                <i className="ci-home"></i>Home
+                                            </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
                                         <a href="#">Shop</a>

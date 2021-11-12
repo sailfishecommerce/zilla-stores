@@ -12,7 +12,7 @@ export default function DashboardHeader() {
                                 <img
                                     src="/img/logo-dark.png"
                                     width="142"
-                                    alt="Cartzilla"
+                                    alt="Bandicoot"
                                 />
                             </a>
                         </Link>
@@ -21,7 +21,7 @@ export default function DashboardHeader() {
                                 <img
                                     src="/img/logo-icon.png"
                                     width="74"
-                                    alt="Cartzilla"
+                                    alt="Bandicoot"
                                 />
                             </a>
                         </Link>

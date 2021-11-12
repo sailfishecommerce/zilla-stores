@@ -12,12 +12,11 @@ export default function AccountSingleTicket() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
-                                        <a
-                                            className="text-nowrap"
-                                            href="index.html"
-                                        >
-                                            <i className="ci-home"></i>Home
-                                        </a>
+                                        <Link href="/" passHref>
+                                            <a className="text-nowrap">
+                                                <i className="ci-home"></i>Home
+                                            </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
                                         <a href="#">Account</a>
@@ -91,40 +90,46 @@ export default function AccountSingleTicket() {
                                     </div>
                                     <ul className="list-unstyled mb-0">
                                         <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="account-orders.html"
+                                            <Link
+                                                href="/account-orders"
+                                                passHref
                                             >
-                                                <i className="ci-bag opacity-60 me-2"></i>
-                                                Orders
-                                                <span className="fs-sm text-muted ms-auto">
-                                                    1
-                                                </span>
-                                            </a>
+                                                <a className="nav-link-style d-flex align-items-center px-4 py-3">
+                                                    <i className="ci-bag opacity-60 me-2"></i>
+                                                    Orders
+                                                    <span className="fs-sm text-muted ms-auto">
+                                                        1
+                                                    </span>
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="account-wishlist.html"
+                                            <Link
+                                                href="/account-wishlist"
+                                                passHref
                                             >
-                                                <i className="ci-heart opacity-60 me-2"></i>
-                                                Wishlist
-                                                <span className="fs-sm text-muted ms-auto">
-                                                    3
-                                                </span>
-                                            </a>
+                                                <a className="nav-link-style d-flex align-items-center px-4 py-3">
+                                                    <i className="ci-heart opacity-60 me-2"></i>
+                                                    Wishlist
+                                                    <span className="fs-sm text-muted ms-auto">
+                                                        3
+                                                    </span>
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="account-tickets.html"
+                                            <Link
+                                                href="/account-tickets"
+                                                passHref
                                             >
-                                                <i className="ci-help opacity-60 me-2"></i>
-                                                Support tickets
-                                                <span className="fs-sm text-muted ms-auto">
-                                                    1
-                                                </span>
-                                            </a>
+                                                <a className="nav-link-style d-flex align-items-center px-4 py-3">
+                                                    <i className="ci-help opacity-60 me-2"></i>
+                                                    Support tickets
+                                                    <span className="fs-sm text-muted ms-auto">
+                                                        1
+                                                    </span>
+                                                </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                     <div className="bg-secondary px-4 py-3">
@@ -134,40 +139,48 @@ export default function AccountSingleTicket() {
                                     </div>
                                     <ul className="list-unstyled mb-0">
                                         <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="account-profile.html"
+                                            <Link
+                                                href="/account-profile"
+                                                passHref
                                             >
-                                                <i className="ci-user opacity-60 me-2"></i>
-                                                Profile info
-                                            </a>
+                                                <a className="nav-link-style d-flex align-items-center px-4 py-3">
+                                                    <i className="ci-user opacity-60 me-2"></i>
+                                                    Profile info
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="border-bottom mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="account-address.html"
+                                            <Link
+                                                href="/account-address"
+                                                passHref
                                             >
-                                                <i className="ci-location opacity-60 me-2"></i>
-                                                Addresses
-                                            </a>
+                                                <a className="nav-link-style d-flex align-items-center px-4 py-3">
+                                                    <i className="ci-location opacity-60 me-2"></i>
+                                                    Addresses
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="account-payment.html"
+                                            <Link
+                                                href="/account-payment"
+                                                passHref
                                             >
-                                                <i className="ci-card opacity-60 me-2"></i>
-                                                Payment methods
-                                            </a>
+                                                <a className="nav-link-style d-flex align-items-center px-4 py-3">
+                                                    <i className="ci-card opacity-60 me-2"></i>
+                                                    Payment methods
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="d-lg-none border-top mb-0">
-                                            <a
-                                                className="nav-link-style d-flex align-items-center px-4 py-3"
-                                                href="account-signin.html"
+                                            <Link
+                                                href="/account-signin"
+                                                passHref
                                             >
-                                                <i className="ci-sign-out opacity-60 me-2"></i>
-                                                Sign out
-                                            </a>
+                                                <a className="nav-link-style d-flex align-items-center px-4 py-3">
+                                                    <i className="ci-sign-out opacity-60 me-2"></i>
+                                                    Sign out
+                                                </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -213,12 +226,12 @@ export default function AccountSingleTicket() {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    className="btn btn-primary btn-sm"
-                                    href="account-signin.html"
-                                >
-                                    <i className="ci-sign-out me-2"></i>Sign out
-                                </a>
+                                <Link href="/account-signin" passHref>
+                                    <a className="btn btn-primary btn-sm">
+                                        <i className="ci-sign-out me-2"></i>Sign
+                                        out
+                                    </a>
+                                </Link>
                             </div>
                             <div className="d-flex d-lg-none flex-wrap bg-secondary text-center rounded-3 pt-4 px-4 pb-1 mb-4">
                                 <div className="fs-sm px-3 pb-3">

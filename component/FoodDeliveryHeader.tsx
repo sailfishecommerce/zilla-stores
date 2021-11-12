@@ -1,20 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 export default function FoodDeliveryHeader() {
     return (
         <header className="navbar d-block navbar-sticky navbar-expand-lg navbar-light bg-light">
             <div className="container">
-                <a
-                    className="navbar-brand d-none d-sm-block me-4 order-lg-1"
-                    href="index.html"
-                >
-                    <img src="/img/logo-dark.png" width="142" alt="Cartzilla" />
-                </a>
-                <a
-                    className="navbar-brand d-sm-none me-2 order-lg-1"
-                    href="index.html"
-                >
-                    <img src="/img/logo-icon.png" width="74" alt="Cartzilla" />
-                </a>
+                <Link href="/" passHref>
+                    <a className="navbar-brand d-none d-sm-block me-4 order-lg-1">
+                        <img
+                            src="/img/logo-dark.png"
+                            width="142"
+                            alt="Bandicoot"
+                        />
+                    </a>
+                </Link>
+                <Link href="/" passHref>
+                    <a className="navbar-brand d-sm-none me-2 order-lg-1">
+                        <img
+                            src="/img/logo-icon.png"
+                            width="74"
+                            alt="Bandicoot"
+                        />
+                    </a>
+                </Link>
                 <div className="navbar-toolbar d-flex align-items-center order-lg-3">
                     <button
                         className="navbar-toggler"
@@ -26,7 +34,7 @@ export default function FoodDeliveryHeader() {
                     </button>
                     <a
                         className="navbar-tool d-none d-lg-flex"
-                        href="javascript:void(0)"
+                        href="/javascript:void(0)"
                         data-bs-toggle="collapse"
                         data-bs-target="#searchBox"
                         role="button"
@@ -49,13 +57,12 @@ export default function FoodDeliveryHeader() {
                         </div>
                     </a>
                     <div className="navbar-tool dropdown ms-3">
-                        <a
-                            className="navbar-tool-icon-box bg-secondary dropdown-toggle"
-                            href="food-delivery-cart.html"
-                        >
-                            <span className="navbar-tool-label">3</span>
-                            <i className="navbar-tool-icon ci-cart"></i>
-                        </a>
+                        <Link href="/food-delivery-cart" passHref>
+                            <a className="navbar-tool-icon-box bg-secondary dropdown-toggle">
+                                <span className="navbar-tool-label">3</span>
+                                <i className="navbar-tool-icon ci-cart"></i>
+                            </a>
+                        </Link>
                         {/*<!-- Cart dropdown-->*/}
                         <div className="dropdown-menu dropdown-menu-end">
                             <div
@@ -183,21 +190,19 @@ export default function FoodDeliveryHeader() {
                                             $24.<small>00</small>
                                         </span>
                                     </div>
-                                    <a
-                                        className="btn btn-outline-secondary btn-sm"
-                                        href="food-delivery-cart.html"
-                                    >
-                                        Expand cart
-                                        <i className="ci-arrow-right ms-1 me-n1"></i>
-                                    </a>
+                                    <Link href="/food-delivery-cart" passHref>
+                                        <a className="btn btn-outline-secondary btn-sm">
+                                            Expand cart
+                                            <i className="ci-arrow-right ms-1 me-n1"></i>
+                                        </a>
+                                    </Link>
                                 </div>
-                                <a
-                                    className="btn btn-primary btn-sm d-block w-100"
-                                    href="food-delivery-checkout.html"
-                                >
-                                    <i className="ci-card me-2 fs-base align-middle"></i>
-                                    Checkout
-                                </a>
+                                <Link href="/food-delivery-checkout" passHref>
+                                    <a className="btn btn-primary btn-sm d-block w-100">
+                                        <i className="ci-card me-2 fs-base align-middle"></i>
+                                        Checkout
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -278,20 +283,22 @@ export default function FoodDeliveryHeader() {
                                         style={{ width: "12rem" }}
                                     >
                                         <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
                                             >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/burger.svg"
-                                                    width="60"
-                                                    alt="Burgers &amp; Fries"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Burgers &amp; Fries
-                                                </h6>
-                                            </a>
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/burger.svg"
+                                                        width="60"
+                                                        alt="Burgers &amp; Fries"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Burgers &amp; Fries
+                                                    </h6>
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div
@@ -299,20 +306,22 @@ export default function FoodDeliveryHeader() {
                                         style={{ width: "12rem" }}
                                     >
                                         <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
                                             >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/noodles.svg"
-                                                    width="60"
-                                                    alt="Noodles"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Noodles
-                                                </h6>
-                                            </a>
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/noodles.svg"
+                                                        width="60"
+                                                        alt="Noodles"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Noodles
+                                                    </h6>
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div
@@ -320,85 +329,22 @@ export default function FoodDeliveryHeader() {
                                         style={{ width: "12rem" }}
                                     >
                                         <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
                                             >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/pizza.svg"
-                                                    width="60"
-                                                    alt="Pizza &amp; Pasta"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Pizza &amp; Pasta
-                                                </h6>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="d-flex">
-                                    <div
-                                        className="mega-dropdown-column pt-4 px-3"
-                                        style={{ width: "12rem" }}
-                                    >
-                                        <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
-                                            >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/steak.svg"
-                                                    width="60"
-                                                    alt="Grill &amp; Steaks"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Grill &amp; Steaks
-                                                </h6>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="mega-dropdown-column pt-4 px-3"
-                                        style={{ width: "12rem" }}
-                                    >
-                                        <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
-                                            >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/fish.svg"
-                                                    width="60"
-                                                    alt="Fish &amp; Seafood"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Fish &amp; Seafood
-                                                </h6>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="mega-dropdown-column pt-4 px-3"
-                                        style={{ width: "12rem" }}
-                                    >
-                                        <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
-                                            >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/healthy.svg"
-                                                    width="60"
-                                                    alt="Healthy Food"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Healthy Food
-                                                </h6>
-                                            </a>
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/pizza.svg"
+                                                        width="60"
+                                                        alt="Pizza &amp; Pasta"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Pizza &amp; Pasta
+                                                    </h6>
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -408,20 +354,22 @@ export default function FoodDeliveryHeader() {
                                         style={{ width: "12rem" }}
                                     >
                                         <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
                                             >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/cuisine.svg"
-                                                    width="60"
-                                                    alt="Haute Cuisine"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Haute Cuisine
-                                                </h6>
-                                            </a>
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/steak.svg"
+                                                        width="60"
+                                                        alt="Grill &amp; Steaks"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Grill &amp; Steaks
+                                                    </h6>
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div
@@ -429,20 +377,22 @@ export default function FoodDeliveryHeader() {
                                         style={{ width: "12rem" }}
                                     >
                                         <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
                                             >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/chicken.svg"
-                                                    width="60"
-                                                    alt="Chicken &amp; Snaks"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Chicken &amp; Snaks
-                                                </h6>
-                                            </a>
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/fish.svg"
+                                                        width="60"
+                                                        alt="Fish &amp; Seafood"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Fish &amp; Seafood
+                                                    </h6>
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div
@@ -450,29 +400,102 @@ export default function FoodDeliveryHeader() {
                                         style={{ width: "12rem" }}
                                     >
                                         <div className="widget mb-3">
-                                            <a
-                                                className="d-block"
-                                                href="food-delivery-category.html"
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
                                             >
-                                                <img
-                                                    className="d-block mx-auto mb-3"
-                                                    src="/img/food-delivery/icons/coffee.svg"
-                                                    width="60"
-                                                    alt="Coffee &amp; Desserts"
-                                                />
-                                                <h6 className="fs-base text-center">
-                                                    Coffee &amp; Desserts
-                                                </h6>
-                                            </a>
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/healthy.svg"
+                                                        width="60"
+                                                        alt="Healthy Food"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Healthy Food
+                                                    </h6>
+                                                </a>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="d-flex">
+                                    <div
+                                        className="mega-dropdown-column pt-4 px-3"
+                                        style={{ width: "12rem" }}
+                                    >
+                                        <div className="widget mb-3">
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
+                                            >
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/cuisine.svg"
+                                                        width="60"
+                                                        alt="Haute Cuisine"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Haute Cuisine
+                                                    </h6>
+                                                </a>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="mega-dropdown-column pt-4 px-3"
+                                        style={{ width: "12rem" }}
+                                    >
+                                        <div className="widget mb-3">
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
+                                            >
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/chicken.svg"
+                                                        width="60"
+                                                        alt="Chicken &amp; Snaks"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Chicken &amp; Snaks
+                                                    </h6>
+                                                </a>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="mega-dropdown-column pt-4 px-3"
+                                        style={{ width: "12rem" }}
+                                    >
+                                        <div className="widget mb-3">
+                                            <Link
+                                                href="/food-delivery-category"
+                                                passHref
+                                            >
+                                                <a className="d-block">
+                                                    <img
+                                                        className="d-block mx-auto mb-3"
+                                                        src="/img/food-delivery/icons/coffee.svg"
+                                                        width="60"
+                                                        alt="Coffee &amp; Desserts"
+                                                    />
+                                                    <h6 className="fs-base text-center">
+                                                        Coffee &amp; Desserts
+                                                    </h6>
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="index.html">
-                                Back to main demo
-                            </a>
+                            <Link href="/" passHref>
+                                <a className="nav-link">Back to main demo</a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

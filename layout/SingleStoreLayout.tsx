@@ -17,11 +17,11 @@ export default function SingleStoreLayout({
         <body className="handheld-toolbar-enabled">
             <Head>
                 <meta charSet="utf-8" />
-                <title>Cartzilla | {title}</title>
+                <title>Bandicoot | {title}</title>
                 {/* SEO Meta Tags*/}
                 <meta
                     name="description"
-                    content="Cartzilla - Bootstrap E-commerce Template"
+                    content="Bandicoot - Bootstrap E-commerce Template"
                 />
                 <meta
                     name="keywords"

@@ -11,7 +11,7 @@ export default function MarketplaceHeader() {
                             <img
                                 src="/img/logo-dark.png"
                                 width="142"
-                                alt="Cartzilla"
+                                alt="Bandicoot"
                             />
                         </a>
                     </Link>
@@ -20,7 +20,7 @@ export default function MarketplaceHeader() {
                             <img
                                 src="/img/logo-icon.png"
                                 width="74"
-                                alt="Cartzilla"
+                                alt="Bandicoot"
                             />
                         </a>
                     </Link>
@@ -193,7 +193,7 @@ export default function MarketplaceHeader() {
                                                     passHref
                                                 >
                                                     <a>
-                                                    All Photos
+                                                        All Photos
                                                         <i className="ci-arrow-right fs-xs ms-1"></i>
                                                     </a>
                                                 </Link>

@@ -199,7 +199,7 @@ export default function BlogGrid() {
                                             href="#"
                                             className="blog-entry-meta-link"
                                         >
-                                            Cartzilla news
+                                            Bandicoot news
                                         </a>
                                     </div>
                                 </div>
@@ -361,7 +361,7 @@ export default function BlogGrid() {
                                             className="btn-tag me-2 mb-2"
                                             href="#"
                                         >
-                                            Cartzilla news
+                                            Bandicoot news
                                         </a>
                                     </div>
                                     <div className="card-footer d-flex align-items-center fs-xs">
@@ -431,7 +431,7 @@ export default function BlogGrid() {
                                             className="btn-tag me-2 mb-2"
                                             href="#"
                                         >
-                                            Cartzilla news
+                                            Bandicoot news
                                         </a>
                                     </div>
                                     <div className="card-footer d-flex align-items-center fs-xs">

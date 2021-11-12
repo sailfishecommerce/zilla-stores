@@ -213,7 +213,7 @@ export default function DashboardPurchases() {
                                                 passHref
                                             >
                                                 <a>
-                                                    Cartzilla - Multipurpose
+                                                    Bandicoot - Multipurpose
                                                     E-Commerce Template
                                                 </a>
                                             </Link>

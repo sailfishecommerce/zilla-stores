@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <>
@@ -386,7 +388,7 @@ export default function Footer() {
                                             className="d-block"
                                             src="/img/footer-logo-light.png"
                                             width="117"
-                                            alt="Cartzilla"
+                                            alt="Bandicoot"
                                         />
                                     </a>
                                     <div className="btn-group dropdown disable-autohide">
@@ -567,15 +569,16 @@ export default function Footer() {
             </footer>
             <div className="handheld-toolbar">
                 <div className="d-table table-layout-fixed w-100">
-                    <a
-                        className="d-table-cell handheld-toolbar-item"
-                        href="account-wishlist.html"
-                    >
-                        <span className="handheld-toolbar-icon">
-                            <i className="ci-heart"></i>
-                        </span>
-                        <span className="handheld-toolbar-label">Wishlist</span>
-                    </a>
+                    <Link href="/account-wishlisl" passHref>
+                        <a className="d-table-cell handheld-toolbar-item">
+                            <span className="handheld-toolbar-icon">
+                                <i className="ci-heart"></i>
+                            </span>
+                            <span className="handheld-toolbar-label">
+                                Wishlist
+                            </span>
+                        </a>
+                    </Link>
                     <a
                         className="d-table-cell handheld-toolbar-item"
                         href="javascript:void(0)"
@@ -588,18 +591,19 @@ export default function Footer() {
                         </span>
                         <span className="handheld-toolbar-label">Menu</span>
                     </a>
-                    <a
-                        className="d-table-cell handheld-toolbar-item"
-                        href="shop-cart.html"
-                    >
-                        <span className="handheld-toolbar-icon">
-                            <i className="ci-cart"></i>
-                            <span className="badge bg-primary rounded-pill ms-1">
-                                4
+                    <Link href="/shop-cart" passHref>
+                        <a className="d-table-cell handheld-toolbar-item">
+                            <span className="handheld-toolbar-icon">
+                                <i className="ci-cart"></i>
+                                <span className="badge bg-primary rounded-pill ms-1">
+                                    4
+                                </span>
                             </span>
-                        </span>
-                        <span className="handheld-toolbar-label">$265.00</span>
-                    </a>
+                            <span className="handheld-toolbar-label">
+                                $265.00
+                            </span>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </>

@@ -15,7 +15,7 @@ export default function DashboardFooter() {
                                         className="d-block"
                                         src="/img/footer-logo-light.png"
                                         width="117"
-                                        alt="Cartzilla"
+                                        alt="Bandicoot"
                                     />
                                 </a>
                                 <span className="d-inline-block align-middle h5 fw-light text-white mb-0">

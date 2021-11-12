@@ -18,7 +18,7 @@ export default function SingleStoreFooter() {
                                         className="d-block mb-4"
                                         src="/img/footer-logo-light.png"
                                         width="117"
-                                        alt="Cartzilla"
+                                        alt="Bandicoot"
                                     />
                                 </a>
                             </div>

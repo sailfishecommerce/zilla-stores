@@ -12,12 +12,11 @@ export default function ShopListls() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
-                                        <a
-                                            className="text-nowrap"
-                                            href="index.html"
-                                        >
-                                            <i className="ci-home"></i>Home
-                                        </a>
+                                        <Link href="/" passHref>
+                                            <a className="text-nowrap">
+                                                <i className="ci-home"></i>Home
+                                            </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
                                         <a href="#">Shop</a>
@@ -2264,7 +2263,10 @@ export default function ShopListls() {
                             </div>
                         </aside>
                         {/*<!-- Content  -->*/}
-                        <section style={{ marginTop:'5rem' }} className="col-lg-8">
+                        <section
+                            style={{ marginTop: "5rem" }}
+                            className="col-lg-8"
+                        >
                             <div className="card product-card product-list">
                                 <button
                                     className="btn-wishlist btn-sm"

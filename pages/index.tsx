@@ -68,7 +68,7 @@ export default function index() {
                 <section className="container pt-5 pb-3 pb-lg-5" id="demos">
                     <div className="text-center pt-md-4 pb-2">
                         <h2>
-                            <span className="fw-light">Explore</span> Cartzilla
+                            <span className="fw-light">Explore</span> Bandicoot
                             Demos
                         </h2>
                         <p className="text-muted">
@@ -445,7 +445,7 @@ export default function index() {
                             <div className="col-lg-7 offset-xl-1">
                                 <img
                                     src="/img/intro/pages-showcase.jpg"
-                                    alt="Cartzilla pages"
+                                    alt="Bandicoot pages"
                                 />
                             </div>
                         </div>
@@ -491,7 +491,7 @@ export default function index() {
                 <section className="py-5">
                     <div className="container py-3 py-lg-4">
                         <h2 className="text-center mb-4">
-                            Cartzilla Feature{" "}
+                            Bandicoot Feature{" "}
                             <span className="fw-light">Highlights</span>
                         </h2>
                         <div className="row text-center pt-4">
@@ -519,7 +519,7 @@ export default function index() {
                                 />
                                 <h6>Easy to Customize with Sass</h6>
                                 <p className="fs-ms text-muted mb-0">
-                                    Cartzilla is built using Sass. Easily change
+                                    Bandicoot is built using Sass. Easily change
                                     colors, typography and much more. It is the
                                     most mature, stable, and powerful CSS
                                     extension language in the world.
@@ -549,7 +549,7 @@ export default function index() {
                                 />
                                 <h6>Built With Bootstrap 5</h6>
                                 <p className="fs-ms text-muted mb-0">
-                                    Cartzilla is the powerful e-commerce
+                                    Bandicoot is the powerful e-commerce
                                     front-end solution based on Bootstrap 5 -
                                     the worlds most popular responsive,
                                     mobile-first front-end component library.
@@ -565,7 +565,7 @@ export default function index() {
                                 <h6>40+ Flexible Components</h6>
                                 <p className="fs-ms text-muted mb-0">
                                     Besides styling all default Bootstrap 5
-                                    components Cartzilla introduces lots of new
+                                    components Bandicoot introduces lots of new
                                     flexible, customizable and reusable elements
                                     you can use across the website.
                                 </p>
@@ -581,7 +581,7 @@ export default function index() {
                                 <p className="fs-ms text-muted mb-0">
                                     Its not a surprise that nowadays over 70% of
                                     users shop online using their mobile
-                                    devices. Cartzilla is 100% responsive and
+                                    devices. Bandicoot is 100% responsive and
                                     optimized for small touch screens.
                                 </p>
                             </div>
@@ -594,7 +594,7 @@ export default function index() {
                                 />
                                 <h6>Google Fonts</h6>
                                 <p className="fs-ms text-muted mb-0">
-                                    Cartzilla uses Google fonts which are free,
+                                    Bandicoot uses Google fonts which are free,
                                     fast to load and of very high quality.
                                     Currently Google fonts library includes 870+
                                     font families to choose from.
@@ -625,7 +625,7 @@ export default function index() {
                                 />
                                 <h6>Vector Based HD Ready Icons</h6>
                                 <p className="fs-ms text-muted mb-0">
-                                    Cartzilla is equiped with font-based icon
+                                    Bandicoot is equiped with font-based icon
                                     pack to ensure that infographics and
                                     interface icons look sharp on any device
                                     with any screen resolution and pixel
@@ -644,7 +644,7 @@ export default function index() {
                                     All HTML files are checked via W3C validator
                                     to ensure 100% valid code. As you probably
                                     know invalid HTML limits innovation, but
-                                    Cartzilla is innovative at its core.
+                                    Bandicoot is innovative at its core.
                                 </p>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2">
@@ -656,7 +656,7 @@ export default function index() {
                                 />
                                 <h6>Future-proof JavaScript</h6>
                                 <p className="fs-ms text-muted mb-0">
-                                    Cartzilla core scripts as well as all
+                                    Bandicoot core scripts as well as all
                                     dependencies are written in vanilla JS. And
                                     now with Bootstrap 5 we finally drops jQuery
                                     and uses ES6 modules.

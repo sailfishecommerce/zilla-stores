@@ -18,7 +18,7 @@ function _typeof(obj) {
 }
 
 /**
- * Cartzilla | Bootstrap E-Commerce Template
+ * Bandicoot | Bootstrap E-Commerce Template
  * Copyright 2021 Bandicoot Studio
  * Theme core scripts
  *

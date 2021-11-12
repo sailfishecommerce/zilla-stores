@@ -16,7 +16,7 @@ export default function GroceryFooter() {
                                         className="d-block mb-4"
                                         src="/img/footer-logo-light.png"
                                         width="117"
-                                        alt="Cartzilla"
+                                        alt="Bandicoot"
                                     />
                                 </a>
                             </div>
@@ -233,7 +233,7 @@ export default function GroceryFooter() {
                                             className="widget-list-link"
                                             href="#"
                                         >
-                                            Careers at Cartzilla
+                                            Careers at Bandicoot
                                         </a>
                                     </li>
                                     <li className="widget-list-item">

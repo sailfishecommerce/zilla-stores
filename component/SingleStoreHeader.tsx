@@ -10,7 +10,7 @@ export default function SingleStoreHeader() {
                         <img
                             src="/img/logo-dark.png"
                             width="142"
-                            alt="Cartzilla"
+                            alt="Bandicoot"
                         />
                     </a>
                 </Link>
@@ -19,7 +19,7 @@ export default function SingleStoreHeader() {
                         <img
                             src="/img/logo-icon.png"
                             width="74"
-                            alt="Cartzilla"
+                            alt="Bandicoot"
                         />
                     </a>
                 </Link>
@@ -1280,8 +1280,7 @@ export default function SingleStoreHeader() {
                                                 <span className="d-block text-heading">
                                                     Support
                                                 </span>
-                                                <small className="d-block text-muted">
-                                                </small>
+                                                <small className="d-block text-muted"></small>
                                             </div>
                                         </div>
                                     </a>

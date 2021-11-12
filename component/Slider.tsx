@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 export default function Slider() {
     return (
         <section className="tns-carousel tns-controls-lg">
@@ -6,10 +8,7 @@ export default function Slider() {
                 className="tns-carousel-inner"
                 data-carousel-options='{"mode": "gallery", "responsive": {"0":{"nav":true, "controls": false},"992":{"nav":false, "controls": true}}}'
             >
-                <div
-                    className="px-lg-5"
-                    style={{ backgroundColor: "#3aafd2" }}
-                >
+                <div className="px-lg-5" style={{ backgroundColor: "#3aafd2" }}>
                     <div className="d-lg-flex justify-content-between align-items-center ps-lg-4">
                         <img
                             className="d-block order-lg-2 me-lg-n5 flex-shrink-0"
@@ -32,13 +31,12 @@ export default function Slider() {
                                     much more...
                                 </p>
                                 <div className="d-table scale-up delay-4 mx-auto mx-lg-0">
-                                    <a
-                                        className="btn btn-primary"
-                                        href="shop-grid-ls.html"
-                                    >
-                                        Shop Now
-                                        <i className="ci-arrow-right ms-2 me-n1"></i>
-                                    </a>
+                                    <Link href="/shop-grid-ls" passHref>
+                                        <a className="btn btn-primary">
+                                            Shop Now
+                                            <i className="ci-arrow-right ms-2 me-n1"></i>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -67,22 +65,18 @@ export default function Slider() {
                                     much more...
                                 </p>
                                 <div className="d-table scale-up delay-4 mx-auto mx-lg-0">
-                                    <a
-                                        className="btn btn-primary"
-                                        href="shop-grid-ls.html"
-                                    >
-                                        Shop Now
-                                        <i className="ci-arrow-right ms-2 me-n1"></i>
-                                    </a>
+                                    <Link href="/shop-grid-ls" passHref>
+                                        <a className="btn btn-primary">
+                                            Shop Now
+                                            <i className="ci-arrow-right ms-2 me-n1"></i>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    className="px-lg-5"
-                    style={{ backgroundColor: "#eba170" }}
-                >
+                <div className="px-lg-5" style={{ backgroundColor: "#eba170" }}>
                     <div className="d-lg-flex justify-content-between align-items-center ps-lg-4">
                         <img
                             className="d-block order-lg-2 me-lg-n5 flex-shrink-0"
@@ -107,7 +101,7 @@ export default function Slider() {
                                 <div className="d-table scale-up delay-4 mx-auto mx-lg-0">
                                     <a
                                         className="btn btn-primary"
-                                        href="shop-grid-ls.html"
+                                        href="shop-grid-ls"
                                     >
                                         Shop Now
                                         <i className="ci-arrow-right ms-2 me-n1"></i>

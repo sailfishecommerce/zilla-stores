@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 export default function FeaturedCategory() {
     return (
         <section className="container mb-4 pb-3 pb-sm-0 mb-sm-5">
@@ -12,10 +14,12 @@ export default function FeaturedCategory() {
                         <div className="d-flex justify-content-between px-grid-gutter py-grid-gutter">
                             <div>
                                 <h3 className="mb-1">Hoodie day</h3>
-                                <a className="fs-md" href="shop-grid-ls.html">
-                                    Shop hoodies
-                                    <i className="ci-arrow-right fs-xs align-middle ms-1"></i>
-                                </a>
+                                <Link href="/shop-grid-ls" passHref>
+                                    <a className="fs-md">
+                                        Shop hoodies
+                                        <i className="ci-arrow-right fs-xs align-middle ms-1"></i>
+                                    </a>
+                                </Link>
                             </div>
                             <div
                                 className="tns-carousel-controls"
@@ -29,16 +33,15 @@ export default function FeaturedCategory() {
                                 </button>
                             </div>
                         </div>
-                        <a
-                            className="d-none d-md-block mt-auto"
-                            href="shop-grid-ls.html"
-                        >
-                            <img
-                                className="d-block w-100"
-                                src="/img/home/categories/cat-lg04.jpg"
-                                alt="For Women"
-                            />
-                        </a>
+                        <Link href="/shop-grid-ls" passHref>
+                            <a className="d-none d-md-block mt-auto">
+                                <img
+                                    className="d-block w-100"
+                                    src="/img/home/categories/cat-lg04.jpg"
+                                    alt="For Women"
+                                />
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 {/*<!-- Product grid (carousel)-->*/}
@@ -62,15 +65,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/20.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/20.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -79,9 +84,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Block-colored Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Block-colored Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -112,15 +123,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/21.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/21.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -129,9 +142,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Block-colored Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Block-colored Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -165,15 +184,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/23.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/23.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -182,9 +203,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Block-colored Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Block-colored Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -218,15 +245,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/51.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/51.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -235,9 +264,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Mono Color Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Mono Color Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -268,15 +303,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/24.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/24.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -285,9 +322,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Block-colored Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Block-colored Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -318,15 +361,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/54.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/54.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -334,10 +379,17 @@ export default function FeaturedCategory() {
                                                 >
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
+
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Mono Color Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Mono Color Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -373,15 +425,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/53.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/53.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -390,9 +444,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Mono Color Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Mono Color Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -423,15 +483,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/52.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/52.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -440,9 +502,14 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Printed Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Printed Hooded Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -473,15 +540,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/22.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/22.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -490,9 +559,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Block-colored Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Block-colored Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -523,15 +598,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/56.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/56.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -540,9 +617,14 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Printed Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Printed Hooded Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -573,15 +655,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/55.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/55.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -590,9 +674,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Block-colored Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Block-colored Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -623,15 +713,17 @@ export default function FeaturedCategory() {
                                             >
                                                 <i className="ci-heart"></i>
                                             </button>
-                                            <a
-                                                className="card-img-top d-block overflow-hidden"
-                                                href="shop-single-v1.html"
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
                                             >
-                                                <img
-                                                    src="/img/shop/catalog/57.jpg"
-                                                    alt="Product"
-                                                />
-                                            </a>
+                                                <a className="card-img-top d-block overflow-hidden">
+                                                    <img
+                                                        src="/img/shop/catalog/57.jpg"
+                                                        alt="Product"
+                                                    />
+                                                </a>
+                                            </Link>
                                             <div className="card-body py-2">
                                                 <a
                                                     className="product-meta d-block fs-xs pb-1"
@@ -640,9 +732,15 @@ export default function FeaturedCategory() {
                                                     Hoodies &amp; Sweatshirts
                                                 </a>
                                                 <h3 className="product-title fs-sm">
-                                                    <a href="shop-single-v1.html">
-                                                        Block-colored Hooded Top
-                                                    </a>
+                                                    <Link
+                                                        href="/shop-single-v1"
+                                                        passHref
+                                                    >
+                                                        <a>
+                                                            Block-colored Hooded
+                                                            Top
+                                                        </a>
+                                                    </Link>
                                                 </h3>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="product-price">
@@ -671,3 +769,5 @@ export default function FeaturedCategory() {
         </section>
     );
 }
+
+//08039003900

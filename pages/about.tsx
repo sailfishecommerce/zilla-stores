@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import FashionLayout from "../layout/FashionLayout";
 
 export default function about() {
@@ -37,12 +38,11 @@ export default function about() {
                                 tortor at auctor urna nunc. Sit amet aliquam id
                                 diam maecenas ultricies mi eget.
                             </p>
-                            <a
-                                className="btn btn-primary btn-shadow"
-                                href="shop-grid-ls.html"
-                            >
-                                View products
-                            </a>
+                            <Link href="/shop-grid-ls" passHref>
+                                <a className="btn btn-primary btn-shadow">
+                                    View products
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -171,12 +171,11 @@ export default function about() {
                                 tortor at auctor urna nunc. Sit amet aliquam id
                                 diam maecenas ultricies mi eget.
                             </p>
-                            <a
-                                className="btn btn-warning btn-shadow"
-                                href="contacts.html"
-                            >
-                                See outlet stores
-                            </a>
+                            <Link href="/contacts" passHref>
+                                <a className="btn btn-warning btn-shadow">
+                                    See outlet stores
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -410,6 +409,6 @@ export default function about() {
                     </div>
                 </section>
             </main>
-						</FashionLayout>
+        </FashionLayout>
     );
 }

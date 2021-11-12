@@ -13,7 +13,7 @@ export default function BaseFooter() {
                         href="https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/"
                         target="_blank"
                     >
-                        <i className="ci-cart me-2"></i>Buy Cartzilla
+                        <i className="ci-cart me-2"></i>Buy Bandicoot
                     </a>
                     <hr className="my-5" />
                     <div className="fs-ms text-muted text-center">

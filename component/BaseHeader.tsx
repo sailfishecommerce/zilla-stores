@@ -11,7 +11,7 @@ export default function BaseHeader() {
                             <img
                                 src="/img/logo-dark.png"
                                 width="142"
-                                alt="Cartzilla"
+                                alt="Bandicoot"
                             />
                         </a>
                     </Link>
@@ -20,7 +20,7 @@ export default function BaseHeader() {
                             <img
                                 src="/img/logo-icon.png"
                                 width="74"
-                                alt="Cartzilla"
+                                alt="Bandicoot"
                             />
                         </a>
                     </Link>

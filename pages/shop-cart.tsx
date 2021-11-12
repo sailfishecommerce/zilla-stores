@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import FashionLayout from "../layout/FashionLayout";
 
 export default function ShopCart() {
@@ -11,15 +12,16 @@ export default function ShopCart() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
-                                        <a
-                                            className="text-nowrap"
-                                            href="index.html"
-                                        >
-                                            <i className="ci-home"></i>Home
-                                        </a>
+                                        <Link href="/" passHref>
+                                            <a className="text-nowrap">
+                                                <i className="ci-home"></i>Home
+                                            </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
-                                        <a href="shop-grid-ls.html">Shop</a>
+                                        <Link href="/shop-grid-ls" passHref>
+                                            <a>Shop</a>
+                                        </Link>
                                     </li>
                                     <li
                                         className="breadcrumb-item text-nowrap active"
@@ -41,32 +43,33 @@ export default function ShopCart() {
                         <section className="col-lg-8">
                             <div className="d-flex justify-content-between align-items-center pt-3 pb-4 pb-sm-5 mt-1">
                                 <h2 className="h6 text-light mb-0">Products</h2>
-                                <a
-                                    className="btn btn-outline-primary btn-sm ps-2"
-                                    href="shop-grid-ls.html"
-                                >
-                                    <i className="ci-arrow-left me-2"></i>
-                                    Continue shopping
-                                </a>
+                                <Link href="/shop-grid-ls" passHref>
+                                    <a className="btn btn-outline-primary btn-sm ps-2">
+                                        <i className="ci-arrow-left me-2"></i>
+                                        Continue shopping
+                                    </a>
+                                </Link>
                             </div>
                             {/*<!-- Item-->*/}
                             <div className="d-sm-flex justify-content-between align-items-center my-2 pb-3 border-bottom">
                                 <div className="d-block d-sm-flex align-items-center text-center text-sm-start">
-                                    <a
-                                        className="d-inline-block flex-shrink-0 mx-auto me-sm-4"
-                                        href="shop-single-v1.html"
-                                    >
-                                        <img
-                                            src="/img/shop/cart/01.jpg"
-                                            width="160"
-                                            alt="Product"
-                                        />
-                                    </a>
+                                    <Link href="/shop-single-v1" passHref>
+                                        <a className="d-inline-block flex-shrink-0 mx-auto me-sm-4">
+                                            <img
+                                                src="/img/shop/cart/01.jpg"
+                                                width="160"
+                                                alt="Product"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="pt-2">
                                         <h3 className="product-title fs-base mb-2">
-                                            <a href="shop-single-v1.html">
-                                                Women Colorblock Sneakers
-                                            </a>
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
+                                            >
+                                                <a>Women Colorblock Sneakers</a>
+                                            </Link>
                                         </h3>
                                         <div className="fs-sm">
                                             <span className="text-muted me-2">
@@ -114,21 +117,23 @@ export default function ShopCart() {
                             {/*<!-- Item-->*/}
                             <div className="d-sm-flex justify-content-between align-items-center my-2 pb-3 border-bottom">
                                 <div className="d-block d-sm-flex align-items-center text-center text-sm-start">
-                                    <a
-                                        className="d-inline-block flex-shrink-0 mx-auto me-sm-4"
-                                        href="shop-single-v1.html"
-                                    >
-                                        <img
-                                            src="/img/shop/cart/02.jpg"
-                                            width="160"
-                                            alt="Product"
-                                        />
-                                    </a>
+                                    <Link href="/shop-single-v1" passHref>
+                                        <a className="d-inline-block flex-shrink-0 mx-auto me-sm-4">
+                                            <img
+                                                src="/img/shop/cart/02.jpg"
+                                                width="160"
+                                                alt="Product"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="pt-2">
                                         <h3 className="product-title fs-base mb-2">
-                                            <a href="shop-single-v1.html">
-                                                TH Jeans City Backpack
-                                            </a>
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
+                                            >
+                                                <a>TH Jeans City Backpack</a>
+                                            </Link>
                                         </h3>
                                         <div className="fs-sm">
                                             <span className="text-muted me-2">
@@ -176,21 +181,23 @@ export default function ShopCart() {
                             {/*<!-- Item-->*/}
                             <div className="d-sm-flex justify-content-between align-items-center my-2 pb-3 border-bottom">
                                 <div className="d-block d-sm-flex align-items-center text-center text-sm-start">
-                                    <a
-                                        className="d-inline-block flex-shrink-0 mx-auto me-sm-4"
-                                        href="shop-single-v1.html"
-                                    >
-                                        <img
-                                            src="/img/shop/cart/03.jpg"
-                                            width="160"
-                                            alt="Product"
-                                        />
-                                    </a>
+                                    <Link href="/shop-single-v1" passHref>
+                                        <a className="d-inline-block flex-shrink-0 mx-auto me-sm-4">
+                                            <img
+                                                src="/img/shop/cart/03.jpg"
+                                                width="160"
+                                                alt="Product"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="pt-2">
                                         <h3 className="product-title fs-base mb-2">
-                                            <a href="shop-single-v1.html">
-                                                3-Color Sun Stash Hat
-                                            </a>
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
+                                            >
+                                                <a>3-Color Sun Stash Hat</a>
+                                            </Link>
                                         </h3>
                                         <div className="fs-sm">
                                             <span className="text-muted me-2">
@@ -238,21 +245,23 @@ export default function ShopCart() {
                             {/*<!-- Item-->*/}
                             <div className="d-sm-flex justify-content-between align-items-center my-2 pb-3 border-bottom">
                                 <div className="d-block d-sm-flex align-items-center text-center text-sm-start">
-                                    <a
-                                        className="d-inline-block flex-shrink-0 mx-auto me-sm-4"
-                                        href="shop-single-v1.html"
-                                    >
-                                        <img
-                                            src="/img/shop/cart/04.jpg"
-                                            width="160"
-                                            alt="Product"
-                                        />
-                                    </a>
+                                    <Link href="/shop-single-v1" passHref>
+                                        <a className="d-inline-block flex-shrink-0 mx-auto me-sm-4">
+                                            <img
+                                                src="/img/shop/cart/04.jpg"
+                                                width="160"
+                                                alt="Product"
+                                            />
+                                        </a>
+                                    </Link>
                                     <div className="pt-2">
                                         <h3 className="product-title fs-base mb-2">
-                                            <a href="shop-single-v1.html">
-                                                Cotton Polo Regular Fit
-                                            </a>
+                                            <Link
+                                                href="/shop-single-v1"
+                                                passHref
+                                            >
+                                                <a>Cotton Polo Regular Fit</a>
+                                            </Link>
                                         </h3>
                                         <div className="fs-sm">
                                             <span className="text-muted me-2">
@@ -509,13 +518,12 @@ export default function ShopCart() {
                                             </div>
                                         </div>
                                     </div>
-                                    <a
-                                        className="btn btn-primary btn-shadow d-block w-100 mt-4"
-                                        href="checkout-details.html"
-                                    >
-                                        <i className="ci-card fs-lg me-2"></i>
-                                        Proceed to Checkout
-                                    </a>
+                                    <Link href="/checkout-details" passHref>
+                                        <a className="btn btn-primary btn-shadow d-block w-100 mt-4">
+                                            <i className="ci-card fs-lg me-2"></i>
+                                            Proceed to Checkout
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </aside>

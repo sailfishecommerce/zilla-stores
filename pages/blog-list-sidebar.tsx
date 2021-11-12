@@ -198,7 +198,7 @@ export default function BlogListGrid() {
                                             href="#"
                                             className="blog-entry-meta-link"
                                         >
-                                            Cartzilla news
+                                            Bandicoot news
                                         </a>
                                     </div>
                                 </div>
@@ -486,7 +486,7 @@ export default function BlogListGrid() {
                                                 href="#"
                                                 className="blog-entry-meta-link"
                                             >
-                                                Cartzilla news
+                                                Bandicoot news
                                             </a>
                                         </div>
                                         <div className="fs-sm mb-2">
@@ -572,7 +572,7 @@ export default function BlogListGrid() {
                                                 href="#"
                                                 className="blog-entry-meta-link"
                                             >
-                                                Cartzilla news
+                                                Bandicoot news
                                             </a>
                                         </div>
                                         <div className="fs-sm mb-2">

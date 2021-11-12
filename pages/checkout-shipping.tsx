@@ -241,7 +241,7 @@ export default function CheckoutShipping() {
                                             </td>
                                             <td className="align-middle">
                                                 <span className="text-dark fw-medium">
-                                                    Pick Up at Cartzilla Locker
+                                                    Pick Up at Bandicoot Locker
                                                 </span>
                                                 <br />
                                                 <span className="text-muted">
@@ -274,7 +274,7 @@ export default function CheckoutShipping() {
                                             </td>
                                             <td className="align-middle">
                                                 <span className="text-dark fw-medium">
-                                                    Cartzilla Global Export
+                                                    Bandicoot Global Export
                                                 </span>
                                                 <br />
                                                 <span className="text-muted fs-sm">

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import FashionLayout from "../layout/FashionLayout";
 
 export default function ShopGrid() {
@@ -12,12 +13,12 @@ export default function ShopGrid() {
                                 <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                                         <li className="breadcrumb-item">
-                                            <a
-                                                className="text-nowrap"
-                                                href="index.html"
-                                            >
-                                                <i className="ci-home"></i>Home
-                                            </a>
+                                            <Link href="//" passHref>
+                                                <a className="text-nowrap">
+                                                    <i className="ci-home"></i>
+                                                    Home
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="breadcrumb-item text-nowrap">
                                             <a href="#">Shop</a>
@@ -68,12 +69,11 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-view-grid"></i>
                                 </a>
-                                <a
-                                    className="btn btn-icon nav-link-style"
-                                    href="shop-list-ft.html"
-                                >
-                                    <i className="ci-view-list"></i>
-                                </a>
+                                <Link href="//shop-list-ft" passHref>
+                                    <a className="btn btn-icon nav-link-style">
+                                        <i className="ci-view-list"></i>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         {/*<!-- Toolbar with expandable filters-->*/}
@@ -2357,15 +2357,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/01.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="//shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/01.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -2374,9 +2373,9 @@ export default function ShopGrid() {
                                         Sneakers &amp; Keds
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Women Colorblock Sneakers
-                                        </a>
+                                        <Link href="//shop-single-v1" passHref>
+                                            <a>Women Colorblock Sneakers</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -2489,15 +2488,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/02.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/02.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -2506,9 +2504,9 @@ export default function ShopGrid() {
                                         Women’s T-shirt
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Cotton Lace Blouse
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Cotton Lace Blouse</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -2653,15 +2651,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/03.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/03.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -2670,9 +2667,9 @@ export default function ShopGrid() {
                                         Women’s Shorts
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Mom High Waist Shorts
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Mom High Waist Shorts</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -2782,15 +2779,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/04.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/04.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -2799,9 +2795,9 @@ export default function ShopGrid() {
                                         Sportswear
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Women Sports Jacket
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Women Sports Jacket</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -2911,15 +2907,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/05.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/05.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -2928,9 +2923,9 @@ export default function ShopGrid() {
                                         Men’s Sunglasses
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Polarized Sunglasses
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Polarized Sunglasses</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -2948,12 +2943,11 @@ export default function ShopGrid() {
                                     </div>
                                 </div>
                                 <div className="card-body card-body-hidden">
-                                    <a
-                                        className="btn btn-secondary btn-sm d-block w-100 mb-2"
-                                        href="shop-single-v1.html"
-                                    >
-                                        View details
-                                    </a>
+                                    <Link href="/shop-single-v1" passHref>
+                                        <a className="btn btn-secondary btn-sm d-block w-100 mb-2">
+                                            View details
+                                        </a>
+                                    </Link>
                                     <div className="text-center">
                                         <a
                                             className="nav-link-style fs-ms"
@@ -2980,15 +2974,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/06.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/06.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -2997,9 +2990,9 @@ export default function ShopGrid() {
                                         Backpacks
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            TH Jeans City Backpack
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>TH Jeans City Backpack</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -3112,15 +3105,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/07.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/07.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -3129,9 +3121,9 @@ export default function ShopGrid() {
                                         Womens Swimwear
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Two-Piece Bikini in Print
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Two-Piece Bikini in Print</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -3227,15 +3219,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/08.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/08.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -3244,9 +3235,9 @@ export default function ShopGrid() {
                                         Kids Toys
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Soft Panda Teddy Bear
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Soft Panda Teddy Bear</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -3350,15 +3341,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/09.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/09.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -3367,9 +3357,9 @@ export default function ShopGrid() {
                                         Cosmetics
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Metallic Lipstick (Crimson)
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Metallic Lipstick (Crimson)</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -3483,15 +3473,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/10.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1">
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/10.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -3500,9 +3489,9 @@ export default function ShopGrid() {
                                         Men’s Accessories
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            5-Pack Multicolor Bracelets
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>5-Pack Multicolor Bracelets</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -3553,15 +3542,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/11.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/11.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -3570,9 +3558,9 @@ export default function ShopGrid() {
                                         Men’s Sandals
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Soft Footbed Sandals
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Soft Footbed Sandals</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -3695,15 +3683,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/12.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/12.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -3712,9 +3699,9 @@ export default function ShopGrid() {
                                         Men’s Hats
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            3-Color Sun Stash Hat
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>3-Color Sun Stash Hat</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -3813,15 +3800,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/13.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/13.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -3830,9 +3816,9 @@ export default function ShopGrid() {
                                         Men’s T-shirts
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Cotton Polo Regular Fit
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Cotton Polo Regular Fit</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -3945,15 +3931,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/14.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/14.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -3962,9 +3947,9 @@ export default function ShopGrid() {
                                         Men’s Jeans
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Slim Taper Fit Jeans
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Slim Taper Fit Jeans</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -4074,15 +4059,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/15.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/15.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -4091,9 +4075,9 @@ export default function ShopGrid() {
                                         Men’s Waistcoats
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Single-breasted Trenchcoat
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Single-breasted Trenchcoat</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">
@@ -4183,15 +4167,14 @@ export default function ShopGrid() {
                                 >
                                     <i className="ci-heart"></i>
                                 </button>
-                                <a
-                                    className="card-img-top d-block overflow-hidden"
-                                    href="shop-single-v1.html"
-                                >
-                                    <img
-                                        src="/img/shop/catalog/16.jpg"
-                                        alt="Product"
-                                    />
-                                </a>
+                                <Link href="/shop-single-v1" passHref>
+                                    <a className="card-img-top d-block overflow-hidden">
+                                        <img
+                                            src="/img/shop/catalog/16.jpg"
+                                            alt="Product"
+                                        />
+                                    </a>
+                                </Link>
                                 <div className="card-body py-2">
                                     <a
                                         className="product-meta d-block fs-xs pb-1"
@@ -4200,9 +4183,9 @@ export default function ShopGrid() {
                                         Men’s Hoodie
                                     </a>
                                     <h3 className="product-title fs-sm">
-                                        <a href="shop-single-v1.html">
-                                            Sports Hooded Sweatshirt
-                                        </a>
+                                        <Link href="/shop-single-v1" passHref>
+                                            <a>Sports Hooded Sweatshirt</a>
+                                        </Link>
                                     </h3>
                                     <div className="d-flex justify-content-between">
                                         <div className="product-price">

@@ -1,17 +1,19 @@
+import React, { PropsWithChildren } from "react";
 import Head from "next/head";
-import { PropsWithChildren } from "react";
 
-import FoodDeliveryFooter from "../component/FoodDeliveryFooter";
-import FoodDeliveryHeader from "../component/FoodDeliveryHeader";
+import AuthModal from "../component/AuthModal";
+import MarketplaceHeader from "../component/MarketplaceHeader";
+import MarketplaceFooter from "../component/MarketplaceFooter";
 
-interface FoodDeliveryLayout {
-    title: string;
+interface MarketplaceLayoutProps {
     children: JSX.Element;
+    title: string;
 }
-export default function FoodDeliveryLayout({
-    title,
+
+export default function MarketplaceLayout({
     children,
-}: PropsWithChildren<FoodDeliveryLayout>) {
+    title,
+}: PropsWithChildren<MarketplaceLayoutProps>) {
     return (
         <body className="handheld-toolbar-enabled">
             <Head>
@@ -59,11 +61,12 @@ export default function FoodDeliveryLayout({
                 <meta name="msapplication-TileColor" content="#ffffff" />
                 <meta name="theme-color" content="#ffffff" />
             </Head>
+            <AuthModal />
             <main className="page-wrapper">
-                <FoodDeliveryHeader />
+                <MarketplaceHeader />
                 {children}
             </main>
-            <FoodDeliveryFooter />
+            <MarketplaceFooter />
         </body>
     );
 }

@@ -102,10 +102,7 @@ export default function index() {
                                         href="/home-fashion-store-v1"
                                         passHref
                                     >
-                                        <a
-                                            className="product-thumb-overlay"
-                                            href="#home-fashion-store-v1"
-                                        ></a>
+                                        <a className="product-thumb-overlay"></a>
                                     </Link>
                                     <img
                                         src="/img/home/preview/01.jpg"
@@ -118,9 +115,7 @@ export default function index() {
                                             href="/home-fashion-store-v1"
                                             passHref
                                         >
-                                            <a href="#home-fashion-store-v1">
-                                                Fashion Store v.1
-                                            </a>
+                                            <a>Fashion Store v.1</a>
                                         </Link>
                                     </h3>
                                 </div>
@@ -130,12 +125,14 @@ export default function index() {
                             <div className="card product-card-alt">
                                 <div className="product-thumb border">
                                     <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="#home-electronics-store"
+                                        <Link
+                                            href="/home-electronics-store"
+                                            passHref
                                         >
-                                            <i className="ci-eye"></i>
-                                        </a>
+                                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                                <i className="ci-eye"></i>
+                                            </a>
+                                        </Link>
                                         <a
                                             className="btn btn-light btn-icon btn-shadow fs-base mx-2"
                                             href="#https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/"
@@ -145,10 +142,12 @@ export default function index() {
                                             <i className="ci-cart"></i>
                                         </a>
                                     </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="#home-electronics-store"
-                                    ></a>
+                                    <Link
+                                        href="/home-electronics-store"
+                                        passHref
+                                    >
+                                        <a className="product-thumb-overlay"></a>
+                                    </Link>
                                     <img
                                         src="/img/home/preview/03.jpg"
                                         alt="Electronics Store"
@@ -156,9 +155,12 @@ export default function index() {
                                 </div>
                                 <div className="card-body text-center">
                                     <h3 className="product-title fs-lg pt-2">
-                                        <a href="#home-electronics-store">
-                                            Electronics Store
-                                        </a>
+                                        <Link
+                                            href="/home-electronics-store"
+                                            passHref
+                                        >
+                                            <a>Electronics Store</a>
+                                        </Link>
                                     </h3>
                                 </div>
                             </div>
@@ -167,12 +169,14 @@ export default function index() {
                             <div className="card product-card-alt">
                                 <div className="product-thumb border">
                                     <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="#home-food-delivery"
+                                        <Link
+                                            href="/home-food-delivery"
+                                            passHref
                                         >
-                                            <i className="ci-eye"></i>
-                                        </a>
+                                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                                <i className="ci-eye"></i>
+                                            </a>
+                                        </Link>
                                         <a
                                             className="btn btn-light btn-icon btn-shadow fs-base mx-2"
                                             href="#https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/"
@@ -182,10 +186,9 @@ export default function index() {
                                             <i className="ci-cart"></i>
                                         </a>
                                     </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="#home-food-delivery"
-                                    ></a>
+                                    <Link href="/home-food-delivery" passHref>
+                                        <a className="product-thumb-overlay"></a>
+                                    </Link>
                                     <img
                                         src="/img/home/preview/07.jpg"
                                         alt="Food Delivery Service"
@@ -193,9 +196,12 @@ export default function index() {
                                 </div>
                                 <div className="card-body text-center">
                                     <h3 className="product-title fs-lg pt-2">
-                                        <a href="#home-food-delivery">
-                                            Food Delivery Service
-                                        </a>
+                                        <Link
+                                            href="/home-food-delivery"
+                                            passHref
+                                        >
+                                            <a>Food Delivery Service</a>
+                                        </Link>
                                     </h3>
                                 </div>
                             </div>
@@ -204,12 +210,11 @@ export default function index() {
                             <div className="card product-card-alt">
                                 <div className="product-thumb border">
                                     <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="#home-marketplace"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
+                                        <Link href="/home-marketplace" passHref>
+                                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                                <i className="ci-eye"></i>
+                                            </a>
+                                        </Link>
                                         <a
                                             className="btn btn-light btn-icon btn-shadow fs-base mx-2"
                                             href="#https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/"
@@ -219,10 +224,9 @@ export default function index() {
                                             <i className="ci-cart"></i>
                                         </a>
                                     </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="#home-marketplace"
-                                    ></a>
+                                    <Link href="/home-marketplace" passHref>
+                                        <a className="product-thumb-overlay"></a>
+                                    </Link>
                                     <img
                                         src="/img/home/preview/04.jpg"
                                         alt="Multi-vendor Marketplace"
@@ -230,9 +234,9 @@ export default function index() {
                                 </div>
                                 <div className="card-body text-center">
                                     <h3 className="product-title fs-lg pt-2">
-                                        <a href="#home-marketplace">
-                                            Multi-vendor Marketplace
-                                        </a>
+                                        <Link href="/home-marketplace" passHref>
+                                            <a>Multi-vendor Marketplace</a>
+                                        </Link>
                                     </h3>
                                 </div>
                             </div>
@@ -241,12 +245,14 @@ export default function index() {
                             <div className="card product-card-alt">
                                 <div className="product-thumb border">
                                     <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="#home-grocery-store"
+                                        <Link
+                                            href="/home-grocery-store"
+                                            passHref
                                         >
-                                            <i className="ci-eye"></i>
-                                        </a>
+                                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                                <i className="ci-eye"></i>
+                                            </a>
+                                        </Link>
                                         <a
                                             className="btn btn-light btn-icon btn-shadow fs-base mx-2"
                                             href="#https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/"
@@ -256,10 +262,9 @@ export default function index() {
                                             <i className="ci-cart"></i>
                                         </a>
                                     </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="#home-grocery-store"
-                                    ></a>
+                                    <Link href="/home-grocery-store" passHref>
+                                        <a className="product-thumb-overlay"></a>
+                                    </Link>
                                     <img
                                         src="/img/home/preview/06.jpg"
                                         alt="Grocery Store"
@@ -267,9 +272,12 @@ export default function index() {
                                 </div>
                                 <div className="card-body text-center">
                                     <h3 className="product-title fs-lg pt-2">
-                                        <a href="#home-grocery-store">
-                                            Grocery Store
-                                        </a>
+                                        <Link
+                                            href="/home-grocery-store"
+                                            passHref
+                                        >
+                                            <a>Grocery Store</a>
+                                        </Link>
                                     </h3>
                                 </div>
                             </div>
@@ -278,14 +286,16 @@ export default function index() {
                             <div className="card product-card-alt">
                                 <div className="product-thumb border">
                                     <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="#home-fashion-store-v2"
+                                        <Link
+                                            href="/home-fashion-store-v2"
+                                            passHref
                                         >
-                                            <i className="ci-eye"></i>
-                                        </a>
+                                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                                <i className="ci-eye"></i>
+                                            </a>
+                                        </Link>
+
                                         <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
                                             href="#https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/"
                                             target="_blank"
                                             rel="noopener"
@@ -293,10 +303,12 @@ export default function index() {
                                             <i className="ci-cart"></i>
                                         </a>
                                     </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="#home-fashion-store-v2"
-                                    ></a>
+                                    <Link
+                                        href="/home-fashion-store-v2"
+                                        passHref
+                                    >
+                                        <a className="product-thumb-overlay"></a>
+                                    </Link>
                                     <img
                                         src="/img/home/preview/02.jpg"
                                         alt="Fashion Store v.2"
@@ -304,9 +316,12 @@ export default function index() {
                                 </div>
                                 <div className="card-body text-center">
                                     <h3 className="product-title fs-lg pt-2">
-                                        <a href="#home-fashion-store-v2">
-                                            Fashion Store v.2
-                                        </a>
+                                        <Link
+                                            href="/home-fashion-store-v2"
+                                            passHref
+                                        >
+                                            <a>Fashion Store v.2</a>
+                                        </Link>
                                     </h3>
                                 </div>
                             </div>
@@ -315,12 +330,14 @@ export default function index() {
                             <div className="card product-card-alt">
                                 <div className="product-thumb border">
                                     <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="#home-single-store"
+                                        <Link
+                                            href="/home-single-store"
+                                            passHref
                                         >
-                                            <i className="ci-eye"></i>
-                                        </a>
+                                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                                <i className="ci-eye"></i>
+                                            </a>
+                                        </Link>
                                         <a
                                             className="btn btn-light btn-icon btn-shadow fs-base mx-2"
                                             href="#https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/"
@@ -330,10 +347,9 @@ export default function index() {
                                             <i className="ci-cart"></i>
                                         </a>
                                     </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="#home-single-store"
-                                    ></a>
+                                    <Link href="/home-single-store" passHref>
+                                        <a className="product-thumb-overlay"></a>
+                                    </Link>
                                     <img
                                         src="/img/home/preview/05.jpg"
                                         alt="Single Product / Brand Store"
@@ -341,9 +357,12 @@ export default function index() {
                                 </div>
                                 <div className="card-body text-center">
                                     <h3 className="product-title fs-lg pt-2">
-                                        <a href="#home-single-store">
-                                            Single Product / Brand Store
-                                        </a>
+                                        <Link
+                                            href="/home-single-store"
+                                            passHref
+                                        >
+                                            <a>Single Product / Brand Store</a>
+                                        </Link>
                                     </h3>
                                 </div>
                             </div>

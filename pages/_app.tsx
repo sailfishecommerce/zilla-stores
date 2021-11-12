@@ -14,7 +14,10 @@ import "../styles/theme.min.css";
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
-            <Script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js" />
+            <Script
+                strategy="beforeInteractive"
+                src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"
+            />
             <Head>
                 <link
                     rel="stylesheet"

@@ -59,7 +59,11 @@ class CarouselWrapper extends Component {
 
         return (
             <div>
-                <div ref={(ele) => (this.ref = ele)} onClick={this.onClick}>
+                <div
+                    className="relative home-slider"
+                    ref={(ele) => (this.ref = ele)}
+                    onClick={this.onClick}
+                >
                     {children}
                 </div>
             </div>

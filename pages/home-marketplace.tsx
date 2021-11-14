@@ -1,1570 +1,1308 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 import MarketplaceLayout from "../layout/MarketplaceLayout";
 
 export default function HomeMarketplace() {
-    return (
-        <MarketplaceLayout title="Home marketplace">
-            <>
-                {/*<!-- Hero section-->*/}
-                <section
-                    className="bg-accent bg-position-top-center bg-repeat-0 py-5"
-                    style={{
-                        backgroundImage: "url(img/home/marketplace-hero.jpg)",
-                    }}
+  return (
+    <MarketplaceLayout title="Home marketplace">
+      <>
+        {/*<!-- Hero section-->*/}
+        <section
+          className="bg-accent bg-position-top-center bg-repeat-0 py-5"
+          style={{
+            backgroundImage: "url(img/home/marketplace-hero.jpg)",
+          }}
+        >
+          <div className="pb-lg-5 mb-lg-3">
+            <div className="container py-lg-5 my-lg-5">
+              <div className="row mb-4 mb-sm-5">
+                <div className="col-lg-7 col-md-9 text-center text-sm-start">
+                  <h1 className="text-white lh-base">
+                    <span className="fw-light">Over</span> 1,500{" "}
+                    <span className="fw-light">curated</span> Design{" "}
+                    <span className="fw-light">resources</span>, Images, Graphic{" "}
+                    <span className="fw-light">&amp;</span> Website{" "}
+                    <span className="fw-light">templates</span>
+                  </h1>
+                  <h2 className="h5 text-white fw-light">
+                    High quality items created by our global community
+                  </h2>
+                </div>
+              </div>
+              <div className="row pb-lg-5 mb-4 mb-sm-5">
+                <div className="col-lg-6 col-md-8">
+                  <div className="input-group input-group-lg flex-nowrap">
+                    <i className="ci-search position-absolute top-50 translate-middle-y ms-3"></i>
+                    <input
+                      className="form-control rounded-start"
+                      type="text"
+                      placeholder="Start your search"
+                    />
+                    <button
+                      className="btn btn-primary btn-lg dropdown-toggle fs-base"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                    >
+                      All categories
+                    </button>
+                    <div className="dropdown-menu dropdown-menu-end my-1">
+                      <a className="dropdown-item" href="#">
+                        Photos
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Graphics
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        UI Design
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Web Themes
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Add-Ons
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*<!-- Featured products (Carousel)-->*/}
+        <section
+          className="container position-relative pt-3 pt-lg-0 pb-5 mt-lg-n10"
+          style={{ zIndex: 10 }}
+        >
+          <div className="card px-lg-2 border-0 shadow-lg">
+            <div className="card-body px-4 pt-5 pb-4">
+              <h2 className="h3 text-center">Discover featured products</h2>
+              <p className="text-muted text-center">
+                Every week we hand-pick some of the best items from our
+                collection
+              </p>
+              {/*<!-- Carousel-->*/}
+              <div className="tns-carousel pt-4">
+                <div
+                  className="tns-carousel-inner"
+                  data-carousel-options='{"items": 2, "gutter": 15, "controls": false, "nav": true, "responsive": {"0":{"items":1},"500":{"items":2},"768":{"items":3}, "992":{"items":3, "gutter": 30}}}'
                 >
-                    <div className="pb-lg-5 mb-lg-3">
-                        <div className="container py-lg-5 my-lg-5">
-                            <div className="row mb-4 mb-sm-5">
-                                <div className="col-lg-7 col-md-9 text-center text-sm-start">
-                                    <h1 className="text-white lh-base">
-                                        <span className="fw-light">Over</span>{" "}
-                                        1,500{" "}
-                                        <span className="fw-light">
-                                            curated
-                                        </span>{" "}
-                                        Design{" "}
-                                        <span className="fw-light">
-                                            resources
-                                        </span>
-                                        , Images, Graphic{" "}
-                                        <span className="fw-light">&amp;</span>{" "}
-                                        Website{" "}
-                                        <span className="fw-light">
-                                            templates
-                                        </span>
-                                    </h1>
-                                    <h2 className="h5 text-white fw-light">
-                                        High quality items created by our global
-                                        community
-                                    </h2>
-                                </div>
-                            </div>
-                            <div className="row pb-lg-5 mb-4 mb-sm-5">
-                                <div className="col-lg-6 col-md-8">
-                                    <div className="input-group input-group-lg flex-nowrap">
-                                        <i className="ci-search position-absolute top-50 translate-middle-y ms-3"></i>
-                                        <input
-                                            className="form-control rounded-start"
-                                            type="text"
-                                            placeholder="Start your search"
-                                        />
-                                        <button
-                                            className="btn btn-primary btn-lg dropdown-toggle fs-base"
-                                            type="button"
-                                            data-bs-toggle="dropdown"
-                                        >
-                                            All categories
-                                        </button>
-                                        <div className="dropdown-menu dropdown-menu-end my-1">
-                                            <a
-                                                className="dropdown-item"
-                                                href="#"
-                                            >
-                                                Photos
-                                            </a>
-                                            <a
-                                                className="dropdown-item"
-                                                href="#"
-                                            >
-                                                Graphics
-                                            </a>
-                                            <a
-                                                className="dropdown-item"
-                                                href="#"
-                                            >
-                                                UI Design
-                                            </a>
-                                            <a
-                                                className="dropdown-item"
-                                                href="#"
-                                            >
-                                                Web Themes
-                                            </a>
-                                            <a
-                                                className="dropdown-item"
-                                                href="#"
-                                            >
-                                                Add-Ons
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/*<!-- Featured products (Carousel)-->*/}
-                <section
-                    className="container position-relative pt-3 pt-lg-0 pb-5 mt-lg-n10"
-                    style={{ zIndex: 10 }}
-                >
-                    <div className="card px-lg-2 border-0 shadow-lg">
-                        <div className="card-body px-4 pt-5 pb-4">
-                            <h2 className="h3 text-center">
-                                Discover featured products
-                            </h2>
-                            <p className="text-muted text-center">
-                                Every week we hand-pick some of the best items
-                                from our collection
-                            </p>
-                            {/*<!-- Carousel-->*/}
-                            <div className="tns-carousel pt-4">
-                                <div
-                                    className="tns-carousel-inner"
-                                    data-carousel-options='{"items": 2, "gutter": 15, "controls": false, "nav": true, "responsive": {"0":{"items":1},"500":{"items":2},"768":{"items":3}, "992":{"items":3, "gutter": 30}}}'
-                                >
-                                    {/*<!-- Product-->*/}
-                                    <div>
-                                        <div className="card product-card-alt">
-                                            <div className="product-thumb">
-                                                <button
-                                                    className="btn-wishlist btn-sm"
-                                                    type="button"
-                                                >
-                                                    <i className="ci-heart"></i>
-                                                </button>
-                                                <div className="product-card-actions">
-                                                    <a
-                                                        className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                        href="marketplace-single.html"
-                                                    >
-                                                        <i className="ci-eye"></i>
-                                                    </a>
-                                                    <button
-                                                        className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                        type="button"
-                                                    >
-                                                        <i className="ci-cart"></i>
-                                                    </button>
-                                                </div>
-                                                <a
-                                                    className="product-thumb-overlay"
-                                                    href="marketplace-single.html"
-                                                ></a>
-                                                <img
-                                                    src="/img/marketplace/products/02.jpg"
-                                                    alt="Product"
-                                                />
-                                            </div>
-                                            <div className="card-body">
-                                                <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                                    <div className="text-muted fs-xs me-1">
-                                                        by{" "}
-                                                        <a
-                                                            className="product-meta fw-medium"
-                                                            href="#"
-                                                        >
-                                                            Bandicoot Std.{" "}
-                                                        </a>
-                                                        in{" "}
-                                                        <a
-                                                            className="product-meta fw-medium"
-                                                            href="#"
-                                                        >
-                                                            Graphics
-                                                        </a>
-                                                    </div>
-                                                    <div className="star-rating">
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                    </div>
-                                                </div>
-                                                <h3 className="product-title fs-sm mb-2">
-                                                    <a href="marketplace-single.html">
-                                                        Floating Phone and
-                                                        Tablet Mockup (PSD)
-                                                    </a>
-                                                </h3>
-                                                <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                                    <div className="fs-sm me-2">
-                                                        <i className="ci-download text-muted me-1"></i>
-                                                        109
-                                                        <span className="fs-xs ms-1">
-                                                            Sales
-                                                        </span>
-                                                    </div>
-                                                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                                        $15.<small>00</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/*<!-- Product-->*/}
-                                    <div>
-                                        <div className="card product-card-alt">
-                                            <div className="product-thumb">
-                                                <button
-                                                    className="btn-wishlist btn-sm"
-                                                    type="button"
-                                                >
-                                                    <i className="ci-heart"></i>
-                                                </button>
-                                                <div className="product-card-actions">
-                                                    <a
-                                                        className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                        href="marketplace-single.html"
-                                                    >
-                                                        <i className="ci-eye"></i>
-                                                    </a>
-                                                    <button
-                                                        className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                        type="button"
-                                                    >
-                                                        <i className="ci-cart"></i>
-                                                    </button>
-                                                </div>
-                                                <a
-                                                    className="product-thumb-overlay"
-                                                    href="marketplace-single.html"
-                                                ></a>
-                                                <img
-                                                    src="/img/marketplace/products/03.jpg"
-                                                    alt="Product"
-                                                />
-                                            </div>
-                                            <div className="card-body">
-                                                <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                                    <div className="text-muted fs-xs me-1">
-                                                        by{" "}
-                                                        <a
-                                                            className="product-meta fw-medium"
-                                                            href="#"
-                                                        >
-                                                            Bandicoot Std.{" "}
-                                                        </a>
-                                                        in{" "}
-                                                        <a
-                                                            className="product-meta fw-medium"
-                                                            href="#"
-                                                        >
-                                                            Graphics
-                                                        </a>
-                                                    </div>
-                                                    <div className="star-rating">
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star"></i>
-                                                    </div>
-                                                </div>
-                                                <h3 className="product-title fs-sm mb-2">
-                                                    <a href="marketplace-single.html">
-                                                        Project Devices Showcase
-                                                        (PSD)
-                                                    </a>
-                                                </h3>
-                                                <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                                    <div className="fs-sm me-2">
-                                                        <i className="ci-download text-muted me-1"></i>
-                                                        95
-                                                        <span className="fs-xs ms-1">
-                                                            Sales
-                                                        </span>
-                                                    </div>
-                                                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                                        $18.<small>00</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/*<!-- Product-->*/}
-                                    <div>
-                                        <div className="card product-card-alt">
-                                            <div className="product-thumb">
-                                                <button
-                                                    className="btn-wishlist btn-sm"
-                                                    type="button"
-                                                >
-                                                    <i className="ci-heart"></i>
-                                                </button>
-                                                <div className="product-card-actions">
-                                                    <a
-                                                        className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                        href="marketplace-single.html"
-                                                    >
-                                                        <i className="ci-eye"></i>
-                                                    </a>
-                                                    <button
-                                                        className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                        type="button"
-                                                    >
-                                                        <i className="ci-cart"></i>
-                                                    </button>
-                                                </div>
-                                                <a
-                                                    className="product-thumb-overlay"
-                                                    href="marketplace-single.html"
-                                                ></a>
-                                                <img
-                                                    src="/img/marketplace/products/08.jpg"
-                                                    alt="Product"
-                                                />
-                                            </div>
-                                            <div className="card-body">
-                                                <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                                    <div className="text-muted fs-xs me-1">
-                                                        by{" "}
-                                                        <a
-                                                            className="product-meta fw-medium"
-                                                            href="#"
-                                                        >
-                                                            pixels{" "}
-                                                        </a>
-                                                        in{" "}
-                                                        <a
-                                                            className="product-meta fw-medium"
-                                                            href="#"
-                                                        >
-                                                            Graphics
-                                                        </a>
-                                                    </div>
-                                                    <div className="star-rating">
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-half active"></i>
-                                                        <i className="star-rating-icon ci-star"></i>
-                                                    </div>
-                                                </div>
-                                                <h3 className="product-title fs-sm mb-2">
-                                                    <a href="marketplace-single.html">
-                                                        Business Card Branding
-                                                        Mockup
-                                                    </a>
-                                                </h3>
-                                                <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                                    <div className="fs-sm me-2">
-                                                        <i className="ci-download text-muted me-1"></i>
-                                                        316
-                                                        <span className="fs-xs ms-1">
-                                                            Sales
-                                                        </span>
-                                                    </div>
-                                                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                                        $17.<small>00</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/*<!-- Product-->*/}
-                                    <div>
-                                        <div className="card product-card-alt">
-                                            <div className="product-thumb">
-                                                <button
-                                                    className="btn-wishlist btn-sm"
-                                                    type="button"
-                                                >
-                                                    <i className="ci-heart"></i>
-                                                </button>
-                                                <div className="product-card-actions">
-                                                    <a
-                                                        className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                        href="marketplace-single.html"
-                                                    >
-                                                        <i className="ci-eye"></i>
-                                                    </a>
-                                                    <button
-                                                        className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                        type="button"
-                                                    >
-                                                        <i className="ci-cart"></i>
-                                                    </button>
-                                                </div>
-                                                <a
-                                                    className="product-thumb-overlay"
-                                                    href="marketplace-single.html"
-                                                ></a>
-                                                <img
-                                                    src="/img/marketplace/products/07.jpg"
-                                                    alt="Product"
-                                                />
-                                            </div>
-                                            <div className="card-body">
-                                                <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                                    <div className="text-muted fs-xs me-1">
-                                                        by{" "}
-                                                        <a
-                                                            className="product-meta fw-medium"
-                                                            href="#"
-                                                        >
-                                                            pixels{" "}
-                                                        </a>
-                                                        in{" "}
-                                                        <a
-                                                            className="product-meta fw-medium"
-                                                            href="#"
-                                                        >
-                                                            Graphics
-                                                        </a>
-                                                    </div>
-                                                    <div className="star-rating">
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star-filled active"></i>
-                                                        <i className="star-rating-icon ci-star"></i>
-                                                    </div>
-                                                </div>
-                                                <h3 className="product-title fs-sm mb-2">
-                                                    <a href="marketplace-single.html">
-                                                        Gravity Device Mockups
-                                                        (PSD)
-                                                    </a>
-                                                </h3>
-                                                <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                                    <div className="fs-sm me-2">
-                                                        <i className="ci-download text-muted me-1"></i>
-                                                        234
-                                                        <span className="fs-xs ms-1">
-                                                            Sales
-                                                        </span>
-                                                    </div>
-                                                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                                        $16.<small>00</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/*<!-- Recent products grid-->*/}
-                <section className="container pb-5 mb-lg-3">
-                    {/*<!-- Heading-->*/}
-                    <div className="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
-                        <h2 className="h3 mb-0 pt-3 me-2">
-                            The most recent releases
-                        </h2>
-                        <div className="pt-3">
-                            <select className="form-select me-2">
-                                <option>All categories</option>
-                                <option>Photos</option>
-                                <option>Graphics</option>
-                                <option>UI Design</option>
-                                <option>Web Themes</option>
-                                <option>Fonts</option>
-                                <option>Add-Ons</option>
-                            </select>
-                        </div>
-                    </div>
-                    {/*<!-- Grid-->*/}
-                    <div className="row pt-2 mx-n2">
-                        {/*<!-- Product-->*/}
-                        <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
-                            {/*<!-- Product-->*/}
-                            <div className="card product-card-alt">
-                                <div className="product-thumb">
-                                    <button
-                                        className="btn-wishlist btn-sm"
-                                        type="button"
-                                    >
-                                        <i className="ci-heart"></i>
-                                    </button>
-                                    <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="marketplace-single.html"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
-                                        <button
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            type="button"
-                                        >
-                                            <i className="ci-cart"></i>
-                                        </button>
-                                    </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="marketplace-single.html"
-                                    ></a>
-                                    <img
-                                        src="/img/marketplace/products/01.jpg"
-                                        alt="Product"
-                                    />
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                        <div className="text-muted fs-xs me-1">
-                                            by{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Bandicoot Std.{" "}
-                                            </a>
-                                            in{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                UI Design
-                                            </a>
-                                        </div>
-                                        <div className="star-rating">
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-half active"></i>
-                                            <i className="star-rating-icon ci-star"></i>
-                                        </div>
-                                    </div>
-                                    <h3 className="product-title fs-sm mb-2">
-                                        <a href="marketplace-single.html">
-                                            Square Style Mobile UI Kit (Sketch)
-                                        </a>
-                                    </h3>
-                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div className="fs-sm me-2">
-                                            <i className="ci-download text-muted me-1"></i>
-                                            153
-                                            <span className="fs-xs ms-1">
-                                                Sales
-                                            </span>
-                                        </div>
-                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                            $24.<small>00</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*<!-- Product-->*/}
-                        <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
-                            <div className="card product-card-alt">
-                                <div className="product-thumb">
-                                    <button
-                                        className="btn-wishlist btn-sm"
-                                        type="button"
-                                    >
-                                        <i className="ci-heart"></i>
-                                    </button>
-                                    <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="marketplace-single.html"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
-                                        <button
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            type="button"
-                                        >
-                                            <i className="ci-cart"></i>
-                                        </button>
-                                    </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="marketplace-single.html"
-                                    ></a>
-                                    <img
-                                        src="/img/marketplace/products/04.jpg"
-                                        alt="Product"
-                                    />
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                        <div className="text-muted fs-xs me-1">
-                                            by{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Bandicoot Std.{" "}
-                                            </a>
-                                            in{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Graphics
-                                            </a>
-                                        </div>
-                                        <div className="star-rating">
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                        </div>
-                                    </div>
-                                    <h3 className="product-title fs-sm mb-2">
-                                        <a href="marketplace-single.html">
-                                            Flat-line E-Commerce Icons (AI)
-                                        </a>
-                                    </h3>
-                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div className="fs-sm me-2">
-                                            <i className="ci-download text-muted me-1"></i>
-                                            26
-                                            <span className="fs-xs ms-1">
-                                                Sales
-                                            </span>
-                                        </div>
-                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                            $18.<small>00</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*<!-- Product-->*/}
-                        <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
-                            <div className="card product-card-alt">
-                                <div className="product-thumb">
-                                    <button
-                                        className="btn-wishlist btn-sm"
-                                        type="button"
-                                    >
-                                        <i className="ci-heart"></i>
-                                    </button>
-                                    <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="marketplace-single.html"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
-                                        <button
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            type="button"
-                                        >
-                                            <i className="ci-cart"></i>
-                                        </button>
-                                    </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="marketplace-single.html"
-                                    ></a>
-                                    <img
-                                        src="/img/marketplace/products/09.jpg"
-                                        alt="Product"
-                                    />
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                        <div className="text-muted fs-xs me-1">
-                                            by{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                pixels{" "}
-                                            </a>
-                                            in{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                UI Design
-                                            </a>
-                                        </div>
-                                        <div className="star-rating">
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star"></i>
-                                        </div>
-                                    </div>
-                                    <h3 className="product-title fs-sm mb-2">
-                                        <a href="marketplace-single.html">
-                                            Isometric Device Mockups (PSD)
-                                        </a>
-                                    </h3>
-                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div className="fs-sm me-2">
-                                            <i className="ci-download text-muted me-1"></i>
-                                            36
-                                            <span className="fs-xs ms-1">
-                                                Sales
-                                            </span>
-                                        </div>
-                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                            $16.<small>00</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*<!-- Product-->*/}
-                        <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
-                            <div className="card product-card-alt">
-                                <div className="product-thumb">
-                                    <button
-                                        className="btn-wishlist btn-sm"
-                                        type="button"
-                                    >
-                                        <i className="ci-heart"></i>
-                                    </button>
-                                    <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="marketplace-single.html"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
-                                        <button
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            type="button"
-                                        >
-                                            <i className="ci-cart"></i>
-                                        </button>
-                                    </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="marketplace-single.html"
-                                    ></a>
-                                    <img
-                                        src="/img/marketplace/products/10.jpg"
-                                        alt="Product"
-                                    />
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                        <div className="text-muted fs-xs me-1">
-                                            by{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                theDesigner{" "}
-                                            </a>
-                                            in{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Graphics
-                                            </a>
-                                        </div>
-                                        <div className="star-rating">
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star"></i>
-                                        </div>
-                                    </div>
-                                    <h3 className="product-title fs-sm mb-2">
-                                        <a href="marketplace-single.html">
-                                            Coffe Paper Cup Mockup
-                                        </a>
-                                    </h3>
-                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div className="fs-sm me-2">
-                                            <i className="ci-download text-muted me-1"></i>
-                                            57
-                                            <span className="fs-xs ms-1">
-                                                Sales
-                                            </span>
-                                        </div>
-                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                            $10.<small>00</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*<!-- Product-->*/}
-                        <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
-                            <div className="card product-card-alt">
-                                <div className="product-thumb">
-                                    <button
-                                        className="btn-wishlist btn-sm"
-                                        type="button"
-                                    >
-                                        <i className="ci-heart"></i>
-                                    </button>
-                                    <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="marketplace-single.html"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
-                                        <button
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            type="button"
-                                        >
-                                            <i className="ci-cart"></i>
-                                        </button>
-                                    </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="marketplace-single.html"
-                                    ></a>
-                                    <img
-                                        src="/img/marketplace/products/06.jpg"
-                                        alt="Product"
-                                    />
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                        <div className="text-muted fs-xs me-1">
-                                            by{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Bandicoot Std.{" "}
-                                            </a>
-                                            in{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Graphics
-                                            </a>
-                                        </div>
-                                        <div className="star-rating">
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                        </div>
-                                    </div>
-                                    <h3 className="product-title fs-sm mb-2">
-                                        <a href="marketplace-single.html">
-                                            Travel &amp; Landmark Icon Pack (AI)
-                                        </a>
-                                    </h3>
-                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div className="fs-sm me-2">
-                                            <i className="ci-download text-muted me-1"></i>
-                                            21
-                                            <span className="fs-xs ms-1">
-                                                Sales
-                                            </span>
-                                        </div>
-                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                            $17.<small>00</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*<!-- Product-->*/}
-                        <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
-                            <div className="card product-card-alt">
-                                <div className="product-thumb">
-                                    <button
-                                        className="btn-wishlist btn-sm"
-                                        type="button"
-                                    >
-                                        <i className="ci-heart"></i>
-                                    </button>
-                                    <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="marketplace-single.html"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
-                                        <button
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            type="button"
-                                        >
-                                            <i className="ci-cart"></i>
-                                        </button>
-                                    </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="marketplace-single.html"
-                                    ></a>
-                                    <img
-                                        src="/img/marketplace/products/05.jpg"
-                                        alt="Product"
-                                    />
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                        <div className="text-muted fs-xs me-1">
-                                            by{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Bandicoot Std.{" "}
-                                            </a>
-                                            in{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                UI Design
-                                            </a>
-                                        </div>
-                                        <div className="star-rating">
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star"></i>
-                                        </div>
-                                    </div>
-                                    <h3 className="product-title fs-sm mb-2">
-                                        <a href="marketplace-single.html">
-                                            Minimal Mobile App UI Kit (Sketch)
-                                        </a>
-                                    </h3>
-                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div className="fs-sm me-2">
-                                            <i className="ci-download text-muted me-1"></i>
-                                            117
-                                            <span className="fs-xs ms-1">
-                                                Sales
-                                            </span>
-                                        </div>
-                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                            $23.<small>00</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*<!-- Product-->*/}
-                        <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
-                            <div className="card product-card-alt">
-                                <div className="product-thumb">
-                                    <button
-                                        className="btn-wishlist btn-sm"
-                                        type="button"
-                                    >
-                                        <i className="ci-heart"></i>
-                                    </button>
-                                    <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="marketplace-single.html"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
-                                        <button
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            type="button"
-                                        >
-                                            <i className="ci-cart"></i>
-                                        </button>
-                                    </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="marketplace-single.html"
-                                    ></a>
-                                    <img
-                                        src="/img/marketplace/products/11.jpg"
-                                        alt="Product"
-                                    />
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                        <div className="text-muted fs-xs me-1">
-                                            by{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                pixels{" "}
-                                            </a>
-                                            in{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Graphics
-                                            </a>
-                                        </div>
-                                        <div className="star-rating">
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-half active"></i>
-                                            <i className="star-rating-icon ci-star"></i>
-                                            <i className="star-rating-icon ci-star"></i>
-                                        </div>
-                                    </div>
-                                    <h3 className="product-title fs-sm mb-2">
-                                        <a href="marketplace-single.html">
-                                            Printed T-Shirt Mockup (PSD)
-                                        </a>
-                                    </h3>
-                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div className="fs-sm me-2">
-                                            <i className="ci-download text-muted me-1"></i>
-                                            94
-                                            <span className="fs-xs ms-1">
-                                                Sales
-                                            </span>
-                                        </div>
-                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                            $12.<small>00</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*<!-- Product-->*/}
-                        <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
-                            <div className="card product-card-alt">
-                                <div className="product-thumb">
-                                    <button
-                                        className="btn-wishlist btn-sm"
-                                        type="button"
-                                    >
-                                        <i className="ci-heart"></i>
-                                    </button>
-                                    <div className="product-card-actions">
-                                        <a
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            href="marketplace-single.html"
-                                        >
-                                            <i className="ci-eye"></i>
-                                        </a>
-                                        <button
-                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                            type="button"
-                                        >
-                                            <i className="ci-cart"></i>
-                                        </button>
-                                    </div>
-                                    <a
-                                        className="product-thumb-overlay"
-                                        href="marketplace-single.html"
-                                    ></a>
-                                    <img
-                                        src="/img/marketplace/products/12.jpg"
-                                        alt="Product"
-                                    />
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                                        <div className="text-muted fs-xs me-1">
-                                            by{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                pixels{" "}
-                                            </a>
-                                            in{" "}
-                                            <a
-                                                className="product-meta fw-medium"
-                                                href="#"
-                                            >
-                                                Graphics
-                                            </a>
-                                        </div>
-                                        <div className="star-rating">
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star-filled active"></i>
-                                            <i className="star-rating-icon ci-star"></i>
-                                        </div>
-                                    </div>
-                                    <h3 className="product-title fs-sm mb-2">
-                                        <a href="marketplace-single.html">
-                                            Corporate Branding Mockup (PSD)
-                                        </a>
-                                    </h3>
-                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div className="fs-sm me-2">
-                                            <i className="ci-download text-muted me-1"></i>
-                                            122
-                                            <span className="fs-xs ms-1">
-                                                Sales
-                                            </span>
-                                        </div>
-                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                            $18.<small>00</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/*<!-- More button-->*/}
-                    <div className="text-center">
-                        <a
-                            className="btn btn-outline-accent"
-                            href="marketplace-category.html"
-                        >
-                            View more products
-                            <i className="ci-arrow-right fs-ms ms-1"></i>
-                        </a>
-                    </div>
-                </section>
-                {/*<!-- Seller of the month-->*/}
-                <section className="border-top py-5">
-                    <div className="container py-lg-2">
-                        <h2 className="h3 mb-3 pb-3 pb-lg-4 text-center text-lg-start">
-                            Seller of the month
-                        </h2>
-                        <div className="row">
-                            <div className="col-lg-4 text-center text-lg-start pb-3 pt-lg-2">
-                                <div className="d-inline-block text-start">
-                                    <div className="d-flex align-items-center pb-3">
-                                        <div
-                                            className="img-thumbnail rounded-circle flex-shrink-0"
-                                            style={{ width: "6.375rem" }}
-                                        >
-                                            <img
-                                                className="rounded-circle"
-                                                src="/img/marketplace/account/avatar.png"
-                                                alt="Bandicoot Studio"
-                                            />
-                                        </div>
-                                        <div className="ps-3">
-                                            <h3 className="fs-lg mb-0">
-                                                Bandicoot Studio
-                                            </h3>
-                                            <span className="d-block text-muted fs-ms pt-1 pb-2">
-                                                Member since November 2019
-                                            </span>
-                                            <a
-                                                className="btn btn-primary btn-sm"
-                                                href="marketplace-vendor.html"
-                                            >
-                                                View products
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-8">
-                                <div className="tns-carousel">
-                                    <div
-                                        className="tns-carousel-inner"
-                                        data-carousel-options='{"items": 2, "gutter": 16, "controls": false, "nav": true, "responsive": {"0":{"items":1},"500":{"items":2},"768":{"items":3}}}'
-                                    >
-                                        <div>
-                                            <div className="card product-card-alt">
-                                                <div className="product-thumb">
-                                                    <button
-                                                        className="btn-wishlist btn-sm"
-                                                        type="button"
-                                                    >
-                                                        <i className="ci-heart"></i>
-                                                    </button>
-                                                    <div className="product-card-actions">
-                                                        <a
-                                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                            href="marketplace-single.html"
-                                                        >
-                                                            <i className="ci-eye"></i>
-                                                        </a>
-                                                        <button
-                                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                            type="button"
-                                                        >
-                                                            <i className="ci-cart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <a
-                                                        className="product-thumb-overlay"
-                                                        href="marketplace-single.html"
-                                                    ></a>
-                                                    <img
-                                                        src="/img/marketplace/products/13.jpg"
-                                                        alt="Product"
-                                                    />
-                                                </div>
-                                                <div className="card-body">
-                                                    <h3 className="product-title fs-sm mb-2">
-                                                        <a href="marketplace-single.html">
-                                                            Hardcover Book
-                                                            Catalog Mockup
-                                                        </a>
-                                                    </h3>
-                                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                                        <div className="fs-sm me-2">
-                                                            <i className="ci-download text-muted me-1"></i>
-                                                            39
-                                                            <span className="fs-xs ms-1">
-                                                                Sales
-                                                            </span>
-                                                        </div>
-                                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                                            $12.
-                                                            <small>00</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className="card product-card-alt">
-                                                <div className="product-thumb">
-                                                    <button
-                                                        className="btn-wishlist btn-sm"
-                                                        type="button"
-                                                    >
-                                                        <i className="ci-heart"></i>
-                                                    </button>
-                                                    <div className="product-card-actions">
-                                                        <a
-                                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                            href="marketplace-single.html"
-                                                        >
-                                                            <i className="ci-eye"></i>
-                                                        </a>
-                                                        <button
-                                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                            type="button"
-                                                        >
-                                                            <i className="ci-cart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <a
-                                                        className="product-thumb-overlay"
-                                                        href="marketplace-single.html"
-                                                    ></a>
-                                                    <img
-                                                        src="/img/marketplace/products/14.jpg"
-                                                        alt="Product"
-                                                    />
-                                                </div>
-                                                <div className="card-body">
-                                                    <h3 className="product-title fs-sm mb-2">
-                                                        <a href="marketplace-single.html">
-                                                            Top View Smartwatch
-                                                            3D Render
-                                                        </a>
-                                                    </h3>
-                                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                                        <div className="fs-sm me-2">
-                                                            <i className="ci-download text-muted me-1"></i>
-                                                            28
-                                                            <span className="fs-xs ms-1">
-                                                                Sales
-                                                            </span>
-                                                        </div>
-                                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                                            $14.
-                                                            <small>00</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className="card product-card-alt">
-                                                <div className="product-thumb">
-                                                    <button
-                                                        className="btn-wishlist btn-sm"
-                                                        type="button"
-                                                    >
-                                                        <i className="ci-heart"></i>
-                                                    </button>
-                                                    <div className="product-card-actions">
-                                                        <a
-                                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                            href="marketplace-single.html"
-                                                        >
-                                                            <i className="ci-eye"></i>
-                                                        </a>
-                                                        <button
-                                                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
-                                                            type="button"
-                                                        >
-                                                            <i className="ci-cart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <a
-                                                        className="product-thumb-overlay"
-                                                        href="marketplace-single.html"
-                                                    ></a>
-                                                    <img
-                                                        src="/img/marketplace/products/07.jpg"
-                                                        alt="Product"
-                                                    />
-                                                </div>
-                                                <div className="card-body">
-                                                    <h3 className="product-title fs-sm mb-2">
-                                                        <a href="marketplace-single.html">
-                                                            Gravity Device
-                                                            Mockups (PSD)
-                                                        </a>
-                                                    </h3>
-                                                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                                        <div className="fs-sm me-2">
-                                                            <i className="ci-download text-muted me-1"></i>
-                                                            234
-                                                            <span className="fs-xs ms-1">
-                                                                Sales
-                                                            </span>
-                                                        </div>
-                                                        <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
-                                                            $16.
-                                                            <small>00</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/*<!-- Marketplace features-->*/}
-                <section
-                    className="bg-accent bg-size-cover bg-position-center pt-5 pb-4 pb-lg-5"
-                    style={{
-                        backgroundImage:
-                            "url(img/marketplace/features/features-bg.jpg)",
-                    }}
-                >
-                    <div className="container pt-lg-3">
-                        <h2 className="h3 mb-3 pb-4 text-light text-center">
-                            Why our marketplace?
-                        </h2>
-                        <div className="row pt-lg-2 text-center">
-                            <div className="col-lg-3 col-sm-6 mb-grid-gutter">
-                                <div className="d-inline-flex align-items-center text-start">
-                                    <img
-                                        src="/img/marketplace/features/quality.png"
-                                        width="52"
-                                        alt="Quality Guarantee"
-                                    />
-                                    <div className="ps-3">
-                                        <h6 className="text-light fs-base mb-1">
-                                            Quality Guarantee
-                                        </h6>
-                                        <p className="text-light fs-ms opacity-70 mb-0">
-                                            Quality checked by our team
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6 mb-grid-gutter">
-                                <div className="d-inline-flex align-items-center text-start">
-                                    <img
-                                        src="/img/marketplace/features/support.png"
-                                        width="52"
-                                        alt="Customer Support"
-                                    />
-                                    <div className="ps-3">
-                                        <h6 className="text-light fs-base mb-1">
-                                            Customer Support
-                                        </h6>
-                                        <p className="text-light fs-ms opacity-70 mb-0">
-                                            Friendly 24/7 customer support
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6 mb-grid-gutter">
-                                <div className="d-inline-flex align-items-center text-start">
-                                    <img
-                                        src="/img/marketplace/features/updates.png"
-                                        width="52"
-                                        alt="Free Updates"
-                                    />
-                                    <div className="ps-3">
-                                        <h6 className="text-light fs-base mb-1">
-                                            Lifetime Free Updates
-                                        </h6>
-                                        <p className="text-light fs-ms opacity-70 mb-0">
-                                            Never pay for an update
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6 mb-grid-gutter">
-                                <div className="d-inline-flex align-items-center text-start">
-                                    <img
-                                        src="/img/marketplace/features/secure.png"
-                                        width="52"
-                                        alt="Secure Payments"
-                                    />
-                                    <div className="ps-3">
-                                        <h6 className="text-light fs-base mb-1">
-                                            Secure Payments
-                                        </h6>
-                                        <p className="text-light fs-ms opacity-70 mb-0">
-                                            We posess SSL / Secure сertificate
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/*<!-- Blog posts carousel-->*/}
-                <section className="py-5">
-                    <div className="container py-lg-3">
-                        <h2 className="h3 text-center">From the blog</h2>
-                        <p className="text-muted text-center mb-3 pb-4">
-                            Latest marketplace news, success stories and
-                            tutorials
-                        </p>
-                        <div className="tns-carousel">
-                            <div
-                                className="tns-carousel-inner"
-                                data-carousel-options='{"items": 2, "gutter": 15, "controls": false, "nav": true, "responsive": {"0":{"items":1},"500":{"items":2},"768":{"items":3}, "992":{"items":3, "gutter": 30}}}'
-                            >
-                                <div>
-                                    <div className="card">
-                                        <a
-                                            className="blog-entry-thumb"
-                                            href="blog-single.html"
-                                        >
-                                            <img
-                                                className="card-img-top"
-                                                src="/img/blog/05.jpg"
-                                                alt="Post"
-                                            />
-                                        </a>
-                                        <div className="card-body">
-                                            <h2 className="h6 blog-entry-title">
-                                                <a href="blog-single.html">
-                                                    We start selling WordPress
-                                                    themes soon
-                                                </a>
-                                            </h2>
-                                            <p className="fs-sm">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut
-                                                labore et dolore magna aliqua
-                                                enim ad minim...
-                                            </p>
-                                            <div className="fs-xs text-nowrap">
-                                                <a
-                                                    className="blog-entry-meta-link text-nowrap"
-                                                    href="#"
-                                                >
-                                                    Nov 23
-                                                </a>
-                                                <span className="blog-entry-meta-divider mx-2"></span>
-                                                <a
-                                                    className="blog-entry-meta-link text-nowrap"
-                                                    href="blog-single.html#comments"
-                                                >
-                                                    <i className="ci-message"></i>
-                                                    19
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="card">
-                                        <a
-                                            className="blog-entry-thumb"
-                                            href="blog-single.html"
-                                        >
-                                            <img
-                                                className="card-img-top"
-                                                src="/img/blog/06.jpg"
-                                                alt="Post"
-                                            />
-                                        </a>
-                                        <div className="card-body">
-                                            <h2 className="h6 blog-entry-title">
-                                                <a href="blog-single.html">
-                                                    Shoot like a pro. Tips &amp;
-                                                    tricks
-                                                </a>
-                                            </h2>
-                                            <p className="fs-sm">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut
-                                                labore et dolore magna aliqua
-                                                enim ad minim...
-                                            </p>
-                                            <div className="fs-xs text-nowrap">
-                                                <a
-                                                    className="blog-entry-meta-link text-nowrap"
-                                                    href="#"
-                                                >
-                                                    Oct 10
-                                                </a>
-                                                <span className="blog-entry-meta-divider mx-2"></span>
-                                                <a
-                                                    className="blog-entry-meta-link text-nowrap"
-                                                    href="blog-single.html#comments"
-                                                >
-                                                    <i className="ci-message"></i>
-                                                    28
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="card">
-                                        <a
-                                            className="blog-entry-thumb"
-                                            href="blog-single.html"
-                                        >
-                                            <img
-                                                className="card-img-top"
-                                                src="/img/blog/07.jpg"
-                                                alt="Post"
-                                            />
-                                        </a>
-                                        <div className="card-body">
-                                            <h2 className="h6 blog-entry-title">
-                                                <a href="blog-single.html">
-                                                    Designing engaging mobile
-                                                    experiences
-                                                </a>
-                                            </h2>
-                                            <p className="fs-sm">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut
-                                                labore et dolore magna aliqua
-                                                enim ad minim...
-                                            </p>
-                                            <div className="fs-xs text-nowrap">
-                                                <a
-                                                    className="blog-entry-meta-link text-nowrap"
-                                                    href="#"
-                                                >
-                                                    Sep 15
-                                                </a>
-                                                <span className="blog-entry-meta-divider mx-2"></span>
-                                                <a
-                                                    className="blog-entry-meta-link text-nowrap"
-                                                    href="blog-single.html#comments"
-                                                >
-                                                    <i className="ci-message"></i>
-                                                    46
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*<!-- More button-->*/}
-                        <div className="text-center pt-4 mt-md-2">
-                            <a
-                                className="btn btn-outline-accent"
-                                href="blog-grid-sidebar.html"
-                            >
-                                Ream more posts
-                                <i className="ci-arrow-right fs-ms ms-1"></i>
+                  {/*<!-- Product-->*/}
+                  <div>
+                    <div className="card product-card-alt">
+                      <div className="product-thumb">
+                        <button className="btn-wishlist btn-sm" type="button">
+                          <i className="ci-heart"></i>
+                        </button>
+                        <div className="product-card-actions">
+                          <Link href="/marketplace-single" passHref>
+                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                              <i className="ci-eye"></i>
                             </a>
+                          </Link>
+                          <button
+                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                            type="button"
+                          >
+                            <i className="ci-cart"></i>
+                          </button>
                         </div>
+                        <Link href="/marketplace-single" passHref>
+                          <a className="product-thumb-overlay"></a>
+                        </Link>
+                        <img
+                          src="/img/marketplace/products/02.jpg"
+                          alt="Product"
+                        />
+                      </div>
+                      <div className="card-body">
+                        <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                          <div className="text-muted fs-xs me-1">
+                            by{" "}
+                            <a className="product-meta fw-medium" href="#">
+                              Bandicoot Std.{" "}
+                            </a>
+                            in{" "}
+                            <a className="product-meta fw-medium" href="#">
+                              Graphics
+                            </a>
+                          </div>
+                          <div className="star-rating">
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                          </div>
+                        </div>
+                        <h3 className="product-title fs-sm mb-2">
+                          <Link href="/marketplace-single" passHref>
+                            <a>Floating Phone and Tablet Mockup (PSD)</a>
+                          </Link>
+                        </h3>
+                        <div className="d-flex flex-wrap justify-content-between align-items-center">
+                          <div className="fs-sm me-2">
+                            <i className="ci-download text-muted me-1"></i>
+                            109
+                            <span className="fs-xs ms-1">Sales</span>
+                          </div>
+                          <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                            $15.<small>00</small>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </section>
-            </>
-        </MarketplaceLayout>
-    );
+                  </div>
+                  {/*<!-- Product-->*/}
+                  <div>
+                    <div className="card product-card-alt">
+                      <div className="product-thumb">
+                        <button className="btn-wishlist btn-sm" type="button">
+                          <i className="ci-heart"></i>
+                        </button>
+                        <div className="product-card-actions">
+                          <Link href="/marketplace-single" passHref>
+                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                              <i className="ci-eye"></i>
+                            </a>
+                          </Link>
+                          <button
+                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                            type="button"
+                          >
+                            <i className="ci-cart"></i>
+                          </button>
+                        </div>
+                        <Link href="/marketplace-single" passHref>
+                          <a className="product-thumb-overlay"></a>
+                        </Link>
+                        <img
+                          src="/img/marketplace/products/03.jpg"
+                          alt="Product"
+                        />
+                      </div>
+                      <div className="card-body">
+                        <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                          <div className="text-muted fs-xs me-1">
+                            by{" "}
+                            <a className="product-meta fw-medium" href="#">
+                              Bandicoot Std.{" "}
+                            </a>
+                            in{" "}
+                            <a className="product-meta fw-medium" href="#">
+                              Graphics
+                            </a>
+                          </div>
+                          <div className="star-rating">
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star"></i>
+                          </div>
+                        </div>
+                        <h3 className="product-title fs-sm mb-2">
+                          <Link href="/marketplace-single" passHref>
+                            <a>Project Devices Showcase (PSD)</a>
+                          </Link>
+                        </h3>
+                        <div className="d-flex flex-wrap justify-content-between align-items-center">
+                          <div className="fs-sm me-2">
+                            <i className="ci-download text-muted me-1"></i>
+                            95
+                            <span className="fs-xs ms-1">Sales</span>
+                          </div>
+                          <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                            $18.<small>00</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*<!-- Product-->*/}
+                  <div>
+                    <div className="card product-card-alt">
+                      <div className="product-thumb">
+                        <button className="btn-wishlist btn-sm" type="button">
+                          <i className="ci-heart"></i>
+                        </button>
+                        <div className="product-card-actions">
+                          <Link href="/marketplace-single" passHref>
+                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                              <i className="ci-eye"></i>
+                            </a>
+                          </Link>
+                          <button
+                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                            type="button"
+                          >
+                            <i className="ci-cart"></i>
+                          </button>
+                        </div>
+                        <Link href="/marketplace-single" passHref>
+                          <a className="product-thumb-overlay"></a>
+                        </Link>
+                        <img
+                          src="/img/marketplace/products/08.jpg"
+                          alt="Product"
+                        />
+                      </div>
+                      <div className="card-body">
+                        <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                          <div className="text-muted fs-xs me-1">
+                            by{" "}
+                            <a className="product-meta fw-medium" href="#">
+                              pixels{" "}
+                            </a>
+                            in{" "}
+                            <a className="product-meta fw-medium" href="#">
+                              Graphics
+                            </a>
+                          </div>
+                          <div className="star-rating">
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-half active"></i>
+                            <i className="star-rating-icon ci-star"></i>
+                          </div>
+                        </div>
+                        <h3 className="product-title fs-sm mb-2">
+                          <Link href="/marketplace-single" passHref>
+                            <a>Business Card Branding Mockup</a>
+                          </Link>
+                        </h3>
+                        <div className="d-flex flex-wrap justify-content-between align-items-center">
+                          <div className="fs-sm me-2">
+                            <i className="ci-download text-muted me-1"></i>
+                            316
+                            <span className="fs-xs ms-1">Sales</span>
+                          </div>
+                          <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                            $17.<small>00</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*<!-- Product-->*/}
+                  <div>
+                    <div className="card product-card-alt">
+                      <div className="product-thumb">
+                        <button className="btn-wishlist btn-sm" type="button">
+                          <i className="ci-heart"></i>
+                        </button>
+                        <div className="product-card-actions">
+                          <Link href="/marketplace-single" passHref>
+                            <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                              <i className="ci-eye"></i>
+                            </a>
+                          </Link>
+                          <button
+                            className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                            type="button"
+                          >
+                            <i className="ci-cart"></i>
+                          </button>
+                        </div>
+                        <Link href="/marketplace-single" passHref>
+                          <a className="product-thumb-overlay"></a>
+                        </Link>
+                        <img
+                          src="/img/marketplace/products/07.jpg"
+                          alt="Product"
+                        />
+                      </div>
+                      <div className="card-body">
+                        <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                          <div className="text-muted fs-xs me-1">
+                            by{" "}
+                            <a className="product-meta fw-medium" href="#">
+                              pixels{" "}
+                            </a>
+                            in{" "}
+                            <a className="product-meta fw-medium" href="#">
+                              Graphics
+                            </a>
+                          </div>
+                          <div className="star-rating">
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star"></i>
+                          </div>
+                        </div>
+                        <h3 className="product-title fs-sm mb-2">
+                          <Link href="/marketplace-single" passHref>
+                            <a>Gravity Device Mockups (PSD)</a>
+                          </Link>
+                        </h3>
+                        <div className="d-flex flex-wrap justify-content-between align-items-center">
+                          <div className="fs-sm me-2">
+                            <i className="ci-download text-muted me-1"></i>
+                            234
+                            <span className="fs-xs ms-1">Sales</span>
+                          </div>
+                          <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                            $16.<small>00</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*<!-- Recent products grid-->*/}
+        <section className="container pb-5 mb-lg-3">
+          {/*<!-- Heading-->*/}
+          <div className="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
+            <h2 className="h3 mb-0 pt-3 me-2">The most recent releases</h2>
+            <div className="pt-3">
+              <select className="form-select me-2">
+                <option>All categories</option>
+                <option>Photos</option>
+                <option>Graphics</option>
+                <option>UI Design</option>
+                <option>Web Themes</option>
+                <option>Fonts</option>
+                <option>Add-Ons</option>
+              </select>
+            </div>
+          </div>
+          {/*<!-- Grid-->*/}
+          <div className="row pt-2 mx-n2">
+            {/*<!-- Product-->*/}
+            <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+              {/*<!-- Product-->*/}
+              <div className="card product-card-alt">
+                <div className="product-thumb">
+                  <button className="btn-wishlist btn-sm" type="button">
+                    <i className="ci-heart"></i>
+                  </button>
+                  <div className="product-card-actions">
+                    <Link href="/marketplace-single" passHref>
+                      <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                        <i className="ci-eye"></i>
+                      </a>
+                    </Link>
+                    <button
+                      className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                      type="button"
+                    >
+                      <i className="ci-cart"></i>
+                    </button>
+                  </div>
+                  <Link href="/marketplace-single" passHref>
+                    <a className="product-thumb-overlay"></a>
+                  </Link>
+                  <img src="/img/marketplace/products/01.jpg" alt="Product" />
+                </div>
+                <div className="card-body">
+                  <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                    <div className="text-muted fs-xs me-1">
+                      by{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Bandicoot Std.{" "}
+                      </a>
+                      in{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        UI Design
+                      </a>
+                    </div>
+                    <div className="star-rating">
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-half active"></i>
+                      <i className="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>
+                  <h3 className="product-title fs-sm mb-2">
+                    <Link href="/marketplace-single" passHref>
+                      <a>Square Style Mobile UI Kit (Sketch)</a>
+                    </Link>
+                  </h3>
+                  <div className="d-flex flex-wrap justify-content-between align-items-center">
+                    <div className="fs-sm me-2">
+                      <i className="ci-download text-muted me-1"></i>
+                      153
+                      <span className="fs-xs ms-1">Sales</span>
+                    </div>
+                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                      $24.<small>00</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*<!-- Product-->*/}
+            <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+              <div className="card product-card-alt">
+                <div className="product-thumb">
+                  <button className="btn-wishlist btn-sm" type="button">
+                    <i className="ci-heart"></i>
+                  </button>
+                  <div className="product-card-actions">
+                    <Link href="/marketplace-single" passHref>
+                      <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                        <i className="ci-eye"></i>
+                      </a>
+                    </Link>
+                    <button
+                      className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                      type="button"
+                    >
+                      <i className="ci-cart"></i>
+                    </button>
+                  </div>
+                  <Link href="/marketplace-single" passHref>
+                    <a className="product-thumb-overlay"></a>
+                  </Link>
+                  <img src="/img/marketplace/products/04.jpg" alt="Product" />
+                </div>
+                <div className="card-body">
+                  <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                    <div className="text-muted fs-xs me-1">
+                      by{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Bandicoot Std.{" "}
+                      </a>
+                      in{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Graphics
+                      </a>
+                    </div>
+                    <div className="star-rating">
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                    </div>
+                  </div>
+                  <h3 className="product-title fs-sm mb-2">
+                    <Link href="/marketplace-single" passHref>
+                      <a>Flat-line E-Commerce Icons (AI)</a>
+                    </Link>
+                  </h3>
+                  <div className="d-flex flex-wrap justify-content-between align-items-center">
+                    <div className="fs-sm me-2">
+                      <i className="ci-download text-muted me-1"></i>
+                      26
+                      <span className="fs-xs ms-1">Sales</span>
+                    </div>
+                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                      $18.<small>00</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*<!-- Product-->*/}
+            <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+              <div className="card product-card-alt">
+                <div className="product-thumb">
+                  <button className="btn-wishlist btn-sm" type="button">
+                    <i className="ci-heart"></i>
+                  </button>
+                  <div className="product-card-actions">
+                    <Link href="/marketplace-single" passHref>
+                      <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                        <i className="ci-eye"></i>
+                      </a>
+                    </Link>
+                    <button
+                      className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                      type="button"
+                    >
+                      <i className="ci-cart"></i>
+                    </button>
+                  </div>
+                  <Link href="/marketplace-single" passHref>
+                    <a className="product-thumb-overlay"></a>
+                  </Link>
+                  <img src="/img/marketplace/products/09.jpg" alt="Product" />
+                </div>
+                <div className="card-body">
+                  <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                    <div className="text-muted fs-xs me-1">
+                      by{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        pixels{" "}
+                      </a>
+                      in{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        UI Design
+                      </a>
+                    </div>
+                    <div className="star-rating">
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>
+                  <h3 className="product-title fs-sm mb-2">
+                    <Link href="/marketplace-single" passHref>
+                      <a>Isometric Device Mockups (PSD)</a>
+                    </Link>
+                  </h3>
+                  <div className="d-flex flex-wrap justify-content-between align-items-center">
+                    <div className="fs-sm me-2">
+                      <i className="ci-download text-muted me-1"></i>
+                      36
+                      <span className="fs-xs ms-1">Sales</span>
+                    </div>
+                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                      $16.<small>00</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*<!-- Product-->*/}
+            <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+              <div className="card product-card-alt">
+                <div className="product-thumb">
+                  <button className="btn-wishlist btn-sm" type="button">
+                    <i className="ci-heart"></i>
+                  </button>
+                  <div className="product-card-actions">
+                    <Link href="/marketplace-single" passHref>
+                      <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                        <i className="ci-eye"></i>
+                      </a>
+                    </Link>
+                    <button
+                      className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                      type="button"
+                    >
+                      <i className="ci-cart"></i>
+                    </button>
+                  </div>
+                  <Link href="/marketplace-single" passHref>
+                    <a className="product-thumb-overlay"></a>
+                  </Link>
+                  <img src="/img/marketplace/products/10.jpg" alt="Product" />
+                </div>
+                <div className="card-body">
+                  <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                    <div className="text-muted fs-xs me-1">
+                      by{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        theDesigner{" "}
+                      </a>
+                      in{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Graphics
+                      </a>
+                    </div>
+                    <div className="star-rating">
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>
+                  <h3 className="product-title fs-sm mb-2">
+                    <Link href="/marketplace-single" passHref>
+                      <a>Coffe Paper Cup Mockup</a>
+                    </Link>
+                  </h3>
+                  <div className="d-flex flex-wrap justify-content-between align-items-center">
+                    <div className="fs-sm me-2">
+                      <i className="ci-download text-muted me-1"></i>
+                      57
+                      <span className="fs-xs ms-1">Sales</span>
+                    </div>
+                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                      $10.<small>00</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*<!-- Product-->*/}
+            <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+              <div className="card product-card-alt">
+                <div className="product-thumb">
+                  <button className="btn-wishlist btn-sm" type="button">
+                    <i className="ci-heart"></i>
+                  </button>
+                  <div className="product-card-actions">
+                    <Link href="/marketplace-single" passHref>
+                      <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                        <i className="ci-eye"></i>
+                      </a>
+                    </Link>
+                    <button
+                      className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                      type="button"
+                    >
+                      <i className="ci-cart"></i>
+                    </button>
+                  </div>
+                  <Link href="/marketplace-single" passHref>
+                    <a className="product-thumb-overlay"></a>
+                  </Link>
+                  <img src="/img/marketplace/products/06.jpg" alt="Product" />
+                </div>
+                <div className="card-body">
+                  <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                    <div className="text-muted fs-xs me-1">
+                      by{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Bandicoot Std.{" "}
+                      </a>
+                      in{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Graphics
+                      </a>
+                    </div>
+                    <div className="star-rating">
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                    </div>
+                  </div>
+                  <h3 className="product-title fs-sm mb-2">
+                    <Link href="/marketplace-single" passHref>
+                      <a>Travel &amp; Landmark Icon Pack (AI)</a>
+                    </Link>
+                  </h3>
+                  <div className="d-flex flex-wrap justify-content-between align-items-center">
+                    <div className="fs-sm me-2">
+                      <i className="ci-download text-muted me-1"></i>
+                      21
+                      <span className="fs-xs ms-1">Sales</span>
+                    </div>
+                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                      $17.<small>00</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*<!-- Product-->*/}
+            <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+              <div className="card product-card-alt">
+                <div className="product-thumb">
+                  <button className="btn-wishlist btn-sm" type="button">
+                    <i className="ci-heart"></i>
+                  </button>
+                  <div className="product-card-actions">
+                    <Link href="/marketplace-single" passHref>
+                      <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                        <i className="ci-eye"></i>
+                      </a>
+                    </Link>
+                    <button
+                      className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                      type="button"
+                    >
+                      <i className="ci-cart"></i>
+                    </button>
+                  </div>
+                  <Link href="/marketplace-single" passHref>
+                    <a className="product-thumb-overlay"></a>
+                  </Link>
+                  <img src="/img/marketplace/products/05.jpg" alt="Product" />
+                </div>
+                <div className="card-body">
+                  <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                    <div className="text-muted fs-xs me-1">
+                      by{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Bandicoot Std.{" "}
+                      </a>
+                      in{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        UI Design
+                      </a>
+                    </div>
+                    <div className="star-rating">
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>
+                  <h3 className="product-title fs-sm mb-2">
+                    <Link href="/marketplace-single" passHref>
+                      <a>Minimal Mobile App UI Kit (Sketch)</a>
+                    </Link>
+                  </h3>
+                  <div className="d-flex flex-wrap justify-content-between align-items-center">
+                    <div className="fs-sm me-2">
+                      <i className="ci-download text-muted me-1"></i>
+                      117
+                      <span className="fs-xs ms-1">Sales</span>
+                    </div>
+                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                      $23.<small>00</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*<!-- Product-->*/}
+            <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+              <div className="card product-card-alt">
+                <div className="product-thumb">
+                  <button className="btn-wishlist btn-sm" type="button">
+                    <i className="ci-heart"></i>
+                  </button>
+                  <div className="product-card-actions">
+                    <Link href="/marketplace-single" passHref>
+                      <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                        <i className="ci-eye"></i>
+                      </a>
+                    </Link>
+                    <button
+                      className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                      type="button"
+                    >
+                      <i className="ci-cart"></i>
+                    </button>
+                  </div>
+                  <Link href="/marketplace-single" passHref>
+                    <a className="product-thumb-overlay"></a>
+                  </Link>
+                  <img src="/img/marketplace/products/11.jpg" alt="Product" />
+                </div>
+                <div className="card-body">
+                  <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                    <div className="text-muted fs-xs me-1">
+                      by{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        pixels{" "}
+                      </a>
+                      in{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Graphics
+                      </a>
+                    </div>
+                    <div className="star-rating">
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-half active"></i>
+                      <i className="star-rating-icon ci-star"></i>
+                      <i className="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>
+                  <h3 className="product-title fs-sm mb-2">
+                    <Link href="/marketplace-single" passHref>
+                      <a>Printed T-Shirt Mockup (PSD)</a>
+                    </Link>
+                  </h3>
+                  <div className="d-flex flex-wrap justify-content-between align-items-center">
+                    <div className="fs-sm me-2">
+                      <i className="ci-download text-muted me-1"></i>
+                      94
+                      <span className="fs-xs ms-1">Sales</span>
+                    </div>
+                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                      $12.<small>00</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*<!-- Product-->*/}
+            <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+              <div className="card product-card-alt">
+                <div className="product-thumb">
+                  <button className="btn-wishlist btn-sm" type="button">
+                    <i className="ci-heart"></i>
+                  </button>
+                  <div className="product-card-actions">
+                    <Link href="/marketplace-single" passHref>
+                      <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                        <i className="ci-eye"></i>
+                      </a>
+                    </Link>
+                    <button
+                      className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                      type="button"
+                    >
+                      <i className="ci-cart"></i>
+                    </button>
+                  </div>
+                  <Link href="/marketplace-single" passHref>
+                    <a className="product-thumb-overlay"></a>
+                  </Link>
+                  <img src="/img/marketplace/products/12.jpg" alt="Product" />
+                </div>
+                <div className="card-body">
+                  <div className="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                    <div className="text-muted fs-xs me-1">
+                      by{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        pixels{" "}
+                      </a>
+                      in{" "}
+                      <a className="product-meta fw-medium" href="#">
+                        Graphics
+                      </a>
+                    </div>
+                    <div className="star-rating">
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star-filled active"></i>
+                      <i className="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>
+                  <h3 className="product-title fs-sm mb-2">
+                    <Link href="/marketplace-single" passHref>
+                      <a>Corporate Branding Mockup (PSD)</a>
+                    </Link>
+                  </h3>
+                  <div className="d-flex flex-wrap justify-content-between align-items-center">
+                    <div className="fs-sm me-2">
+                      <i className="ci-download text-muted me-1"></i>
+                      122
+                      <span className="fs-xs ms-1">Sales</span>
+                    </div>
+                    <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                      $18.<small>00</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*<!-- More button-->*/}
+          <div className="text-center">
+            <Link href="/marketplace-category" passHref>
+              <a className="btn btn-outline-accent">
+                View more products
+                <i className="ci-arrow-right fs-ms ms-1"></i>
+              </a>
+            </Link>
+          </div>
+        </section>
+        {/*<!-- Seller of the month-->*/}
+        <section className="border-top py-5">
+          <div className="container py-lg-2">
+            <h2 className="h3 mb-3 pb-3 pb-lg-4 text-center text-lg-start">
+              Seller of the month
+            </h2>
+            <div className="row">
+              <div className="col-lg-4 text-center text-lg-start pb-3 pt-lg-2">
+                <div className="d-inline-block text-start">
+                  <div className="d-flex align-items-center pb-3">
+                    <div
+                      className="img-thumbnail rounded-circle flex-shrink-0"
+                      style={{ width: "6.375rem" }}
+                    >
+                      <img
+                        className="rounded-circle"
+                        src="/img/marketplace/account/avatar.png"
+                        alt="Bandicoot Studio"
+                      />
+                    </div>
+                    <div className="ps-3">
+                      <h3 className="fs-lg mb-0">Bandicoot Studio</h3>
+                      <span className="d-block text-muted fs-ms pt-1 pb-2">
+                        Member since November 2019
+                      </span>
+                      <Link href="/marketplace-vendor" passHref>
+                        <a className="btn btn-primary btn-sm">View products</a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-8">
+                <div className="tns-carousel">
+                  <div
+                    className="tns-carousel-inner"
+                    data-carousel-options='{"items": 2, "gutter": 16, "controls": false, "nav": true, "responsive": {"0":{"items":1},"500":{"items":2},"768":{"items":3}}}'
+                  >
+                    <div>
+                      <div className="card product-card-alt">
+                        <div className="product-thumb">
+                          <button className="btn-wishlist btn-sm" type="button">
+                            <i className="ci-heart"></i>
+                          </button>
+                          <div className="product-card-actions">
+                            <Link href="/marketplace-single" passHref>
+                              <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                <i className="ci-eye"></i>
+                              </a>
+                            </Link>
+                            <button
+                              className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                              type="button"
+                            >
+                              <i className="ci-cart"></i>
+                            </button>
+                          </div>
+                          <Link href="/marketplace-single" passHref>
+                            <a className="product-thumb-overlay"></a>
+                          </Link>
+                          <img
+                            src="/img/marketplace/products/13.jpg"
+                            alt="Product"
+                          />
+                        </div>
+                        <div className="card-body">
+                          <h3 className="product-title fs-sm mb-2">
+                            <Link href="/marketplace-single" passHref>
+                              <a>Hardcover Book Catalog Mockup</a>
+                            </Link>
+                          </h3>
+                          <div className="d-flex flex-wrap justify-content-between align-items-center">
+                            <div className="fs-sm me-2">
+                              <i className="ci-download text-muted me-1"></i>
+                              39
+                              <span className="fs-xs ms-1">Sales</span>
+                            </div>
+                            <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                              $12.
+                              <small>00</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="card product-card-alt">
+                        <div className="product-thumb">
+                          <button className="btn-wishlist btn-sm" type="button">
+                            <i className="ci-heart"></i>
+                          </button>
+                          <div className="product-card-actions">
+                            <Link href="/marketplace-single" passHref>
+                              <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                <i className="ci-eye"></i>
+                              </a>
+                            </Link>
+                            <button
+                              className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                              type="button"
+                            >
+                              <i className="ci-cart"></i>
+                            </button>
+                          </div>
+                          <Link href="/marketplace-single" passHref>
+                            <a className="product-thumb-overlay"></a>
+                          </Link>
+                          <img
+                            src="/img/marketplace/products/14.jpg"
+                            alt="Product"
+                          />
+                        </div>
+                        <div className="card-body">
+                          <h3 className="product-title fs-sm mb-2">
+                            <Link href="/marketplace-single" passHref>
+                              <a>Top View Smartwatch 3D Render</a>
+                            </Link>
+                          </h3>
+                          <div className="d-flex flex-wrap justify-content-between align-items-center">
+                            <div className="fs-sm me-2">
+                              <i className="ci-download text-muted me-1"></i>
+                              28
+                              <span className="fs-xs ms-1">Sales</span>
+                            </div>
+                            <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                              $14.
+                              <small>00</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="card product-card-alt">
+                        <div className="product-thumb">
+                          <button className="btn-wishlist btn-sm" type="button">
+                            <i className="ci-heart"></i>
+                          </button>
+                          <div className="product-card-actions">
+                            <Link href="/marketplace-single" passHref>
+                              <a className="btn btn-light btn-icon btn-shadow fs-base mx-2">
+                                <i className="ci-eye"></i>
+                              </a>
+                            </Link>
+                            <button
+                              className="btn btn-light btn-icon btn-shadow fs-base mx-2"
+                              type="button"
+                            >
+                              <i className="ci-cart"></i>
+                            </button>
+                          </div>
+                          <Link href="/marketplace-single" passHref>
+                            <a className="product-thumb-overlay"></a>
+                          </Link>
+                          <img
+                            src="/img/marketplace/products/07.jpg"
+                            alt="Product"
+                          />
+                        </div>
+                        <div className="card-body">
+                          <h3 className="product-title fs-sm mb-2">
+                            <Link href="/marketplace-single" passHref>
+                              <a>Gravity Device Mockups (PSD)</a>
+                            </Link>
+                          </h3>
+                          <div className="d-flex flex-wrap justify-content-between align-items-center">
+                            <div className="fs-sm me-2">
+                              <i className="ci-download text-muted me-1"></i>
+                              234
+                              <span className="fs-xs ms-1">Sales</span>
+                            </div>
+                            <div className="bg-faded-accent text-accent rounded-1 py-1 px-2">
+                              $16.
+                              <small>00</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*<!-- Marketplace features-->*/}
+        <section
+          className="bg-accent bg-size-cover bg-position-center pt-5 pb-4 pb-lg-5"
+          style={{
+            backgroundImage: "url(img/marketplace/features/features-bg.jpg)",
+          }}
+        >
+          <div className="container pt-lg-3">
+            <h2 className="h3 mb-3 pb-4 text-light text-center">
+              Why our marketplace?
+            </h2>
+            <div className="row pt-lg-2 text-center">
+              <div className="col-lg-3 col-sm-6 mb-grid-gutter">
+                <div className="d-inline-flex align-items-center text-start">
+                  <img
+                    src="/img/marketplace/features/quality.png"
+                    width="52"
+                    alt="Quality Guarantee"
+                  />
+                  <div className="ps-3">
+                    <h6 className="text-light fs-base mb-1">
+                      Quality Guarantee
+                    </h6>
+                    <p className="text-light fs-ms opacity-70 mb-0">
+                      Quality checked by our team
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-sm-6 mb-grid-gutter">
+                <div className="d-inline-flex align-items-center text-start">
+                  <img
+                    src="/img/marketplace/features/support.png"
+                    width="52"
+                    alt="Customer Support"
+                  />
+                  <div className="ps-3">
+                    <h6 className="text-light fs-base mb-1">
+                      Customer Support
+                    </h6>
+                    <p className="text-light fs-ms opacity-70 mb-0">
+                      Friendly 24/7 customer support
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-sm-6 mb-grid-gutter">
+                <div className="d-inline-flex align-items-center text-start">
+                  <img
+                    src="/img/marketplace/features/updates.png"
+                    width="52"
+                    alt="Free Updates"
+                  />
+                  <div className="ps-3">
+                    <h6 className="text-light fs-base mb-1">
+                      Lifetime Free Updates
+                    </h6>
+                    <p className="text-light fs-ms opacity-70 mb-0">
+                      Never pay for an update
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-sm-6 mb-grid-gutter">
+                <div className="d-inline-flex align-items-center text-start">
+                  <img
+                    src="/img/marketplace/features/secure.png"
+                    width="52"
+                    alt="Secure Payments"
+                  />
+                  <div className="ps-3">
+                    <h6 className="text-light fs-base mb-1">Secure Payments</h6>
+                    <p className="text-light fs-ms opacity-70 mb-0">
+                      We posess SSL / Secure сertificate
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*<!-- Blog posts carousel-->*/}
+        <section className="py-5">
+          <div className="container py-lg-3">
+            <h2 className="h3 text-center">From the blog</h2>
+            <p className="text-muted text-center mb-3 pb-4">
+              Latest marketplace news, success stories and tutorials
+            </p>
+            <div className="tns-carousel">
+              <div
+                className="tns-carousel-inner"
+                data-carousel-options='{"items": 2, "gutter": 15, "controls": false, "nav": true, "responsive": {"0":{"items":1},"500":{"items":2},"768":{"items":3}, "992":{"items":3, "gutter": 30}}}'
+              >
+                <div>
+                  <div className="card">
+                    <Link href="/blog-single" passHref>
+                      <a className="blog-entry-thumb">
+                        <img
+                          className="card-img-top"
+                          src="/img/blog/05.jpg"
+                          alt="Post"
+                        />
+                      </a>
+                    </Link>
+                    <div className="card-body">
+                      <h2 className="h6 blog-entry-title">
+                        <Link href="/blog-single" passHref>
+                          <a>We start selling WordPress themes soon</a>
+                        </Link>
+                      </h2>
+                      <p className="fs-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua enim ad minim...
+                      </p>
+                      <div className="fs-xs text-nowrap">
+                        <a
+                          className="blog-entry-meta-link text-nowrap"
+                          href="#"
+                        >
+                          Nov 23
+                        </a>
+                        <span className="blog-entry-meta-divider mx-2"></span>
+                        <Link href="/blog-single#comments" passHref>
+                          <a className="blog-entry-meta-link text-nowrap">
+                            <i className="ci-message"></i>
+                            19
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="card">
+                    <Link href="/blog-single" passHref>
+                      <a className="blog-entry-thumb">
+                        <img
+                          className="card-img-top"
+                          src="/img/blog/06.jpg"
+                          alt="Post"
+                        />
+                      </a>
+                    </Link>
+                    <div className="card-body">
+                      <h2 className="h6 blog-entry-title">
+                        <Link href="/blog-single" passHref>
+                          <a>Shoot like a pro. Tips &amp; tricks</a>
+                        </Link>
+                      </h2>
+                      <p className="fs-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua enim ad minim...
+                      </p>
+                      <div className="fs-xs text-nowrap">
+                        <a
+                          className="blog-entry-meta-link text-nowrap"
+                          href="#"
+                        >
+                          Oct 10
+                        </a>
+                        <span className="blog-entry-meta-divider mx-2"></span>
+                        <Link href="/blog-single#comments" passHref>
+                          <a className="blog-entry-meta-link text-nowrap">
+                            <i className="ci-message"></i>
+                            28
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="card">
+                    <Link href="/blog-single" passHref>
+                      <a className="blog-entry-thumb">
+                        <img
+                          className="card-img-top"
+                          src="/img/blog/07.jpg"
+                          alt="Post"
+                        />
+                      </a>
+                    </Link>
+                    <div className="card-body">
+                      <h2 className="h6 blog-entry-title">
+                        <Link href="/blog-single" passHref>
+                          <a>Designing engaging mobile experiences</a>
+                        </Link>
+                      </h2>
+                      <p className="fs-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua enim ad minim...
+                      </p>
+                      <div className="fs-xs text-nowrap">
+                        <a
+                          className="blog-entry-meta-link text-nowrap"
+                          href="#"
+                        >
+                          Sep 15
+                        </a>
+                        <span className="blog-entry-meta-divider mx-2"></span>
+                        <Link href="/blog-single#comments" passHref>
+                          <a className="blog-entry-meta-link text-nowrap">
+                            <i className="ci-message"></i>
+                            46
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*<!-- More button-->*/}
+            <div className="text-center pt-4 mt-md-2">
+              <Link href="/blog-grid-sidebar" passHref>
+                <a className="btn btn-outline-accent">
+                  Ream more posts
+                  <i className="ci-arrow-right fs-ms ms-1"></i>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </>
+    </MarketplaceLayout>
+  );
 }

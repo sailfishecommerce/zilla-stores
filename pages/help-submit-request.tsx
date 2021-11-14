@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import FashionLayout from "../layout/FashionLayout";
 
 export default function HelpSubmitRequest() {
@@ -10,17 +12,18 @@ export default function HelpSubmitRequest() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
-                                        <a
-                                            className="text-nowrap"
-                                            href="index.html"
-                                        >
+                                        <Link  href="/" passHref>
+                                        <a className="text-nowrap">
                                             <i className="ci-home"></i>Home
                                         </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
-                                        <a href="help-topics.html">
+                                        <Link href="/help-topics" passHref>
+                                        <a>
                                             Help center
                                         </a>
+                                        </Link>
                                     </li>
                                     <li
                                         className="breadcrumb-item text-nowrap active"

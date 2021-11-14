@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link'
 import FashionLayout from "../layout/FashionLayout";
 
 export default function HelpSingleTopic() {
@@ -11,17 +12,25 @@ export default function HelpSingleTopic() {
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
                                     <li className="breadcrumb-item">
+                                        <Link 
+                                            href="/"
+                                        passHref>
                                         <a
                                             className="text-nowrap"
-                                            href="index.html"
                                         >
                                             <i className="ci-home"></i>Home
                                         </a>
+                                        </Link>
                                     </li>
                                     <li className="breadcrumb-item text-nowrap">
-                                        <a href="help-topics.html">
+                                        <Link 
+                                            href="/help-topics"
+                                        passHref>
+                                        <a 
+                                        >
                                             Help center
                                         </a>
+                                        </Link>
                                     </li>
                                     <li
                                         className="breadcrumb-item text-nowrap active"
@@ -447,12 +456,15 @@ export default function HelpSingleTopic() {
                                     Haven&#39;t found the answer? We can help.
                                 </h2>
                                 <i className="ci-help h3 text-primary d-block mb-4"></i>
+                                <Link 
+                                    href="/help-submit-request"
+                                passHref>
                                 <a
                                     className="btn btn-primary"
-                                    href="help-submit-request.html"
                                 >
                                     Submit a request
                                 </a>
+                                </Link>
                                 <p className="fs-sm pt-4">
                                     Contact us and we’ll get back to you as soon
                                     as possible.

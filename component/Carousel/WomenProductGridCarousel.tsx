@@ -1,43 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import CarouselWrapper from "./Carousel/CarouselWrapper";
 
-export default function FeaturedCategory() {
-  var settings = {
-    controlsText: [
-      '<i class="ci-arrow-left"></i>',
-      '<i class="ci-arrow-right"></i>',
-    ],
-    navPosition: "bottom",
-    mouseDrag: true,
-    rewind: true,
-    controlsContainer: "#hoodie-day",
+import CarouselWrapper from "./CarouselWrapper";
+
+export default function WomenProductGridCarousel() {
+  const womenProductGridSettings = {
     nav: false,
-    speed: 500,
-    loop: true,
-    autoplayHoverPause: true,
-    autoplayButtonOutput: false,
+    controlsContainer: "#for-women",
   };
   return (
-    <section className="container mb-4 pb-3 pb-sm-0 mb-sm-5">
+    <section className="container pt-lg-3 mb-4 mb-sm-5">
       <div className="row">
         {/*<!-- Banner with controls-->*/}
         <div className="col-md-5">
           <div
             className="d-flex flex-column h-100 overflow-hidden rounded-3"
-            style={{ backgroundColor: "#e2e9ef" }}
+            style={{ backgroundColor: "#f6f8fb" }}
           >
             <div className="d-flex justify-content-between px-grid-gutter py-grid-gutter">
               <div>
-                <h3 className="mb-1">Hoodie day</h3>
+                <h3 className="mb-1">For Women</h3>
                 <Link href="/shop-grid-ls" passHref>
                   <a className="fs-md">
-                    Shop hoodies
+                    Shop for women
                     <i className="ci-arrow-right fs-xs align-middle ms-1"></i>
                   </a>
                 </Link>
               </div>
-              <div className="tns-carousel-controls" id="hoodie-day">
+              <div className="tns-carousel-controls" id="for-women">
                 <button type="button">
                   <i className="ci-arrow-left"></i>
                 </button>
@@ -50,7 +40,7 @@ export default function FeaturedCategory() {
               <a className="d-none d-md-block mt-auto">
                 <img
                   className="d-block w-100"
-                  src="/img/home/categories/cat-lg04.jpg"
+                  src="/img/home/categories/cat-lg02.jpg"
                   alt="For Women"
                 />
               </a>
@@ -60,7 +50,10 @@ export default function FeaturedCategory() {
         {/*<!-- Product grid (carousel)-->*/}
         <div className="col-md-7 pt-4 pt-md-0">
           <div className="tns-carousel">
-            <CarouselWrapper onClick={() => {}} settings={settings}>
+            <CarouselWrapper
+              onClick={() => {}}
+              settings={womenProductGridSettings}
+            >
               {/*<!-- Carousel item-->*/}
               <div>
                 <div className="row mx-n2">
@@ -77,22 +70,22 @@ export default function FeaturedCategory() {
                       </button>
                       <Link href="/shop-single-v1" passHref>
                         <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/20.jpg" alt="Product" />
+                          <img src="/img/shop/catalog/09.jpg" alt="Product" />
                         </a>
                       </Link>
                       <div className="card-body py-2">
                         <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
+                          Cosmetics
                         </a>
                         <h3 className="product-title fs-sm">
                           <Link href="/shop-single-v1" passHref>
-                            <a>Block-colored Hooded Top</a>
+                            <a>Metallic Lipstick (Crimson)</a>
                           </Link>
                         </h3>
                         <div className="d-flex justify-content-between">
                           <div className="product-price">
                             <span className="text-accent">
-                              $24.
+                              $12.
                               <small>99</small>
                             </span>
                           </div>
@@ -100,7 +93,7 @@ export default function FeaturedCategory() {
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-half active"></i>
                             <i className="star-rating-icon ci-star"></i>
                           </div>
                         </div>
@@ -120,22 +113,22 @@ export default function FeaturedCategory() {
                       </button>
                       <Link href="/shop-single-v1" passHref>
                         <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/21.jpg" alt="Product" />
+                          <img src="/img/shop/catalog/26.jpg" alt="Product" />
                         </a>
                       </Link>
                       <div className="card-body py-2">
                         <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
+                          Shoes
                         </a>
                         <h3 className="product-title fs-sm">
                           <Link href="/shop-single-v1" passHref>
-                            <a>Block-colored Hooded Top</a>
+                            <a>Textile Platform Sneakers</a>
                           </Link>
                         </h3>
                         <div className="d-flex justify-content-between">
                           <div className="product-price">
                             <span className="text-accent">
-                              $26.
+                              $59.
                               <small>99</small>
                             </span>
                           </div>
@@ -164,18 +157,18 @@ export default function FeaturedCategory() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link passHref href="/shop-single-v1">
                         <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/23.jpg" alt="Product" />
+                          <img src="/img/shop/catalog/27.jpg" alt="Product" />
                         </a>
                       </Link>
                       <div className="card-body py-2">
                         <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
+                          Accessories
                         </a>
                         <h3 className="product-title fs-sm">
                           <Link href="/shop-single-v1" passHref>
-                            <a>Block-colored Hooded Top</a>
+                            <a>Polarized Sunglasses</a>
                           </Link>
                         </h3>
                         <div className="d-flex justify-content-between">
@@ -185,14 +178,15 @@ export default function FeaturedCategory() {
                               <small>99</small>
                             </span>
                             <del className="fs-sm text-muted">
-                              24.<small>99</small>
+                              28.
+                              <small>99</small>
                             </del>
                           </div>
                           <div className="star-rating">
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-half active"></i>
+                            <i className="star-rating-icon ci-star"></i>
                             <i className="star-rating-icon ci-star"></i>
                           </div>
                         </div>
@@ -212,22 +206,22 @@ export default function FeaturedCategory() {
                       </button>
                       <Link href="/shop-single-v1" passHref>
                         <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/51.jpg" alt="Product" />
+                          <img src="/img/shop/catalog/28.jpg" alt="Product" />
                         </a>
                       </Link>
                       <div className="card-body py-2">
                         <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
+                          Shoes
                         </a>
                         <h3 className="product-title fs-sm">
                           <Link href="/shop-single-v1" passHref>
-                            <a>Mono Color Hooded Top</a>
+                            <a>Leather Platform Sandals</a>
                           </Link>
                         </h3>
                         <div className="d-flex justify-content-between">
                           <div className="product-price">
                             <span className="text-accent">
-                              $21.
+                              $79.
                               <small>99</small>
                             </span>
                           </div>
@@ -236,7 +230,7 @@ export default function FeaturedCategory() {
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star"></i>
                           </div>
                         </div>
                       </div>
@@ -255,16 +249,16 @@ export default function FeaturedCategory() {
                       </button>
                       <Link href="/shop-single-v1" passHref>
                         <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/24.jpg" alt="Product" />
+                          <img src="/img/shop/catalog/29.jpg" alt="Product" />
                         </a>
                       </Link>
                       <div className="card-body py-2">
                         <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
+                          Shorts
                         </a>
                         <h3 className="product-title fs-sm">
                           <Link href="/shop-single-v1" passHref>
-                            <a>Block-colored Hooded Top</a>
+                            <a>Short Chino Shorts</a>
                           </Link>
                         </h3>
                         <div className="d-flex justify-content-between">
@@ -277,9 +271,9 @@ export default function FeaturedCategory() {
                           <div className="star-rating">
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-half active"></i>
-                            <i className="star-rating-icon ci-star"></i>
-                            <i className="star-rating-icon ci-star"></i>
                           </div>
                         </div>
                       </div>
@@ -298,23 +292,22 @@ export default function FeaturedCategory() {
                       </button>
                       <Link href="/shop-single-v1" passHref>
                         <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/54.jpg" alt="Product" />
+                          <img src="/img/shop/catalog/30.jpg" alt="Product" />
                         </a>
                       </Link>
                       <div className="card-body py-2">
                         <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
+                          T-shirts
                         </a>
-
                         <h3 className="product-title fs-sm">
                           <Link href="/shop-single-v1" passHref>
-                            <a>Mono Color Hooded Top</a>
+                            <a>T-shirt with Motif</a>
                           </Link>
                         </h3>
                         <div className="d-flex justify-content-between">
                           <div className="product-price">
                             <span className="text-accent">
-                              $21.
+                              $13.
                               <small>99</small>
                             </span>
                           </div>
@@ -334,6 +327,178 @@ export default function FeaturedCategory() {
               {/*<!-- Carousel item-->*/}
               <div>
                 <div className="row mx-n2">
+                  <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
+                    <div className="card product-card card-static">
+                      <button
+                        className="btn-wishlist btn-sm"
+                        type="button"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Add to wishlist"
+                      >
+                        <i className="ci-heart"></i>
+                      </button>
+                      <Link href="/shop-single-v1" passHref>
+                        <a className="card-img-top d-block overflow-hidden">
+                          <img src="/img/shop/catalog/01.jpg" alt="Product" />
+                        </a>
+                      </Link>
+                      <div className="card-body py-2">
+                        <a className="product-meta d-block fs-xs pb-1" href="#">
+                          Shoes
+                        </a>
+                        <h3 className="product-title fs-sm">
+                          <Link href="/shop-single-v1" passHref>
+                            <a>Colorblock Sneakers</a>
+                          </Link>
+                        </h3>
+                        <div className="d-flex justify-content-between">
+                          <div className="product-price">
+                            <span className="text-accent">
+                              $154.
+                              <small>99</small>
+                            </span>
+                          </div>
+                          <div className="star-rating">
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-half active"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
+                    <div className="card product-card card-static">
+                      <button
+                        className="btn-wishlist btn-sm"
+                        type="button"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Add to wishlist"
+                      >
+                        <i className="ci-heart"></i>
+                      </button>
+                      <Link href="/shop-single-v1" passHref>
+                        <a className="card-img-top d-block overflow-hidden">
+                          <img src="/img/shop/catalog/02.jpg" alt="Product" />
+                        </a>
+                      </Link>
+                      <div className="card-body py-2">
+                        <a className="product-meta d-block fs-xs pb-1" href="#">
+                          Blouse
+                        </a>
+                        <h3 className="product-title fs-sm">
+                          <Link href="/shop-single-v1" passHref>
+                            <a>Cotton Lace Blouse</a>
+                          </Link>
+                        </h3>
+                        <div className="d-flex justify-content-between">
+                          <div className="product-price">
+                            <span className="text-accent">
+                              $37.
+                              <small>50</small>
+                            </span>
+                          </div>
+                          <div className="star-rating">
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star"></i>
+                            <i className="star-rating-icon ci-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
+                    <div className="card product-card card-static">
+                      <button
+                        className="btn-wishlist btn-sm"
+                        type="button"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Add to wishlist"
+                      >
+                        <i className="ci-heart"></i>
+                      </button>
+                      <Link href="/shop-single-v1" passHref>
+                        <a className="card-img-top d-block overflow-hidden">
+                          <img src="/img/shop/catalog/03.jpg" alt="Product" />
+                        </a>
+                      </Link>
+                      <div className="card-body py-2">
+                        <a className="product-meta d-block fs-xs pb-1" href="#">
+                          Shorts
+                        </a>
+                        <h3 className="product-title fs-sm">
+                          <Link href="/shop-single-v1" passHref>
+                            <a>Mom High Waist Shorts</a>
+                          </Link>
+                        </h3>
+                        <div className="d-flex justify-content-between">
+                          <div className="product-price">
+                            <span className="text-accent">
+                              $39.
+                              <small>50</small>
+                            </span>
+                          </div>
+                          <div className="star-rating">
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
+                    <div className="card product-card card-static">
+                      <button
+                        className="btn-wishlist btn-sm"
+                        type="button"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Add to wishlist"
+                      >
+                        <i className="ci-heart"></i>
+                      </button>
+                      <Link href="/shop-single-v1" passHref>
+                        <a className="card-img-top d-block overflow-hidden">
+                          <img src="/img/shop/catalog/04.jpg" alt="Product" />
+                        </a>
+                      </Link>
+                      <div className="card-body py-2">
+                        <a className="product-meta d-block fs-xs pb-1" href="#">
+                          Sportswear
+                        </a>
+                        <h3 className="product-title fs-sm">
+                          <Link href="/shop-single-v1" passHref>
+                            <a>Sports Jacket</a>
+                          </Link>
+                        </h3>
+                        <div className="d-flex justify-content-between">
+                          <div className="product-price">
+                            <span className="text-accent">
+                              $68.
+                              <small>40</small>
+                            </span>
+                          </div>
+                          <div className="star-rating">
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star-filled active"></i>
+                            <i className="star-rating-icon ci-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4 d-none d-lg-block">
                     <div className="card product-card card-static">
                       <button
@@ -347,31 +512,31 @@ export default function FeaturedCategory() {
                       </button>
                       <Link href="/shop-single-v1" passHref>
                         <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/53.jpg" alt="Product" />
+                          <img src="/img/shop/catalog/31.jpg" alt="Product" />
                         </a>
                       </Link>
                       <div className="card-body py-2">
                         <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
+                          Shorts
                         </a>
                         <h3 className="product-title fs-sm">
                           <Link href="/shop-single-v1" passHref>
-                            <a>Mono Color Hooded Top</a>
+                            <a>Leather Platform Sandals</a>
                           </Link>
                         </h3>
                         <div className="d-flex justify-content-between">
                           <div className="product-price">
                             <span className="text-accent">
-                              $21.
-                              <small>99</small>
+                              $67.
+                              <small>95</small>
                             </span>
                           </div>
                           <div className="star-rating">
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-half active"></i>
+                            <i className="star-rating-icon ci-star"></i>
+                            <i className="star-rating-icon ci-star"></i>
                           </div>
                         </div>
                       </div>
@@ -390,65 +555,22 @@ export default function FeaturedCategory() {
                       </button>
                       <Link href="/shop-single-v1" passHref>
                         <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/52.jpg" alt="Product" />
+                          <img src="/img/shop/catalog/07.jpg" alt="Product" />
                         </a>
                       </Link>
                       <div className="card-body py-2">
                         <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
+                          T-shirts
                         </a>
                         <h3 className="product-title fs-sm">
                           <Link href="/shop-single-v1" passHref>
-                            <a>Printed Hooded Top</a>
+                            <a>Two-Piece Bikini</a>
                           </Link>
                         </h3>
                         <div className="d-flex justify-content-between">
                           <div className="product-price">
                             <span className="text-accent">
-                              $25.
-                              <small>99</small>
-                            </span>
-                          </div>
-                          <div className="star-rating">
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-half active"></i>
-                            <i className="star-rating-icon ci-star"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
-                    <div className="card product-card card-static">
-                      <button
-                        className="btn-wishlist btn-sm"
-                        type="button"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="left"
-                        title="Add to wishlist"
-                      >
-                        <i className="ci-heart"></i>
-                      </button>
-                      <Link href="/shop-single-v1" passHref>
-                        <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/22.jpg" alt="Product" />
-                        </a>
-                      </Link>
-                      <div className="card-body py-2">
-                        <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
-                        </a>
-                        <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
-                            <a>Block-colored Hooded Top</a>
-                          </Link>
-                        </h3>
-                        <div className="d-flex justify-content-between">
-                          <div className="product-price">
-                            <span className="text-accent">
-                              $24.
+                              $18.
                               <small>99</small>
                             </span>
                           </div>
@@ -457,135 +579,6 @@ export default function FeaturedCategory() {
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
                             <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
-                    <div className="card product-card card-static">
-                      <button
-                        className="btn-wishlist btn-sm"
-                        type="button"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="left"
-                        title="Add to wishlist"
-                      >
-                        <i className="ci-heart"></i>
-                      </button>
-                      <Link href="/shop-single-v1" passHref>
-                        <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/56.jpg" alt="Product" />
-                        </a>
-                      </Link>
-                      <div className="card-body py-2">
-                        <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
-                        </a>
-                        <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
-                            <a>Printed Hooded Top</a>
-                          </Link>
-                        </h3>
-                        <div className="d-flex justify-content-between">
-                          <div className="product-price">
-                            <span className="text-accent">
-                              $25.
-                              <small>99</small>
-                            </span>
-                          </div>
-                          <div className="star-rating">
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
-                    <div className="card product-card card-static">
-                      <button
-                        className="btn-wishlist btn-sm"
-                        type="button"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="left"
-                        title="Add to wishlist"
-                      >
-                        <i className="ci-heart"></i>
-                      </button>
-                      <Link href="/shop-single-v1" passHref>
-                        <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/55.jpg" alt="Product" />
-                        </a>
-                      </Link>
-                      <div className="card-body py-2">
-                        <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
-                        </a>
-                        <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
-                            <a>Block-colored Hooded Top</a>
-                          </Link>
-                        </h3>
-                        <div className="d-flex justify-content-between">
-                          <div className="product-price">
-                            <span className="text-accent">
-                              $24.
-                              <small>99</small>
-                            </span>
-                          </div>
-                          <div className="star-rating">
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-half active"></i>
-                            <i className="star-rating-icon ci-star"></i>
-                            <i className="star-rating-icon ci-star"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
-                    <div className="card product-card card-static">
-                      <button
-                        className="btn-wishlist btn-sm"
-                        type="button"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="left"
-                        title="Add to wishlist"
-                      >
-                        <i className="ci-heart"></i>
-                      </button>
-                      <Link href="/shop-single-v1" passHref>
-                        <a className="card-img-top d-block overflow-hidden">
-                          <img src="/img/shop/catalog/57.jpg" alt="Product" />
-                        </a>
-                      </Link>
-                      <div className="card-body py-2">
-                        <a className="product-meta d-block fs-xs pb-1" href="#">
-                          Hoodies &amp; Sweatshirts
-                        </a>
-                        <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
-                            <a>Block-colored Hooded Top</a>
-                          </Link>
-                        </h3>
-                        <div className="d-flex justify-content-between">
-                          <div className="product-price">
-                            <span className="text-accent">
-                              $23.
-                              <small>99</small>
-                            </span>
-                          </div>
-                          <div className="star-rating">
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star-filled active"></i>
-                            <i className="star-rating-icon ci-star"></i>
                             <i className="star-rating-icon ci-star"></i>
                           </div>
                         </div>

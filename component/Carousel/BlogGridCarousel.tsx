@@ -12,16 +12,23 @@ export default function BlogGridCarousel() {
       "700": { items: 2, gutter: 20 },
       "991": { items: 2, gutter: 30 },
     },
+    controlsText: [
+      '<i class="ci-arrow-left"></i>',
+      '<i class="ci-arrow-right"></i>',
+    ],
+    controlsContainer: "#blog-grid-controls",
   };
   return (
-    <div className="py-5">
+    <div className="pt-5 position-relative">
+      <div className="tns-controls" id="blog-grid-controls">
+        <button type="button">
+          <i className="ci-arrow-left"></i>
+        </button>
+        <button type="button">
+          <i className="ci-arrow-right"></i>
+        </button>
+      </div>
       <CarouselWrapper onClick={() => {}} settings={settings}>
-        {/* <div className="featured-posts-carousel tns-carousel pt-5"> */}
-        {/* <div
-          className="tns-carousel-inner"
-          data-carousel-options='{"items": 2, "nav": false, "autoHeight": true,
-           "responsive": {"0":{"items":1},"700":{"items":2, "gutter": 20},"991":{"items":2, "gutter": 30}}}'
-        > */}
         <article>
           <Link href="/blog-single-sidebar" passHref>
             <a className="blog-entry-thumb mb-3">
@@ -137,8 +144,6 @@ export default function BlogGridCarousel() {
             </div>
           </div>
         </article>
-        {/* </div> */}
-        {/* </div> */}
       </CarouselWrapper>
     </div>
   );

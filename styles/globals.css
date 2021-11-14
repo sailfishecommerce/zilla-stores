@@ -181,3 +181,14 @@ a {
   right: 20px;
   top: 45%;
 }
+
+div#blog-grid-controls {
+  width: 100%;
+  max-width: 100%;
+  top: 40%;
+  position: absolute;
+}
+
+.electronicsBrandsCarousel .tns-outer button {
+  display: none;
+}

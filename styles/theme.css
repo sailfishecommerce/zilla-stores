@@ -14458,8 +14458,7 @@ dd {
 [class*=" ci-"] {
   display: inline-block;
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "cartzilla-icons" !important;
-  speak: never;
+  font-family: "cartzilla-icons" !important;  
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -18790,8 +18789,8 @@ a.nav-link:hover .media-tab-media {
   position: relative;
   text-decoration: none !important;
   overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
+
 .gallery-item > img {
   display: block;
   width: 100%;
@@ -18807,6 +18806,7 @@ a.nav-link:hover .media-tab-media {
   opacity: 0;
   z-index: 1;
 }
+
 .gallery-item::after {
   display: block;
   position: absolute;

@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import dyanmic from "next/dynamic";
-import CarouselWrapper from "../component/Carousel/CarouselWrapper";
 
 import FashionLayout from "../layout/FashionLayout";
 

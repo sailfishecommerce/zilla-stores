@@ -53,23 +53,15 @@ export default function FashionHeader() {
               (00) 33 169 7720
             </a>
           </div>
-          {/* <div className="tns-carousel tns-controls-static d-none d-md-block">
-            <div
-              className="tns-carousel-inner"
-              //   data-carousel-options='{"mode": "gallery", "nav": false}'
-            > */}
-          <CarouselWrapper
-            outerDivClassname="tns-carousel tns-controls-static d-none d-md-block"
-            innerDivClassname="tns-carousel-inner"
-            onClick={() => {}}
-            settings={settings}
-          >
-            <div className="topbar-text">Free shipping for order over $200</div>
-            <div className="topbar-text">We return money within 30 days</div>
-            <div className="topbar-text">Friendly 24/7 customer support</div>
-          </CarouselWrapper>
-          {/* </div>
-          </div> */}
+          <div className="tns-carousel tns-controls-static d-none d-md-block">
+            <CarouselWrapper onClick={() => {}} settings={settings}>
+              <div className="topbar-text">
+                Free shipping for order over $200
+              </div>
+              <div className="topbar-text">We return money within 30 days</div>
+              <div className="topbar-text">Friendly 24/7 customer support</div>
+            </CarouselWrapper>
+          </div>
           <div className="ms-3 text-nowrap">
             <Link href="/order-tracking" passHref>
               <a className="topbar-link me-4 d-none d-md-inline-block">

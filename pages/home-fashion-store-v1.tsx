@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+
 import Banners from "../component/Banners";
 import InfoCards from "../component/InfoCards";
 import PopularCategories from "../component/PopularCategories";

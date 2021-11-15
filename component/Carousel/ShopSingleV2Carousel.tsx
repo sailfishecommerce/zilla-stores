@@ -27,7 +27,7 @@ export default function ShopSingleV2Carousel() {
     <>
       <div className="container pt-lg-2 pb-5 mb-md-3">
         <h2 className="h3 text-center pb-4">You may also like</h2>
-        <div className="tns-carousel tns-controls-static tns-controls-outside">
+        <div className="tns-carousegle l tns-controls-static tns-controls-outside">
           <CarouselWrapper onClick={() => {}} settings={otherProductSettings}>
             {/*<!-- Product-->*/}
             <div>

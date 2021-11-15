@@ -12,6 +12,10 @@ export default function ShopSingleV2Carousel() {
       "768": { items: 3, gutter: 20 },
       "1100": { items: 4, gutter: 30 },
     },
+    controlsText: [
+      '<i class="ci-arrow-left"></i>',
+      '<i class="ci-arrow-right"></i>',
+    ],
   };
 
   const productSettings = {

@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import dyanmic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 import FashionLayout from "../layout/FashionLayout";
 
-const RelatedPostCarousel = dyanmic(
+const RelatedPostCarousel = dynamic(
   () => import("../component/Carousel/RelatedPostCarousel"),
   {
     ssr: false,

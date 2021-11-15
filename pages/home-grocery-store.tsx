@@ -1,32 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 
-import dyanmic from "next/dynamic";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 
 import GroceryLayout from "../layout/GroceryLayout";
 
-const HomeGroceryCarousel = dyanmic(
+const HomeGroceryCarousel = dynamic(
   () => import("../component/Carousel/HomeGroceryCarousel"),
   {
     ssr: false,
   }
 );
 
-const DiscountedProductCarousel = dyanmic(
+const DiscountedProductCarousel = dynamic(
   () => import("../component/Carousel/DiscountedProductCarousel"),
   {
     ssr: false,
   }
 );
 
-const BestSellersCarousel = dyanmic(
+const BestSellersCarousel = dynamic(
   () => import("../component/Carousel/BestsellersCarousel"),
   {
     ssr: false,
   }
 );
 
-const CustomerReviewCarousel = dyanmic(
+const CustomerReviewCarousel = dynamic(
   () => import("../component/Carousel/CustomerReviewCarousel"),
   {
     ssr: false,

@@ -1,24 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import dyanmic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 import MarketplaceLayout from "../layout/MarketplaceLayout";
 
-const MarketplaceFeaturedProducts = dyanmic(
+const MarketplaceFeaturedProducts = dynamic(
   () => import("../component/Carousel/MarketplaceFeaturedProducts"),
   {
     ssr: false,
   }
 );
 
-const MonthSellerCarousel = dyanmic(
+const MonthSellerCarousel = dynamic(
   () => import("../component/Carousel/MonthSellerCarousel"),
   {
     ssr: false,
   }
 );
 
-const MarketplaceBlogPost = dyanmic(
+const MarketplaceBlogPost = dynamic(
   () => import("../component/Carousel/MarketplaceBlogPost"),
   {
     ssr: false,

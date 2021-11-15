@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import dyanmic from "next/dynamic";
+import dynamic from "next/dynamic";
 
-const HomeElectronicsCarousel = dyanmic(
+const HomeElectronicsCarousel = dynamic(
   () => import("../component/Carousel/HomeElectronicsCarousel"),
   {
     ssr: false,
   }
 );
 
-const ElectronicBrandsCarousel = dyanmic(
+const ElectronicBrandsCarousel = dynamic(
   () => import("../component/Carousel/ElectronicBrandsCarousel"),
   {
     ssr: false,

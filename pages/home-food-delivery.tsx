@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import dyanmic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 import FoodDeliveryLayout from "../layout/FoodDeliveryLayout";
 
 export default function HomefoodDelivery() {
-  const CustomerReviewCarousel = dyanmic(
+  const CustomerReviewCarousel = dynamic(
     () => import("../component/Carousel/CustomerReviewCarousel"),
     {
       ssr: false,

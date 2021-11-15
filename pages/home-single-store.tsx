@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import dyanmic from "next/dynamic";
+import dynamic from "next/dynamic";
 import SingleStoreLayout from "../layout/SingleStoreLayout";
 
-const CustomerReviewCarousel = dyanmic(
+const CustomerReviewCarousel = dynamic(
   () => import("../component/Carousel/CustomerReviewCarousel"),
   {
     ssr: false,
   }
 );
-const ElectronicsRelatedProduct = dyanmic(
+const ElectronicsRelatedProduct = dynamic(
   () => import("../component/Carousel/ElectronicsRelatedProduct"),
   {
     ssr: false,

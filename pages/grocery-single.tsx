@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import dyanmic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 import GroceryLayout from "../layout/GroceryLayout";
 
-const GroceryRelatedProduct = dyanmic(
+const GroceryRelatedProduct = dynamic(
   () => import("../component/Carousel/GroceryRelatedProduct"),
   {
     ssr: false,

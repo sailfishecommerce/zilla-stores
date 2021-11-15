@@ -1,29 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import dyanmic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 import FashionLayout from "../layout/FashionLayout";
 
 export default function HomeFashionStorev2() {
-  const HomeFashionCarousel = dyanmic(
+  const HomeFashionCarousel = dynamic(
     () => import("../component/Carousel/HomeFashionCarousel"),
     {
       ssr: false,
     }
   );
-  const WomenProductGridCarousel = dyanmic(
+  const WomenProductGridCarousel = dynamic(
     () => import("../component/Carousel/WomenProductGridCarousel"),
     {
       ssr: false,
     }
   );
-  const MenProductGridCarousel = dyanmic(
+  const MenProductGridCarousel = dynamic(
     () => import("../component/Carousel/MenProductGridCarousel"),
     {
       ssr: false,
     }
   );
-  const KidsProductGridCarousel = dyanmic(
+  const KidsProductGridCarousel = dynamic(
     () => import("../component/Carousel/KidsProductGridCarousel"),
     {
       ssr: false,

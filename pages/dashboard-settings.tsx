@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import DashboardSidebar from "../component/DashboardSidebar";
+import DashboardSidebar from "../components/DashboardSidebar";
 import React from "react";
 import DashboardLayout from "../layout/DashboardLayout";
 

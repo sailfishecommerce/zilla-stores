@@ -1,0 +1,346 @@
+[
+  {
+    "name": "Home",
+    "link": "/",
+    "type": "single-dropdown",
+    "subLink": [
+      [
+        {
+          "title": "Fashion Store v.1",
+          "small": "Classic shop layout",
+          "img": "/img/home/preview/th01.jpg",
+          "link": "/home-fashion-store-v1"
+        },
+        {
+          "title": "Electronics Store",
+          "small": "Slider + Prommo banners",
+          "img": "/img/home/preview/th03.jpg",
+          "link": "/home-electronics-store"
+        },
+        {
+          "title": "Marketplace Store",
+          "small": "Multi-vendor, digital goods",
+          "img": "/img/home/preview/th04.jpg",
+          "link": "/home-marketplace"
+        },
+        {
+          "title": "Grocery Store",
+          "small": "Full width + Side menu",
+          "img": "/img/home/preview/th06.jpg",
+          "link": "/home-grocery-store"
+        },
+        {
+          "title": "Food Delivery Service",
+          "small": "Food &amp; Beverages delivery",
+          "img": "/img/home/preview/th07.jpg",
+          "link": "/home-food-delivery"
+        },
+        {
+          "title": "Fashion Store v.2",
+          "small": "Slider + Featured categories",
+          "img": "/img/home/preview/th02.jpg",
+          "link": "/home-fashion-store-v2"
+        },
+        {
+          "title": "Single Product Store",
+          "small": "Single product / mono brand",
+          "img": "/img/home/preview/th05.jpg",
+          "link": "/home-single-store"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Shop",
+    "link": "#",
+    "type": "mega-dropdown",
+    "subLink": [
+      [
+        {
+          "title": "Shop layouts",
+          "link": "#",
+          "sublinks": [
+            {
+              "title": "Shop Grid - Left Sidebar",
+              "link": "/shop-grid-ls"
+            },
+            {
+              "title": "Shop Grid - Right Sidebar",
+              "link": "/shop-grid-rs"
+            },
+            {
+              "title": "  Shop Grid - Filters on Top",
+              "link": "/shop-grid-ft"
+            },
+            {
+              "title": "Shop List - Left Sidebar",
+              "link": "/shop-list-lst"
+            },
+            {
+              "title": "Shop List - Right Sidebar",
+              "link": "/shop-list-rs"
+            },
+            {
+              "title": "Shop List - Filters on Top",
+              "link": "/shop-list-ft"
+            },
+            {
+              "title": "Shop List - Right Sidebar",
+              "link": "/shop-list-rs"
+            }
+          ]
+        },
+        {
+          "title": "Marketplace",
+          "link": "#",
+          "sublinks": [
+            {
+              "title": "Category Page",
+              "link": "/marketplace-category"
+            },
+            {
+              "title": "Single Item Page",
+              "link": "/marketplace-single"
+            },
+            {
+              "title": "Vendor Page",
+              "link": "/marketplace-vendor"
+            },
+            {
+              "title": "Cart",
+              "link": "/marketplace-cart"
+            },
+            {
+              "title": "Checkout",
+              "link": "/marketplace-checkout"
+            },
+            {
+              "title": "Shop List - Filters on Top",
+              "link": "/shop-list-ft"
+            },
+            {
+              "title": "Shop List - Right Sidebar",
+              "link": "/shop-list-rs"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Shop pages",
+          "link": "#",
+          "sublinks": [
+            {
+              "title": "Shop Categories",
+              "link": "/shop-categories"
+            },
+            {
+              "title": "Product Page v.1",
+              "link": "/shop-single-v1"
+            },
+            {
+              "title": "Product Page v.2",
+              "link": "/shop-single-v2"
+            },
+            {
+              "title": "Cart",
+              "link": "/shop-cart"
+            },
+            {
+              "title": "Checkout - Details",
+              "link": "/checkout-details"
+            },
+            {
+              "title": "Checkout - Shipping",
+              "link": "/checkout-shipping"
+            },
+            {
+              "title": "Checkout - Payment",
+              "link": "/checkout-payment"
+            },
+            {
+              "title": " Checkout - Review",
+              "link": "/checkout-review"
+            },
+            {
+              "title": "Checkout - Complete",
+              "link": "/checkout-complete"
+            },
+            {
+              "title": "Order Tracking",
+              "link": "/order-tracking"
+            },
+            {
+              "title": "Product Comparison",
+              "link": "/comparison"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Grocery store",
+          "link": "#",
+          "sublinks": [
+            {
+              "title": "Product Catalog",
+              "link": "/grocery-catalog"
+            },
+            {
+              "title": "Single Product Page",
+              "link": "/grocery-single"
+            },
+            {
+              "title": "Checkout",
+              "link": "/grocery-checkout"
+            }
+          ]
+        },
+        {
+          "title": "Food Delivery",
+          "link": "#",
+          "sublinks": [
+            {
+              "title": "Category Page",
+              "link": "/food-delivery-category"
+            },
+            {
+              "title": "Single Item ( Restaurant)",
+              "link": "/food-delivery-single"
+            },
+            {
+              "title": "Cart (Your Order)",
+              "link": "/food-delivery-cart"
+            },
+            {
+              "title": "Checkout (Address &amp; Payment)",
+              "link": "/food-delivery-checkout"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Account",
+    "link": "#",
+    "type": "nested-dropdown",
+    "subLink": [
+      [
+        {
+          "title": "Shop User Account",
+          "link": "#",
+          "sublinks": [
+            { "title": "Orders History", "link": "/account-orders" },
+            { "title": "Profile Settings", "link": "/account-profile" },
+            { "title": "Account Addresses", "link": "/account-address" },
+            { "title": "Payment Methods", "link": "/account-payment" },
+            { "title": "Wishlist", "link": "/account-wishlist" },
+            { "title": "My Tickets", "link": "/account-tickets" },
+            { "title": "Single Ticket", "link": "/account-single-ticket" }
+          ]
+        },
+        {
+          "title": "Vendor Dashboard",
+          "link": "#",
+          "sublinks": [
+            { "title": "Settings", "link": "/dashboard-settings" },
+            { "title": "Purchases", "link": "/dashboard-purchases" },
+            { "title": "Favorites", "link": "/dashboard-favorites" },
+            { "title": "Sales", "link": "/dashboard-sales" },
+            { "title": "Products", "link": "/dashboard-products" },
+            {
+              "title": "Add New Product",
+              "link": "/dashboard-add-new-product"
+            },
+            { "title": "Payouts", "link": "/dashboard-payouts" }
+          ]
+        },
+        {
+          "title": "Sign In / Sign Up",
+          "link": "/account-signin"
+        },
+        {
+          "title": "Password Recovery",
+          "link": "/account-password-recovery"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pages",
+    "link": "#",
+    "type": "nested-dropdown",
+    "subLink": [
+      [
+        {
+          "link": "/about",
+          "title": "About Us"
+        }
+      ],
+      [
+        {
+          "link": "/contacts",
+          "title": "Contacts "
+        }
+      ],
+      [
+        {
+          "link": "#",
+          "title": "Help Center ",
+          "sublinks": [
+            { "title": "Help Topics", "link": "/help-topics" },
+            { "title": "Single Topic", "link": "/help-single-topic" },
+            { "title": "Submit a Request", "link": "/help-submit-request" }
+          ]
+        }
+      ],
+      [
+        {
+          "link": "#",
+          "title": " 404 Not Found",
+          "sublinks": [
+            { "title": "404 - Simple Text", "link": "/404-simple" },
+            { "title": "404 - Illustration", "link": "/404-illustration" }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Blog",
+    "link": "#",
+    "type": "nested-dropdown",
+    "subLink": [
+      [
+        {
+          "title": "Blog List Layouts",
+          "link": "#",
+          "sublinks": [
+            { "title": "List with Sidebar", "link": "/blog-list-sidebar" },
+            { "title": "List no Sidebar", "link": "/blog-list" }
+          ]
+        },
+        {
+          "title": "Blog Grid Layouts",
+          "link": "#",
+          "sublinks": [
+            { "title": "Grid with Sidebar", "link": "/blog-grid-sidebar" },
+            { "title": "Grid no Sidebar", "link": "/blog-grid" }
+          ]
+        },
+        {
+          "title": "Single Post Layouts",
+          "link": "#",
+          "sublinks": [
+            {
+              "title": "Article with Sidebar",
+              "link": "/blog-single-sidebar"
+            },
+            { "title": "Article no Sidebar", "link": "/blog-single" }
+          ]
+        }
+      ]
+    ]
+  }
+]

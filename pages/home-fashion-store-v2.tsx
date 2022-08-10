@@ -6,25 +6,25 @@ import FashionLayout from "../layout/FashionLayout";
 
 export default function HomeFashionStorev2() {
   const HomeFashionCarousel = dynamic(
-    () => import("../component/Carousel/HomeFashionCarousel"),
+    () => import("../components/Carousel/HomeFashionCarousel"),
     {
       ssr: false,
     }
   );
   const WomenProductGridCarousel = dynamic(
-    () => import("../component/Carousel/WomenProductGridCarousel"),
+    () => import("../components/Carousel/WomenProductGridCarousel"),
     {
       ssr: false,
     }
   );
   const MenProductGridCarousel = dynamic(
-    () => import("../component/Carousel/MenProductGridCarousel"),
+    () => import("../components/Carousel/MenProductGridCarousel"),
     {
       ssr: false,
     }
   );
   const KidsProductGridCarousel = dynamic(
-    () => import("../component/Carousel/KidsProductGridCarousel"),
+    () => import("../components/Carousel/KidsProductGridCarousel"),
     {
       ssr: false,
     }

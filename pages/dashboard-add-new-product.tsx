@@ -1,7 +1,7 @@
 import React from "react";
 
 import DashboardLayout from "../layout/DashboardLayout";
-import DashboardSidebar from "../component/DashboardSidebar";
+import DashboardSidebar from "../components/DashboardSidebar";
 
 export default function DashboardAddNewProduct() {
     return (

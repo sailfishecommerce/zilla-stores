@@ -1,9 +1,9 @@
 import React, { PropsWithChildren } from "react";
 import Head from "next/head";
 
-import AuthModal from "../component/AuthModal";
-import MarketplaceHeader from "../component/MarketplaceHeader";
-import MarketplaceFooter from "../component/MarketplaceFooter";
+import AuthModal from "../components/AuthModal";
+import MarketplaceHeader from "../components/MarketplaceHeader";
+import MarketplaceFooter from "../components/MarketplaceFooter";
 
 interface MarketplaceLayoutProps {
     children: JSX.Element;

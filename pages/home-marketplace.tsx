@@ -5,21 +5,21 @@ import dynamic from "next/dynamic";
 import MarketplaceLayout from "../layout/MarketplaceLayout";
 
 const MarketplaceFeaturedProducts = dynamic(
-  () => import("../component/Carousel/MarketplaceFeaturedProducts"),
+  () => import("../components/Carousel/MarketplaceFeaturedProducts"),
   {
     ssr: false,
   }
 );
 
 const MonthSellerCarousel = dynamic(
-  () => import("../component/Carousel/MonthSellerCarousel"),
+  () => import("../components/Carousel/MonthSellerCarousel"),
   {
     ssr: false,
   }
 );
 
 const MarketplaceBlogPost = dynamic(
-  () => import("../component/Carousel/MarketplaceBlogPost"),
+  () => import("../components/Carousel/MarketplaceBlogPost"),
   {
     ssr: false,
   }

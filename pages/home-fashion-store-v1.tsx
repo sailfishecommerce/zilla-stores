@@ -1,20 +1,20 @@
 import dynamic from "next/dynamic";
 
-import Banners from "../component/Banners";
-import InfoCards from "../component/InfoCards";
-import PopularCategories from "../component/PopularCategories";
-import ShopByBrand from "../component/ShopByBrand";
-import TrendingProducts from "../component/TrendingProducts";
+import Banners from "../components/Banners";
+import InfoCards from "../components/InfoCards";
+import PopularCategories from "../components/PopularCategories";
+import ShopByBrand from "../components/ShopByBrand";
+import TrendingProducts from "../components/TrendingProducts";
 import FashionLayout from "../layout/FashionLayout";
 
 const FeaturedCategory = dynamic(
-  () => import("../component/FeaturedCategory"),
+  () => import("../components/FeaturedCategory"),
   {
     ssr: false,
   }
 );
 
-const Slider = dynamic(() => import("../component/Slider"), {
+const Slider = dynamic(() => import("../components/Slider"), {
   ssr: false,
 });
 

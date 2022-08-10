@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import GroceryLayout from "../layout/GroceryLayout";
 
 const GroceryRelatedProduct = dynamic(
-  () => import("../component/Carousel/GroceryRelatedProduct"),
+  () => import("../components/Carousel/GroceryRelatedProduct"),
   {
     ssr: false,
   }

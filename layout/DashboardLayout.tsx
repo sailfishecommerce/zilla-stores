@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { PropsWithChildren } from "react";
-import DashboardFooter from "../component/DashboardFooter";
-import DashboardHeader from "../component/DashboardHeader";
+import DashboardFooter from "../components/DashboardFooter";
+import DashboardHeader from "../components/DashboardHeader";
 
 interface DashboardLayoutProps {
     title: string;

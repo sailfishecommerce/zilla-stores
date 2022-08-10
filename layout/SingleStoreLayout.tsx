@@ -1,8 +1,8 @@
 import { PropsWithChildren } from "react";
 import Head from "next/head";
 
-import SingleStoreHeader from "../component/SingleStoreHeader";
-import SingleStoreFooter from "../component/SingleStoreFooter";
+import SingleStoreHeader from "../components/SingleStoreHeader";
+import SingleStoreFooter from "../components/SingleStoreFooter";
 
 interface BaseLayoutProps {
     children: JSX.Element;

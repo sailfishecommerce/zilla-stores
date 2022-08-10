@@ -6,28 +6,28 @@ import Link from "next/link";
 import GroceryLayout from "../layout/GroceryLayout";
 
 const HomeGroceryCarousel = dynamic(
-  () => import("../component/Carousel/HomeGroceryCarousel"),
+  () => import("../components/Carousel/HomeGroceryCarousel"),
   {
     ssr: false,
   }
 );
 
 const DiscountedProductCarousel = dynamic(
-  () => import("../component/Carousel/DiscountedProductCarousel"),
+  () => import("../components/Carousel/DiscountedProductCarousel"),
   {
     ssr: false,
   }
 );
 
 const BestSellersCarousel = dynamic(
-  () => import("../component/Carousel/BestsellersCarousel"),
+  () => import("../components/Carousel/BestsellersCarousel"),
   {
     ssr: false,
   }
 );
 
 const CustomerReviewCarousel = dynamic(
-  () => import("../component/Carousel/CustomerReviewCarousel"),
+  () => import("../components/Carousel/CustomerReviewCarousel"),
   {
     ssr: false,
   }

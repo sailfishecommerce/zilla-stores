@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
-import CheckoutStep from "../component/CheckoutStep";
-import Orderdetails from "../component/Orderdetails";
+import CheckoutStep from "../components/CheckoutStep";
+import Orderdetails from "../components/Orderdetails";
 import FashionLayout from "../layout/FashionLayout";
 
 export default function CheckoutReview() {

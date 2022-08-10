@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import MarketplaceLayout from "../layout/MarketplaceLayout";
 
 const MarketplaceRelatedProductsCarousel = dynamic(
-  () => import("../component/Carousel/MarketplaceRelatedProductsCarousel"),
+  () => import("../components/Carousel/MarketplaceRelatedProductsCarousel"),
   {
     ssr: false,
   }

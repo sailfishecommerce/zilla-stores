@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import Electroniclayout from "../layout/Electroniclayout";
 
 const ShopSingleV2Carousel = dynamic(
-  () => import("../component/Carousel/ShopSingleV2Carousel"),
+  () => import("../components/Carousel/ShopSingleV2Carousel"),
   {
     ssr: false,
   }

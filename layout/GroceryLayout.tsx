@@ -1,9 +1,9 @@
 import { PropsWithChildren } from "react";
 import Head from "next/head";
 
-import GrocerySidebar from "../component/GrocerySidebar";
-import GroceryHeader from "../component/GroceryHeader";
-import GroceryFooter from "../component/GroceryFooter";
+import GrocerySidebar from "../components/GrocerySidebar";
+import GroceryHeader from "../components/GroceryHeader";
+import GroceryFooter from "../components/GroceryFooter";
 
 interface GroceryLayoutProps {
     children: JSX.Element;

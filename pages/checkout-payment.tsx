@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import CheckoutStep from "../component/CheckoutStep";
+import CheckoutStep from "../components/CheckoutStep";
 
 import FashionLayout from "../layout/FashionLayout";
 

@@ -3,13 +3,13 @@ import dynamic from "next/dynamic";
 import SingleStoreLayout from "../layout/SingleStoreLayout";
 
 const CustomerReviewCarousel = dynamic(
-  () => import("../component/Carousel/CustomerReviewCarousel"),
+  () => import("../components/Carousel/CustomerReviewCarousel"),
   {
     ssr: false,
   }
 );
 const ElectronicsRelatedProduct = dynamic(
-  () => import("../component/Carousel/ElectronicsRelatedProduct"),
+  () => import("../components/Carousel/ElectronicsRelatedProduct"),
   {
     ssr: false,
   }

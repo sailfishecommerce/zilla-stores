@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import FashionLayout from "../layout/FashionLayout";
 
 const RelatedPostCarousel = dynamic(
-  () => import("../component/Carousel/RelatedPostCarousel"),
+  () => import("../components/Carousel/RelatedPostCarousel"),
   {
     ssr: false,
   }

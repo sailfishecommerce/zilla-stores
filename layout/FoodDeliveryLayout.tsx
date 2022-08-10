@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { PropsWithChildren } from "react";
 
-import FoodDeliveryFooter from "../component/FoodDeliveryFooter";
-import FoodDeliveryHeader from "../component/FoodDeliveryHeader";
+import FoodDeliveryFooter from "../components/FoodDeliveryFooter";
+import FoodDeliveryHeader from "../components/FoodDeliveryHeader";
 
 interface FoodDeliveryLayout {
     title: string;

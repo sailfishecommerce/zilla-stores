@@ -3,14 +3,14 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 
 const HomeElectronicsCarousel = dynamic(
-  () => import("../component/Carousel/HomeElectronicsCarousel"),
+  () => import("../components/Carousel/HomeElectronicsCarousel"),
   {
     ssr: false,
   }
 );
 
 const ElectronicBrandsCarousel = dynamic(
-  () => import("../component/Carousel/ElectronicBrandsCarousel"),
+  () => import("../components/Carousel/ElectronicBrandsCarousel"),
   {
     ssr: false,
   }

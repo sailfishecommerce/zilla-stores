@@ -1,9 +1,9 @@
 import Head from "next/head";
 import React, { PropsWithChildren } from "react";
-import AuthModal from "../component/AuthModal";
-import ElectronicModalView from "../component/ElectronicModalView";
-import ElectronicsNavbar from "../component/ElectronicsNavbar";
-import Footer from "../component/Footer";
+import AuthModal from "../components/AuthModal";
+import ElectronicModalView from "../components/ElectronicModalView";
+import ElectronicsNavbar from "../components/ElectronicsNavbar";
+import Footer from "../components/Footer";
 
 interface ElectroniclayoutProps {
     title: string;

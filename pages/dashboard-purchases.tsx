@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
-import DashboardSidebar from "../component/DashboardSidebar";
+import DashboardSidebar from "../components/DashboardSidebar";
 import DashboardLayout from "../layout/DashboardLayout";
 
 export default function DashboardPurchases() {

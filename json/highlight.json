@@ -1,0 +1,57 @@
+[
+  {
+    "img": "/img/intro/nextjs.png",
+    "title": "Built With Next.js",
+    "text": "Next.js, the React enterprise Framework for reliability, performant and better SEO websites"
+  },
+  {
+    "img": "/img/intro/react.png",
+    "title": "React.js",
+    "text": "Gain headstart by building with React.js, build performant and scalable site with React.js"
+  },
+  {
+    "img": "/img/intro/features/02.png",
+    "title": "Easy to Customize with Sass",
+    "text": " Bandicoot is built using Sass. Easily change colors, typography and much more. It is the most mature, stable, and powerful CSS extension language in the world."
+  },
+  {
+    "img": "/img/intro/features/04.png",
+    "title": "Built With Bootstrap 5",
+    "text": "Bandicoot is the powerful e-commerce front-end solution based on Bootstrap 5 - the worlds most popular responsive, mobile-first front-end component library."
+  },
+  {
+    "img": "/img/intro/features/05.png",
+    "title": "40+ Flexible Components",
+    "text": "Besides styling all default Bootstrap 5 components Bandicoot introduces lots of new flexible, customizable and reusable elements you can use across the website."
+  },
+  {
+    "img": "/img/intro/features/06.png",
+    "title": "Mobile Friendly Interface",
+    "text": "It's not a surprise that nowadays over 70% of users shop online using their mobile devices. Bandicoot is 100% responsive and optimized for small touch screens."
+  },
+  {
+    "img": "/img/intro/features/07.png",
+    "title": "Google Fonts",
+    "text": "Bandicoot uses Google fonts which are free, fast to load and of very high quality. Currently Google fonts library includes 870+ font families to choose from."
+  },
+  {
+    "img": "/img/intro/features/08.png",
+    "title": "Touch-enabled Sliders",
+    "text": "In the era of touch screens its important to ensure great user experience on handheld devices, especially when it comes to such frequently used interface component as slider."
+  },
+  {
+    "img": "/img/intro/features/09.png",
+    "title": "Vector Based HD Ready Icons",
+    "text": "Bandicoot is equiped with font-based icon pack to ensure that infographics and interface icons look sharp on any device with any screen resolution and pixel density."
+  },
+  {
+    "img": "/img/intro/typescript.png",
+    "title": "Typescript",
+    "text": "Bandicoot core scripts as well as all dependencies are written in vanilla JS. And now with Bootstrap 5 we finally drops jQuery and uses ES6 modules."
+  },
+  {
+    "img": "/img/intro/features/12.png",
+    "title": "Detailed Documentation",
+    "text": "Download package includes links to online documentation. It covers all crucial information about how to get started, customize template and components usage."
+  }
+]

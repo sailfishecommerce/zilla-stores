@@ -1,0 +1,44 @@
+{
+  "banners": [
+    {
+      "image": "/img/home/preview/01.jpg",
+      "name": "Fashion Store v.1",
+      "link": "/home-fashion-store-v1"
+    },
+    {
+      "image": "/img/home/preview/03.jpg",
+      "name": "Electronics Store",
+      "link": "/home-electronics-store"
+    },
+    {
+      "image": "/img/home/preview/07.jpg",
+      "name": "Food Delivery Service",
+      "link": "/home-food-delivery"
+    },
+    {
+      "image": "/img/home/preview/04.jpg",
+      "name": "Multi-vendor Marketplace",
+      "link": "/home-marketplace"
+    },
+    {
+      "image": "/img/home/preview/06.jpg",
+      "name": "Grocery Store",
+      "link": "/home-grocery-store"
+    },
+    {
+      "image": "/img/home/preview/02.jpg",
+      "name": "Fashion Store v.2",
+      "link": "/home-fashion-store-v2"
+    },
+    {
+      "image": "/img/home/preview/05.jpg",
+      "name": "Single Product / Brand Store",
+      "link": "/home-single-store"
+    },
+    {
+      "image": "/img/home/preview/coming.png",
+      "name": "Coming Soon"
+    }
+  ],
+  "links": []
+}

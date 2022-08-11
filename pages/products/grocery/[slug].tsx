@@ -17,26 +17,19 @@ interface Props {
   product: productType;
 }
 
-const linksArray = [
-  { link: "/", text: "Home" },
-  { link: "/products", text: "Product Catalog" },
-  { link: "/products", text: "Singe Product" },
-];
-
 export default function GrocerySingleProductPage({ product }: Props) {
-  console.log("product", product);
+  const linksArray = [
+    { link: "/home-grocery-store", text: "Home" },
+    { link: "/grocery-catalog", text: "Shop" },
+    { link: null, text: product.name },
+  ];
   return (
     <GroceryLayout title="Grocery single">
       <section className="ps-lg-4 pe-lg-3 pt-4">
         <div className="px-3 pt-2">
-          <Breadcrumb linksArray={linksArray} />
-          <GroceryProductGallery />
-          <section className="pb-5 mb-2 mb-xl-4">
-            <h2 className="h3 pb-2 mb-grid-gutter text-center">
-              You may also like
-            </h2>
-            <GroceryRelatedProduct />
-          </section>
+          <Breadcrumb className="text-black mb-4" linksArray={linksArray} />
+          <GroceryProductGallery product={product} />
+          <GroceryRelatedProduct />
         </div>
       </section>
     </GroceryLayout>

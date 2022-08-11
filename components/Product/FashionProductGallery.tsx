@@ -1,28 +1,20 @@
-import { productType } from "@/types";
-import Image from "next/image";
-import { useState } from "react";
+/* eslint-disable @next/next/no-img-element */
+import type { productType } from "@/types";
 
 import FashionProductForm from "@/components/Forms/FashionProductForm";
 import SocialIcons from "@/components/Icons/SocialIcons";
 import FormattedPrice from "@/components/Price/FormattedPrice";
 import RatingStar from "@/components/UI/Ratings";
 import FashionProductInfo from "@/components/Product/FashionProductInfo";
+import useProductPageImage from "@/hooks/useProductPageImage";
+import ProductImageThumbnail from "@/components/Product/ProductImageThumbnail";
 
-/* eslint-disable @next/next/no-img-element */
 interface Props {
   product: productType;
 }
 export default function FashionProductGallery({ product }: Props) {
-  const mainProductImage =
-    typeof product.images[0] === "string"
-      ? product.images[0]
-      : product.images[0].file.url;
+  const { activeImage, updateMainImage } = useProductPageImage(product);
 
-  const [activeImage, setActiveImage] = useState(mainProductImage);
-
-  function updateMainImage(image: string) {
-    setActiveImage(image);
-  }
   return (
     <div className="bg-light shadow-lg rounded-3 px-4 py-3 mb-5">
       <div className="px-lg-3">
@@ -40,33 +32,11 @@ export default function FashionProductGallery({ product }: Props) {
                   <div className="image-zoom-pane"></div>
                 </div>
               </div>
-              <div className="product-gallery-thumblist order-sm-1">
-                {product.images.map((image, index) => {
-                  const productImage =
-                    typeof image === "string" ? image : image.file.url;
-                  const productIndex =
-                    typeof image === "string" ? index : image.id;
-
-                  const activethumb =
-                    activeImage === productImage ? "active" : "";
-                  return (
-                    <a
-                      key={productIndex}
-                      className={`product-gallery-thumblist-item ${activethumb}`}
-                      href="#first"
-                      onClick={() => updateMainImage(productImage)}
-                    >
-                      <Image
-                        src={productImage}
-                        alt={product.name}
-                        blurDataURL={productImage}
-                        height={78}
-                        width={78}
-                      />
-                    </a>
-                  );
-                })}
-              </div>
+              <ProductImageThumbnail
+                product={product}
+                activeImage={activeImage}
+                updateMainImage={updateMainImage}
+              />
             </div>
           </div>
           {/*<!-- Product details-->*/}

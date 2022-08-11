@@ -1,6 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 
-export default function GroceryProductGallery() {
+import useProductPageImage from "@/hooks/useProductPageImage";
+import ProductImageThumbnail from "@/components/Product/ProductImageThumbnail";
+import type { productType } from "@/types";
+import FormattedPrice from "../Price/FormattedPrice";
+
+interface Props {
+  product: productType;
+}
+
+export default function GroceryProductGallery({ product }: Props) {
+  const { activeImage, updateMainImage } = useProductPageImage(product);
+  const quantity = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
   return (
     <section className="row g-0 mx-n2 pb-5 mb-xl-3">
       <div className="col-xl-7 px-2 mb-3">
@@ -8,92 +20,82 @@ export default function GroceryProductGallery() {
           <div className="product-gallery">
             <div className="product-gallery-preview order-sm-2">
               <div className="product-gallery-preview-item active" id="first">
-                <img src="/img/grocery/single/01.jpg" alt="Product image" />
-              </div>
-              <div className="product-gallery-preview-item" id="second">
-                <img src="/img/grocery/single/02.jpg" alt="Product image" />
-              </div>
-              <div className="product-gallery-preview-item" id="third">
-                <img src="/img/grocery/single/03.jpg" alt="Product image" />
+                <img src={activeImage} alt={product.name} />
               </div>
             </div>
-            <div className="product-gallery-thumblist order-sm-1">
-              <a
-                className="product-gallery-thumblist-item active"
-                href="#first"
-              >
-                <img src="/img/grocery/single/th01.jpg" alt="Product thumb" />
-              </a>
-              <a className="product-gallery-thumblist-item" href="#second">
-                <img src="/img/grocery/single/th02.jpg" alt="Product thumb" />
-              </a>
-              <a className="product-gallery-thumblist-item" href="#third">
-                <img src="/img/grocery/single/th03.jpg" alt="Product thumb" />
-              </a>
-            </div>
+            <ProductImageThumbnail
+              product={product}
+              activeImage={activeImage}
+              updateMainImage={updateMainImage}
+            />
           </div>
         </div>
       </div>
-      <div className="col-xl-5 px-2 mb-3">
-        <div className="h-100 bg-light rounded-3 py-5 px-4 px-sm-5">
+      <div className="col-xl-5  mb-3 product-description">
+        <div className="h-100 bg-light rounded-3 py-5 px-2 px-4">
           <a className="product-meta d-block fs-sm pb-2" href="#">
-            Packets, Cereals
+            {product.product_categories
+              ? product.product_categories?.map((category, index) => {
+                  const arrayLength: any = product?.product_categories?.length;
+                  const showComma = index === arrayLength - 1 ? " " : " , ";
+                  return `${category}${showComma}`;
+                })
+              : ""}
           </a>
-          <h1 className="h2">
-            Muesli Fitness Nutritious Energy, Gluten Free (500g)
-          </h1>
-          <div className="h2 fw-normal text-accent">
-            $4.<small>99</small>
+          <h1 className="h2">{product.name}</h1>
+          <FormattedPrice
+            price={product.sale_price}
+            className="h2 fw-normal text-accent"
+          />
+          {product.price ? (
+            <del className="ms-2 fs-sm">
+              <FormattedPrice
+                price={product.price}
+                className="h4 fw-normal text-accent "
+              />
+            </del>
+          ) : (
+            ""
+          )}
+          <div className="d-flex flex-column flex-wrap align-items-center pt-4 pb-2 mb-3">
+            <div className="select-quantity d-flex align-items-center w-full">
+              <select
+                className="form-select me-3 mb-3"
+                style={{ width: "5rem" }}
+              >
+                {quantity.map((count) => (
+                  <option key={count} value={count}>
+                    {count}
+                  </option>
+                ))}
+              </select>
+              <button
+                className="btn btn-primary btn-shadow me-3 mb-3 w-100"
+                type="submit"
+              >
+                <i className="ci-cart fs-lg me-2"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>kw
+          <div className="description border rounded px-4 py-1">
+            <p
+              className="fs-sm text-muted pb-1"
+              dangerouslySetInnerHTML={{
+                __html: product["description"],
+              }}
+            />
           </div>
-          <div className="d-flex flex-wrap align-items-center pt-4 pb-2 mb-3">
-            <select className="form-select me-3 mb-3" style={{ width: "5rem" }}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <button
-              className="btn btn-primary btn-shadow me-3 mb-3"
-              type="submit"
-            >
-              <i className="ci-cart fs-lg me-2"></i>
-              Add to Cart
-            </button>
-            <button
-              className="btn btn-icon btn-secondary mb-3"
-              type="submit"
-              data-bs-toggle="tooltip"
-              title="Add to Wishlist"
-            >
-              <i className="ci-heart fs-lg"></i>
-            </button>
-          </div>
-          <h6>Product description</h6>
-          <ul className="list-unstyled fs-sm pt-2 mb-0">
-            <li>
-              <i className="ci-check-circle text-success me-2"></i>
-              Natural ingredients
-            </li>
-            <li>
-              <i className="ci-check-circle text-success me-2"></i>
-              No dyes and flavor enhancers
-            </li>
-            <li>
-              <i className="ci-check-circle text-success me-2"></i>
-              Gluten free
-            </li>
-            <li>
-              <i className="ci-check-circle text-success me-2"></i>
-              Vitamins B2, B3, B5 and B6
-            </li>
-            <li>
-              <i className="ci-check-circle text-success me-2"></i>
-              Tastes better with milk
-            </li>
-          </ul>
         </div>
       </div>
+      <style jsx>
+        {`
+          .product-description {
+            overflow-y: scroll;
+            background-color: white;
+          }
+        `}
+      </style>
     </section>
   );
 }

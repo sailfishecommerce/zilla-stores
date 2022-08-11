@@ -5,12 +5,14 @@ interface Props {
     link: string | null;
     text: string;
   }[];
+  className?: string;
 }
 
-export default function Breadcrumb({ linksArray }: Props) {
+export default function Breadcrumb({ linksArray, className }: Props) {
+  const breadcrumbClassName = className ? className : "breadcrumb-light";
   return (
     <nav className="mb-0" aria-label="breadcrumb">
-      <ol className="breadcrumb breadcrumb-light flex-lg-nowrap">
+      <ol className={`breadcrumb ${breadcrumbClassName} flex-lg-nowrap`}>
         {linksArray.map((linkItem, index) => {
           const activeIndex = linksArray.length - 1;
           const activeClassName =

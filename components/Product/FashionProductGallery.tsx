@@ -2,7 +2,7 @@
 import type { productType } from "@/types";
 
 import FashionProductForm from "@/components/Forms/FashionProductForm";
-import SocialIcons from "@/components/Icons/SocialIcons";
+import ShareSocialIcons from "@/components/Icons/ShareSocialIcons";
 import FormattedPrice from "@/components/Price/FormattedPrice";
 import RatingStar from "@/components/UI/Ratings";
 import FashionProductInfo from "@/components/Product/FashionProductInfo";
@@ -85,7 +85,7 @@ export default function FashionProductGallery({ product }: Props) {
               </div>
               <FashionProductForm />
               <FashionProductInfo product={product} />
-              <SocialIcons />
+              <ShareSocialIcons />
             </div>
           </div>
         </div>

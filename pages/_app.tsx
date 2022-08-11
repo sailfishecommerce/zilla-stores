@@ -17,6 +17,7 @@ import "drift-zoom/dist/drift-basic.min.css";
 import "simplebar/dist/simplebar.css";
 import "@/styles/globals.css";
 import "@/styles/theme.min.css";
+import "react-toastify/dist/ReactToastify.css";
 
 dynamic(() => import("drift-zoom/dist/Drift.min.js"), {
   ssr: false,

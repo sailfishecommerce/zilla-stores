@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function SocialIcons() {
+export default function ShareSocialIcons() {
   return (
     <>
       <label className="form-label d-inline-block align-middle my-2 me-3">

@@ -2,10 +2,10 @@ import dynamic from "next/dynamic";
 import { PropsWithChildren } from "react";
 import Head from "next/head";
 
-import Footer from "../components/Footer";
-import AuthModal from "../components/AuthModal";
+import Footer from "@/components/Footer";
+import AuthModal from "@/components/AuthModal";
 
-const FashionHeader = dynamic(() => import("../components/FashionHeader"), {
+const FashionHeader = dynamic(() => import("@/components/FashionHeader"), {
   ssr: false,
 });
 

@@ -14,171 +14,186 @@ export default function CustomerReviewCarousel() {
     navPosition: "bottom",
   };
   return (
-    <div className="tns-carousel mb-3">
-      <CarouselWrapper onClick={() => {}} settings={settings}>
-        <blockquote className="mb-2">
-          <div className="card card-body fs-md text-muted border-0 shadow-sm">
-            <div className="mb-2">
-              <div className="star-rating">
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star"></i>
+    <section className="py-5 bg-light rounded-3 my-4 my-md-5 px-3 px-sm-4">
+      <h2 className="h3 py-4 text-center">Customer reviews</h2>
+      <div className="tns-carousel mb-3">
+        <CarouselWrapper onClick={() => {}} settings={settings}>
+          <blockquote className="mb-2">
+            <div className="card card-body fs-md text-muted border-0 shadow-sm">
+              <div className="mb-2">
+                <div className="star-rating">
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star"></i>
+                </div>
               </div>
+              Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
-            Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <footer className="d-flex justify-content-center align-items-center pt-4">
-            <img
-              className="rounded-circle"
-              src="/img/testimonials/03.jpg"
-              width="50"
-              alt="Richard Davis"
-            />
-            <div className="ps-3">
-              <h6 className="fs-sm mb-n1">Richard Davis</h6>
-              <span className="fs-ms text-muted opacity-75">Feb 14, 2020</span>
-            </div>
-          </footer>
-        </blockquote>
-        <blockquote className="mb-2">
-          <div className="card card-body fs-md text-muted border-0 shadow-sm">
-            <div className="mb-2">
-              <div className="star-rating">
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
+            <footer className="d-flex justify-content-center align-items-center pt-4">
+              <img
+                className="rounded-circle"
+                src="/img/testimonials/03.jpg"
+                width="50"
+                alt="Richard Davis"
+              />
+              <div className="ps-3">
+                <h6 className="fs-sm mb-n1">Richard Davis</h6>
+                <span className="fs-ms text-muted opacity-75">
+                  Feb 14, 2020
+                </span>
               </div>
-            </div>
-            Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <footer className="d-flex justify-content-center align-items-center pt-4">
-            <img
-              className="rounded-circle"
-              src="/img/testimonials/04.jpg"
-              width="50"
-              alt="Laura Willson"
-            />
-            <div className="ps-3">
-              <h6 className="fs-sm mb-n1">Laura Willson</h6>
-              <span className="fs-ms text-muted opacity-75">Feb 05, 2020</span>
-            </div>
-          </footer>
-        </blockquote>
-        <blockquote className="mb-2">
-          <div className="card card-body fs-md text-muted border-0 shadow-sm">
-            <div className="mb-2">
-              <div className="star-rating">
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star"></i>
-                <i className="star-rating-icon ci-star"></i>
+            </footer>
+          </blockquote>
+          <blockquote className="mb-2">
+            <div className="card card-body fs-md text-muted border-0 shadow-sm">
+              <div className="mb-2">
+                <div className="star-rating">
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                </div>
               </div>
+              Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
-            Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <footer className="d-flex justify-content-center align-items-center pt-4">
-            <img
-              className="rounded-circle"
-              src="/img/testimonials/01.jpg"
-              width="50"
-              alt="Mary Grant"
-            />
-            <div className="ps-3">
-              <h6 className="fs-sm mb-n1">Mary Alice Grant</h6>
-              <span className="fs-ms text-muted opacity-75">Jan 27, 2020</span>
-            </div>
-          </footer>
-        </blockquote>
-        <blockquote className="mb-2">
-          <div className="card card-body fs-md text-muted border-0 shadow-sm">
-            <div className="mb-2">
-              <div className="star-rating">
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star"></i>
+            <footer className="d-flex justify-content-center align-items-center pt-4">
+              <img
+                className="rounded-circle"
+                src="/img/testimonials/04.jpg"
+                width="50"
+                alt="Laura Willson"
+              />
+              <div className="ps-3">
+                <h6 className="fs-sm mb-n1">Laura Willson</h6>
+                <span className="fs-ms text-muted opacity-75">
+                  Feb 05, 2020
+                </span>
               </div>
-            </div>
-            Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <footer className="d-flex justify-content-center align-items-center pt-4">
-            <img
-              className="rounded-circle"
-              src="/img/shop/reviews/01.jpg"
-              width="50"
-              alt="Rafael Marquez"
-            />
-            <div className="ps-3">
-              <h6 className="fs-sm mb-n1">Rafael Marquez</h6>
-              <span className="fs-ms text-muted opacity-75">Dec 19, 2020</span>
-            </div>
-          </footer>
-        </blockquote>
-        <blockquote className="mb-2">
-          <div className="card card-body fs-md text-muted border-0 shadow-sm">
-            <div className="mb-2">
-              <div className="star-rating">
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
+            </footer>
+          </blockquote>
+          <blockquote className="mb-2">
+            <div className="card card-body fs-md text-muted border-0 shadow-sm">
+              <div className="mb-2">
+                <div className="star-rating">
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star"></i>
+                  <i className="star-rating-icon ci-star"></i>
+                </div>
               </div>
+              Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
-            Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <footer className="d-flex justify-content-center align-items-center pt-4">
-            <img
-              className="rounded-circle"
-              src="/img/testimonials/02.jpg"
-              width="50"
-              alt="Adrian Lewis"
-            />
-            <div className="ps-3">
-              <h6 className="fs-sm mb-n1">Adrian Lewis</h6>
-              <span className="fs-ms text-muted opacity-75">Dec 13, 2020</span>
-            </div>
-          </footer>
-        </blockquote>
-        <blockquote className="mb-2">
-          <div className="card card-body fs-md text-muted border-0 shadow-sm">
-            <div className="mb-2">
-              <div className="star-rating">
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star-filled active"></i>
-                <i className="star-rating-icon ci-star"></i>
-                <i className="star-rating-icon ci-star"></i>
+            <footer className="d-flex justify-content-center align-items-center pt-4">
+              <img
+                className="rounded-circle"
+                src="/img/testimonials/01.jpg"
+                width="50"
+                alt="Mary Grant"
+              />
+              <div className="ps-3">
+                <h6 className="fs-sm mb-n1">Mary Alice Grant</h6>
+                <span className="fs-ms text-muted opacity-75">
+                  Jan 27, 2020
+                </span>
               </div>
+            </footer>
+          </blockquote>
+          <blockquote className="mb-2">
+            <div className="card card-body fs-md text-muted border-0 shadow-sm">
+              <div className="mb-2">
+                <div className="star-rating">
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star"></i>
+                </div>
+              </div>
+              Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
-            Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <footer className="d-flex justify-content-center align-items-center pt-4">
-            <img
-              className="rounded-circle"
-              src="/img/shop/reviews/03.jpg"
-              width="50"
-              alt="Daniel Adams"
-            />
-            <div className="ps-3">
-              <h6 className="fs-sm mb-n1">Daniel Adams</h6>
-              <span className="fs-ms text-muted opacity-75">Dec 04, 2020</span>
+            <footer className="d-flex justify-content-center align-items-center pt-4">
+              <img
+                className="rounded-circle"
+                src="/img/shop/reviews/01.jpg"
+                width="50"
+                alt="Rafael Marquez"
+              />
+              <div className="ps-3">
+                <h6 className="fs-sm mb-n1">Rafael Marquez</h6>
+                <span className="fs-ms text-muted opacity-75">
+                  Dec 19, 2020
+                </span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote className="mb-2">
+            <div className="card card-body fs-md text-muted border-0 shadow-sm">
+              <div className="mb-2">
+                <div className="star-rating">
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                </div>
+              </div>
+              Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
-          </footer>
-        </blockquote>
-      </CarouselWrapper>
-    </div>
+            <footer className="d-flex justify-content-center align-items-center pt-4">
+              <img
+                className="rounded-circle"
+                src="/img/testimonials/02.jpg"
+                width="50"
+                alt="Adrian Lewis"
+              />
+              <div className="ps-3">
+                <h6 className="fs-sm mb-n1">Adrian Lewis</h6>
+                <span className="fs-ms text-muted opacity-75">
+                  Dec 13, 2020
+                </span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote className="mb-2">
+            <div className="card card-body fs-md text-muted border-0 shadow-sm">
+              <div className="mb-2">
+                <div className="star-rating">
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star-filled active"></i>
+                  <i className="star-rating-icon ci-star"></i>
+                  <i className="star-rating-icon ci-star"></i>
+                </div>
+              </div>
+              Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <footer className="d-flex justify-content-center align-items-center pt-4">
+              <img
+                className="rounded-circle"
+                src="/img/shop/reviews/03.jpg"
+                width="50"
+                alt="Daniel Adams"
+              />
+              <div className="ps-3">
+                <h6 className="fs-sm mb-n1">Daniel Adams</h6>
+                <span className="fs-ms text-muted opacity-75">
+                  Dec 04, 2020
+                </span>
+              </div>
+            </footer>
+          </blockquote>
+        </CarouselWrapper>
+      </div>
+    </section>
   );
 }

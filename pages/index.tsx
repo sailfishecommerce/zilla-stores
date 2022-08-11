@@ -22,33 +22,14 @@ export default function index() {
                   <br />
                   E-Commerce <span className="fw-light">Template</span>
                 </h1>
-                <span className="d-inline-block h5 text-light fw-light mx-2 opacity-70">
-                  Single / Multi-vendor
-                </span>
-                <span className="d-inline-block h3 text-light fw-light mx-2">
-                  Marketplace
-                </span>
-                <span className="d-inline-block h4 text-light fw-light mx-2 opacity-70">
-                  Fashion
-                </span>
-                <span className="d-inline-block h3 text-light fw-light mx-2 opacity-90">
-                  Electronics
-                </span>
-                <span className="d-inline-block h6 text-light fw-light mx-2 opacity-60">
-                  Cart
-                </span>
-                <span className="d-inline-block h3 text-light fw-light mx-2">
-                  Grocery store
-                </span>
-                <span className="d-inline-block h5 text-light fw-light mx-2 opacity-80">
-                  Checkout
-                </span>
-                <span className="d-inline-block h4 text-light fw-light mx-2">
-                  Food Delivery
-                </span>
-                <span className="d-inline-block fs-lg text-light fw-light mx-2 opacity-60">
-                  Account / Dasboard
-                </span>
+                {siteBanners.links.map((link) => (
+                  <span
+                    key={link.text}
+                    className={`d-inline-block text-light fw-light mx-2 ${link.className}`}
+                  >
+                    {link.text}
+                  </span>
+                ))}
                 <div className="py-4 py-sm-5">
                   <a
                     className="btn btn-primary btn-lg"
@@ -123,47 +104,12 @@ export default function index() {
                   All you need for your next e-commerce project
                 </p>
                 <ul className="text-light list-unstyled pt-3">
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Shop Grid / List Layout Options
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Multiple Product Page Variations
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Complete Order Workflow: Cart + Checkout
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Shop Customer Account Pages
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Vendor Dashboard for Multi-vendor Marketplaces
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Ready for any Content: Fashion, Electronics, Digital
-                    (Downloadable) Products, etc.
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Blog Pages: Blog Layouts + Single Post
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Help Center / Support Pages
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    Secondary Pages: About, Contacts, 404, etc.
-                  </li>
-                  <li>
-                    <i className="ci-check-circle text-success me-2"></i>
-                    40+ Flexible Components
-                  </li>
+                  {siteBanners.features.map((feature, index) => (
+                    <li key={index}>
+                      <i className="ci-check-circle text-success me-2"></i>
+                      {feature}
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="col-lg-7 offset-xl-1">

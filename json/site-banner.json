@@ -40,5 +40,27 @@
       "name": "Coming Soon"
     }
   ],
-  "links": []
+  "links": [
+    { "className": "h5 opacity-70", "text": " Single / Multi-vendor" },
+    { "className": "h3", "text": "Marketplace" },
+    { "className": "h4 opacity-70", "text": "Fashion" },
+    { "className": "h4 opacity-90", "text": "Electronics" },
+    { "className": "h6 opacity-60", "text": "Cart" },
+    { "className": "h4", "text": " Grocery store" },
+    { "className": "h4 opacity-80", "text": "Checkout" },
+    { "className": "h4", "text": "Food Delivery" },
+    { "className": "h4 opacity-60", "text": "Account / Dasboard" }
+  ],
+  "features": [
+    "Shop Grid / List Layout Options",
+    "Multiple Product Page Variations",
+    "Complete Order Workflow: Cart + Checkout",
+    "Shop Customer Account Pages",
+    "Vendor Dashboard for Multi-vendor Marketplaces",
+    "Ready for any Content: Fashion, Electronics, Digital (Downloadable) Products, etc.",
+    "Blog Pages: Blog Layouts + Single Post",
+    "Help Center / Support Pages",
+    "Secondary Pages: About, Contacts, 404, etc.",
+    "40+ Flexible Components"
+  ]
 }

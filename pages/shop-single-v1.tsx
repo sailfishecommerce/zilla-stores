@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import FashionLayout from "../layout/FashionLayout";
 
 const SingleShopProductCarousel1 = dynamic(
-  () => import("../components/Carousel/SingleShopProductCarousel1"),
+  () => import("@/components/Carousel/SingleShopProductCarousel1"),
   {
     ssr: false,
   }

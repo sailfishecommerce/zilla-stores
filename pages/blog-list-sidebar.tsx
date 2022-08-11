@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import FashionLayout from "../layout/FashionLayout";
 
 const BlogSlider = dynamic(
-  () => import("../components/Carousel/BlogGridCarousel"),
+  () => import("@/components/Carousel/BlogGridCarousel"),
   {
     ssr: false,
   }

@@ -6,7 +6,7 @@ import FoodDeliveryLayout from "../layout/FoodDeliveryLayout";
 
 export default function HomefoodDelivery() {
   const CustomerReviewCarousel = dynamic(
-    () => import("../components/Carousel/CustomerReviewCarousel"),
+    () => import("@/components/Carousel/CustomerReviewCarousel"),
     {
       ssr: false,
     }

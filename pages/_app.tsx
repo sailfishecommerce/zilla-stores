@@ -2,20 +2,30 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 import dynamic from "next/dynamic";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { Provider } from "react-redux";
+import { persistStore } from "redux-persist";
+import { PersistGate } from "redux-persist/integration/react";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 import "simplebar";
+
+import store from "@/redux/store";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "drift-zoom/dist/drift-basic.min.css";
 import "simplebar/dist/simplebar.css";
-import "../styles/globals.css";
-import "../styles/theme.min.css";
+import "@/styles/globals.css";
+import "@/styles/theme.min.css";
 
 dynamic(() => import("drift-zoom/dist/Drift.min.js"), {
   ssr: false,
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const persistor = persistStore(store);
+
+  const queryClient = new QueryClient();
   return (
     <>
       <Head>
@@ -35,7 +45,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Script type="module" src="/js/theme.js" />
 
-      <Component {...pageProps} />
+      <Provider store={store}>
+        <QueryClientProvider client={queryClient}>
+          <PersistGate loading={null} persistor={persistor}>
+            <Component {...pageProps} />
+          </PersistGate>
+          <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
+      </Provider>
     </>
   );
 }

@@ -1,17 +1,9 @@
-import dynamic from "next/dynamic";
-
 import GroceryLayout from "@/layout/GroceryLayout";
 import getAProduct from "@/lib/getAProduct";
 import { productType } from "@/types";
 import GroceryProductGallery from "@/components/Product/GroceryProductGallery";
 import Breadcrumb from "@/components/UI/Breadcrumb";
-
-const GroceryRelatedProduct = dynamic(
-  () => import("@/components/Carousel/GroceryRelatedProduct"),
-  {
-    ssr: false,
-  }
-);
+import RelatedProductsCarousel from "@/components/Carousel/RelatedProductsCarousel";
 
 interface Props {
   product: productType;
@@ -20,7 +12,7 @@ interface Props {
 export default function GrocerySingleProductPage({ product }: Props) {
   const linksArray = [
     { link: "/home-grocery-store", text: "Home" },
-    { link: "/grocery-catalog", text: "Shop" },
+    { link: "/shop/grocery", text: "Shop" },
     { link: null, text: product.name },
   ];
   return (
@@ -29,7 +21,11 @@ export default function GrocerySingleProductPage({ product }: Props) {
         <div className="px-3 pt-2">
           <Breadcrumb className="text-black mb-4" linksArray={linksArray} />
           <GroceryProductGallery product={product} />
-          <GroceryRelatedProduct />
+          <RelatedProductsCarousel
+            vendor={product.vendor}
+            slug={product.slug}
+            productType="grocery"
+          />
         </div>
       </section>
     </GroceryLayout>

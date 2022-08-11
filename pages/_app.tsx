@@ -11,7 +11,7 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import "simplebar";
 
 import store from "@/redux/store";
-
+import Nprogress from "@/components/Loader/Nprogress";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "drift-zoom/dist/drift-basic.min.css";
 import "simplebar/dist/simplebar.css";
@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" />
 
       <Script type="module" src="/js/theme.js" />
-
+      <Nprogress color="red" options={{ showSpinner: false }} />
       <Provider store={store}>
         <QueryClientProvider client={queryClient}>
           <PersistGate loading={null} persistor={persistor}>

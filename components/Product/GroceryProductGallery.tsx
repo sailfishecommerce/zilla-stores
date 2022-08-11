@@ -31,7 +31,7 @@ export default function GroceryProductGallery({ product }: Props) {
           </div>
         </div>
       </div>
-      <div className="col-xl-5  mb-3 product-description">
+      <div className="col-xl-5 h-100  mb-3 product-description">
         <div className="h-100 bg-light rounded-3 py-5 px-2 px-4">
           <a className="product-meta d-block fs-sm pb-2" href="#">
             {product.product_categories
@@ -42,7 +42,7 @@ export default function GroceryProductGallery({ product }: Props) {
                 })
               : ""}
           </a>
-          <h1 className="h2">{product.name}</h1>
+          <h4 className="h4">{product.name}</h4>
           <FormattedPrice
             price={product.sale_price}
             className="h2 fw-normal text-accent"
@@ -77,7 +77,7 @@ export default function GroceryProductGallery({ product }: Props) {
                 Add to Cart
               </button>
             </div>
-          </div>kw
+          </div>
           <div className="description border rounded px-4 py-1">
             <p
               className="fs-sm text-muted pb-1"
@@ -93,6 +93,7 @@ export default function GroceryProductGallery({ product }: Props) {
           .product-description {
             overflow-y: scroll;
             background-color: white;
+            max-height: 500px;
           }
         `}
       </style>

@@ -7,7 +7,7 @@ import FashionReview from "@/components/Reviews/FashionReview";
 import FashionProductDescription from "@/components/Product/FashionProductDescription";
 
 const SingleShopProductCarousel1 = dynamic(
-  () => import("@/components/Carousel/SingleShopProductCarousel1"),
+  () => import("@/components/Carousel/RelatedProductsCarousel"),
   {
     ssr: false,
   }

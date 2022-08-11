@@ -307,6 +307,8 @@ export type filterType = {
 
 export type hitType = {
   name: string;
+  hkd_compare_at_price: number;
+  compare_at_price: number;
   __queryID: string;
   __position: number;
   objectID: string;

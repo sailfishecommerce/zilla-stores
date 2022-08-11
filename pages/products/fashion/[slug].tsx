@@ -8,8 +8,8 @@ import FashionReview from "@/components/Reviews/FashionReview";
 import getAProduct from "@/lib/getAProduct";
 import { productType } from "@/types";
 
-const SingleShopProductCarousel1 = dynamic(
-  () => import("@/components/Carousel/SingleShopProductCarousel1"),
+const RelatedProductsCarousel = dynamic(
+  () => import("@/components/Carousel/RelatedProductsCarousel"),
   {
     ssr: false,
   }
@@ -33,9 +33,10 @@ export default function FashionProductPage({ product }: Props) {
           rating={product.rating}
           reviews={product.review_rating}
         />
-        <SingleShopProductCarousel1
+        <RelatedProductsCarousel
           vendor={product.vendor}
           slug={product.slug}
+          productType="fashion"
         />
       </>
     </FashionLayout>

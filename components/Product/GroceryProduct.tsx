@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import useMediaQuery from "@/hooks/useMediaQuery";
-import { productType } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import FormattedPrice from "../Price/FormattedPrice";
+
+import { productType } from "@/types";
+import FormattedPrice from "@/components/Price/FormattedPrice";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 interface Props {
   product: productType;

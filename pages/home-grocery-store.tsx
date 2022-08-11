@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import swellNode from "@/lib/swellNode";
 import GroceryLayout from "@/layout/GroceryLayout";
 import { productType } from "@/types";
+import GroceryBestSellers from "@/components/GroceryBestSellers";
 
 const HomeGroceryCarousel = dynamic(
   () => import("@/components/Carousel/HomeGroceryCarousel"),
@@ -46,7 +47,7 @@ export default function HomeGroceryStore({ products }: Props) {
         <HomeGroceryCarousel />
         <GroceryPromoBanner />
         <DiscountedProductCarousel products={products} />
-        <BestSellersCarousel />
+        <GroceryBestSellers />
         <CustomerReviewCarousel />
       </>
     </GroceryLayout>

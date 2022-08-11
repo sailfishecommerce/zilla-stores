@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
-import GroceryLayout from "../layout/GroceryLayout";
+import GroceryLayout from "@/layout/GroceryLayout";
 
 export default function GroceryCatalog() {
     return (

@@ -1,21 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
+import Logo from "@/components/Logo";
+
 export default function GroceryHeader() {
   return (
     <header className="bg-light shadow-sm fixed-top" data-fixed-element>
       <div className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
-          <Link href="/" passHref>
-            <a className="navbar-brand d-none d-sm-block me-3 me-xl-4 flex-shrink-0">
-              <img src="/img/logo-dark.png" width="142" alt="Bandicoot" />
-            </a>
-          </Link>
-          <Link href="/" passHref>
-            <a className="navbar-brand d-sm-none me-2">
-              <img src="/img/logo-icon.png" width="74" alt="Bandicoot" />
-            </a>
-          </Link>
+          <Logo />
           {/*<!-- Search-->*/}
           <div className="input-group d-none d-lg-flex flex-nowrap mx-4">
             <i className="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>

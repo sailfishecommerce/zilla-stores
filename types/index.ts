@@ -4,6 +4,7 @@ export type productType = {
   attributes?: any;
   className?: string;
   meta_title?: string;
+  product_categories?: string[];
   content: {
     maxQuantity: number;
     productBenefits: {
@@ -11,6 +12,7 @@ export type productType = {
       text: string;
     }[];
   };
+  meta_description?: string;
   __queryID?: string;
   __position?: number;
   objectID?: string;
@@ -318,7 +320,7 @@ export type hitType = {
       text: string;
     }[];
   };
-  sale_price?: any |number;
+  sale_price?: any | number;
   vendor?: string;
   product_image?: string;
   product_images: { link: string; alt: string }[];

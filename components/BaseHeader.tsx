@@ -3,19 +3,16 @@ import Link from "next/link";
 import headerLinks from "@/json/header.json";
 import SingleDropdownMenu from "@/components/Header/SingleDropdownMenu";
 import MegaDropdownMenu from "@/components/Header/MegaDropdownMenu";
-import NestedDropdownMenu from "./Header/NestedDropdownMenu";
+import NestedDropdownMenu from "@/components/Header/NestedDropdownMenu";
 import { headerLinksType } from "@/types/headerType";
+import Logo from "@/components/Logo";
 
 export default function BaseHeader() {
   return (
     <header className="bg-light shadow-sm navbar-sticky">
       <div className="navbar navbar-expand-lg navbar-light">
         <div className="container align-items-center">
-          <Link href="/" passHref>
-            <a className="navbar-brand  me-4 order-lg-1">
-              <h1 className="mb-0">Bandicoot</h1>
-            </a>
-          </Link>
+          <Logo />
           <div className="navbar-toolbar d-flex align-items-center order-lg-3">
             <button
               className="navbar-toggler"

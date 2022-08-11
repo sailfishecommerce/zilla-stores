@@ -25,7 +25,7 @@ export default function BestSellersCarousel() {
     ],
   };
   return (
-    <section className="pt-5 pb-4">
+    <section className="pt-5 pb-4 px-4">
       {/*<!-- Heading-->*/}
       <div className="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
         <h2 className="h3 mb-0 pt-3 me-3">Bestsellers</h2>

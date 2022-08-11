@@ -25,6 +25,6 @@
     "**/*.tsx",
     "**/**/*.tsx",
     "**/**/*.ts"
-  ],
+, "pages/grocery/[slug].txs"  ],
   "exclude": ["node_modules"]
 }

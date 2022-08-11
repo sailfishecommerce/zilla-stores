@@ -2,9 +2,10 @@
 
 import GroceryPromoBanner from "@/components/Banners/GroceryPromoBanner";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 
-import GroceryLayout from "../layout/GroceryLayout";
+import swellNode from "@/lib/swellNode";
+import GroceryLayout from "@/layout/GroceryLayout";
+import { productType } from "@/types";
 
 const HomeGroceryCarousel = dynamic(
   () => import("@/components/Carousel/HomeGroceryCarousel"),
@@ -33,16 +34,35 @@ const CustomerReviewCarousel = dynamic(
     ssr: false,
   }
 );
-export default function HomeGroceryStore() {
+
+interface Props {
+  products: productType[];
+}
+
+export default function HomeGroceryStore({ products }: Props) {
   return (
     <GroceryLayout title="Home grocery stores">
-      <section className="ps-lg-4 pe-lg-3 pt-4">
+      <>
         <HomeGroceryCarousel />
         <GroceryPromoBanner />
-        <DiscountedProductCarousel />
+        <DiscountedProductCarousel products={products} />
         <BestSellersCarousel />
         <CustomerReviewCarousel />
-      </section>
+      </>
     </GroceryLayout>
   );
+}
+
+export async function getStaticProps() {
+  const { swell, initSwell } = swellNode();
+  initSwell();
+  const products: any = await swell.get("/products", {
+    where: { select_store: "livehealthy" },
+  });
+
+  return {
+    props: {
+      products: products.results,
+    },
+  };
 }

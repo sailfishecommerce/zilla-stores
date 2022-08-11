@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
-import CarouselWrapper from "./Carousel/CarouselWrapper";
+import CarouselWrapper from "@/components/Carousel/CarouselWrapper";
+import Logo from "@/components/Logo";
 
 export default function FashionHeader() {
   const settings = {
@@ -133,16 +134,7 @@ export default function FashionHeader() {
       <div className="navbar-sticky bg-light">
         <div className="navbar navbar-expand-lg navbar-light">
           <div className="container">
-            <Link href="/" passHref>
-              <a className="navbar-brand d-none d-sm-block flex-shrink-0">
-                <img src="/img/logo-dark.png" width="142" alt="Bandicoot" />
-              </a>
-            </Link>
-            <Link href="/" passHref>
-              <a className="navbar-brand d-sm-none flex-shrink-0 me-2">
-                <img src="/img/logo-icon.png" width="74" alt="Bandicoot" />
-              </a>
-            </Link>
+            <Logo />
             <div className="input-group d-none d-lg-flex mx-4">
               <input
                 className="form-control rounded-end pe-5"

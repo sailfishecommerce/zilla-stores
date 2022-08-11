@@ -1,19 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import { useState } from "react";
-import Image from "next/image";
-
-import RatingStar from "@/components/UI/Ratings";
-import { productType } from "@/types";
-import FormattedPrice from "@/components/Price/FormattedPrice";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import { productType } from "@/types";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import FormattedPrice from "../Price/FormattedPrice";
 
 interface Props {
   product: productType;
   algoliaEvent?: "search";
 }
 
-export default function Product({ product, algoliaEvent }: Props) {
+export default function GroceryProduct({ product, algoliaEvent }: Props) {
   const [inHover, setHover] = useState(false);
   const mobileDevice = useMediaQuery("(max-width:768px)");
   const smallerMobileDevice = useMediaQuery("(max-width:330px)");
@@ -23,6 +21,7 @@ export default function Product({ product, algoliaEvent }: Props) {
     : mobileDevice
     ? { height: 80, width: 80 }
     : { height: 300, width: 300 };
+
   const productImage =
     typeof product.images === "object" && typeof product.images[0] === "string"
       ? product.images[0]
@@ -32,12 +31,13 @@ export default function Product({ product, algoliaEvent }: Props) {
 
   const linkURL =
     algoliaEvent === "search"
-      ? `/products/fashion/${product.slug}?query-id=${product.__queryID}`
-      : `/products/fashion/${product.slug}?id=${product.id}`;
+      ? `/products/grocery/${product.slug}?query-id=${product.__queryID}`
+      : `/products/grocery/${product.slug}?id=${product.id}`;
 
   return (
-    <div className="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
-      <div className="card product-card">
+    <div>
+      <div className="card product-card card-static pb-3">
+        <span className="badge bg-danger badge-shadow">Sale</span>
         <button
           className="btn-wishlist btn-sm"
           type="button"
@@ -70,51 +70,32 @@ export default function Product({ product, algoliaEvent }: Props) {
           <a className="product-meta d-block fs-xs pb-1" href="#">
             {product.vendor}
           </a>
-          <h3 className="product-title fs-sm">
-            <Link href="/shop-single-v1" passHref>
+          <h3 className="product-title fs-sm text-truncate">
+            <Link href="/grocery-single" passHref>
               <a>{product.name}</a>
             </Link>
           </h3>
-          <div className="d-flex justify-content-between">
-            <div className="product-price">
-              <FormattedPrice
-                className="text-accent"
-                price={product.sale_price}
-              />
-              {product?.price ? (
-                <del className="ms-1 fs-sm">
-                  <FormattedPrice
-                    className="text-accent"
-                    price={product?.price}
-                  />
-                </del>
-              ) : (
-                ""
-              )}
-            </div>
-            {product.rating && <RatingStar rate={product?.rating} />}
+          <div className="product-price">
+            <FormattedPrice
+              className="text-accent"
+              price={product.sale_price}
+            />
+            {product?.price && (
+              <del className="ms-1 fs-sm">
+                <FormattedPrice
+                  className="text-accent"
+                  price={product?.price}
+                />
+              </del>
+            )}
           </div>
         </div>
-        <div className="card-body card-body-hidden">
-          <button
-            className="btn btn-primary btn-sm d-block w-100 mb-2"
-            type="button"
-          >
-            <i className="ci-cart fs-sm me-1"></i>Add to Cart
+        <div className="product-floating-btn">
+          <button className="btn btn-primary btn-shadow btn-sm" type="button">
+            +<i className="ci-cart fs-base ms-1"></i>
           </button>
-          <div className="text-center">
-            <a
-              className="nav-link-style fs-ms"
-              href="#quick-view"
-              data-bs-toggle="modal"
-            >
-              <i className="ci-eye align-middle me-1"></i>
-              Quick view
-            </a>
-          </div>
         </div>
       </div>
-      <hr className="d-sm-none" />
     </div>
   );
 }

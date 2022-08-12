@@ -3,7 +3,6 @@ interface Props {
 }
 
 export default function ReviewsBar({ rating }: Props) {
-  console.log("rating", rating);
   const reviewsArray = [
     { count: 5, rating: 40, bg: "#42D697" },
     { count: 4, rating: 20, bg: "#a7e453" },

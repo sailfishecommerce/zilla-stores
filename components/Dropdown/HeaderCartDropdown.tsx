@@ -95,7 +95,7 @@ function HeaderCartDropdownComponent({ cart, checkoutLink }: Props) {
         {`
           .widget.widget-cart {
             width: 20rem;
-            height: 300px;
+            max-height: 300px;
             overflow-y: scroll;
           }
         `}
@@ -105,3 +105,4 @@ function HeaderCartDropdownComponent({ cart, checkoutLink }: Props) {
 }
 const HeaderCartDropdown = memo(HeaderCartDropdownComponent);
 export default HeaderCartDropdown;
+

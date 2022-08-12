@@ -44,6 +44,7 @@
     "redux-persist": "^6.0.0",
     "sass": "^1.43.4",
     "search-insights": "^2.2.1",
+    "sharp": "^0.30.7",
     "shufflejs": "^5.4.1",
     "simplebar": "^5.3.6",
     "smooth-scroll": "^16.1.3",

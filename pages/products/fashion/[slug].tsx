@@ -21,7 +21,7 @@ interface Props {
 
 export default function FashionProductPage({ product }: Props) {
   return (
-    <FashionLayout title="Homepage">
+    <FashionLayout title={product.meta_title}>
       <>
         {(product !== null || product !== undefined) && (
           <>

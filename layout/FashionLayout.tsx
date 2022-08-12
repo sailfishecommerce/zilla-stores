@@ -13,7 +13,7 @@ const FashionHeader = dynamic(() => import("@/components/FashionHeader"), {
 
 interface BaseLayoutProps {
   children: JSX.Element;
-  title: string;
+  title?: string;
 }
 
 export default function FashionLayout({

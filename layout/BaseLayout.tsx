@@ -14,7 +14,7 @@ export default function BaseLayout({
   title,
 }: PropsWithChildren<BaseLayoutProps>) {
   return (
-    <body className="handheld-toolbar-enabled">
+    <div className="handheld-toolbar-enabled">
       <Head>
         <meta charSet="utf-8" />
         <title>Bandicoot |{title}</title>
@@ -56,6 +56,6 @@ export default function BaseLayout({
       <BaseHeader />
       {children}
       <BaseFooter />
-    </body>
+    </div>
   );
 }

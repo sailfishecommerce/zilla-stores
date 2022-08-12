@@ -18,6 +18,7 @@ export default function FashionRelatedProduct({ relatedProduct }: Props) {
     <Link
       href={`/products/fashion/${relatedProduct.slug}?id=${relatedProduct.id}`}
       key={relatedProduct.id}
+      passHref
     >
       <a>
         <div className="col-12">
@@ -31,7 +32,7 @@ export default function FashionRelatedProduct({ relatedProduct }: Props) {
             >
               <i className="ci-heart"></i>
             </button>
-            <a className="card-img-top d-block overflow-hidden" href="#">
+            <div className="card-img-top d-block overflow-hidden">
               <Image
                 height={275}
                 width={275}
@@ -39,14 +40,12 @@ export default function FashionRelatedProduct({ relatedProduct }: Props) {
                 alt={relatedProduct.name}
                 blurDataURL={mainProductImage}
               />
-            </a>
+            </div>
             <div className="card-body py-2">
-              <a className="product-meta d-block fs-xs pb-1" href="#">
+              <div className="product-meta d-block fs-xs pb-1">
                 {relatedProduct.vendor}
-              </a>
-              <h3 className="product-title fs-sm">
-                <a href="#">{relatedProduct.name}</a>
-              </h3>
+              </div>
+              <h3 className="product-title fs-sm">{relatedProduct.name}</h3>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="product-price">
                   <FormattedPrice

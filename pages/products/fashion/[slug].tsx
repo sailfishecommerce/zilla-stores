@@ -47,6 +47,7 @@ export default function FashionProductPage({ product }: Props) {
 }
 
 export async function getServerSideProps(context: any) {
+  console.log("context.query", context.query);
   const productData: any = await getAProduct(context.query.id);
 
   return {

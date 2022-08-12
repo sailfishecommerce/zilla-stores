@@ -18,6 +18,7 @@ import "simplebar/dist/simplebar.css";
 import "@/styles/globals.css";
 import "@/styles/theme.min.css";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 dynamic(() => import("drift-zoom/dist/Drift.min.js"), {
   ssr: false,
@@ -46,6 +47,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Script type="module" src="/js/theme.js" />
       <Nprogress color="red" options={{ showSpinner: false }} />
+      <ToastContainer />
       <Provider store={store}>
         <QueryClientProvider client={queryClient}>
           <PersistGate loading={null} persistor={persistor}>

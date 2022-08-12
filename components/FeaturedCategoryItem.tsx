@@ -30,7 +30,10 @@ export default function FeaturedCategoryItem({
                 >
                   <i className="ci-heart"></i>
                 </button>
-                <Link href="/shop-single-v1" passHref>
+                <Link
+                  href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                  passHref
+                >
                   <a className="card-img-top d-block overflow-hidden">
                     <img src={item.ProductImg} alt="Product" />
                   </a>
@@ -40,7 +43,10 @@ export default function FeaturedCategoryItem({
                     {item.categoryName}
                   </a>
                   <h3 className="product-title fs-sm">
-                    <Link href="/shop-single-v1" passHref>
+                    <Link
+                      href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                      passHref
+                    >
                       <a>{item.productName}</a>
                     </Link>
                   </h3>

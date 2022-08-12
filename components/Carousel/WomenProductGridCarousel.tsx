@@ -68,7 +68,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/09.jpg" alt="Product" />
                         </a>
@@ -78,7 +81,10 @@ export default function WomenProductGridCarousel() {
                           Cosmetics
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Metallic Lipstick (Crimson)</a>
                           </Link>
                         </h3>
@@ -111,7 +117,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/26.jpg" alt="Product" />
                         </a>
@@ -121,7 +130,10 @@ export default function WomenProductGridCarousel() {
                           Shoes
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Textile Platform Sneakers</a>
                           </Link>
                         </h3>
@@ -157,7 +169,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link passHref href="/shop-single-v1">
+                      <Link
+                        passHref
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/27.jpg" alt="Product" />
                         </a>
@@ -167,7 +182,10 @@ export default function WomenProductGridCarousel() {
                           Accessories
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Polarized Sunglasses</a>
                           </Link>
                         </h3>
@@ -204,7 +222,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/28.jpg" alt="Product" />
                         </a>
@@ -214,7 +235,10 @@ export default function WomenProductGridCarousel() {
                           Shoes
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Leather Platform Sandals</a>
                           </Link>
                         </h3>
@@ -247,7 +271,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/29.jpg" alt="Product" />
                         </a>
@@ -257,7 +284,10 @@ export default function WomenProductGridCarousel() {
                           Shorts
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Short Chino Shorts</a>
                           </Link>
                         </h3>
@@ -290,7 +320,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/30.jpg" alt="Product" />
                         </a>
@@ -300,7 +333,10 @@ export default function WomenProductGridCarousel() {
                           T-shirts
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>T-shirt with Motif</a>
                           </Link>
                         </h3>
@@ -338,7 +374,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/01.jpg" alt="Product" />
                         </a>
@@ -348,7 +387,10 @@ export default function WomenProductGridCarousel() {
                           Shoes
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Colorblock Sneakers</a>
                           </Link>
                         </h3>
@@ -381,7 +423,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/02.jpg" alt="Product" />
                         </a>
@@ -391,7 +436,10 @@ export default function WomenProductGridCarousel() {
                           Blouse
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Cotton Lace Blouse</a>
                           </Link>
                         </h3>
@@ -424,7 +472,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/03.jpg" alt="Product" />
                         </a>
@@ -434,7 +485,10 @@ export default function WomenProductGridCarousel() {
                           Shorts
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Mom High Waist Shorts</a>
                           </Link>
                         </h3>
@@ -467,7 +521,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/04.jpg" alt="Product" />
                         </a>
@@ -477,7 +534,10 @@ export default function WomenProductGridCarousel() {
                           Sportswear
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Sports Jacket</a>
                           </Link>
                         </h3>
@@ -510,7 +570,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/31.jpg" alt="Product" />
                         </a>
@@ -520,7 +583,10 @@ export default function WomenProductGridCarousel() {
                           Shorts
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Leather Platform Sandals</a>
                           </Link>
                         </h3>
@@ -553,7 +619,10 @@ export default function WomenProductGridCarousel() {
                       >
                         <i className="ci-heart"></i>
                       </button>
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="card-img-top d-block overflow-hidden">
                           <img src="/img/shop/catalog/07.jpg" alt="Product" />
                         </a>
@@ -563,7 +632,10 @@ export default function WomenProductGridCarousel() {
                           T-shirts
                         </a>
                         <h3 className="product-title fs-sm">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Two-Piece Bikini</a>
                           </Link>
                         </h3>

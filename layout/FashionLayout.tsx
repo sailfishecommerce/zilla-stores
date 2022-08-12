@@ -4,6 +4,8 @@ import Head from "next/head";
 
 import Footer from "@/components/Footer";
 import AuthModal from "@/components/AuthModal";
+import QuickViewModal from "@/components/Modal/QuickViewModal";
+import { useAppSelector } from "@/hooks/useRedux";
 
 const FashionHeader = dynamic(() => import("@/components/FashionHeader"), {
   ssr: false,
@@ -18,6 +20,8 @@ export default function FashionLayout({
   children,
   title,
 }: PropsWithChildren<BaseLayoutProps>) {
+  const UI = useAppSelector((state) => state.UI);
+
   return (
     <div className="handheld-toolbar-enabled">
       <Head>
@@ -59,6 +63,9 @@ export default function FashionLayout({
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <AuthModal />
+      {UI?.quickViewModal?.active && (
+        <QuickViewModal product={UI.quickViewModal} />
+      )}
       <main className="page-wrapper">
         <FashionHeader />
         {children}

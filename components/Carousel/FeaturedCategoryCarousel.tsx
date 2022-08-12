@@ -37,7 +37,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/20.jpg" alt="Product" />
                     </a>
@@ -47,7 +50,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Block-colored Hooded Top</a>
                       </Link>
                     </h3>
@@ -80,7 +86,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/21.jpg" alt="Product" />
                     </a>
@@ -90,7 +99,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Block-colored Hooded Top</a>
                       </Link>
                     </h3>
@@ -124,7 +136,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/23.jpg" alt="Product" />
                     </a>
@@ -134,7 +149,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Block-colored Hooded Top</a>
                       </Link>
                     </h3>
@@ -170,7 +188,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/51.jpg" alt="Product" />
                     </a>
@@ -180,7 +201,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Mono Color Hooded Top</a>
                       </Link>
                     </h3>
@@ -213,7 +237,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/24.jpg" alt="Product" />
                     </a>
@@ -223,7 +250,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Block-colored Hooded Top</a>
                       </Link>
                     </h3>
@@ -256,7 +286,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/54.jpg" alt="Product" />
                     </a>
@@ -267,7 +300,10 @@ export default function FeaturedCategoryCarousel() {
                     </a>
 
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Mono Color Hooded Top</a>
                       </Link>
                     </h3>
@@ -305,7 +341,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/53.jpg" alt="Product" />
                     </a>
@@ -315,7 +354,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Mono Color Hooded Top</a>
                       </Link>
                     </h3>
@@ -348,7 +390,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/52.jpg" alt="Product" />
                     </a>
@@ -358,7 +403,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Printed Hooded Top</a>
                       </Link>
                     </h3>
@@ -391,7 +439,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/22.jpg" alt="Product" />
                     </a>
@@ -401,7 +452,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Block-colored Hooded Top</a>
                       </Link>
                     </h3>
@@ -434,7 +488,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/56.jpg" alt="Product" />
                     </a>
@@ -444,7 +501,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Printed Hooded Top</a>
                       </Link>
                     </h3>
@@ -477,7 +537,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/55.jpg" alt="Product" />
                     </a>
@@ -487,7 +550,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Block-colored Hooded Top</a>
                       </Link>
                     </h3>
@@ -520,7 +586,10 @@ export default function FeaturedCategoryCarousel() {
                   >
                     <i className="ci-heart"></i>
                   </button>
-                  <Link href="/shop-single-v1" passHref>
+                  <Link
+                    href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                    passHref
+                  >
                     <a className="card-img-top d-block overflow-hidden">
                       <img src="/img/shop/catalog/57.jpg" alt="Product" />
                     </a>
@@ -530,7 +599,10 @@ export default function FeaturedCategoryCarousel() {
                       Hoodies &amp; Sweatshirts
                     </a>
                     <h3 className="product-title fs-sm">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a>Block-colored Hooded Top</a>
                       </Link>
                     </h3>

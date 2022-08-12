@@ -2,8 +2,10 @@
 
 import useProductPageImage from "@/hooks/useProductPageImage";
 import ProductImageThumbnail from "@/components/Product/ProductImageThumbnail";
+import FormattedPrice from "@/components/Price/FormattedPrice";
+import useProduct from "@/hooks/useProduct";
 import type { productType } from "@/types";
-import FormattedPrice from "../Price/FormattedPrice";
+import Button from "@/components/UI/Button";
 
 interface Props {
   product: productType;
@@ -12,6 +14,9 @@ interface Props {
 export default function GroceryProductGallery({ product }: Props) {
   const { activeImage, updateMainImage } = useProductPageImage(product);
   const quantity = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  const { updateProductQuantityHandler, addToCartHandler } =
+    useProduct(product);
 
   return (
     <section className="row g-0 mx-n2 pb-5 mb-xl-3">
@@ -62,6 +67,7 @@ export default function GroceryProductGallery({ product }: Props) {
               <select
                 className="form-select me-3 mb-3"
                 style={{ width: "5rem" }}
+                onChange={updateProductQuantityHandler}
               >
                 {quantity.map((count) => (
                   <option key={count} value={count}>
@@ -69,23 +75,26 @@ export default function GroceryProductGallery({ product }: Props) {
                   </option>
                 ))}
               </select>
-              <button
+              <Button
                 className="btn btn-primary btn-shadow me-3 mb-3 w-100"
-                type="submit"
+                type="button"
+                onClick={addToCartHandler}
+                text="Add to Cart"
               >
                 <i className="ci-cart fs-lg me-2"></i>
-                Add to Cart
-              </button>
+              </Button>
             </div>
           </div>
-          <div className="description border rounded px-4 py-1">
-            <p
-              className="fs-sm text-muted pb-1"
-              dangerouslySetInnerHTML={{
-                __html: product["description"],
-              }}
-            />
-          </div>
+          {product.description && (
+            <div className="description border rounded px-4 py-1">
+              <p
+                className="fs-sm text-muted pb-1"
+                dangerouslySetInnerHTML={{
+                  __html: product["description"],
+                }}
+              />
+            </div>
+          )}
         </div>
       </div>
       <style jsx>

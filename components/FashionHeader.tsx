@@ -3,8 +3,19 @@ import Link from "next/link";
 
 import CarouselWrapper from "@/components/Carousel/CarouselWrapper";
 import Logo from "@/components/Logo";
+import HeaderCartDropdown from "@/components/Dropdown/HeaderCartDropdown";
+import useCart from "@/hooks/useCart";
+import FormattedPrice from "@/components/Price/FormattedPrice";
+import { toggleSlideCart } from "@/redux/ui-slice";
+import { useAppDispatch } from "@/hooks/useRedux";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 export default function FashionHeader() {
+  const { useCartData } = useCart();
+  const { data: cart } = useCartData();
+  const dispatch = useAppDispatch();
+  const tabWidth = useMediaQuery("(max-width:768px)");
+
   const settings = {
     mode: "gallery",
     nav: false,
@@ -18,6 +29,10 @@ export default function FashionHeader() {
     controls: false,
     mouseDrag: true,
   };
+
+  function toggleSlideCartMobile() {
+    tabWidth && dispatch(toggleSlideCart());
+  }
   return (
     <header className="shadow-sm">
       <div className="topbar topbar-dark bg-dark">
@@ -179,186 +194,27 @@ export default function FashionHeader() {
                 </div>
               </a>
               <div className="navbar-tool dropdown ms-3">
-                <Link href="/shop-cart" passHref>
-                  <a className="navbar-tool-icon-box bg-secondary dropdown-toggle">
-                    <span className="navbar-tool-label">4</span>
-                    <i className="navbar-tool-icon ci-cart"></i>
-                  </a>
-                </Link>
+                <a
+                  className="navbar-tool-icon-box bg-secondary dropdown-toggle"
+                  onClick={toggleSlideCartMobile}
+                >
+                  {cart?.items?.length > 0 && (
+                    <span className="navbar-tool-label">
+                      {cart?.items?.length}
+                    </span>
+                  )}
+                  <i className="navbar-tool-icon ci-cart"></i>
+                </a>
                 <Link href="/shop-cart" passHref>
                   <a className="navbar-tool-text">
-                    <small>My Cart</small>$265.00
+                    {cart?.grandTotal ? (
+                      <FormattedPrice price={cart?.grandTotal} />
+                    ) : (
+                      <FormattedPrice price={0} />
+                    )}
                   </a>
                 </Link>
-                <div className="dropdown-menu dropdown-menu-end">
-                  <div
-                    className="widget widget-cart px-3 pt-2 pb-3"
-                    style={{ width: "20rem" }}
-                  >
-                    <div
-                      style={{ height: "15rem" }}
-                      data-simplebar
-                      data-simplebar-auto-hide="false"
-                    >
-                      <div className="widget-cart-item pb-2 border-bottom">
-                        <button
-                          className="btn-close text-danger"
-                          type="button"
-                          aria-label="Remove"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div className="d-flex align-items-center">
-                          <Link href="/shop-single-v1" passHref>
-                            <a className="flex-shrink-0">
-                              <img
-                                src="/img/shop/cart/widget/01.jpg"
-                                width="64"
-                                alt="Product"
-                              />
-                            </a>
-                          </Link>
-                          <div className="ps-2">
-                            <h6 className="widget-product-title">
-                              <Link href="/shop-single-v1" passHref>
-                                <a>Women Colorblock Sneakers</a>
-                              </Link>
-                            </h6>
-                            <div className="widget-product-meta">
-                              <span className="text-accent me-2">
-                                $150.
-                                <small>00</small>
-                              </span>
-                              <span className="text-muted">x 1</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="widget-cart-item py-2 border-bottom">
-                        <button
-                          className="btn-close text-danger"
-                          type="button"
-                          aria-label="Remove"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div className="d-flex align-items-center">
-                          <Link href="/shop-single-v1" passHref>
-                            <a className="flex-shrink-0">
-                              <img
-                                src="/img/shop/cart/widget/02.jpg"
-                                width="64"
-                                alt="Product"
-                              />
-                            </a>
-                          </Link>
-                          <div className="ps-2">
-                            <h6 className="widget-product-title">
-                              <Link href="/shop-single-v1" passHref>
-                                <a>TH Jeans City Backpack</a>
-                              </Link>
-                            </h6>
-                            <div className="widget-product-meta">
-                              <span className="text-accent me-2">
-                                $79.
-                                <small>50</small>
-                              </span>
-                              <span className="text-muted">x 1</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="widget-cart-item py-2 border-bottom">
-                        <button
-                          className="btn-close text-danger"
-                          type="button"
-                          aria-label="Remove"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div className="d-flex align-items-center">
-                          <Link href="/shop-single-v1" passHref>
-                            <a className="flex-shrink-0">
-                              <img
-                                src="/img/shop/cart/widget/03.jpg"
-                                width="64"
-                                alt="Product"
-                              />
-                            </a>
-                          </Link>
-                          <div className="ps-2">
-                            <h6 className="widget-product-title">
-                              <Link href="/shop-single-v1" passHref>
-                                <a>3-Color Sun Stash Hat</a>
-                              </Link>
-                            </h6>
-                            <div className="widget-product-meta">
-                              <span className="text-accent me-2">
-                                $22.
-                                <small>50</small>
-                              </span>
-                              <span className="text-muted">x 1</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="widget-cart-item py-2 border-bottom">
-                        <button
-                          className="btn-close text-danger"
-                          type="button"
-                          aria-label="Remove"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div className="d-flex align-items-center">
-                          <Link href="/shop-single-v1" passHref>
-                            <a className="flex-shrink-0">
-                              <img
-                                src="/img/shop/cart/widget/04.jpg"
-                                width="64"
-                                alt="Product"
-                              />
-                            </a>
-                          </Link>
-                          <div className="ps-2">
-                            <h6 className="widget-product-title">
-                              <Link href="/shop-single-v1" passHref>
-                                <a>Cotton Polo Regular Fit</a>
-                              </Link>
-                            </h6>
-                            <div className="widget-product-meta">
-                              <span className="text-accent me-2">
-                                $9.
-                                <small>00</small>
-                              </span>
-                              <span className="text-muted">x 1</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="d-flex flex-wrap justify-content-between align-items-center py-3">
-                      <div className="fs-sm me-2 py-2">
-                        <span className="text-muted">Subtotal:</span>
-                        <span className="text-accent fs-base ms-1">
-                          $265.<small>00</small>
-                        </span>
-                      </div>
-                      <Link href="/shop-cart" passHref>
-                        <a className="btn btn-outline-secondary btn-sm">
-                          Expand cart
-                          <i className="ci-arrow-right ms-1 me-n1"></i>
-                        </a>
-                      </Link>
-                    </div>
-                    <Link href="/checkout-details" passHref>
-                      <a className="btn btn-primary btn-sm d-block w-100">
-                        <i className="ci-card me-2 fs-base align-middle"></i>
-                        Checkout
-                      </a>
-                    </Link>
-                  </div>
-                </div>
+                {cart?.items.length > 0 && <HeaderCartDropdown cart={cart}  checkoutLink="/checkout-payment" />}
               </div>
             </div>
           </div>
@@ -888,7 +744,10 @@ export default function FashionHeader() {
                               </Link>
                             </li>
                             <li className="widget-list-item">
-                              <Link href="/shop-single-v1" passHref>
+                              <Link
+                                href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                                passHref
+                              >
                                 <a className="widget-list-link">
                                   Product Page v.1
                                 </a>

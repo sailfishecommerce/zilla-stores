@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
@@ -7,6 +6,11 @@ import RatingStar from "@/components/UI/Ratings";
 import { productType } from "@/types";
 import FormattedPrice from "@/components/Price/FormattedPrice";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import useShoppingCart from "@/hooks/useShoppingCart";
+import Button from "@/components/UI/Button";
+import { quickViewModal } from "@/redux/ui-slice";
+import { useAppDispatch } from "@/hooks/useRedux";
+import useAlgoliaEvents from "@/hooks/useAlgoliaEvents";
 
 interface Props {
   product: productType;
@@ -17,6 +21,23 @@ export default function Product({ product, algoliaEvent }: Props) {
   const [inHover, setHover] = useState(false);
   const mobileDevice = useMediaQuery("(max-width:768px)");
   const smallerMobileDevice = useMediaQuery("(max-width:330px)");
+  const { itemViewed, productAddedToCart } = useAlgoliaEvents();
+  const dispatch = useAppDispatch();
+  const { addItemToCart } = useShoppingCart();
+
+  function addToCartHandler() {
+    if (product.objectID) {
+      productAddedToCart([product.objectID]);
+    }
+    addItemToCart.mutate({ product, quantity: 1 });
+  }
+
+  function quickViewHandler(product: any) {
+    const itemId =
+      product.objectID !== undefined ? product.objectID : [product.id];
+    itemViewed("quick_view_of_product_by_modal", itemId);
+    dispatch(quickViewModal(product));
+  }
 
   const productDimension = smallerMobileDevice
     ? { height: 200, width: 250 }
@@ -71,7 +92,10 @@ export default function Product({ product, algoliaEvent }: Props) {
             {product.vendor}
           </a>
           <h3 className="product-title fs-sm">
-            <Link href="/shop-single-v1" passHref>
+            <Link
+              href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+              passHref
+            >
               <a>{product.name}</a>
             </Link>
           </h3>
@@ -96,17 +120,20 @@ export default function Product({ product, algoliaEvent }: Props) {
           </div>
         </div>
         <div className="card-body card-body-hidden">
-          <button
+          <Button
             className="btn btn-primary btn-sm d-block w-100 mb-2"
             type="button"
+            text="Add to Cart"
+            onClick={addToCartHandler}
           >
-            <i className="ci-cart fs-sm me-1"></i>Add to Cart
-          </button>
+            <i className="ci-cart fs-sm me-1"></i>
+          </Button>
           <div className="text-center">
             <a
               className="nav-link-style fs-ms"
-              href="#quick-view"
               data-bs-toggle="modal"
+              href="#quick-view"
+              onClick={() => quickViewHandler(product)}
             >
               <i className="ci-eye align-middle me-1"></i>
               Quick view

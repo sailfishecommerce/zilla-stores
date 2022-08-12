@@ -11,6 +11,7 @@ export default function SocialIcon({ className }: Props) {
       {socialIconLinks.map((link) => (
         <a
           key={link.link}
+          href={link.link}
           className={`btn-social ${className} bs-${link.name} me-2 mb-2`}
           rel="noreferrer"
           target="_blank"

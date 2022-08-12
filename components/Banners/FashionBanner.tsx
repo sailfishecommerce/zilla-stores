@@ -7,7 +7,10 @@ interface Props {
 export default function FashionBanner({ title }: Props) {
   const linkArray = [
     { text: "Home", link: "/" },
-    { text: "Shop", link: "/shop-single-v1" },
+    {
+      text: "Shop",
+      link: "products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8",
+    },
     { text: title, link: null },
   ];
   return (

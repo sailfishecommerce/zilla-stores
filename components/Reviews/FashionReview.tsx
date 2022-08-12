@@ -1,21 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
 
 import RatingStar from "@/components/UI/Ratings";
-import ReviewsBar from "./ReviewsBar";
+import ReviewsBar from "@/components/Reviews/ReviewsBar";
 
 interface Props {
   rating: number;
-  reviews?: number;
+  reviews?: number | any;
 }
 
 export default function FashionReview({ rating, reviews }: Props) {
+  const reviewText = reviews > 1 ? "Reviews" : "Review";
   return (
     <>
       <div className="border-top border-bottom my-lg-3 py-5">
         <div className="container pt-md-2" id="reviews">
           <div className="row pb-3">
             <div className="col-lg-4 col-md-5">
-              {reviews ? <h2 className="h3 mb-4">{reviews} Reviews</h2> : ""}
+              {reviews ? (
+                <h2 className="h3 mb-4">
+                  {reviews} {reviewText}
+                </h2>
+              ) : (
+                ""
+              )}
               {rating > 0 ? (
                 <div className="ratings d-flex align-items-center mb-0">
                   <RatingStar rate={rating} />

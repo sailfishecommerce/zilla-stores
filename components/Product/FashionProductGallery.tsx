@@ -39,8 +39,6 @@ export default function FashionProductGallery({ product }: Props) {
               />
             </div>
           </div>
-          {/*<!-- Product details-->*/}
-
           <div className="col-lg-5 pt-4 pt-lg-0">
             <div className="position-relative me-n4 mt-4">
               <div className="product-badge product-available mt-n1 mb-4">
@@ -83,7 +81,7 @@ export default function FashionProductGallery({ product }: Props) {
                   Sale
                 </span>
               </div>
-              <FashionProductForm />
+              <FashionProductForm product={product} />
               <FashionProductInfo product={product} />
               <ShareSocialIcons />
             </div>

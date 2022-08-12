@@ -1,5 +1,5 @@
 import { productType } from "@/types";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function useProductPageImage(product: productType) {
   const mainProductImage =
@@ -8,10 +8,6 @@ export default function useProductPageImage(product: productType) {
       : product.images[0].file.url;
 
   const [activeImage, setActiveImage] = useState(mainProductImage);
-
-  useEffect(() => {
-    setActiveImage(mainProductImage);
-  }, []);
 
   function updateMainImage(image: string) {
     setActiveImage(image);

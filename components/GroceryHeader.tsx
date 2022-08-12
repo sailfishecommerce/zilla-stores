@@ -2,8 +2,14 @@
 import Link from "next/link";
 
 import Logo from "@/components/Logo";
+import HeaderCartDropdown from "@/components/Dropdown/HeaderCartDropdown";
+import FormattedPrice from "@/components/Price/FormattedPrice";
+import useCart from "@/hooks/useCart";
 
 export default function GroceryHeader() {
+  const { useCartData } = useCart();
+  const { data: cart } = useCartData();
+
   return (
     <header className="bg-light shadow-sm fixed-top" data-fixed-element>
       <div className="navbar navbar-expand-lg navbar-light">
@@ -82,143 +88,30 @@ export default function GroceryHeader() {
             <div className="navbar-tool dropdown ms-3">
               <Link href="/grocery-checkout" passHref>
                 <a className="navbar-tool-icon-box bg-secondary dropdown-toggle">
-                  <span className="navbar-tool-label">3</span>
+                  {cart?.items?.length > 0 && (
+                    <span className="navbar-tool-label">
+                      {cart?.items?.length}
+                    </span>
+                  )}
                   <i className="navbar-tool-icon ci-cart"></i>
                 </a>
               </Link>
               <Link href="/grocery-checkout" passHref>
                 <a className="navbar-tool-text">
-                  <small>My Cart</small>$25.00
+                  <small>My Cart</small>
+                  {cart?.grandTotal ? (
+                    <FormattedPrice price={cart?.grandTotal} />
+                  ) : (
+                    <FormattedPrice price={0} />
+                  )}
                 </a>
               </Link>
-              <div className="dropdown-menu dropdown-menu-end">
-                <div
-                  className="widget widget-cart px-3 pt-2 pb-3"
-                  style={{ width: "20rem" }}
-                >
-                  <div
-                    style={{ height: "15rem" }}
-                    data-simplebar
-                    data-simplebar-auto-hide="false"
-                  >
-                    <div className="widget-cart-item pb-2 border-bottom">
-                      <button
-                        className="btn-close text-danger"
-                        type="button"
-                        aria-label="Remove"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <div className="d-flex align-items-center">
-                        <Link href="/grocery-single" passHref>
-                          <a className="d-block">
-                            <img
-                              src="/img/grocery/cart/th01.jpg"
-                              width="64"
-                              alt="Product"
-                            />
-                          </a>
-                        </Link>
-                        <div className="ps-2">
-                          <h6 className="widget-product-title">
-                            <Link href="/grocery-single" passHref>
-                              <a>Frozen Oven-ready Poultry</a>
-                            </Link>
-                          </h6>
-                          <div className="widget-product-meta">
-                            <span className="text-accent me-2">
-                              $15.
-                              <small>00</small>
-                            </span>
-                            <span className="text-muted">x 1</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="widget-cart-item py-2 border-bottom">
-                      <button
-                        className="btn-close text-danger"
-                        type="button"
-                        aria-label="Remove"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <div className="d-flex align-items-center">
-                        <Link href="/grocery-single" passHref>
-                          <a className="d-block">
-                            <img
-                              src="/img/grocery/cart/th02.jpg"
-                              width="64"
-                              alt="Product"
-                            />
-                          </a>
-                        </Link>
-                        <div className="ps-2">
-                          <h6 className="widget-product-title">
-                            <Link href="/grocery-single" passHref>
-                              <a>Nut Chocolate Paste (750g)</a>
-                            </Link>
-                          </h6>
-                          <div className="widget-product-meta">
-                            <span className="text-accent me-2">
-                              $6.<small>50</small>
-                            </span>
-                            <span className="text-muted">x 1</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="widget-cart-item py-2 border-bottom">
-                      <button
-                        className="btn-close text-danger"
-                        type="button"
-                        aria-label="Remove"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <div className="d-flex align-items-center">
-                        <Link href="/grocery-single" passHref>
-                          <a className="d-block">
-                            <img
-                              src="/img/grocery/cart/th03.jpg"
-                              width="64"
-                              alt="Product"
-                            />
-                          </a>
-                        </Link>
-                        <div className="ps-2">
-                          <h6 className="widget-product-title">
-                            <Link href="/grocery-single" passHref>
-                              <a>Mozzarella Mini Cheese</a>
-                            </Link>
-                          </h6>
-                          <div className="widget-product-meta">
-                            <span className="text-accent me-2">
-                              $3.<small>50</small>
-                            </span>
-                            <span className="text-muted">x 1</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="d-flex flex-wrap justify-content-between align-items-center pt-3">
-                    <div className="fs-sm me-2 py-2">
-                      <span className="text-muted">Total:</span>
-                      <span className="text-accent fs-base ms-1">
-                        $25.<small>00</small>
-                      </span>
-                    </div>
-                    <Link href="/grocery-checkout" passHref>
-                      <a className="btn btn-primary btn-sm">
-                        <i className="ci-card me-2 fs-base align-middle"></i>
-                        Checkout
-                        <i className="ci-arrow-right ms-1 me-n1"></i>
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              {cart?.items.length > 0 && (
+                <HeaderCartDropdown
+                  cart={cart}
+                  checkoutLink="/grocery-checkout"
+                />
+              )}
             </div>
           </div>
         </div>

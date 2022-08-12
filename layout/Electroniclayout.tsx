@@ -1,9 +1,12 @@
 import Head from "next/head";
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
+
 import AuthModal from "@/components/AuthModal";
 import ElectronicModalView from "@/components/ElectronicModalView";
 import ElectronicsNavbar from "@/components/ElectronicsNavbar";
 import Footer from "@/components/Footer";
+import QuickViewModal from "@/components/Modal/QuickViewModal";
+import { useAppSelector } from "@/hooks/useRedux";
 
 interface ElectroniclayoutProps {
   title: string;
@@ -12,6 +15,8 @@ export default function Electroniclayout({
   title,
   children,
 }: PropsWithChildren<ElectroniclayoutProps>) {
+  const UI = useAppSelector((state) => state.UI);
+
   return (
     <>
       <Head>
@@ -53,6 +58,9 @@ export default function Electroniclayout({
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <AuthModal />
+      {UI?.quickViewModal?.active && (
+        <QuickViewModal product={UI.quickViewModal} />
+      )}
       <main className="page-wrapper">
         <ElectronicModalView />
         <ElectronicsNavbar />

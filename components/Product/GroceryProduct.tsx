@@ -6,6 +6,8 @@ import React, { useState } from "react";
 import { productType } from "@/types";
 import FormattedPrice from "@/components/Price/FormattedPrice";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import useShoppingCart from "@/hooks/useShoppingCart";
+import useAlgoliaEvents from "@/hooks/useAlgoliaEvents";
 
 interface Props {
   product: productType;
@@ -16,6 +18,8 @@ export default function GroceryProduct({ product, algoliaEvent }: Props) {
   const [inHover, setHover] = useState(false);
   const mobileDevice = useMediaQuery("(max-width:768px)");
   const smallerMobileDevice = useMediaQuery("(max-width:330px)");
+  const { addItemToCart } = useShoppingCart();
+  const { productAddedToCart } = useAlgoliaEvents();
 
   const productDimension = smallerMobileDevice
     ? { height: 200, width: 250 }
@@ -34,6 +38,13 @@ export default function GroceryProduct({ product, algoliaEvent }: Props) {
     algoliaEvent === "search"
       ? `/products/grocery/${product.slug}?query-id=${product.__queryID}`
       : `/products/grocery/${product.slug}?id=${product.id}`;
+
+  function addToCartHandler() {
+    if (product.objectID) {
+      productAddedToCart([product.objectID]);
+    }
+    addItemToCart.mutate({ product, quantity: 1 });
+  }
 
   return (
     <div>
@@ -92,7 +103,11 @@ export default function GroceryProduct({ product, algoliaEvent }: Props) {
           </div>
         </div>
         <div className="product-floating-btn">
-          <button className="btn btn-primary btn-shadow btn-sm" type="button">
+          <button
+            className="btn btn-primary btn-shadow btn-sm"
+            type="button"
+            onClick={addToCartHandler}
+          >
             +<i className="ci-cart fs-base ms-1"></i>
           </button>
         </div>

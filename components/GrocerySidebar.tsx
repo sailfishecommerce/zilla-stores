@@ -1552,7 +1552,10 @@ export default function GrocerySidebar() {
                                 </Link>
                               </li>
                               <li className="widget-list-item">
-                                <Link href="/shop-single-v1" passHref>
+                                <Link
+                                  href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                                  passHref
+                                >
                                   <a className="widget-list-link">
                                     Product Page v.1
                                   </a>

@@ -6,7 +6,7 @@ import FashionProductGallery from "@/components/Product/FashionProductGallery";
 import FashionProductDescription from "@/components/Product/FashionProductDescription";
 import FashionReview from "@/components/Reviews/FashionReview";
 import getAProduct from "@/lib/getAProduct";
-import { productType } from "@/types";
+import type { productType } from "@/types";
 
 const RelatedProductsCarousel = dynamic(
   () => import("@/components/Carousel/RelatedProductsCarousel"),
@@ -20,7 +20,6 @@ interface Props {
 }
 
 export default function FashionProductPage({ product }: Props) {
-  console.log("product-fashion", product);
   return (
     <FashionLayout title=" Homepage">
       <>

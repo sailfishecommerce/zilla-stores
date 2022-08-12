@@ -333,7 +333,10 @@ export default function CheckoutShipping() {
                   <div className="widget mb-3">
                     <h2 className="widget-title text-center">Order summary</h2>
                     <div className="d-flex align-items-center pb-2 border-bottom">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="d-block flex-shrink-0">
                           <img
                             src="/img/shop
@@ -346,7 +349,10 @@ export default function CheckoutShipping() {
 
                       <div className="ps-2">
                         <h6 className="widget-product-title">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Women Colorblock Sneakers</a>
                           </Link>
                         </h6>
@@ -359,7 +365,10 @@ export default function CheckoutShipping() {
                       </div>
                     </div>
                     <div className="d-flex align-items-center py-2 border-bottom">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="d-block flex-shrink-0">
                           <img
                             src="/img/shop/cart/widget/02.jpg"
@@ -370,7 +379,10 @@ export default function CheckoutShipping() {
                       </Link>
                       <div className="ps-2">
                         <h6 className="widget-product-title">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>TH Jeans City Backpack</a>
                           </Link>
                         </h6>
@@ -383,7 +395,10 @@ export default function CheckoutShipping() {
                       </div>
                     </div>
                     <div className="d-flex align-items-center py-2 border-bottom">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="d-block flex-shrink-0">
                           <img
                             src="/img/shop/cart/widget/03.jpg"
@@ -394,7 +409,10 @@ export default function CheckoutShipping() {
                       </Link>
                       <div className="ps-2">
                         <h6 className="widget-product-title">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>3-Color Sun Stash Hat</a>
                           </Link>
                         </h6>
@@ -407,7 +425,10 @@ export default function CheckoutShipping() {
                       </div>
                     </div>
                     <div className="d-flex align-items-center py-2 border-bottom">
-                      <Link href="/shop-single-v1" passHref>
+                      <Link
+                        href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                        passHref
+                      >
                         <a className="d-block flex-shrink-0">
                           <img
                             src="/img/shop/cart/widget/04.jpg"
@@ -418,7 +439,10 @@ export default function CheckoutShipping() {
                       </Link>
                       <div className="ps-2">
                         <h6 className="widget-product-title">
-                          <Link href="/shop-single-v1" passHref>
+                          <Link
+                            href="products/fashion/etch-ethos-hydrating-botanical-bloom-body-wash-1kg-refill?id=62e185c2c9f37b4c07a462f8"
+                            passHref
+                          >
                             <a>Cotton Polo Regular Fit</a>
                           </Link>
                         </h6>

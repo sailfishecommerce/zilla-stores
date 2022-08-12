@@ -21,22 +21,26 @@ interface Props {
 
 export default function FashionProductPage({ product }: Props) {
   return (
-    <FashionLayout title=" Homepage">
+    <FashionLayout title="Homepage">
       <>
-        <FashionBanner title={product.name} />
-        <div className="container">
-          <FashionProductGallery product={product} />
-          <FashionProductDescription product={product} />
-        </div>
-        <FashionReview
-          rating={product.rating}
-          reviews={product.review_rating}
-        />
-        <RelatedProductsCarousel
-          vendor={product.vendor}
-          slug={product.slug}
-          productType="fashion"
-        />
+        {(product !== null || product !== undefined) && (
+          <>
+            <FashionBanner title={product?.name} />
+            <div className="container">
+              <FashionProductGallery product={product} />
+              <FashionProductDescription product={product} />
+            </div>
+            <FashionReview
+              rating={product?.rating}
+              reviews={product?.review_rating}
+            />
+            <RelatedProductsCarousel
+              vendor={product?.vendor}
+              slug={product?.slug}
+              productType="fashion"
+            />
+          </>
+        )}
       </>
     </FashionLayout>
   );

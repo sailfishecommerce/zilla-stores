@@ -55,7 +55,6 @@ export default function GroceryBestSellers() {
         <div className="tns-carousel tns-controls-static tns-controls-outside tns-dots-enabled pt-2">
           <CarouselWrapper onClick={() => {}} settings={settings}>
             {data.map((dataItem: productType) => {
-              console.log("data", dataItem);
               return <GroceryProduct key={dataItem.id} product={dataItem} />;
             })}
           </CarouselWrapper>

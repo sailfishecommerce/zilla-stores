@@ -1,13 +1,13 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import swell from "swell-node";
 
-import swellNodeInit from "../../lib/swellNode";
+import swellNode from "../../lib/swellNode";
 
 export default async function VendorProductHandler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  swellNodeInit();
+  const { swell, initSwell } = swellNode();
+  initSwell();
   const vendor = req.body.vendor;
   switch (req.method) {
     case "POST": {

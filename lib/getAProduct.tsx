@@ -1,9 +1,8 @@
-import swell from "swell-node";
-
-import swellNodeInit from "@/lib/swellNode";
+import swellNode from "@/lib/swellNode";
 
 export default async function getAProduct(productId: string) {
-  swellNodeInit();
+  const { swell, initSwell } = swellNode();
+  initSwell();
   return await swell.get(`/products/${productId}`, {
     where: { select_store: "livehealthy", active: true },
   });

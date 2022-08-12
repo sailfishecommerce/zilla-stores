@@ -23,31 +23,26 @@ export default function FashionProductPage({ product }: Props) {
   return (
     <FashionLayout title={product.meta_title}>
       <>
-        {(product !== null || product !== undefined) && (
-          <>
-            <FashionBanner title={product?.name} />
-            <div className="container">
-              <FashionProductGallery product={product} />
-              <FashionProductDescription product={product} />
-            </div>
-            <FashionReview
-              rating={product?.rating}
-              reviews={product?.review_rating}
-            />
-            <RelatedProductsCarousel
-              vendor={product?.vendor}
-              slug={product?.slug}
-              productType="fashion"
-            />
-          </>
-        )}
+        <FashionBanner title={product?.name} />
+        <div className="container">
+          <FashionProductGallery product={product} />
+          <FashionProductDescription product={product} />
+        </div>
+        <FashionReview
+          rating={product?.rating}
+          reviews={product?.review_rating}
+        />
+        <RelatedProductsCarousel
+          vendor={product?.vendor}
+          slug={product?.slug}
+          productType="fashion"
+        />
       </>
     </FashionLayout>
   );
 }
 
 export async function getServerSideProps(context: any) {
-  console.log("context.query", context.query);
   const productData: any = await getAProduct(context.query.id);
 
   return {
